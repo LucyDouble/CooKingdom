@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*전체 가운데 정렬*/
+.wrapper{
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#hamburgerM, .my {
+    padding: 30px;
+}
+#hamburgerM, #logo  {
+    float: left;
+}
+#logo{
+    position: absolute;
+    right: 45%;
+}
+.my{
+    position: relative;
+    float: right;
+}
+a:link{
+    color: #000;
+}
+a:hover{
+    color: #628c03;
+    font-weight: bold;
+}
+
+#nav {
+    clear: both;
+}
+#indexMenu {
+    padding: 0;
+}
+#nav .menu {
+    float: left;
+    margin: 20px 30px;
+}
+#login {
+    float: right;
+    margin: 20px 20px;
+}
+#join{
+    float: right;
+    margin: 20px 20px;
+}

@@ -1,12 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-안
+<div class="wrapper">
+	<jsp:include page="header.jsp"></jsp:include>
+	<jsp:include page="footer.jsp"></jsp:include>
+</div>
 </body>
 </html>
