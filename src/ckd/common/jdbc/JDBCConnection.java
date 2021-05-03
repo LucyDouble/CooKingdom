@@ -1,4 +1,4 @@
-package ckd.common;
+package ckd.common.jdbc;
 
 
 import java.io.BufferedReader;
