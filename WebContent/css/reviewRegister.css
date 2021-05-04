@@ -1,0 +1,64 @@
+@charset "UTF-8";
+#line {
+    background-color: #6e8c03;
+    width: 100%; 
+    height: 3px;
+}
+#head {
+    text-align: center;
+    padding-bottom: 50px;
+    clear: both;
+}
+#reviewReg{
+    margin-top: 250px;
+    margin-bottom: 100px;
+
+}
+#frmCS {
+    padding-top: 50px;
+    width: 700px;
+    margin: auto; 
+}
+#frmCS table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+.inp {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#btn {
+    text-align: center;
+}
+
+#btnSubmit{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    background-color: #6e8c03;
+    color: #fff;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 20pt;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+button:hover{
+    
+    background-color: #6e8c03;
+
+    box-shadow: 0 5px #808080;
+
+    transform: translateY(4px);
+}
+
