@@ -9,7 +9,7 @@ import ckd.member.vo.Manager;
 
 public class managerManagementService {
 	
-	public int inqueryManagerInfo(Manager manager) {
+	public int inquiryManagerInfo(Manager manager) {
 	
 		Connection conn = null;
 		PreparedStatement pstmt = null;

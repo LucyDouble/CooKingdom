@@ -1,8 +1,8 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/userSignup.css?ver=1" rel="stylesheet" type="text/css">
+<link href="css/managerSignup.css?ver=1" rel="stylesheet"
+	type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
-v
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -42,16 +42,6 @@ v
 		} else {
 			document.getElementById("msg3").style.display = "none";
 		}
-		// 중복 이메일 확인
-		
-		userManagementService uService = new userManagementService();
-		int result = uService.checkId(user);
-		if (result != 0) {
-			document.getElementById("msg4").style.display = "block";
-		} else if (result == 1) {
-			document.getElementById("msg4").style.display = "none";
-		}
-		
 	}
 </script>
 </head>
@@ -62,8 +52,8 @@ v
 	<br>
 	<h5 style="text-align: center;">회원가입</h5>
 	<hr style="margin-bottom: 30px;">
-	<form action="<%=request.getContextPath()%>/inquiryUser" method="POST"
-		style="text-align: center;" onsubmit="return checkValue();">
+	<form action="<%=request.getContextPath()%>/inquiryDirector"
+		method="POST" style="text-align: center;" onsubmit="return checkValue();">
 		<div id="index">
 			<p id="info">이메일</p>
 			<input type="text" class="input" name="email">
@@ -72,16 +62,6 @@ v
 		<div id="index">
 			<p id="info">이름</p>
 			<input type="text" class="input" name="name">
-		</div>
-		<br>
-		<div id="index">
-			<p id="info">닉네임</p>
-			<input type="text" class="input" name="nickName">
-		</div>
-		<br>
-		<div id="index">
-			<p id="info">생년월일</p>
-			<input type="text" class="input" name="birth">
 		</div>
 		<br>
 		<div id="index">
@@ -100,14 +80,13 @@ v
 		</div>
 		<br>
 		<div id="index">
-			<p id="info">주소</p>
-			<input type="text" class="input" name="address">
+			<p id="info">시리얼 넘버</p>
+			<input type="text" class="input" name="serial">
 		</div>
 		<br>
 		<p id="msg1" style="color: red; display: none; margin-top: 0;">모든 항목을 채워주세요.</p>
 		<p id="msg2" style="color: red; display: none; margin-top: 0;">비밀번호 양식에 맞게 입력해주세요.</p>
-		<p id="msg3" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p>		
-		<p id="msg4" style="color: red; display: none; margin-top: 0;">중복되는 이메일이 있습니다.</p>		
+		<p id="msg3" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
 		</div>
