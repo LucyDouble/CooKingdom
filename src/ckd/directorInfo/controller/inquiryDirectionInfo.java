@@ -1,27 +1,27 @@
-package ckd.userInfo.controller;
+package ckd.directorInfo.controller;
 
 import java.io.IOException;
-import java.sql.Date;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import oracle.jdbc.dcn.DatabaseChangeEvent;
+import ckd.directorInfo.service.directorManagementService;
+import ckd.managerInfo.service.managerManagementService;
+import ckd.member.vo.Manager;
 
 /**
- * Servlet implementation class inqueryDirectorInfo
+ * Servlet implementation class inqueryDirectionInfo
  */
-@WebServlet("/inqueryDirector")
-public class inqueryUserInfo extends HttpServlet {
+@WebServlet("/inquiryDirector")
+public class inquiryDirectionInfo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public inqueryUserInfo() {
+    public inquiryDirectionInfo() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,22 +30,38 @@ public class inqueryUserInfo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		System.out.println("POST 방식으로 접근했습니다~");
+
+		Manager manager = new Manager();
+		
 		String email = request.getParameter("email");
 		String name = request.getParameter("name");
-		String nickName = request.getParameter("niceName");
-		String birth = request.getParameter("birth");
 		String pwd = request.getParameter("pwd");
-		String repwd = request.getParameter("rePwd");
-		int phone = Integer.parseInt(request.getParameter("phone"));
-		String address = request.getParameter("address");
+		String rePwd = request.getParameter("rePwd");
+		String phone = request.getParameter("phone");
+		String serial = request.getParameter("serial");
+		
+		manager.setEmail(email);
+		manager.setName(name);
+		manager.setPwd(pwd);
+		manager.setRePwd(rePwd);
+		manager.setPhone(phone);
+		manager.setSerial(serial);
+		
+		int result = new directorManagementService().inquiryDirectorInfo(manager);
+		
+		if (result == 0) {
+			System.out.println("회원가입 실패");
+		} else {
+			System.out.println("회원가입 성공");
+		}
+		request.getRequestDispatcher("/test").forward(request, response);
 	}
 
 }

@@ -9,7 +9,7 @@ import ckd.member.vo.User;
 
 public class userManagementService {
 
-	public int inqueryUserInfo(User user) {
+	public int inquiryUserInfo(User user) {
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
