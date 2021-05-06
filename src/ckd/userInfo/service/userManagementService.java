@@ -3,6 +3,7 @@ package ckd.userInfo.service;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import ckd.member.vo.User;
@@ -29,14 +30,6 @@ public class userManagementService {
 			pstmt.setString(5, user.getPwd());
 			pstmt.setString(6, user.getPhone());
 			pstmt.setString(7, user.getAddress());
-			
-//			System.out.println(user.getEmail());
-//			System.out.println(user.getName());
-//			System.out.println(user.getNickName());
-//			System.out.println(user.getBirth());
-//			System.out.println(user.getPwd());
-//			System.out.println(user.getPhone());
-//			System.out.println(user.getAddress());
 
 			result = pstmt.executeUpdate();
 
@@ -53,6 +46,31 @@ public class userManagementService {
 
 		return result;
 
+	}
+	
+	public int checkId(User user) {
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String query = "select * from USERS where email = ?";
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "chef", "chef11");
+			ResultSet rs = null;
+			
+			pstmt.setString(1, user.getEmail());
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) { // 중복 아이디 O
+				return 1;
+			} else { // 중복 아이디 X
+				return 0;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1; // 오류 발생 시
 	}
 
 }

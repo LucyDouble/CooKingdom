@@ -42,6 +42,16 @@ v
 		} else {
 			document.getElementById("msg3").style.display = "none";
 		}
+		// 중복 이메일 확인
+		
+		userManagementService uService = new userManagementService();
+		int result = uService.checkId(user);
+		if (result != 0) {
+			document.getElementById("msg4").style.display = "block";
+		} else if (result == 1) {
+			document.getElementById("msg4").style.display = "none";
+		}
+		
 	}
 </script>
 </head>
@@ -97,6 +107,7 @@ v
 		<p id="msg1" style="color: red; display: none; margin-top: 0;">모든 항목을 채워주세요.</p>
 		<p id="msg2" style="color: red; display: none; margin-top: 0;">비밀번호 양식에 맞게 입력해주세요.</p>
 		<p id="msg3" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p>		
+		<p id="msg4" style="color: red; display: none; margin-top: 0;">중복되는 이메일이 있습니다.</p>		
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
 		</div>
