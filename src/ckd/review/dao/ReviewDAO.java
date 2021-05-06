@@ -112,13 +112,6 @@ public class ReviewDAO {
 			pstmt.setString(4, review.getReviewContent());
 			pstmt.setString(5, review.getReviewPhoto());
 
-			System.out.println("여기는 DAO입니다.");
-			System.out.println("getEmail : "+ review.getEmail());
-			System.out.println("getRecipeCode : "+ review.getRecipeCode());
-			System.out.println("getReviewSubject : "+ review.getReviewSubject());
-			System.out.println("getReviewContent : "+ review.getReviewContent());
-			System.out.println("getReviewPhoto : "+ review.getReviewPhoto());
-			
 			result = pstmt.executeUpdate();
 			
 		} catch (SQLException e) {
