@@ -1,6 +1,12 @@
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<link href="css/recipeListInquery.css" rel="stylesheet" type="text/css">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<link href="${pageContext.request.contextPath}/css/RecipeListInquery.css" rel="stylesheet" type="text/css">
+	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,67 +14,203 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<header class="recipeListInquery_type_cag">
-        <div>
-            <ul>
-                <li>종류별</li>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">밥</a></li>
-                <li><a href="#">밑반찬/김치</a></li>
-                <li><a href="#">찜</a></li>
-                <li><a href="#">부침</a></li>
-                <li><a href="#">조림</a></li>
-                <li><a href="#">구이</a></li>
-                <li><a href="#">볶음</a></li>
-                <li><a href="#">찌개/전골/스튜</a></li>
-                <li><a href="#">만두/면류</a></li>
-                <li><a href="#">나물/생채/샐러드</a></li>
-                <li><a href="#">그라탕/리조또</a></li>
-            </ul>
-            <ul>
-                <li>나라별</li>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">한식</a></li>
-                <li><a href="#">중식</a></li>
-                <li><a href="#">일식</a></li>
-                <li><a href="#">서양</a></li>
-                <li><a href="#">퓨전</a></li>
-                <li><a href="#">이탈리아</a></li>
-                <li><a href="#">동남아시아</a></li>
-            </ul>
-            <ul>
-                <li>분량별</li>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">1인분</a></li>
-                <li><a href="#">2인분</a></li>
-                <li><a href="#">3인분</a></li>
-                <li><a href="#">4인분</a></li>
-            </ul>
-            <ul>
-                <li>시간별</li>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">20분이하</a></li>
-                <li><a href="#">30분</a></li>
-                <li><a href="#">40~50분</a></li>
-                <li><a href="#">1시간 이상</a></li>
-            </ul>
-            <ul>
-                <li>칼로리별</li>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">100kcal이하</a></li>
-                <li><a href="#">~200kcal</a></li>
-                <li><a href="#">~300kcal</a></li>
-                <li><a href="#">~400kcal</a></li>
-                <li><a href="#">500kcal 이상</a></li>
-            </ul>
-            <ul>
-                <li>난이도별</li>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">초보환영</a></li>
-                <li><a href="#">보통</a></li>
-                <li><a href="#">어려움</a></li>
-            </ul>
-        </div>
-    </header>
+	<div class="wrapper">
+		<jsp:include page="../main/header.jsp"></jsp:include>
+
+		<section class="recipeListInquery">
+			<article class="searchCategory">
+				<div>
+					<ul>
+						<li>종류별</li>
+						<li><a href="#">전체</a></li>
+						<li><a href="#">밥</a></li>
+						<li><a href="#">밑반찬/김치</a></li>
+						<li><a href="#">찜</a></li>
+						<li><a href="#">부침</a></li>
+						<li><a href="#">조림</a></li>
+						<li><a href="#">구이</a></li>
+						<li><a href="#">볶음</a></li>
+						<li><a href="#">찌개/전골/스튜</a></li>
+						<li><a href="#">만두/면류</a></li>
+						<li><a href="#">나물/생채/샐러드</a></li>
+						<li><a href="#">그라탕/리조또</a></li>
+					</ul>
+					<ul>
+						<li>나라별</li>
+						<li><a href="#">전체</a></li>
+						<li><a href="#">한식</a></li>
+						<li><a href="#">중식</a></li>
+						<li><a href="#">일식</a></li>
+						<li><a href="#">서양</a></li>
+						<li><a href="#">퓨전</a></li>
+						<li><a href="#">이탈리아</a></li>
+						<li><a href="#">동남아시아</a></li>
+					</ul>
+					<ul>
+						<li>분량별</li>
+						<li><a href="#">전체</a></li>
+						<li><a href="#">1인분</a></li>
+						<li><a href="#">2인분</a></li>
+						<li><a href="#">3인분</a></li>
+						<li><a href="#">4인분</a></li>
+					</ul>
+					<ul>
+						<li>시간별</li>
+						<li><a href="#">전체</a></li>
+						<li><a href="#">20분이하</a></li>
+						<li><a href="#">30분</a></li>
+						<li><a href="#">40~50분</a></li>
+						<li><a href="#">1시간 이상</a></li>
+					</ul>
+					<ul>
+						<li>칼로리별</li>
+						<li><a href="#">전체</a></li>
+						<li><a href="#">100kcal이하</a></li>
+						<li><a href="#">~200kcal</a></li>
+						<li><a href="#">~300kcal</a></li>
+						<li><a href="#">~400kcal</a></li>
+						<li><a href="#">500kcal 이상</a></li>
+					</ul>
+					<ul>
+						<li>난이도별</li>
+						<li><a href="#">전체</a></li>
+						<li><a href="#">초보환영</a></li>
+						<li><a href="#">보통</a></li>
+						<li><a href="#">어려움</a></li>
+					</ul>
+				</div>
+			</article>
+		</section>
+
+		<main class="goodsList">
+			<div class="goodsList_innerbox">
+				<ul>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span>김치볶음밥</span> <span>5,000원</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span>김치볶음밥</span> <span>5,000원</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span>김치볶음밥</span> <span>5,000원</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span></span> <span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span></span> <span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span></span> <span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span></span> <span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span></span> <span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="goodsList_card">
+							<div>
+								<a href=""> <img
+									src="http://file.okdab.com/UserFiles/searching/recipe/082100.jpg"
+									alt="">
+								</a>
+							</div>
+							<a class="goodsList_card_info" href=""> <span></span> <span></span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</main>
+
+		<c:if test="${startPage != 1 }">
+			<a
+				href="<%=request.getContextPath() %>/boardlist.do?pageNum=${startPage-1}&search=${search}">이전</a>
+		</c:if>
+		<c:forEach begin="${startPage }" end="${endPage }" var="s" step="1">
+			<a
+				href="<%=request.getContextPath() %>/boardlist.do?pageNum=${s }&search=${search}">${s }</a>
+		</c:forEach>
+		<c:if test="${endPage < pageCnt }">
+			<a
+				href="<%=request.getContextPath() %>/boardlist.do?pageNum=${endPage+1}&search=${search}">다음</a>
+		</c:if>
+
+		<jsp:include page="../main/footer.jsp"></jsp:include>
+	</div>
 </body>
 </html>
