@@ -2,6 +2,7 @@ package ckd.review.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Enumeration;
 
 import javax.servlet.ServletException;
@@ -63,13 +64,13 @@ public class ReviewRegister extends HttpServlet {
 
 			// saveDirectory위치에 파일을 저장하는 코드
 			MultipartRequest mReq = new MultipartRequest(request, saveDirectory, maxSize, encType, new DefaultFileRenamePolicy());
-
+			
 			// *****저장이 잘 되었는지 확인하는 코드*****
 			// 저장된 file의 정보(file의 경로 + file name)를 읽어오기 --> DB에 저장할 내용임
 			String fileName = "";
 			Enumeration<?> files = mReq.getFileNames();
 			while (files.hasMoreElements()) {
-				String name = (String) files.nextElement(); // input type="file" name="xxxx" //name부분을 String에 넣기. 즉,
+				String name = (String) files.nextElement(); // input type="file" name="xxxx" //name부분을 String에 넣기. 
 															
 				fileName = mReq.getFilesystemName(name); // 서버에 저장된 파일이름이 fileName에 들어감 
 														 
@@ -81,12 +82,22 @@ public class ReviewRegister extends HttpServlet {
 				}
 			}
 			
-			Review vo = new Review();
-			vo.setEmail(mReq.getParameter("email"));
-			vo.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
-			vo.setReviewSubject(mReq.getParameter(""));
-			
-			
+			Review review = new Review();
+			review.setReviewNo(1);
+			review.setEmail(mReq.getParameter("email"));
+			review.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
+			review.setReviewSubject(mReq.getParameter("reviewSubject"));
+			review.setReviewPhoto(fileName);
+			review.setReviewContent(mReq.getParameter("reviewContent"));
+					
+			int result = rsv.registerReview(review);
+//			System.out.println("여기는 서블릿입니다.");
+//			System.out.println("reviewNO : "+ review.getReviewNo());
+//			System.out.println("email : "+ review.getEmail());
+//			System.out.println("recipeCode : "+ review.getRecipeCode());
+//			System.out.println("reviewSubject : "+ review.getReviewSubject());
+//			System.out.println("reviewContent : "+ review.getReviewContent());
+//			System.out.println("reviewPhoto : "+ fileName);
 			
 			
 		} catch (Exception e) {
