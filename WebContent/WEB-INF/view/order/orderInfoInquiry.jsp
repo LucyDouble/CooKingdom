@@ -1,6 +1,5 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/orderInfoInquiry.css" rel="stylesheet" type="text/css">
 
@@ -33,19 +32,19 @@
 				<table>
 					<tr>
 						<th>이름</th>
-						<td>김또비</td>
+						<td>${user.name }</td>
 					</tr>
 					<tr>
 						<th>휴대폰번호</th>
-						<td>010-1234-5678</td>
+						<td>${user.phone }</td>
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td>kimttobi@ttobi.com</td>
+						<td>${user.email }</td>
 					</tr>
 					<tr>
 						<th>주소</th>
-						<td>서울특별시 중구 남대문로 120 대일빌딩 2F, 3F</td>
+						<td>${user.address }</td>
 					</tr>
 				</table>
 
