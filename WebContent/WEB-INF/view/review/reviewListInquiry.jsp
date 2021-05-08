@@ -10,7 +10,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>쿠킹덤</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -23,9 +24,10 @@
         </div>
         <div class="board" id="board">
             <div id="review"   class="tabcontent">
+				
                 <form action="" name="frmList">
                     <div class="title_txt">
-                        <h3>리뷰( review)</h3>
+                        <h3>리뷰 (<c:out value= "${cnt}" /> review)</h3>
                     </div>
                     <div id="line"></div>
                     <!-- 각 리뷰의 목록을 보여주는 div-->
@@ -33,8 +35,8 @@
 				       		게시글이 없습니다.	
 			        </c:if>
 			        <c:if test="${not empty reviewList}" >
-			        <c:forEach items="${reviewList}" var="r" >
-                    <div class="review_Inq">
+			        <c:forEach items="${reviewList}" var="r">             
+                    <div class="review_Inq">         	
                         <table>
                             <tr>
                                 <td class="reviewTitle rnum">${r.reviewNo}</td>
@@ -44,8 +46,8 @@
                                 <td class="reviewTitle rname">
                                     <span><a href="#">${r.recipeName}</a></span>
                                 </td>
-                                <td class="reviewTitle rsub" id="rsubjs">
-                                    <span><a href="#">${r.reviewSubject}</a></span>
+                                <td class="reviewTitle rsub" id="rsub-${r.reviewNo}">
+                                    <span><a href="#"><c:out value= "${r.reviewSubject}" /></a></span>
                                 </td>
                                 <td class="reviewTitle rwriter">
                                     <span>${r.nickname }</span>
@@ -58,16 +60,18 @@
                                 </td>
                             </tr>
                         </table>
-                        <div id="review_content">
+                        <div class="review_content" id="review_content-${r.reviewNo}">
                             <div id="line"></div>
-                            <div class="contentImage">
-                                <img src="http://placehold.it/500x300">
+                            <c:if test="${not empty r.reviewPhoto }">
+                            <div class="contentImage">                            	
+                                <img src="<%=request.getContextPath() %>/files/${r.reviewPhoto}" style="width:500px; height:300px;">
                             </div>
-                            <div id="content">
+                            </c:if>
+                            <div id="content"  style="padding: 0 100px;">
                                 <p>${r.reviewContent }</p>
                             </div>
                             <div class="showWriter">
-                                <button type="button"> 수정</button>
+                                <button type="button" onclick="window.location='<%=request.getContextPath()%>/modifyReview';">수정</button>
                                 <button type="button">삭제</button>
                             </div>
                             <br>
@@ -76,8 +80,21 @@
                     </div>
                     </c:forEach>
                     </c:if>
-                    <button type="button" id="writeReview" onclick="">글쓰기</button>
+ 					<div id= "pageCount">	
+	                    <c:if test="${startPage != 1 }">
+							<a href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${startPage-1}">이전</a> 
+						</c:if>
+						<c:forEach begin="${startPage}" end="${endPage}" var="s" step="1">
+							<a class="focus${(currentPage == s)? 'Page' : ''}" href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${s}">${s}</a> 
+						</c:forEach>
+						<c:if test="${endPage < pageCnt }">
+							<a href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${endPage+1}">다음</a>
+						</c:if>
+					</div>
+					<br>
+                    <button type="button" id="writeReview" onclick= "window.location ='<%=request.getContextPath()%>/registerReview';">글쓰기</button>
                 </form>  
+        
             </div>
             <div id="comment"  class="tabcontent">
                 <form action="" name="frmList">
@@ -85,14 +102,10 @@
                         <h3>댓글( comment)</h3>
                     </div>
                     <div id="line"></div>
-                    <!-- 각 리뷰의 목록을 보여주는 div-->
                     <div class="review_Inq">
                         <table>
                             <tr>
                                 <td class="reviewTitle rnum"><span>1</span></td>
-                                <td class="reviewTitle">
-                                    <a href="#"><img src="http://placehold.it/50x80"></a>
-                                </td>
                                 <td class="reviewTitle rname">
                                     <span><a href="#">밀푀유나베</a></span>
                                 </td>
@@ -105,40 +118,14 @@
                                 <td class="reviewTitle rdate">
                                     <span>2021-05-04</span>
                                 </td>
-                                <td class="reviewTitle rcnt">
-                                    <span>0</span>
-                                </td>
                             </tr>
 
                         </table>
-                        <div id="review_content">
-                            <div id="line"></div>
-                            <div class="contentImage">
-                                <img src="http://placehold.it/500x300">
-                            </div>
-                            <div id="content">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quod impedit nisi
-                                    nemo ipsum accusantium temporibus. Vero, aperiam omnis. Soluta, beatae recusandae?
-                                    Voluptate placeat consectetur mollitia doloremque quam, quidem minus?</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quod impedit nisi
-                                    nemo ipsum accusantium temporibus. Vero, aperiam omnis. Soluta, beatae recusandae?
-                                    Voluptate placeat consectetur mollitia doloremque quam, quidem minus?</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quod impedit nisi
-                                    nemo ipsum accusantium temporibus. Vero, aperiam omnis. Soluta, beatae recusandae?
-                                    Voluptate placeat consectetur mollitia doloremque quam, quidem minus?</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quod impedit nisi
-                                    nemo ipsum accusantium temporibus. Vero, aperiam omnis. Soluta, beatae recusandae?
-                                    Voluptate placeat consectetur mollitia doloremque quam, quidem minus?</p>
-                            </div>
-                            <div class="showWriter">
-                                <button type="button"> 수정</button>
-                                <button type="button">삭제</button>
-                            </div>
-                            <br>
-                        </div>
-                        <div id="line"></div>
+                        
+                       </div>
+                       <div id="line"></div>
                     </div>
-                    <button type="button" id="writeReview" onclick="">글쓰기</button>
+                    
                 </form>
             </div>
         </div>

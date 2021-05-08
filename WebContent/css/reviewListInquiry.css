@@ -93,12 +93,27 @@
 .rdate{
     width: 100px;
 }
+/*각 리뷰의 내용*/
 .review_content{
     position: relative;  
+    display: none;
 }
 .contentImage{
     text-align: center;
 }
+
+/*review page 표시*/
+#pageCount{
+	width: 150px;
+	margin : 0 auto;
+	text-align : center;
+}
+
+.focusPage{
+	font-weight: bold;
+}
+
+/*수정 */
 .showWriter{
     display: inline-block;
     position: absolute;
@@ -110,6 +125,8 @@
     background: 0;
     cursor: pointer;
 }
+
+/*글쓰기*/
 #writeReview{
     border: 0;
     outline: 0;
@@ -121,7 +138,4 @@
     right: 0;
 }
 
-#review_content {
-    display: none;
-}
 
