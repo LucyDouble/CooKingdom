@@ -33,4 +33,11 @@ public class RecipeService {
 		JDBCConnection.close(conn);
 		return result;
 	}
+	
+	public List<Recipe> inqueryRecipeList(int start, int end, String search) throws SQLException {
+		Connection conn = JDBCConnection.getConnection();
+		List<Recipe> list = new RecipeDAO().selectRecipeList(conn, start, end, search);
+		JDBCConnection.close(conn);
+		return list;
+	}
 }

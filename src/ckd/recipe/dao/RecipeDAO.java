@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import ckd.common.jdbc.JDBCConnection;
@@ -24,7 +25,6 @@ public class RecipeDAO {
 			JDBCConnection.commit(conn);
 		}
 		JDBCConnection.close(pstmt);
-		JDBCConnection.close(conn);
 		
 		return result;
 	}
@@ -73,7 +73,6 @@ public class RecipeDAO {
 		}
 
 		JDBCConnection.close(pstmt);
-		JDBCConnection.close(conn);
 		
 		System.out.println("resultCntDAO : " + resultCnt);
 		return resultCnt;
@@ -96,8 +95,50 @@ public class RecipeDAO {
 		
 		JDBCConnection.close(rs);
 		JDBCConnection.close(pstmt);
-		JDBCConnection.close(conn);
 		
 		return cnt;
+	}
+	
+	public List<Recipe> selectRecipeList(Connection conn, int start, int end, String search) throws SQLException {
+		List<Recipe> list = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String sql_1 = "(select recipe_name, recipe_price, recipe_url, likes from recipe ";
+		if(search == null) {
+			sql_1 += " order by recipe_code) d";
+		} else {
+			sql_1 += " where recipe_name like '%" + search + "%'"
+				+ " order by recipe_code) d";
+		}
+		
+		String sql = "select recipe_name, recipe_price, recipe_url, likes from "
+		+ " (select rownum r, d.* from " + sql_1 + " ) "
+		+ " where r >= ? and r <= ?";
+					
+		pstmt = null; rs = null;
+		
+		pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, start);
+		pstmt.setInt(2, end);
+		rs = pstmt.executeQuery();
+		
+		if(rs.next()) {
+			list = new ArrayList<Recipe>();
+			do {			
+				Recipe vo = new Recipe();
+				vo.setRecipeName(rs.getString("recipe_name"));
+				vo.setRecipePrice(rs.getString("recipe_price"));
+				vo.setRecipeUrl(rs.getString("recipe_url"));
+				vo.setLikes(rs.getInt("likes"));
+				
+				list.add(vo);
+			} while(rs.next());
+		}
+		
+		JDBCConnection.close(rs);
+		JDBCConnection.close(pstmt);
+		
+		return list;
 	}
 }

@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.simple.JSONObject;
+
 import ckd.recipe.service.RecipeService;
 import ckd.recipe.vo.Recipe;
 
@@ -87,6 +89,41 @@ public class RecipeListInquery extends HttpServlet {
 			//	검색은 ajax를 통한 경우...
 		} else {
 			search =  null;
+		}
+		try {
+			list = sv.inqueryRecipeList(startRnum, endRnum, search);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		/********** 검색 *************/
+		if(search != null && !search.equals("")) {
+			JSONObject jobj = new JSONObject();
+			System.out.println("pageCnt : " + pageCnt);
+			jobj.put("pageCnt", pageCnt);
+			jobj.put("startPage", startPage);
+			jobj.put("endPage", endPage);
+			jobj.put("currentPage", currentPage);
+			jobj.put("recipeList", list);
+			jobj.put("search", search);
+			response.setContentType("application/json; charset=utf-8");
+			response.getWriter().print(jobj);
+			
+		} else {
+			request.setAttribute("pageCnt", pageCnt);
+			request.setAttribute("startPage", startPage);
+			request.setAttribute("endPage", endPage);
+			request.setAttribute("currentPage", currentPage);
+			request.setAttribute("recipeList", list);
+			request.setAttribute("search", search);
+			System.out.println(pageCnt);
+			System.out.println(startPage);
+			System.out.println(endPage);
+			System.out.println(currentPage);
+			System.out.println(list);
+			System.out.println(search);
+			
+			request.getRequestDispatcher("/WEB-INF/view/recipe/recipeListInquery.jsp").forward(request, response);
 		}
 	}
 
