@@ -12,19 +12,50 @@ import ckd.review.vo.Review;
 
 public class ReviewService {
 
-	public List<Review> selectReviewList(){
+	public List<Review> selectReviewList(int start, int end){
 		List<Review> list = null;
 		Connection conn = JDBCConnection.getConnection();
-		list = new ReviewDAO().selectReviewList(conn);
+		list = new ReviewDAO().selectReviewList(conn, start, end);
 		JDBCConnection.close(conn);
 		return list;
 	}
+	
 	
 	public int registerReview(Review review) {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new ReviewDAO().insertReview(conn, review);
 		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int updateReview(Review review) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ReviewDAO().updateReview(conn, review);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int deleteReview(Review review) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ReviewDAO().deleteReview(conn, review);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int getReviewTotalCount() {
+		int cnt = 0;
+		Connection conn = JDBCConnection.getConnection();
+		cnt = new ReviewDAO().getReviewTotalCount(conn);
+		return cnt;
+	}
+	
+	public int getReviewHit(int reviewNo) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ReviewDAO().getReviewHit(conn, reviewNo);
 		return result;
 	}
 }

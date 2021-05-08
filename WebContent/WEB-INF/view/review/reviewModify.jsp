@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>리뷰 등록</title>
+<title>리뷰 수정</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
 <div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<div id="reviewReg">     
-            <h3 id="head">리뷰 작성</h3>
+            <h3 id="head">리뷰수정</h3>
             <div id="line"></div>
             <div id="frmCS">
                 <form id="frm" enctype="multipart/form-data">
