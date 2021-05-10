@@ -2,7 +2,8 @@
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/reviewRegister.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
-
+<!-- TODO -->
+<%-- Member m = (Member)session.getAttribute("member"); --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -23,8 +24,11 @@
             <div id="line"></div>
             <div id="frmCS">
                 <form id="frm" enctype="multipart/form-data">
+                <!-- TODO -->
                 	<input type="hidden" name="email" value= "abc" id="email"/>
-                	<input type="hidden" name="recipeCode" value= "320"  id="recipeCode" />        	
+                	<!-- ${param.email}-->
+                	<input type="hidden" name="recipeCode" value= "347"  id="recipeCode" />        
+                	<!--  ${param.recipeCode}  -->	
                     <table>
                         <tr class="tr1">
                             <td><label>제목</label></td>

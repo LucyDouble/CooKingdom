@@ -13,9 +13,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<%--
-	//TODO reviewSubjectrequest.getSession();
---%>
+<%-- TODO --%>
+<%-- Member m = (Member)session.getAttribute("member"); --%>
 <div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<div id="reviewReg">     
@@ -23,12 +22,16 @@
             <div id="line"></div>
             <div id="frmCS">
                 <form id="frm" enctype="multipart/form-data">
-                	<input type="hidden" name="email" value= "abc" id="email"/>
-                	<input type="hidden" name="recipeCode" value= "320"  id="recipeCode" />        	
+                	<!-- ${param.email}-->
+                	<!--  ${param.recipeCode}  -->		 
+                	<input type="hidden" name="reviewNo" id="reviewNo" value="${reviewNo}" />
+                	<input type="hidden" name="recipeCode" id="recipeCode" value="${recipeCode}" />
+                	<input type="hidden" name="email" id="email" value="${email}" />
+                	<input type="hidden" name="nickname" id="nickname" value="${nickname}" />
                     <table>
                         <tr class="tr1">
                             <td><label>제목</label></td>
-                            <td class="inp" id="subinp"><input type="text" style="width: 365px;" name="reviewSubject" id="reviewSubject"  /></td>
+                            <td class="inp" id="subinp"><input type="text" style="width: 365px;" name="reviewSubject" id="reviewSubject" value="${reviewSubject }" /></td>
                         </tr>
                         <tr></tr>
                         <tr class="tr1">
@@ -38,11 +41,11 @@
                         <tr></tr>
                         <tr class="tr1">
                             <td rowspan="10"><label>내용</label></td>
-                            <td class="inp"><textarea placeholder="1000자까지만 허용합니다." cols="50" rows="10" name="reviewContent" id="reviewContent"></textarea></td>
+                            <td class="inp"><textarea placeholder="1000자까지만 허용합니다." cols="50" rows="10" name="reviewContent" id="reviewContent" >${reviewContent}</textarea></td>
                         </tr>
                     </table>    
                     <div id="btn">
-                    	<input type="button" id="btnSubmit" value="글 등록" onclick="goList();">
+                    	<input type="button" id="btnSubmit" value="글 수정" onclick="goList();">
                 	</div>                
                 </form>             
             </div>
@@ -53,16 +56,16 @@
 		function goList(){
 			
 			var formData = new FormData(document.getElementById("frm"));
-			formData.append('email',document.getElementById("email").value);
+			formData.append('reviewNo',document.getElementById("reviewNo").value);
 			formData.append('recipeCode',document.getElementById("recipeCode").value);
+			formData.append('email',document.getElementById("email").value);
 			formData.append('reviewSubject',document.getElementById("reviewSubject").value);
 			formData.append('reviewPhoto',document.getElementById("reviewPhoto").files[0]);
 			formData.append('reviewContent',document.getElementById("reviewContent").value);
-			alert("글 등록 성공!");
-			
-			
+			alert("글 수정 성공!");
+				
 			$.ajax({
-				url: "<%=request.getContextPath()%>/reviewRegister",
+				url: "<%=request.getContextPath()%>/reviewModifyDo",
 				type:"POST",
 				cache: false,
 				processData: false,

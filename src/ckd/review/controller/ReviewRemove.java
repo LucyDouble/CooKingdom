@@ -1,9 +1,6 @@
 package ckd.review.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,17 +11,18 @@ import ckd.review.service.ReviewService;
 import ckd.review.vo.Review;
 
 /**
- * Servlet implementation class ReviewListInquiry
+ * Servlet implementation class ReviewRemove
  */
-@WebServlet("/reviewHitUpdate")
-public class ReviewHitUpdate extends HttpServlet {
+@WebServlet("/reviewRemove")
+public class ReviewRemove extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ReviewHitUpdate() {
+    public ReviewRemove() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -44,15 +42,19 @@ public class ReviewHitUpdate extends HttpServlet {
 	
 	
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter out =response.getWriter();
+		System.out.println("들어오기 성공!");
+		
 		ReviewService rsv = new ReviewService();
 		
-		int reviewNo = Integer.parseInt(request.getParameter("reviewNo"));
+		int result = 0;
 		
-		int hit = rsv.getReviewHit(reviewNo);
-		out.print(hit);
-		out.flush();
-		out.close();
+		Review review = new Review();
+		review.setRecipeCode(Integer.parseInt(request.getParameter("recipeCode")));
+		review.setReviewNo(Integer.parseInt(request.getParameter("reviewNo")));
 		
-		}
+		result = rsv.deleteReview(review);
+		
+		
+	}
+
 }

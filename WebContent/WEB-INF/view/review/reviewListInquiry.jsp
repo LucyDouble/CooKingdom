@@ -1,8 +1,10 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/reviewListInquiry.css" rel="stylesheet" type="text/css">
+<link href="css/deleteModal.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
-
+<!-- TODO -->
+<%-- Member m = (Member)session.getAttribute("member"); --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -22,14 +24,21 @@
                 <button class="tablinks" onclick="openCont(event, 'comment');">댓글</button>
             </div>
         </div>
+        <!-- TODO -->
+	        <input type="hidden" name="email" value= "abc" id="email"/>
+	        <!-- ${param.email}-->
+	        
+	        <!--  ${param.recipeCode}  -->	
         <div class="board" id="board">
             <div id="review"   class="tabcontent">
 				
-                <form action="" name="frmList">
+                <form action="" name="frmList" >
+ <!-- 리뷰 -->
                     <div class="title_txt">
                         <h3>리뷰 (<c:out value= "${cnt}" /> review)</h3>
                     </div>
                     <div id="line"></div>
+                    <input type="hidden" name="recipeCode" value= "347"  id="recipeCode" />
                     <!-- 각 리뷰의 목록을 보여주는 div-->
                     <c:if test="${empty reviewList}" >
 				       		게시글이 없습니다.	
@@ -70,9 +79,10 @@
                             <div id="content"  style="padding: 0 100px;">
                                 <p>${r.reviewContent }</p>
                             </div>
+                            <!-- TODO -->
                             <div class="showWriter">
-                                <button type="button" onclick="window.location='<%=request.getContextPath()%>/modifyReview';">수정</button>
-                                <button type="button">삭제</button>
+                                <button type="button" onclick="window.location='<%=request.getContextPath()%>/reviewModify?reviewNo=${r.reviewNo}&reviewSubject=${r.reviewSubject}&reviewContent=${r.reviewContent }&email=abc&recipeCode=347';">수정</button>
+                                <button type="button" id="delete_modal-${r.reviewNo}" >삭제</button>
                             </div>
                             <br>
                         </div>
@@ -94,10 +104,11 @@
 					<br>
                     <button type="button" id="writeReview" onclick= "window.location ='<%=request.getContextPath()%>/registerReview';">글쓰기</button>
                 </form>  
-        
             </div>
+            
+<!-- 댓글 -->     
             <div id="comment"  class="tabcontent">
-                <form action="" name="frmList">
+                <form action="" name="frmComment">
                     <div class="title_txt">
                         <h3>댓글( comment)</h3>
                     </div>
@@ -124,13 +135,14 @@
                         
                        </div>
                        <div id="line"></div>
-                    </div>
-                    
+                    </div>                  
                 </form>
             </div>
         </div>
-		<jsp:include page="../main/footer.jsp"></jsp:include>	
+		<jsp:include page="../main/footer.jsp"></jsp:include>			
+		<jsp:include page="../modal/DeleteModal.jsp"></jsp:include>	  
 	</div>
 	<script type="text/javascript" src="js/reviewListInquiry.js"></script>
+	<script type="text/javascript" src="js/reviewRemove.js"></script>
 </body>
 </html>

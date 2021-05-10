@@ -45,7 +45,7 @@ public class ReviewListInquiry extends HttpServlet {
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		final int pageSize = 3;  // 한페이지당 글 수
-		final int pageBlock = 3;  // 화면에 나타날 페이지 링크 수   dP) 화면 하단에 1 2 3 
+		final int pageBlock = 5;  // 화면에 나타날 페이지 링크 수   dP) 화면 하단에 1 2 3 
 		
 		ReviewService rsv = new ReviewService();
 			

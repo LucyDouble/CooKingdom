@@ -119,17 +119,18 @@ public class ReviewDAO {
 	/*Update*/
 	public int updateReview(Connection conn, Review review) {
 		int result = 0;
-		String sql = "UPDATE REVIEW SET REVIEW_SUBJECT = ? NICKNAME = ? REVIEW_CONTENT = ? REVIEW_PHOTO = ? WHERE REVIEW_NO = ? AND RECIPE_CODE = ?";
+		String sql = "UPDATE REVIEW SET REVIEW_SUBJECT = ?, REVIEW_CONTENT = ?, REVIEW_PHOTO = ? WHERE REVIEW_NO = ? AND RECIPE_CODE = ? AND EMAIL = ?";
 		
 		pstmt = null;
 		try {
+			System.out.println("DAO왔어욤~~");
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, review.getReviewSubject());
-			pstmt.setString(2, review.getNickname());
-			pstmt.setString(3, review.getReviewContent());
-			pstmt.setString(4, review.getReviewPhoto());
-			pstmt.setInt(5, review.getReviewNo());
-			pstmt.setInt(6, review.getRecipeCode());
+			pstmt.setString(2, review.getReviewContent());
+			pstmt.setString(3, review.getReviewPhoto());
+			pstmt.setInt(4, review.getReviewNo());
+			pstmt.setInt(5, review.getRecipeCode());
+			pstmt.setString(6, review.getEmail());
 			result = pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -143,7 +144,7 @@ public class ReviewDAO {
 	/*DELETE*/
 	public int deleteReview(Connection conn, Review review) {
 		int result = 0;
-		String sql = "DELETE FROM REVEIW WHERE REVIEW_NO = ? AND RECIPE_CODE= ?";
+		String sql = "DELETE FROM REVIEW WHERE REVIEW_NO = ? AND RECIPE_CODE= ?";
 		
 		pstmt = null;
 		try {

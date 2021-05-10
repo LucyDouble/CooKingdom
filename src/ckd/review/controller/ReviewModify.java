@@ -1,9 +1,6 @@
 package ckd.review.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,16 +11,16 @@ import ckd.review.service.ReviewService;
 import ckd.review.vo.Review;
 
 /**
- * Servlet implementation class ReviewListInquiry
+ * Servlet implementation class ReviewModify
  */
-@WebServlet("/reviewHitUpdate")
-public class ReviewHitUpdate extends HttpServlet {
+@WebServlet("/reviewModify")
+public class ReviewModify extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ReviewHitUpdate() {
+    public ReviewModify() {
         super();
     }
 
@@ -41,18 +38,28 @@ public class ReviewHitUpdate extends HttpServlet {
 		execute(request, response);
 	}
 
-	
-	
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter out =response.getWriter();
+		
 		ReviewService rsv = new ReviewService();
+		Review review = new Review();
+		
+		request.setCharacterEncoding("utf-8");
 		
 		int reviewNo = Integer.parseInt(request.getParameter("reviewNo"));
+		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
+		String email = request.getParameter("email");
+		String reviewSubject = request.getParameter("reviewSubject");
+		String reviewContent = request.getParameter("reviewContent");
+
 		
-		int hit = rsv.getReviewHit(reviewNo);
-		out.print(hit);
-		out.flush();
-		out.close();
 		
-		}
+		
+		request.setAttribute("reviewNo", reviewNo);
+		request.setAttribute("recipeCode", recipeCode);
+		request.setAttribute("email", email);
+		request.setAttribute("reviewSubject", reviewSubject);
+		request.setAttribute("reviewContent", reviewContent);
+
+		request.getRequestDispatcher("/WEB-INF/view/review/reviewModify.jsp").forward(request, response);
+	}
 }
