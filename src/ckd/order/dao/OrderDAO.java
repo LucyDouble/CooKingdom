@@ -1,12 +1,14 @@
 package ckd.order.dao;
 
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import ckd.member.vo.User;
+
+import ckd.order.vo.OrderMember;
 
 public class OrderDAO {
 
@@ -31,9 +33,9 @@ public class OrderDAO {
 	}
 
 	
-	public User getUserRead(Connection conn, User inputVo) {
-		User vo = null;
-		String sql = "select * from users where email = '?'";
+	public OrderMember getOrderMemberRead(Connection conn, OrderMember inputVo) {
+		OrderMember vo = null;
+		String sql = "select * from users where email = ?";
 		pstmt = null;
 		rs = null;
 		try {
@@ -41,10 +43,10 @@ public class OrderDAO {
 			pstmt.setString(1, inputVo.getEmail());
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				vo = new User();
+				vo = new OrderMember();
 				vo.setEmail(rs.getString("email"));
 				vo.setName(rs.getString("name"));
-				vo.setPhone(rs.getString("phone"));
+				vo.setPhone(rs.getInt("phone"));
 				vo.setAddress(rs.getString("address"));
 			}
 		} catch (SQLException e) {
@@ -52,8 +54,6 @@ public class OrderDAO {
 		} finally {
 			close();
 		}
-		
 		return vo;
-		
 	}
 }

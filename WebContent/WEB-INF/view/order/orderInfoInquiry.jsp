@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -32,25 +32,25 @@
 				<table>
 					<tr>
 						<th>이름</th>
-						<td>${user.name }</td>
+						<td>${ordermember.name }</td>
 					</tr>
 					<tr>
 						<th>휴대폰번호</th>
-						<td>${user.phone }</td>
+						<td>${ordermember.phone }</td>
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td>${user.email }</td>
+						<td>${ordermember.email }</td>
 					</tr>
 					<tr>
 						<th>주소</th>
-						<td>${user.address }</td>
+						<td>${ordermember.address }</td>
 					</tr>
 				</table>
 
 				<hr id="bhr">
 				<div id="order_head2">
-					<strong>배송정보</strong> <input type="checkbox" id="check_orderer" /><label
+					<strong>배송정보</strong> <input type="checkbox" id="check_orderer" class="orderer_info" /><label
 						for="check_orderer"><span></span>주문자 정보와 동일</label>
 				</div>
 				<hr>
@@ -58,19 +58,19 @@
 				<table>
 					<tr>
 						<th>이름</th>
-						<td><input type="text" /></td>
+						<td><input type="text" id="buyer_name" value="" /></td>
 					</tr>
 					<tr>
 						<th>휴대폰번호</th>
-						<td><input type="text" size="30" /></td>
+						<td><input type="text" size="30" id="buyer_phone" value="" /></td>
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td><input type="text" size="30" /></td>
+						<td><input type="text" size="30" id="buyer_email" value="" /></td>
 					</tr>
 					<tr>
 						<th>주소</th>
-						<td><input type="text" size="50" /></td>
+						<td><input type="text" size="50" id="buyer_address" value="" /></td>
 					</tr>
 				</table>
 
@@ -227,6 +227,24 @@
 	  	
 	  	evt.currentTarget.className += " active";
 	}
-</script>
+	
+	// 배송정보 주문자 동일 체크박스
+	$("#check_orderer").click(function(){
+		var chk = $(this).is(":checked");//.attr('checked');
+		if(chk) {
+			$("#buyer_name").val('${ordermember.name }'); 
+			$("#buyer_phone").val('${ordermember.phone }'); 
+			$("#buyer_email").val('${ordermember.email }'); 
+			$("#buyer_address").val('${ordermember.address }'); 
+		}
+		else {
+			$("#buyer_name").val(''); 
+			$("#buyer_phone").val(''); 
+			$("#buyer_email").val(''); 
+			$("#buyer_address").val(''); 
+		}
+	});
+
+	</script>
 </body>
 </html>
