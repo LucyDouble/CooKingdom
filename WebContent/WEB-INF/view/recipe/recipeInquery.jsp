@@ -1,21 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/recipeInquery.css" rel="stylesheet" type="text/css">
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-.paybill {
- 	margin-top: 150px;
-}
-.payBtn {
-	width: 120px;
-}
+
 </style>
 </head>
 <body>
@@ -53,11 +51,25 @@
 				<div>
 					<ul>
                     <li><strong>필요 재료</strong></li>
-                    <li>재료1</li>
+                    <c:forEach items="${ingredientInquery }" var="v">
+                    <li>${v.ingTypeName } : ${v.ingName }  ${v.ingQty }</li>
+                    </c:forEach>
 					</ul>
 				</div>
 
 				<div>
+					<div class="CountBtn">
+	                    <span>
+	                        <button type="button" class="CountBtn_up">
+	                            <i class="fas fa-plus"></i>
+	                        </button>
+	                        <input type="text" value="0" readonly class="CountBtn_number">
+	                        <button type="button" class="CountBtn_down">
+	                            <i class="fas fa-minus"></i>
+	                        </button>
+	                    </span>
+                	</div>
+				
 					<div class="paybill">
 						<table class="paybill">
 							<tr>
@@ -89,7 +101,8 @@
 		<br>
 		<br>
 		<hr>
-		
+		<br>
+		<br>
 		
 
 

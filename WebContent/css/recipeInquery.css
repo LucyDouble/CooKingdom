@@ -68,7 +68,7 @@
   width: 245px;
   height: 200px;
   background-color: #f2f2f2;
-  margin-top: 150px;
+  margin-top: 10px;
 }
 
 .paybill table {
@@ -102,4 +102,39 @@
   font-size: 17px;
   border: none;
   border-radius: 10px;
+}
+
+.CountBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 143px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100px;
+}
+
+.CountBtn_number {
+	margin-top: 2px;
+  border: 0;
+  padding-left: 12px;
+  width: 30px;
+  height: 20px;
+}
+.CountBtn_up {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  outline: none;
+  top: 3px;
+  left: 2px;
+  cursor: pointer;
+}
+.CountBtn_down {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  outline: none;
+  top: 3px;
+  right: 2px;
+  cursor: pointer;
 }

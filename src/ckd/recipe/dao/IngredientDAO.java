@@ -19,10 +19,11 @@ public class IngredientDAO {
 		Ingredient vo = null;
 		
 		System.out.println("inputVoIngredientCode : " + inputVo.getRecipeCode());
-		String sql = "select r.recipe_code, i.ing_name, i.ing_ty_nm, i.ing_cpcty"
+		String sql = "select r.recipe_code, i.ing_name, i.ing_ty_nm, i.ing_ty_code, i.ing_cpcty"
 				+ " from recipe r join ingredient i"
 				+ " on r.recipe_code = i.recipe_code"
-				+ " where r.recipe_code = ?";
+				+ " where r.recipe_code = ?"
+				+ " order by i.ing_ty_code";
 		
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setInt(1, inputVo.getRecipeCode());
@@ -33,10 +34,10 @@ public class IngredientDAO {
 			do {
 				
 				vo = new Ingredient();
-				vo.setRecipeCode(rs.getInt("recipe_code"));
 				vo.setIngName(rs.getString("ing_name"));
 				vo.setIngTypeName(rs.getString("ing_ty_nm"));
-				vo.setIngQty("ing_cpcty");
+				vo.setIngTypeCode(rs.getInt("ing_ty_code"));
+				vo.setIngQty(rs.getString("ing_cpcty"));
 				
 				list.add(vo);
 				
