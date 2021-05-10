@@ -20,11 +20,11 @@ package ckd.recipe.vo;
 public class Recipe {
 	private int recipeCode;
 	private String recipeName;
-	private int typeCode;
-	private String typeCag;
+	private int typeCode;	// 음식국적
+	private String typeCag;	// 음식국적
 	private String recipeInfo;
-	private int recipeTypeCode;
-	private String recipeCag;
+	private int recipeTypeCode;	//	음식종류
+	private String recipeCag;	//	음식종류
 	private String cookingTime;
 	private String calorie;
 	private String recipeQty;

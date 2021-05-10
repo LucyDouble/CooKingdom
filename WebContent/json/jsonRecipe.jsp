@@ -57,7 +57,7 @@ function getJson() {
 <!-- <script type="text/javascript" src="./js/"jsonRecipe.js></script> -->
 </head>
 <body>
-	<form action="<%= request.getContextPath() %>/json.do" method="post">
+	<form action="<%= request.getContextPath() %>/jsonRecipe.do" method="post">
 		<input type="submit" value="db에 저장">
 		<input type="hidden" name="command" value="listdb">
 

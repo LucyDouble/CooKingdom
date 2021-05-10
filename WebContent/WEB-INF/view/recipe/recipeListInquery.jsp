@@ -157,7 +157,8 @@
 							<li>
 								<div class="goodsList_card">
 									<div class="goodsList_card_inner">
-										<a href="#"> <img src="${v.recipeUrl }" alt="img">
+										<a href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
+										<img src="${v.recipeUrl }" alt="img">
 										</a>
 										<div id="likeBtn">
 											<button type="button">
@@ -165,7 +166,7 @@
 											</button>
 										</div>
 									</div>
-									<a class="goodsList_card_info" href=""> <span>${v.recipeName }</span>
+									<a class="goodsList_card_info" href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}"> <span>${v.recipeName }</span>
 										<span>${v.recipePrice }</span>
 									</a>
 								</div>

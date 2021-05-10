@@ -13,19 +13,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import ckd.recipe.service.RecipeService;
-import ckd.recipe.vo.Recipe;
+import ckd.recipe.vo.Ingredient;
 
 /**
  * Servlet implementation class JsonServlet
  */
-@WebServlet("/json.do")
-public class JsonServlet extends HttpServlet {
+@WebServlet("/jsonIngredient.do")
+public class JsonIngredientServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public JsonServlet() {
+    public JsonIngredientServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,48 +39,40 @@ public class JsonServlet extends HttpServlet {
 		String command = request.getParameter("command");
 //		// 만약 요청이 list라면?
 		if(command.equals("list")) {
-			response.sendRedirect("./json/jsonRecipe.jsp");
+			response.sendRedirect("./json/jsonIngredient.jsp");
 		} else if(command.equals("listdb")) {
 			try {
-				new RecipeService().removeRecipeAll();
+				new RecipeService().removeIngredientAll();
 				
-				String[] jsonRecipe = request.getParameterValues("jsonRecipe");
-				System.out.println("jsonRecipe : " + jsonRecipe);
+				String[] jsonIngredient = request.getParameterValues("jsonIngredient");
+				System.out.println("jsonIngredient : " + jsonIngredient);
 				
-				List<Recipe> recipes = new ArrayList<Recipe>();
+				List<Ingredient> ingredients = new ArrayList<Ingredient>();
 				
-				for(int i = 0; i < jsonRecipe.length; i++) {
-					String[] temp = jsonRecipe[i].split("@");
+				for(int i = 0; i < jsonIngredient.length; i++) {
+					String[] temp = jsonIngredient[i].split("@");
+					System.out.println(jsonIngredient[i]);
 					
-					Recipe recipe = new Recipe();
-					recipe.setRecipeCode(Integer.parseInt(temp[0]));
-					recipe.setRecipeName(temp[1]);
-					recipe.setTypeCode(Integer.parseInt(temp[2]));
-					recipe.setTypeCag(temp[3]);
-					recipe.setRecipeInfo(temp[4]);
-					recipe.setRecipeTypeCode(Integer.parseInt(temp[5]));
-					recipe.setRecipeCag(temp[6]);
-					recipe.setCookingTime(temp[7]);
-					recipe.setCalorie(temp[8]);
-					recipe.setRecipeQty(temp[9]);
-					recipe.setRecipeLevel(temp[10]);
-					recipe.setIngType(temp[11]);
-					recipe.setRecipePrice(temp[12]);
-					recipe.setLikes(0);
-					recipe.setRecipeUrl(temp[13]);
+					Ingredient ingredient = new Ingredient();
+					ingredient.setRecipeCode(Integer.parseInt(temp[0]));
+					ingredient.setIngName(temp[1]);
+					ingredient.setIngTypeName(temp[2]);
+					ingredient.setIngTypeCode(Integer.parseInt(temp[3]));
+					ingredient.setIngQty(temp[4]);
 					
-					recipes.add(recipe);
+					ingredients.add(ingredient);
 				}
 				
 
-					int resultCnt = new RecipeService().regesterRecipeAll(recipes);
-					System.out.println("recipesSize : " + recipes.size());
+//					int resultCnt = new RecipeService().regesterRecipeAll(recipes);
+					int resultCnt = new RecipeService().regesterIngredientAll(ingredients);
+					System.out.println("ingredients : " + ingredients.size());
 					System.out.println("resultCntServlet : " + resultCnt);
 					
-					if(resultCnt == recipes.size()) {
-						jsResponse("db 저장성공", "./json.do?command=list", response);
+					if(resultCnt == ingredients.size()) {
+						jsResponse("db 저장성공", "./jsonIngredient.do?command=list", response);
 					} else {						
-						jsResponse("db 저장실패", "./json.do?command=list", response);
+						jsResponse("db 저장실패", "./jsonIngredient.do?command=list", response);
 					}
 					
 					
