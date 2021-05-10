@@ -65,18 +65,18 @@ public class JsonRecipeServlet extends HttpServlet {
 					recipe.setRecipeQty(temp[9]);
 					recipe.setRecipeLevel(temp[10]);
 					recipe.setIngType(temp[11]);
-					recipe.setRecipePrice(temp[12]);
+					recipe.setRecipeUrl(temp[12]);
 					recipe.setLikes(0);
-					recipe.setRecipeUrl(temp[13]);
+					
 					
 					recipes.add(recipe);
 				}
 				
-
 //					int resultCnt = new RecipeService().regesterRecipeAll(recipes);
 					int resultCnt = new RecipeService().regesterRecipeAll(recipes);
 					System.out.println("recipesSize : " + recipes.size());
 					System.out.println("resultCntServlet : " + resultCnt);
+					System.out.println("recipes : " + recipes);
 					
 					if(resultCnt == recipes.size()) {
 						jsResponse("db 저장성공", "./jsonRecipe.do?command=list", response);

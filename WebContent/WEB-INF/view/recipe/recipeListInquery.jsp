@@ -167,7 +167,7 @@
 										</div>
 									</div>
 									<a class="goodsList_card_info" href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}"> <span>${v.recipeName }</span>
-										<span>${v.recipePrice }</span>
+										<span>가격</span>
 									</a>
 								</div>
 							</li>

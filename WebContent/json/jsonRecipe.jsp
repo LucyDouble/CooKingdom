@@ -38,15 +38,13 @@ function getJson() {
 							"<th>" + str.QNT + "</th>" +
 							"<th>" + str.LEVEL_NM + "</th>" +
 							"<th>" + str.IRDNT_CODE + "</th>" +
-							"<th>" + str.PC_NM + "</th>" +
 							"<th>" + str.IMG_URL + "</th>" +
 							"<input type='hidden' name='jsonRecipe' value='" +
 							str.RECIPE_ID + "@" + str.RECIPE_NM_KO + "@" + str.NATION_CODE + "@" +
 							str.NATION_NM + "@" + str.SUMRY + "@" + str.TY_CODE + "@" + 
 							str.TY_NM + "@" + str.COOKING_TIME + "@" + str.CALORIE + "@" +
-							str.QNT + "@" + str.LEVEL_NM + "@" + str.IRDNT_CODE + "@" + 
-							str.PC_NM + "@" + str.IMG_URL + "'>" +
-						"</tr>"
+							str.QNT + "@" + str.LEVEL_NM + "@" + str.IRDNT_CODE + "@" + str.IMG_URL + "'>" +
+							"</tr>"
 					);
 				}
 			}

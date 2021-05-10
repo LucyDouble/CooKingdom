@@ -13,7 +13,25 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+	.recipeInquery_content {
+  padding: 0 60px 0 60px;
+  display: flex;
+  justify-content: center;
+}
 
+.recipeInquery_content img {
+  margin-bottom: 90px;
+  width: 500px;
+  height: 500px;
+}
+
+.recipeInquery_content p {
+  margin: 0;
+  padding: 0 0 0 70px;
+  width: 900px;
+  font-size: 25px;
+  line-height: 70px;
+}
 </style>
 </head>
 <body>
@@ -104,7 +122,10 @@
 		<br>
 		<br>
 		
-
+		<div class="recipeInquery_content">
+        	<img src="https://recipe1.ezmember.co.kr/cache/recipe/2016/07/11/ca42a85ed24dbb39add026e355ffd63b1.jpg" alt="">
+        	<p>170도 기름에 잠깐 1차 튀겨줄거에요, 새우는 금방 익으니까 오래 튀길 필요는 없어요. 튀김옷을 한방울 넣었을때 하나 둘 셋.. 정도에 떠오르면 적당한 거에요.^^ 요렇게 살짝만 튀겨요... 튀김가루로 튀길때랑은 전혀 다른 느낌이 나거든요... 저는 전분가루로 튀긴 걸 참 좋아해요.</p>
+    	</div>
 
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>

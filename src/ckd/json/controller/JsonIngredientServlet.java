@@ -51,7 +51,6 @@ public class JsonIngredientServlet extends HttpServlet {
 				
 				for(int i = 0; i < jsonIngredient.length; i++) {
 					String[] temp = jsonIngredient[i].split("@");
-					System.out.println(jsonIngredient[i]);
 					
 					Ingredient ingredient = new Ingredient();
 					ingredient.setRecipeCode(Integer.parseInt(temp[0]));

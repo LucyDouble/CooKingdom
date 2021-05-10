@@ -50,7 +50,7 @@ public class RecipeDAO {
 		PreparedStatement pstmt = null;
 		int resultCnt = 0;
 		
-		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		pstmt = conn.prepareStatement(sql);
 		
@@ -70,9 +70,8 @@ public class RecipeDAO {
 			pstmt.setString(10, recipe.getRecipeQty());
 			pstmt.setString(11, recipe.getRecipeLevel());
 			pstmt.setString(12, recipe.getIngType());
-			pstmt.setString(13, recipe.getRecipePrice());
+			pstmt.setString(13, recipe.getRecipeUrl());
 			pstmt.setInt(14, recipe.getLikes());
-			pstmt.setString(15, recipe.getRecipeUrl());
 			
 			pstmt.addBatch();
 		}
@@ -210,9 +209,8 @@ public class RecipeDAO {
 				vo.setRecipeQty(rs.getString("recipe_qty"));
 				vo.setRecipeLevel(rs.getString("recipe_level"));
 				vo.setIngType(rs.getString("ing_type"));
-				vo.setRecipePrice(rs.getString("recipe_price"));
-				vo.setRecipeUrl(rs.getString("recipe_url"));
 				vo.setLikes(rs.getInt("likes"));
+				vo.setRecipeUrl(rs.getString("recipe_url"));
 				
 				list.add(vo);
 			} while(rs.next());
@@ -249,9 +247,8 @@ public class RecipeDAO {
 			vo.setRecipeQty(rs.getString("recipe_qty"));
 			vo.setRecipeLevel(rs.getString("recipe_level"));
 			vo.setIngType(rs.getString("ing_type"));
-			vo.setRecipePrice(rs.getString("recipe_price"));
-			vo.setRecipeUrl(rs.getString("recipe_url"));
 			vo.setLikes(rs.getInt("likes"));
+			vo.setRecipeUrl(rs.getString("recipe_url"));
 		}
 		
 		JDBCConnection.close(rs);
