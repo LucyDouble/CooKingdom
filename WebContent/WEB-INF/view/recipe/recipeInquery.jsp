@@ -123,7 +123,7 @@
 		<br>
 		
 		<div class="recipeInquery_content">
-			<c:forEach items="${cookingStepList }" var="v">		
+			<c:forEach items="${cookingStepInquery }" var="v">		
 	        	<img src="${v.CookingImage }" alt="img">
 	        	<p>${v.CookingDesc }</p>
 			</c:forEach>

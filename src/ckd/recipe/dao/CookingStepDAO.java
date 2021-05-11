@@ -75,8 +75,8 @@ public class CookingStepDAO {
 		List<CookingStep> list = null;
 		
 		String sql = "select c.cooking_step, c.cooking_desc, c.cooking_image"
-				+ " from recipe r, cooking_steps c"
-				+ " on r.recipe = c.recipe_code"
+				+ " from recipe r join cooking_steps c"
+				+ " on r.recipe_code = c.recipe_code"
 				+ " where c.recipe_code = ?"
 				+ " order by c.cooking_step";
 		
