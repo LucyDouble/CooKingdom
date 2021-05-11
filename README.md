@@ -1,5 +1,5 @@
 # CooKingdom
-<h2>메인메뉴 실행</h2><br>
+<h2>메인페이지 실행</h2><br>
   src/ckd/Main.java <br>
   <h2>테이블정의 sql</h2><br>
   WebContent/cookingdom.sql<br>
