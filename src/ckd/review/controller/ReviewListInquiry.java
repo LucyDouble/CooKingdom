@@ -90,11 +90,11 @@ public class ReviewListInquiry extends HttpServlet {
 		//TODO  list조회시 어떤 레시피에 대한 리뷰인지 확인하는 recipeCode 던져줘야함. 
 		list =rsv.selectReviewList(startRnum, endRnum);
 		
-		System.out.println("pageCnt : " + pageCnt);
-		System.out.println("pageSize : " + pageSize);
-		System.out.println("startRnum : " + startRnum);
-		System.out.println("endRnum : " + endRnum);
-		System.out.println("currentPage : " + currentPage);
+//		System.out.println("pageCnt : " + pageCnt);
+//		System.out.println("pageSize : " + pageSize);
+//		System.out.println("startRnum : " + startRnum);
+//		System.out.println("endRnum : " + endRnum);
+//		System.out.println("currentPage : " + currentPage);
 		
 		request.setAttribute("pageCnt", pageCnt);
 		request.setAttribute("startPage", startPage);

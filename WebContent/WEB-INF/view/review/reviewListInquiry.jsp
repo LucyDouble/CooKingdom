@@ -1,6 +1,7 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/reviewListInquiry.css" rel="stylesheet" type="text/css">
+<link href="css/comment.css" rel="stylesheet" type="text/css">
 <link href="css/deleteModal.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <!-- TODO -->
@@ -26,9 +27,7 @@
         </div>
         <!-- TODO -->
 	        <input type="hidden" name="email" value= "abc" id="email"/>
-	        <!-- ${param.email}-->
-	        
-	        <!--  ${param.recipeCode}  -->	
+ 			<input type="hidden" name="recipeCode" value= "347"  id="recipeCode" />
         <div class="board" id="board">
             <div id="review"   class="tabcontent">
 				
@@ -38,10 +37,9 @@
                         <h3>리뷰 (<c:out value= "${cnt}" /> review)</h3>
                     </div>
                     <div id="line"></div>
-                    <input type="hidden" name="recipeCode" value= "347"  id="recipeCode" />
                     <!-- 각 리뷰의 목록을 보여주는 div-->
                     <c:if test="${empty reviewList}" >
-				       		게시글이 없습니다.	
+				       		첫번째 리뷰를 작성해 보세요!
 			        </c:if>
 			        <c:if test="${not empty reviewList}" >
 			        <c:forEach items="${reviewList}" var="r">             
@@ -113,36 +111,36 @@
                         <h3>댓글( comment)</h3>
                     </div>
                     <div id="line"></div>
-                    <div class="review_Inq">
+			        	<div class="comment_Inq">
                         <table>
                             <tr>
-                                <td class="reviewTitle rnum"><span>1</span></td>
-                                <td class="reviewTitle rname">
-                                    <span><a href="#">밀푀유나베</a></span>
+                                <td class="reviewTitle rwriter">
+                                    <span>김또비</span>
                                 </td>
                                 <td class="reviewTitle rsub" id="rsubjs">
-                                    <span><a href="#">밀푀유 나베 정말 맛있어요!</a></span>
-                                </td>
-                                <td class="reviewTitle rwriter">
-                                    <span>작성자</span>
+                                    <span><a href="#">파래무침이라니!ㅋㅋㅋㅋㅋ</a></span>
                                 </td>
                                 <td class="reviewTitle rdate">
-                                    <span>2021-05-04</span>
-                                </td>
+                                    <span>2021-05-11 11:51:00</span>
+                                </td>                        
                             </tr>
-
-                        </table>
-                        
-                       </div>
-                       <div id="line"></div>
-                    </div>                  
+                        </table> 
+                        <div>
+                        	<button type="button">댓글쓰기</button>
+                        	<button type="button">수정</button>
+                        	<button type="button">삭제</button>
+                        </div>
+                   	 	</div>	
+                       <br><br>
+                   <input type="text" id="commentInput" /><input type="button" value="글 등록" id="commentSubmit" onclick="goReview();">                 
                 </form>
-            </div>
+            </div> 
         </div>
 		<jsp:include page="../main/footer.jsp"></jsp:include>			
 		<jsp:include page="../modal/DeleteModal.jsp"></jsp:include>	  
 	</div>
 	<script type="text/javascript" src="js/reviewListInquiry.js"></script>
 	<script type="text/javascript" src="js/reviewRemove.js"></script>
+	<script type="text/javascript" src="js/commentRegister.js"></script>
 </body>
 </html>
