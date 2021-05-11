@@ -134,11 +134,9 @@
 				</div>
 			</article>
 		</section>
-		
+	
 		<div>
-			<button>
-				<a href="<%= request.getContextPath() %>/cookingDom?command=recipeRegester">등록</a>
-			</button>
+			<button type="button">등록</button>
 		</div>
 
 		<c:if test="${not empty search }">
@@ -148,7 +146,6 @@
 			게시글이 없습니다.		
 		</c:if>
 		<c:if test="${not empty recipeList }">
-		
 			<main class="goodsList">
 				<div class="goodsList_innerbox">
 					<ul>

@@ -26,7 +26,14 @@ public class Main extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
+			String command = request.getParameter("command");
+			
+			if(command.equals("Main")) {
+				request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
+			} else if(command.equals("recipeRegester")){
+				request.getRequestDispatcher("/WEB-INF/view/recipe/recipeRegister.jsp").forward(request, response);
+			}
+			
 	}
 
 	/**

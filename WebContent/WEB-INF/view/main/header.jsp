@@ -15,7 +15,7 @@
 </header>
 <nav id="nav">
             <ul>
-                <li class="menu"><a href="recipelistinquery.do">레시피</a></li>
+                <li class="menu"><a href="recipelistinquery.do">레시피 목록</a></li>
                 <li class="menu"><a href="#">메뉴2</a></li>
                 <li class="menu"><a href="#">메뉴3</a></li>
                 <li class="menu"><a href="#">메뉴4</a></li>
