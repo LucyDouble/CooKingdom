@@ -108,8 +108,8 @@
 					</div>
 					<br>
 	                <div>
-	                    <button class="payBtn">바로 결제</button>
-	                    <button class="payBtn">장바구니 담기</button>
+	                    <button class="payBtn" id="order_btn" onClick="location.href='<%=request.getContextPath() %>/orderInfoInquiry?email=kimttobi@ttobi.com'">바로 결제</button>
+	                    <button class="payBtn" id="cart_btn" onClick="location.href='<%=request.getContextPath() %>/CartListInquiry'">장바구니 담기</button>
 	                </div>
 				</div>
 			</main>
