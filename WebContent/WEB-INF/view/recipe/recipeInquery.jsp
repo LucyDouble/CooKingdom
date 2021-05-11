@@ -125,7 +125,9 @@
 	        	<p>${v.CookingDesc }</p>
 			</c:forEach>
     	</div>
-
+		<jsp:include page="../review/reviewListInquiry.jsp">
+			<jsp:param name="recipeCode" value="${recipeInquery.recipeCode }" />
+		</jsp:include>
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
