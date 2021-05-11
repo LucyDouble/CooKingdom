@@ -78,7 +78,6 @@ public class IngredientDAO {
 		ResultSet rs = null;
 		Ingredient vo = null;
 		
-		System.out.println("inputVoIngredientCode : " + inputVo.getRecipeCode());
 		String sql = "select r.recipe_code, i.ing_name, i.ing_ty_nm, i.ing_ty_code, i.ing_cpcty"
 				+ " from recipe r join ingredient i"
 				+ " on r.recipe_code = i.recipe_code"

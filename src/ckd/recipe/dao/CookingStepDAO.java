@@ -74,6 +74,7 @@ public class CookingStepDAO {
 		CookingStep vo = null;
 		List<CookingStep> list = null;
 		
+		System.out.println("inputVoCookingStepCode : " + inputVo.getRecipeCode());
 		String sql = "select c.cooking_step, c.cooking_desc, c.cooking_image"
 				+ " from recipe r join cooking_steps c"
 				+ " on r.recipe_code = c.recipe_code"
@@ -87,18 +88,22 @@ public class CookingStepDAO {
 		if(rs.next()) {
 			list = new ArrayList<CookingStep>();
 			do {
+				
 				vo = new CookingStep();
-				vo.setCookingStep(rs.getInt("COOKING_STEP"));
-				vo.setCookingDesc(rs.getString("COOKING_DESC"));
-				vo.setCookingImage(rs.getString("COOKING_IMAGE"));
+				vo.setCookingStep(rs.getInt("cooking_step"));
+				vo.setCookingDesc(rs.getString("cooking_desc"));
+				vo.setCookingImage(rs.getString("cooking_image"));
 				
 				list.add(vo);
 				
+				
 			}while(rs.next());
 			
-			JDBCConnection.close(rs);
-			JDBCConnection.close(pstmt);
 		}
+		
+		JDBCConnection.close(rs);
+		JDBCConnection.close(pstmt);
+		System.out.println("list : " +  list);
 		
 		return list;
 	}

@@ -57,6 +57,7 @@ public class RecipeInquery extends HttpServlet {
 					
 //					System.out.println("ingName" + ingredientVo.());
 					System.out.println("ingredientList : " + ingredientList);
+					System.out.println("cookingStepList : " + cookingStepList);
 					if(recipeVo != null) {
 						request.setAttribute("recipeInquery", recipeVo);
 						request.setAttribute("ingredientInquery", ingredientList);
