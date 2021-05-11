@@ -64,8 +64,7 @@ public class CommentDAO {
 		} finally {
 			close();
 		}
-	
-		
+
 		return list;
 	}
 	

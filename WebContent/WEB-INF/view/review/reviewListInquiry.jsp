@@ -1,24 +1,15 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/reviewListInquiry.css" rel="stylesheet" type="text/css">
 <link href="css/comment.css" rel="stylesheet" type="text/css">
 <link href="css/deleteModal.css" rel="stylesheet" type="text/css">
-<link href="css/footer.css" rel="stylesheet" type="text/css">
 <!-- TODO -->
 <%-- Member m = (Member)session.getAttribute("member"); --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>쿠킹덤</title>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-</head>
-<body>
-	<div class="wrapper">
-		<jsp:include page="../main/header.jsp"></jsp:include>
+<%
+	int recipeCode2 = Integer.parseInt(request.getParameter("recipeCode"));
+%>
         <div class="tabBoard">
             <div class="tab">
                 <button class="tablinks active" onclick="openCont(event, 'review');">리뷰</button>
@@ -27,9 +18,9 @@
         </div>
         <!-- TODO -->
 	        <input type="hidden" name="email" value= "abc" id="email"/>
- 			<input type="hidden" name="recipeCode" value= "347"  id="recipeCode" />
+ 			<input type="hidden" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />
         <div class="board" id="board">
-            <div id="review"   class="tabcontent">
+            <div id="review" class="tabcontent">
 				
                 <form action="" name="frmList" >
  <!-- 리뷰 -->
@@ -79,7 +70,7 @@
                             </div>
                             <!-- TODO -->
                             <div class="showWriter">
-                                <button type="button" onclick="window.location='<%=request.getContextPath()%>/reviewModify?reviewNo=${r.reviewNo}&reviewSubject=${r.reviewSubject}&reviewContent=${r.reviewContent }&email=abc&recipeCode=347';">수정</button>
+                                <button type="button" onclick="window.location='<%=request.getContextPath()%>/reviewModify?reviewNo=${r.reviewNo}&reviewSubject=${r.reviewSubject}&reviewContent=${r.reviewContent }&email=abc&recipeCode=<%=recipeCode2%>';">수정</button>
                                 <button type="button" id="delete_modal-${r.reviewNo}" >삭제</button>
                             </div>
                             <br>
@@ -136,10 +127,10 @@
                 </form>
             </div> 
         </div>
-		<jsp:include page="../main/footer.jsp"></jsp:include>			
 		<jsp:include page="../modal/DeleteModal.jsp"></jsp:include>	  
 	</div>
 	<script type="text/javascript" src="js/reviewListInquiry.js"></script>
+	<script type="text/javascript" src="js/comment.js"></script>
 	<script type="text/javascript" src="js/reviewRemove.js"></script>
 	<script type="text/javascript" src="js/commentRegister.js"></script>
 </body>
