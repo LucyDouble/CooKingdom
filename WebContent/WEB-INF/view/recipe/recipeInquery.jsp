@@ -76,13 +76,18 @@
 				</div>
 
 				<div>
+					<div>
+						<span>
+							<h2 style='margin-left:10px;'>${recipeInquery.recipeName }</h2>
+						</span>
+					</div>
 					<div class="CountBtn">
 	                    <span>
-	                        <button type="button" class="CountBtn_up">
+	                        <button type="button" class="CountBtn_up" onclick='count("plus")'>
 	                            <i class="fas fa-plus"></i>
 	                        </button>
-	                        <input type="text" value="0" readonly class="CountBtn_number">
-	                        <button type="button" class="CountBtn_down">
+	                        <input type="text" value="0" readonly class="CountBtn_number" id="CountBtn_result">
+	                        <button type="button" class="CountBtn_down" onclick='count("minus")'>
 	                            <i class="fas fa-minus"></i>
 	                        </button>
 	                    </span>
@@ -91,20 +96,12 @@
 					<div class="paybill">
 						<table class="paybill">
 							<tr>
-								<th>주문 금액</th>
-								<td class="paybill_right">50,000원</td>
-							</tr>
-							<tr>
-								<th>상품 할인 금액</th>
-								<td class="paybill_right">0원</td>
-							</tr>
-							<tr>
-								<th>배송비</th>
-								<td class="paybill_right">2,500원</td>
+								<th>밀키트 가격</th>
+								<td class="paybill_right" id="mealkit_price">10000원</td>
 							</tr>
 							<tr>
 								<th class="paybill_total">총 주문 금액</th>
-								<td class="paybill_total_price"><strong>52,500원</strong></td>
+								<td class="paybill_total_price"><strong id="total_price">0원</strong></td>
 							</tr>
 						</table>
 					</div>
@@ -132,6 +129,31 @@
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
+	<script>
+	function count(type)  {
+		  // 결과를 표시할 element
+		  const resultElement = document.getElementById('CountBtn_result');
+		  const mealkitPrice = document.getElementById('mealkit_price');
+		  const resultPrice = document.getElementById('total_price');
+		  
+		  // 현재 화면에 표시된 값
+		  let number = resultElement.value;
+		  
+		  // 더하기/빼기
+		  if(type === 'plus') {
+		    number = parseInt(number) + 1;
+		  }else if(type === 'minus')  {
+			  if(resultElement.value> 0 ) {
+				    number = parseInt(number) - 1;
+			  }
+		  }
+		  
+		  // 결과 출력
+		  resultElement.value = number;
+		  resultPrice.innerText = parseInt(mealkitPrice.innerText)*number + "원";
+		  
+		}
+	</script>
 	 <script src="https://kit.fontawesome.com/6a57affb8e.js" crossorigin="anonymous"></script>
 </body>
 </html>
