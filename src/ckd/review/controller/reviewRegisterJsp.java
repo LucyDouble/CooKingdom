@@ -1,4 +1,4 @@
-package ckd.review;
+package ckd.review.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
