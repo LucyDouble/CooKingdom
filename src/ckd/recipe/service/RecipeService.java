@@ -5,8 +5,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 import ckd.common.jdbc.JDBCConnection;
+import ckd.recipe.dao.CookingStepDAO;
 import ckd.recipe.dao.IngredientDAO;
 import ckd.recipe.dao.RecipeDAO;
+import ckd.recipe.vo.CookingStep;
 import ckd.recipe.vo.Ingredient;
 import ckd.recipe.vo.Recipe;
 
@@ -22,10 +24,19 @@ public class RecipeService {
 	public int removeIngredientAll() throws SQLException {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
-		result = new RecipeDAO().deleteIngredientAll(conn);
+		result = new IngredientDAO().deleteIngredientAll(conn);
 		JDBCConnection.close(conn);
 		return result;
 	}
+	public int removeCookingStepAll() throws SQLException {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new CookingStepDAO().deleteCookingStepAll(conn);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	
 	
 	public int regesterRecipeAll(List<Recipe> recipes) throws SQLException {
 		int result = 0;
@@ -37,10 +48,20 @@ public class RecipeService {
 	public int regesterIngredientAll(List<Ingredient> ingredients) throws SQLException {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
-		result = new RecipeDAO().insertIngredientAll(conn, ingredients);
+		result = new IngredientDAO().insertIngredientAll(conn, ingredients);
 		JDBCConnection.close(conn);
 		return result;
 	}
+	public int regesterCookingStepAll(List<CookingStep> cookingSteps) throws SQLException {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new CookingStepDAO().insertCookingStepAll(conn, cookingSteps);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	
+	
 	
 	public int getRecipeCount(String search) throws SQLException {
 		int result = 0;
@@ -66,6 +87,12 @@ public class RecipeService {
 	public List<Ingredient> inqueryIngredient(Ingredient inputVo) throws SQLException {
 		Connection conn = JDBCConnection.getConnection();
 		List<Ingredient> list = new IngredientDAO().selectIngredient(conn, inputVo);
+		JDBCConnection.close(conn);
+		return list;
+	}
+	public List<CookingStep> inqueryCookingStep(CookingStep inputVo) throws SQLException {
+		Connection conn = JDBCConnection.getConnection();
+		List<CookingStep> list = new CookingStepDAO().selectCookingStep(conn, inputVo);
 		JDBCConnection.close(conn);
 		return list;
 	}

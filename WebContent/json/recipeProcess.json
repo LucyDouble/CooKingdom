@@ -1,0 +1,4134 @@
+{
+    "data": 
+    [   
+
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/cb0f4b30cc5b65c5043f2b3b3fd88b491.jpg",
+        "STEP_TIP": "육수 만들기  냄비에 쇠고기(양지) 200g과 물 5컵을 넣고   끓인 후 체에 한번 거른다.",
+        "RN": 254,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "양배추는 가늘게 채썰어 찬 물에 담궈주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/c5a39da6faf357c264135e382be1c8501.jpg",
+        "STEP_TIP": null,
+        "RN": 255,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "고기를 고기망치로 두드려 넓게 펴주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/f2a6d790fcf2da78a93d953c1c8250e81.jpg",
+        "STEP_TIP": null,
+        "RN": 256,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "소금, 후추로 밑간을 해주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/16d2badba069fff79e59998d62d7fbc81.jpg",
+        "STEP_TIP": null,
+        "RN": 257,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "튀김가루, 달걀물, 빵가루 순서로 튀김옷을 입혀주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/5adb4a5d4e82e321ad93527ea3cdfcce1.jpg",
+        "STEP_TIP": null,
+        "RN": 258,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "간장 1 식초 0.5 설탕 2 케챱 1 물 3 비율로 소스를 준비해주세요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/46b6d1cdd5455c89167cef6f4018e26e1.jpg",
+        "STEP_TIP": null,
+        "RN": 259,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "팬에 버터를 녹이고 밀가루를 섞어 루를 만들어주세요. (비율은 1:1이에요.)",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/031d44a609743cc06feb032d3f9b30631.jpg",
+        "STEP_TIP": null,
+        "RN": 259,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "만들어둔 루에 소스를 넣고 끓여주세요.",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/e872ab6a56f2b5911c0074b1a06cb2331.jpg",
+        "STEP_TIP": null,
+        "RN": 259,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "약 180도의 온도에서 튀겨주세요.",
+        "COOKING_NO": 8
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/06/12/1ab377fb2b2454053535ef29da52ed4d1.jpg",
+        "STEP_TIP": null,
+        "RN": 259,
+        "RECIPE_ID": 49,
+        "COOKING_DC": "그릇에 양배추와 돈까스, 밥을 올려주면 완성!",
+        "COOKING_NO": 9
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/89a39ff550763eced843f8f231ced5691.jpg",
+        "STEP_TIP": null,
+        "RN": 312,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "유부는 반으로 잘라서 속을 열어줍니다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/1fcea581b8f0ed031f546d49e49ab0101.jpg",
+        "STEP_TIP": null,
+        "RN": 313,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "유부는 쌀뜨물과 함께 냄비에 넣고 끓여줍니다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/25f29b70ddd0734ad00720e98aedca201.jpg",
+        "STEP_TIP": null,
+        "RN": 314,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "어느 정도 끓어오르면 불을 끄고 체에 밭쳐 찬물에 헹군 다음 손바닥으로 눌러 물기를 짜줍니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/958acfcb26d04e55836c93a6b5d44df21.jpg",
+        "STEP_TIP": null,
+        "RN": 315,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "냄비에 유부, 다시 육수, 설탕, 간장, 맛술 등을 넣고 뚜껑을 덮어 조려줍니다.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/35f4c073b0fbf309c1c61e40113ab3601.jpg",
+        "STEP_TIP": null,
+        "RN": 316,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "어느 정도 끓여 오르면 중불에서 국물이 자작해질 때까지 끓여줍니다.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/62e73719972f33c7e22ce457226351fd1.jpg",
+        "STEP_TIP": null,
+        "RN": 317,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "완성된 유부는 바닥이 넓은 그릇 등에 가지런히 펴서 식혀줍니다.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/18353cdc5ef2896b6346ed770e5baf7e1.jpg",
+        "STEP_TIP": null,
+        "RN": 317,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "먼저 단촛물을 만든 다음 볼에 밥과 단촛물로 간을 맞춰 주걱으로 잘 섞어줍니다.",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/62e73719972f33c7e22ce457226351fd1.jpg",
+        "STEP_TIP": null,
+        "RN": 317,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "식힌 유부의 즙을 살짝 짠 후에 초밥용 밥을 한 입 크기로 가볍게 쥐어 유부의 상하,좌우 순서로 접어서 모양을 만듭니다.",
+        "COOKING_NO": 8
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/02/01/b6100968414aad2804fb08515705cd321.jpg",
+        "STEP_TIP": null,
+        "RN": 317,
+        "RECIPE_ID": 59,
+        "COOKING_DC": "유부초밥 완성!!",
+        "COOKING_NO": 9
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/43df110ae5c80ba729a52244aea25cab1.jpg",
+        "STEP_TIP": "다시마는 마른행주로 불순물을 닦아낸 후 찬물에 1시간 이상 불려 우려내거나 약한불에 넣고 끓여 불에서 바로 다시마를 건져내 사용하면 된다.",
+        "RN": 600,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "연어초밥에 겉들일 소스 마요네즈 3큰술, 꿀 1/2큰술, 생와사비 1/3큰술, 레몬즙 1큰술, 양파 다진거 1큰술. 후추가루을 모두 넣고 잘 섞어주세요. ",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/c9699e5502afb041c6823be0641dfd2b1.jpg",
+        "STEP_TIP": null,
+        "RN": 601,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "밥 1.5공기 분량에 식초2큰술과 설탕 반큰술을 넣고 잘 섞어서 준비합니다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/2a7ccf44afdc650fea70e0db13c7278f1.jpg",
+        "STEP_TIP": null,
+        "RN": 602,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "밥을 둥그스레 초밥모양으로 만들어주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/236422773d6c05bc1dd640cc4668cb9b1.jpg",
+        "STEP_TIP": null,
+        "RN": 603,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "밥위에 조금씩 생와사비를 올려주세요",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/3603251103bbab35902fd2c5852111ed1.jpg",
+        "STEP_TIP": null,
+        "RN": 604,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "연어는 이렇게 길쭉길쭉하게 잘라주세요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/73ef7ce6720e3896e78c538f0c8aa75a1.jpg",
+        "STEP_TIP": null,
+        "RN": 604,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "양파, 그리고 무순을 차례대로 올려주세요.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/27/3aa62c9008bfcddbde28962cb56573621.jpg",
+        "STEP_TIP": null,
+        "RN": 604,
+        "RECIPE_ID": 110,
+        "COOKING_DC": "마지막으로 마요네즈 소스를 올려주면, 연어초밥 완성!!!!",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/04/cce9423f13b944ddccb530647d405d061.jpg",
+        "STEP_TIP": null,
+        "RN": 1564,
+        "RECIPE_ID": 295,
+        "COOKING_DC": "닭다리 정육살은 칼집을 내어준 후 후춧가루 약간 뿌려 밑간해주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/04/684515c06e64215d044bf033487ab40f1.jpg",
+        "STEP_TIP": null,
+        "RN": 1565,
+        "RECIPE_ID": 295,
+        "COOKING_DC": "쪽파는 어슷썰어 준비해주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/04/425d23c55d2a6c6e3e46f1f3c554d69f1.jpg",
+        "STEP_TIP": null,
+        "RN": 1566,
+        "RECIPE_ID": 295,
+        "COOKING_DC": "중불로 달구어진 팬어 식용유를 두르고 닭 껍질부분부터 바삭하게 구우면서 앞뒤를 모두 익혀주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/04/a2dd61cd6686003a9b94d0562e49ba3a1.jpg",
+        "STEP_TIP": null,
+        "RN": 1567,
+        "RECIPE_ID": 295,
+        "COOKING_DC": "닭이 어느정도 익으면 먹기좋은 크기로 잘라준 후 양념재료들을 넣어 양념이 3큰술 정도만 남을때까지 졸여주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/04/045c79489688426d04c66e2d381600681.jpg",
+        "STEP_TIP": null,
+        "RN": 1568,
+        "RECIPE_ID": 295,
+        "COOKING_DC": "치킨 데리야끼 완성!!.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/abdda215b6ff640f0b916d9e87b6a1bb1.jpg",
+        "STEP_TIP": null,
+        "RN": 1901,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "설탕 2큰술 식초 3큰술 소금 1/2 큰술을 넣어 살짝 끓여주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/6dff2500ded141625b4f6891efafae961.jpg",
+        "STEP_TIP": null,
+        "RN": 1902,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "밥 4공기 분량에 배합초를 섞어 준비해주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/9cec2267259a032942021256e6a2ae4f1.jpg",
+        "STEP_TIP": null,
+        "RN": 1903,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "양배추는 채썰어 물에 담갔다가 물기를 제거해주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/c9d0ff4f75d22118f1af44f22cb20bc61.jpg",
+        "STEP_TIP": null,
+        "RN": 1904,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "맛살은 잘게 찢어 마요네즈 1큰술을 넣고 섞어서 준비해주시고요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/0b12f25ace33ad4f897806eb88ec9bba1.jpg",
+        "STEP_TIP": null,
+        "RN": 1905,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "계란 2개를 풀어 소금 간을 한뒤 두껍게 지단을 부쳐서 썰어주세요.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/431018035d8363e2522d2e16921b34fb1.jpg",
+        "STEP_TIP": null,
+        "RN": 1906,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "캘리포니아롤 말기 도마나 김발 위에 비닐랩을 김보다 크게 깔고 김에 밥을 골고루 올려주세요.",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/36f138f4001b8335c67c7838f4ea05321.jpg",
+        "STEP_TIP": null,
+        "RN": 1906,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "김을 뒤집어서 속재료를 올려주시고요.",
+        "COOKING_NO": 8
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/8d4d69497dbe79edfc845efd4fe62c701.jpg",
+        "STEP_TIP": null,
+        "RN": 1906,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "랩을 빼가면서 말아주시고 칼로 썰어주세요.",
+        "COOKING_NO": 9
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/04/13/0749ee3997e00ff4e945f09d5c83e31a1.jpg",
+        "STEP_TIP": null,
+        "RN": 1906,
+        "RECIPE_ID": 359,
+        "COOKING_DC": "캘리포니아롤 완성!!",
+        "COOKING_NO": 10
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/4a775159bfe50e76b670ce0772dfa92b1.jpg",
+        "STEP_TIP": null,
+        "RN": 1936,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "달걀세개를 저어가며 스크램블을 만들어줍니다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/0a392586fe13ea1d9516d6f5b854b1471.jpg",
+        "STEP_TIP": null,
+        "RN": 1937,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "다진소고기를 오일둘러 볶습니다.(아무 고기나 상관없어요)",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/7574555c6814be553692f93ad17c97011.jpg",
+        "STEP_TIP": null,
+        "RN": 1938,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "그릇에 고기.스크램블 넣고 냉장고 잔반채소를 넣어줍니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/d1994b38bc9c29c8339622bab3cd11031.jpg",
+        "STEP_TIP": null,
+        "RN": 1939,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "볼에 고명을 둘러서 얹고",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/ece66402339fd02aa2412d88e07a03081.jpg",
+        "STEP_TIP": null,
+        "RN": 1940,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "그릇에 날달걀 올리는데 노른자만 올리고",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/ae1039a3009e54c57b88fa838de9316a1.jpg",
+        "STEP_TIP": null,
+        "RN": 1941,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "흰자는 스크램블해준다.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/03/02/0315c927a5da44e660aabea1939cab761.jpg",
+        "STEP_TIP": null,
+        "RN": 1941,
+        "RECIPE_ID": 365,
+        "COOKING_DC": "완성!!!!.",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/80ff682e0c041e892a4746667c63752f1.jpg",
+        "STEP_TIP": "**물에 식초 한두방을 넣어 손에 묻힌다음 밥알이 묻지 않도록한다.",
+        "RN": 1942,
+        "RECIPE_ID": 366,
+        "COOKING_DC": "먼저 볼에 밥 1공기를 준비하세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/aed46cb495b74f43def1ada3236b08eb1.jpg",
+        "STEP_TIP": null,
+        "RN": 1943,
+        "RECIPE_ID": 366,
+        "COOKING_DC": "김을 4등분 해주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/43d0f5f48bd89e2e171c74eb55215ca91.jpg",
+        "STEP_TIP": null,
+        "RN": 1944,
+        "RECIPE_ID": 366,
+        "COOKING_DC": "밥을 만질 때는 손에 물을 묻혀 밥을 잡아주면서 굴려주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/f09cab8c366160b016b7547a59675ad21.jpg",
+        "STEP_TIP": null,
+        "RN": 1945,
+        "RECIPE_ID": 366,
+        "COOKING_DC": "밥에 김띠를 둘러주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/119349aa586dfd48d6fa6568a3f40f7b1.jpg",
+        "STEP_TIP": null,
+        "RN": 1946,
+        "RECIPE_ID": 366,
+        "COOKING_DC": "밥위에 와사비를 바르고 연어알로 장식하면 완성!!.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/12/48e6136d33debe77d87a47f4ec107cb91.jpg",
+        "STEP_TIP": null,
+        "RN": 1963,
+        "RECIPE_ID": 371,
+        "COOKING_DC": "쯔유와 냉수를 2:3의 비율로 섞어 잠시 냉동실에 넣어둔다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/12/3f93d33e3f7840ef5cd067fece99297c1.jpg",
+        "STEP_TIP": null,
+        "RN": 1964,
+        "RECIPE_ID": 371,
+        "COOKING_DC": "무 한토막을 강판에 간다. 이때 무의 뿌리쪽 초록부분을 가는 것이 맛이 더 좋아요 맛이 더 달기 때문에 무를 생으로 즐기실 때는 초록부분을 사용하세요~",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/12/144ba3bd61ad2b740ec8f8afd46dd96c1.jpg",
+        "STEP_TIP": null,
+        "RN": 1965,
+        "RECIPE_ID": 371,
+        "COOKING_DC": "고추냉이 가루를 찬물에 갠다. 비율은 1:1 정도",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/12/227eee07866c6f89b880d4eedf6cb55c1.jpg",
+        "STEP_TIP": null,
+        "RN": 1966,
+        "RECIPE_ID": 371,
+        "COOKING_DC": "재료준비하는 동안 면 삶을 물을 올려 끓으면 면을 삶아내 찬물에 여러번 헹궈 전분기를 제거한다..",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/12/6a633221d1774cdb4b05a7645fd6bba11.jpg",
+        "STEP_TIP": null,
+        "RN": 1967,
+        "RECIPE_ID": 371,
+        "COOKING_DC": "냉동실에 넣어두었던 그릇을 꺼내 면을 담고 면 위에 준비한 재료들을 올린 후 얼음을 담는다.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/12/fd1f107e74bd76e02cdb375ac5ed0fb21.jpg",
+        "STEP_TIP": null,
+        "RN": 1968,
+        "RECIPE_ID": 371,
+        "COOKING_DC": "쯔유를 희석한 물을 담고는 김가루와 쪽파를 뿌려내면 완성!!!",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/11/23/0949c97e804df6ef887df19ee787d52c1.jpg",
+        "STEP_TIP": null,
+        "RN": 1969,
+        "RECIPE_ID": 370,
+        "COOKING_DC": "물 2리터, 무 1/4개, 양파 1/2개, 대파 1대, 홍고추, 청양고추, 자른다시마 5-6개, 멸치 반줌 넣고 팔팔 끓여 육수를 만들어 주세요. 다 끓은 육수는 체에 받쳐 건더기는 버려주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/11/23/9f65a93eab5467c0580590c2b13f577f1.jpg",
+        "STEP_TIP": null,
+        "RN": 1970,
+        "RECIPE_ID": 370,
+        "COOKING_DC": "고춧가루 3T, 고추장1T, 간장 2T, 다진마늘 2T, 소금 1/2t, 후춧가루 1/2t, 다진 청양고추 2T 넣고 잘 섞어주세요. 양념은 미리 만들어 숙성시켜 주시면 더 좋아요.(청양고추는 기호에 따라 가감하세요. 저희는 얼큰한 걸 좋아해요)",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/11/23/0441f88a9983d60460e411738fe381531.jpg",
+        "STEP_TIP": null,
+        "RN": 1971,
+        "RECIPE_ID": 370,
+        "COOKING_DC": "미나리를 먹기 좋게 썰어주고 느타리버섯은 손으로 먹기 좋게 찢어주고 양파는 채 썰어 주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/11/23/f8f82a635b577ebfe8aff8a478df23601.jpg",
+        "STEP_TIP": null,
+        "RN": 1972,
+        "RECIPE_ID": 370,
+        "COOKING_DC": "육수에 양념장을 두어스푼 넣고 버섯, 미나리, 양파를 넣고 먼저 끓여주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/11/23/c79293b3ec03808f7ed21bf39ad9ee4f1.jpg",
+        "STEP_TIP": null,
+        "RN": 1972,
+        "RECIPE_ID": 370,
+        "COOKING_DC": "이제 준비 해 둔 소고기를 넣으면 완성!!",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/c49ed9a8f2db1bab90e05635b045a2b31.jpg",
+        "STEP_TIP": null,
+        "RN": 1973,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "먼저 양파, 표고버섯, 당근, 파프리카를 채썰어주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/b6316d48466880da43a0568e1c6267371.jpg",
+        "STEP_TIP": null,
+        "RN": 1974,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "쇠고기는 길이 5cm 정도로 채썰어둔다",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/b423b912307b8507cdeb5cc171ca7f041.jpg",
+        "STEP_TIP": null,
+        "RN": 1975,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "다진마늘1~2큰술, 간장 3큰술, 맛술 2큰술, 물엿 또는 설탕 1큰술, 후추로 밑간을 합니다. 오래 안재우셔도 됩니다. 바로 조리하셔도 되요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/d9914cd07969baffbc659a3896ed98091.jpg",
+        "STEP_TIP": null,
+        "RN": 1976,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "먼저 달궈진 팬에 기름을 넣지 말고 양념한 고기를 먼저 볶아주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/1b20bc5dd04edb6e2ffe17ff94a2273c1.jpg",
+        "STEP_TIP": null,
+        "RN": 1977,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "고기가 어느 정도 익혀졌으면 준비한 채소 (양파, 표고, 당근, 파프리카 순)를 넣고 볶아주세요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/21dc8a10506c51fe030a3980684dbe841.jpg",
+        "STEP_TIP": null,
+        "RN": 1978,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "2~3분 볶아준 후 물 600ml를 붓습니다.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/ecb075598df301e5f4e7429d9ed0b4561.jpg",
+        "STEP_TIP": null,
+        "RN": 1978,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "잠시 끓여준 후 전분물을 농도를 봐가며 넣어줍니다. 절대 한곳에 붓지 말고, 골고루 뿌려주세요. 그러면서 골고루 풀어주세요. 안그러면 뭉칩니다.",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/06/12/080708f393f5955c9ead83d9bfaf72031.jpg",
+        "STEP_TIP": null,
+        "RN": 1978,
+        "RECIPE_ID": 372,
+        "COOKING_DC": "완성된 밥에 계란 후라이 하나 올리면 완성!!!",
+        "COOKING_NO": 8
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/11/ca42a85ed24dbb39add026e355ffd63b1.jpg",
+        "STEP_TIP": "**장어대리만드는 법 : 장어뼈를 살짝 말려서 바싹 구워 넣고 ,정종과 미림은 알콜을 태워서 증발시킨 후에 나머지 양념(진간장 3큰술, 정종 5큰술, 미림 2큰술, 설탕 2큰술, 장어뼈 약간)을 모두 넣고 은근하게 정성을 들여서 반정도 분량으로 졸여낸 다음 고운체에 밭쳐 낸",
+        "RN": 1997,
+        "RECIPE_ID": 376,
+        "COOKING_DC": "민물장어는 넓적하게 편다음 뼈와 내장을 제거하고 깨끗하게 씻어둔다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/11/f4d148b9e7f73af7f57fc8aa3d97f5fe1.jpg",
+        "STEP_TIP": null,
+        "RN": 1998,
+        "RECIPE_ID": 376,
+        "COOKING_DC": "팬에 올리브유를 두르고 1의 마리네이드한 장어를 구워준다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/11/06eba36de5b3a81ce2d0ad3f060438981.jpg",
+        "STEP_TIP": null,
+        "RN": 1999,
+        "RECIPE_ID": 376,
+        "COOKING_DC": "3의 생강 데리야끼 소스에 2의 구운 장어를 넣고 간이 베어들게 졸여준다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/11/d5b6bf5cdda8a0359918cacb48e6c67c1.jpg",
+        "STEP_TIP": null,
+        "RN": 2000,
+        "RECIPE_ID": 376,
+        "COOKING_DC": "4의 졸인 장어를 먹기 좋은 크기로 썰어준다.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/11/2d20745822d33f38925cfd1fc1afe0271.jpg",
+        "STEP_TIP": null,
+        "RN": 2001,
+        "RECIPE_ID": 376,
+        "COOKING_DC": "그릇에 밥을 담고 5의 썰은 장어와 4의 졸인 데리야끼 소스를 올린 뒤 생강채와 송송썬 실파를 올려 완성해준다.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/13/4d7b2ce7f527dfa44ef4be1fea52fba91.jpg",
+        "STEP_TIP": null,
+        "RN": 2013,
+        "RECIPE_ID": 379,
+        "COOKING_DC": "돈까스를 노릇노릇, 바삭바삭 튀겨 주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/13/9128213c579131726f3ab19d60e170121.jpg",
+        "STEP_TIP": null,
+        "RN": 2014,
+        "RECIPE_ID": 379,
+        "COOKING_DC": "프라이팬에 소스를 넣고 중불에서 끓여 주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/13/31897e36c90327fbee5d36286ac284671.jpg",
+        "STEP_TIP": null,
+        "RN": 2015,
+        "RECIPE_ID": 379,
+        "COOKING_DC": "소스가 끓어오르면 양파를 넣고 익혀 주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/13/da2b6f0a338b5e829d39381a56681b121.jpg",
+        "STEP_TIP": null,
+        "RN": 2016,
+        "RECIPE_ID": 379,
+        "COOKING_DC": "계란물을 넣고 대파도 넣어 주세요. 약불에서 끓이다 계란이 75~85% 정도 익으면 불을 꺼 주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/13/c4ff392e7a32ea534efc8db6861e07891.jpg",
+        "STEP_TIP": null,
+        "RN": 2017,
+        "RECIPE_ID": 379,
+        "COOKING_DC": "밥 위에 소스와 돈까스를 올리면 완성!!!",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/08/14/3be2d573a92e852716bc0b88f48d2a841.jpg",
+        "STEP_TIP": null,
+        "RN": 2018,
+        "RECIPE_ID": 380,
+        "COOKING_DC": "간장2T, 고추가루 1T, 다진마늘 1T, 굴소스 2T, 올리고당 2T, 물 1T를 넣고 소스를 만들어주세요",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/08/14/6d50e7d2f66d870efe1046f6fbc347e61.jpg",
+        "STEP_TIP": null,
+        "RN": 2019,
+        "RECIPE_ID": 380,
+        "COOKING_DC": "숙주, 버섯, 청경채를 깨끗하게 씻어서 손질해두고 끓는 물에 데쳐둡니다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/08/14/1193bf92933d36291cba29730c792da71.jpg",
+        "STEP_TIP": null,
+        "RN": 2020,
+        "RECIPE_ID": 380,
+        "COOKING_DC": "양파는 가늘게 썰고 팬에 기름 살짝 둘러 볶아줍니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/08/14/52e43132a71de40a26b76aace71a2c101.jpg",
+        "STEP_TIP": null,
+        "RN": 2021,
+        "RECIPE_ID": 380,
+        "COOKING_DC": "그 다음, 만들어둔 양념장을 넣고 가볍게 볶아줍니다.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/08/14/bfb17d7acaaf264b8d2232ea81b326611.jpg",
+        "STEP_TIP": null,
+        "RN": 2022,
+        "RECIPE_ID": 380,
+        "COOKING_DC": "채소들과 면이 잘 섞이도록 볶아주면 완성.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/01/28/b794489c8329fc5a168de6ba052c22791.jpg",
+        "STEP_TIP": "** 폰즈소스 : 다시물 1/2컵, 간장 1/2컵, 식초 1/4컵, 레몬즙 1/4컵, 설탕 1과1/2큰술, 무즙 1/2컵, 통깨, 실파, 레몬 약간을 넣어 준비한다.  ** 와사비간장소스 : 다시물1 큰술, 간장 3큰술, 청주 3큰술, 레몬즙 2큰술, 와사비 약간을 섞어준다.  **깨소스: 다시마물 1/2",
+        "RN": 2153,
+        "RECIPE_ID": 404,
+        "COOKING_DC": "가리비와 바지락을 준비해주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/01/28/15cc8706f76d97dfb4e5f03053d902c61.jpg",
+        "STEP_TIP": null,
+        "RN": 2154,
+        "RECIPE_ID": 404,
+        "COOKING_DC": "해산물을 손질해주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/01/28/5896e308ac0beab67581d7dc3508666c1.jpg",
+        "STEP_TIP": null,
+        "RN": 2155,
+        "RECIPE_ID": 404,
+        "COOKING_DC": "육수에 가리비와 바지락을 넣어주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/01/28/9cadfca870bc280f96e07c401237f7e61.jpg",
+        "STEP_TIP": null,
+        "RN": 2156,
+        "RECIPE_ID": 404,
+        "COOKING_DC": "육수에 준비한 채소들을 넣고 해산물을 준비해주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/01/28/770e8558925cf005c2e658b8100597661.jpg",
+        "STEP_TIP": null,
+        "RN": 2157,
+        "RECIPE_ID": 404,
+        "COOKING_DC": "해물을 넣고 끓여주면 완성!!!.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/04/d0195255a5d50038562e054acf43616e1.jpg",
+        "STEP_TIP": "다시물 만들기 : 냄비에 물 2컵과 가쓰오브시를 넣어 물이 끓으면 불에서 내린 후 체에 걸러 육수만 사용한다.",
+        "RN": 2559,
+        "RECIPE_ID": 483,
+        "COOKING_DC": "오징어는 채썬후, 다시 토막토막 1~2센티 정도로 잘라주시고, 새우도 식감있는 정도로 3,4등분 해주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/04/e426212ce82c9fda68d87b22289508c11.jpg",
+        "STEP_TIP": null,
+        "RN": 2560,
+        "RECIPE_ID": 483,
+        "COOKING_DC": "양배추와 양파는 채썰어서 너무 야채 길이가 길거나 크지않을정도로만 잘라 준비해주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/04/a754930dd29ebf3661f540003cebccd61.jpg",
+        "STEP_TIP": null,
+        "RN": 2561,
+        "RECIPE_ID": 483,
+        "COOKING_DC": "큰 볼에 양배추, 양파, 해산물을 넣고, 계란두개와 부침가루 2~3큰술을 넣은 후 섞어주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/04/3f5f6faaee4d1d7bc492cea823ec418d1.jpg",
+        "STEP_TIP": null,
+        "RN": 2562,
+        "RECIPE_ID": 483,
+        "COOKING_DC": "반죽을 잘 섞어주세요",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/04/8e2fcbc000e56348d1c3961ace5ef60a1.jpg",
+        "STEP_TIP": null,
+        "RN": 2563,
+        "RECIPE_ID": 483,
+        "COOKING_DC": "타지 않게 중불로 잘 부쳐주세요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/04/c97b253384536b82a0a96a3dcf0602921.jpg",
+        "STEP_TIP": null,
+        "RN": 2564,
+        "RECIPE_ID": 483,
+        "COOKING_DC": "소스를 뿌리고 가츠오부시를 위에 올리면 완성!!!.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/01/c3e3b20928ff6e2ee768f722b98d46571.jpg",
+        "STEP_TIP": null,
+        "RN": 2583,
+        "RECIPE_ID": 488,
+        "COOKING_DC": "냄비에 물을 붓고 멸치다시다백을 넣어 육수를 만들어주세요",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/01/dfcd17b5939302fa67c198dc366f768b1.jpg",
+        "STEP_TIP": null,
+        "RN": 2585,
+        "RECIPE_ID": 488,
+        "COOKING_DC": "물이 끓기 시작하면 김치와 어묵을 넣고 쯔유로 간을 맞춰주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/01/f652a79560e9445334f32c248a2bdb5b1.jpg",
+        "STEP_TIP": null,
+        "RN": 2586,
+        "RECIPE_ID": 488,
+        "COOKING_DC": "흐르는 따뜻한 물에 우동면을 풀어주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/01/baa865991bfc7f795922c36f62a2471d1.jpg",
+        "STEP_TIP": null,
+        "RN": 2587,
+        "RECIPE_ID": 488,
+        "COOKING_DC": "국물에 면을 담으면 완성!!!.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/12/fb09bc879c7544c2a7734e8aafef09511.jpg",
+        "STEP_TIP": null,
+        "RN": 2612,
+        "RECIPE_ID": 494,
+        "COOKING_DC": "멸치육수팩으로 육수를 우려내주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/12/e95ed2944e847c29a4fa102d4279ecad1.jpg",
+        "STEP_TIP": null,
+        "RN": 2613,
+        "RECIPE_ID": 494,
+        "COOKING_DC": "두부는 정사각형으로 썰어주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/12/8a0f41e530f9d990d32a704381f65c7a1.jpg",
+        "STEP_TIP": null,
+        "RN": 2614,
+        "RECIPE_ID": 494,
+        "COOKING_DC": "미소된장을 넣고 끓여주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/12/1ba6da8481befa649def778b0fd2d3021.jpg",
+        "STEP_TIP": null,
+        "RN": 2615,
+        "RECIPE_ID": 494,
+        "COOKING_DC": "육수가 끓기 시작하면 두부와 쪽파를 넣고 더 끓여주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/12/e456d63d16282200bfefc503651bed911.jpg",
+        "STEP_TIP": null,
+        "RN": 2616,
+        "RECIPE_ID": 494,
+        "COOKING_DC": "미소된장국 완성!!!",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/15/6eaa74ab590d101949ada8fff168aaf51.jpg",
+        "STEP_TIP": "양념장: 간장 5큰술, 고춧가루 1큰술, 참기름 1큰술, 다진고추 1큰술, 설탕 1작은술, 후춧가루 1작은술",
+        "RN": 48,
+        "RECIPE_ID": 10,
+        "COOKING_DC": "밀가루1컵 + 소금 약간 + 찬물을 넣고 반죽을 만들어 치댄 후 랩에 씌워 냉장고에 보관해주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/15/9166e60b67eb466470f18e0c7e8c58021.jpg",
+        "STEP_TIP": null,
+        "RN": 49,
+        "RECIPE_ID": 10,
+        "COOKING_DC": "감자는 껍질을 벗겨 애호박, 양파와 함께 0.5cm 두께의 부채꼴 모양으로 썰어주세요. 대파는 송송썰어 준비합니다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/15/57d63745f60416487944e4662593bc951.jpg",
+        "STEP_TIP": null,
+        "RN": 50,
+        "RECIPE_ID": 10,
+        "COOKING_DC": "국물용멸치20마리 + 다시마 2장 + 물 7컵을 넣고 멸치다시마 육수를 끓여 주세요. 센불에서 물이 끓어 오르기 시작 하면 다시마를 건지고 중약불로 줄여 5분간 더 끓여주세요. 그런다음 멸치를 건저내 깨끗한 국물을 만들어 줍니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/15/956a7ce89d41963e8e2f03da6aedb73f1.jpg",
+        "STEP_TIP": null,
+        "RN": 50,
+        "RECIPE_ID": 10,
+        "COOKING_DC": "끓어 오르면 약불로 줄인 다음 미리 만들어 놓은 반죽을 떠 넣어주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/15/959ee1ed422213284c7292da5b3ffb0e1.jpg",
+        "STEP_TIP": null,
+        "RN": 50,
+        "RECIPE_ID": 10,
+        "COOKING_DC": "반죽이 끓어 오르기 시작 하면 양파와 애호박을 넣고",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/15/22ec0cd53e8af33f98ac1e0680d95b781.jpg",
+        "STEP_TIP": null,
+        "RN": 50,
+        "RECIPE_ID": 10,
+        "COOKING_DC": "국간장 0.5큰술, 다진마늘 0.5큰술, 소금 약간, 대파를 넣고 3분간 더 끓여 완성!!!.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/04/da3e7234eb481a7f6e9b9708037f42ae1.jpg",
+        "STEP_TIP": null,
+        "RN": 54,
+        "RECIPE_ID": 11,
+        "COOKING_DC": "쇠고추장 4큰술 (푹푹 크게 뜨면 안됩니다~), 다진마늘 1큰술, 매실청 2큰술, 진간장 1큰술, 식초 3큰술로 양념장을 만들어주세요",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/04/ea4478874cb79c670c721baa61b75ead1.jpg",
+        "STEP_TIP": null,
+        "RN": 55,
+        "RECIPE_ID": 11,
+        "COOKING_DC": "냄비에 물을 받아, 물이 끓어오르면 냉면사리를 넣고 2-3분간 끓여주시고 찬물에 행궈주세요",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/04/d42782e9060ec242f8ad96a93faf7a281.jpg",
+        "STEP_TIP": null,
+        "RN": 56,
+        "RECIPE_ID": 11,
+        "COOKING_DC": "물기를 잘짠 면에 위에 미리 만들어 놓은 양념 3큰술을 올려주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/04/c9edeb951fc29f653b6b3cafb906a8a11.jpg",
+        "STEP_TIP": null,
+        "RN": 57,
+        "RECIPE_ID": 11,
+        "COOKING_DC": "면 위에 고명을 올려주면 완성!!!.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/08/15/3bbb7d7f42bd37f87087043899f10bb21.jpg",
+        "STEP_TIP": null,
+        "RN": 108,
+        "RECIPE_ID": 21,
+        "COOKING_DC": "불린 미역을 들기름 넉넉히 넣고 5분 정도 볶아 줍니다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/08/15/67af5032a053e8803012db89829267a21.jpg",
+        "STEP_TIP": null,
+        "RN": 109,
+        "RECIPE_ID": 21,
+        "COOKING_DC": "잘게 잘라준 황태를 같이 넣고 푹 끓여 주면 됩니다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/08/15/05b63e88c9831bc6f937f84d89f94dc51.jpg",
+        "STEP_TIP": null,
+        "RN": 110,
+        "RECIPE_ID": 21,
+        "COOKING_DC": "소금을 1수저 넣었다면 국간장은 2수저을 넣습니다 소금 1:국간장 2의 비율로 보시면 됩니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/08/15/3ea391563f90ec959ce854b30f879bc01.jpg",
+        "STEP_TIP": null,
+        "RN": 111,
+        "RECIPE_ID": 21,
+        "COOKING_DC": "시간을 두고 30분 이상 충분히 끓여 주세요~",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/08/15/08084fee3021802152b6d61108e331d01.jpg",
+        "STEP_TIP": null,
+        "RN": 111,
+        "RECIPE_ID": 21,
+        "COOKING_DC": "완성!!!",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/06/d4a1969247271219d74fe2e25cba8db21.jpg",
+        "STEP_TIP": null,
+        "RN": 179,
+        "RECIPE_ID": 35,
+        "COOKING_DC": "콩나물을 깨끗이 씻어요. 바로 팬에 담아서 뚜껑을 덮어 가열합니다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/06/9f087c27396047a88b92f606b2158f591.jpg",
+        "STEP_TIP": null,
+        "RN": 180,
+        "RECIPE_ID": 35,
+        "COOKING_DC": "먼저 참기름 1T로 콩나물을 버무려주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/06/97377b28ca3673fc067fd0b7fca023331.jpg",
+        "STEP_TIP": null,
+        "RN": 181,
+        "RECIPE_ID": 35,
+        "COOKING_DC": "소금과 고명채소, 통깨를 넣고.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/06/4cd94960550ff3915f9990d34664bdc21.jpg",
+        "STEP_TIP": null,
+        "RN": 181,
+        "RECIPE_ID": 35,
+        "COOKING_DC": "잘 버무려주세면 완성!!.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/02/2b11cd655b9f93f3707e834a34f869aa1.jpg",
+        "STEP_TIP": null,
+        "RN": 194,
+        "RECIPE_ID": 38,
+        "COOKING_DC": "몇치를 볶고 멸치가 약간 노릇노릇하게 되었을때 오일을 3T 넣고 볶아주세요",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/02/a667e859771c5a0417fba2617606116b1.jpg",
+        "STEP_TIP": null,
+        "RN": 195,
+        "RECIPE_ID": 38,
+        "COOKING_DC": "맛술1T,간장1T, 올리고당 3T와 설탕 티스푼1T를 넣고 골고루 섞어주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/02/16c174ab16a8f1608399293c2f171f571.jpg",
+        "STEP_TIP": null,
+        "RN": 196,
+        "RECIPE_ID": 38,
+        "COOKING_DC": "멸치가 노릇노릇해지면 참기름과 설탕을 넣고 약불로 볶아주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/02/760e92406112f6a0ad98d84844cbfc7e1.jpg",
+        "STEP_TIP": null,
+        "RN": 197,
+        "RECIPE_ID": 38,
+        "COOKING_DC": "완성!!!.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/17/07c2b62703d02a313ffa23a159b14cc31.jpg",
+        "STEP_TIP": null,
+        "RN": 260,
+        "RECIPE_ID": 50,
+        "COOKING_DC": "돼지갈비는 누린내와 잡내를 제거하기위해 1시간정도 담가두어 핏물을 빼주세요~",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/17/fab1df8e9ba2b9d48e25ed8d6203d9be1.jpg",
+        "STEP_TIP": null,
+        "RN": 261,
+        "RECIPE_ID": 50,
+        "COOKING_DC": "당근과 감자는 2~3cm 정도로 깍뚝썰기를해준 후 모서리부분을 밤톨 모양으로 둥글게깍아 정리해주시고 양파도 비슷한크기로 잘라서 준비해주세요~",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/17/e6e4b195a84a38f1ea459c89131a2de81.jpg",
+        "STEP_TIP": null,
+        "RN": 263,
+        "RECIPE_ID": 50,
+        "COOKING_DC": "양념으로 준비해놓은 다진마늘(1), 다진파, 간장(6), 설탕(2), 매실청(2), 올리고당(2), 맛술(2), 생강가루(0.3), 후추가루(0.3), 참기름(2)를넣어 섞은뒤 갈비에 버무려 30분간 재어놔주세요~",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/17/68dd5d3e3d621e6cb239bee30e4f1b771.jpg",
+        "STEP_TIP": null,
+        "RN": 264,
+        "RECIPE_ID": 50,
+        "COOKING_DC": "냄비에 재워둔 갈비와 준비해둔 감자 당근을넣고 30분간 서서히 끓여주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/07/17/65094e2e46077a0241a44dc56657a10f1.jpg",
+        "STEP_TIP": null,
+        "RN": 265,
+        "RECIPE_ID": 50,
+        "COOKING_DC": "양파를 넣고 5분 정도 더 끓여주시면 완성!!",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/f2947654e0ec037f23338bd19ff9e3781.jpg",
+        "STEP_TIP": "두부를 만드는 과정에서 콩의 단백질이 몽글몽글하게 응고되었을 때 압착하지 않고 그대로 먹는 것을 순두부라 한다",
+        "RN": 283,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "채소를 준비해주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/fc60753370b55bbf12edd691caee7cc21.jpg",
+        "STEP_TIP": null,
+        "RN": 284,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "돼지고기는 맛술2스푼 넣고 잡내를 없애주시고 볶아주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/ead611aa954f0eb367110ac70cd394ca1.jpg",
+        "STEP_TIP": null,
+        "RN": 285,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "마늘 한스푼, 국간장한스푼 넣고 계속 약불로 볶아 주시다가 양파를 넣고 더 볶아주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/e80053312c599dbbc71c1c25988dc0ef1.jpg",
+        "STEP_TIP": null,
+        "RN": 286,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "뚝배기라서 탈수 있으니 불을 끄시고 고춧가루 3~4스푼 취향껏 넣으셔서 볶아 주세요.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/d1e04ef5cd3ebf7d9338cf80b636a4a51.jpg",
+        "STEP_TIP": null,
+        "RN": 287,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "다시 불을 켜서 물은 뚝배기 반만 넣고 끓여주세요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/105c4343cc2e1ac5c70bc52cab6319ec1.jpg",
+        "STEP_TIP": null,
+        "RN": 288,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "끓기 시작하면 각종 채소와 순두부를 넣고 더 끊여주세요.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/28/ac5f3661dc7c4ea8109b2ca8dd10980d1.jpg",
+        "STEP_TIP": null,
+        "RN": 288,
+        "RECIPE_ID": 54,
+        "COOKING_DC": "완성!!",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/02/02/2d15d32e861636c6d16d597a0f7c558a1.jpg",
+        "STEP_TIP": "돼지고기에 술과 후추로 밑간을 해두면 누린내를 막을 수 있다.  김치가 어중간하게 익어 찌개를 해도 맛이 잘 안난다면 멸치와 버섯으로 국물을 우려내 찌개를 만들면, 훨씬 풍부한 김치찌개를 맛볼 수 있다.",
+        "RN": 294,
+        "RECIPE_ID": 56,
+        "COOKING_DC": "식용유 3스푼을 김치위에 돌돌 돌려 뿌려주시고 볶다가 참치캔을 넣고 더 볶아주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/02/02/ea1ea52cbeb69c71eef022cbfb41bda51.jpg",
+        "STEP_TIP": null,
+        "RN": 295,
+        "RECIPE_ID": 56,
+        "COOKING_DC": "물 400ml를 넣어 끓여주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/02/02/c67674ec9178f01eee0cb5ca12c0dd361.jpg",
+        "STEP_TIP": null,
+        "RN": 296,
+        "RECIPE_ID": 56,
+        "COOKING_DC": "다음 김치국물 큰 국자로 3스푼 넣고 팔팔 끓여줍니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/02/02/a99ba33c2397fc15c98dd56fc871140c1.jpg",
+        "STEP_TIP": null,
+        "RN": 298,
+        "RECIPE_ID": 56,
+        "COOKING_DC": "계속 끓이다가 대파 한뿌리 송송 썰어주신 걸 넣어주세요~",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/02/02/5be9b42cc06fdf6a554d8bf51dfe44cd1.jpg",
+        "STEP_TIP": null,
+        "RN": 299,
+        "RECIPE_ID": 56,
+        "COOKING_DC": "완성!!.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/5cf45552b0c4a7cd10ed605a1f27222d1.jpg",
+        "STEP_TIP": null,
+        "RN": 532,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "먼저 양파와 파는 아주 자게 다져주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/6ed1115baecf148be522fd99a5da002e1.jpg",
+        "STEP_TIP": null,
+        "RN": 533,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "볼이 넓은 그릇에 다진양파와 파를 넣은 후 계란 4개를 깨 주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/af06a7565cff4c597df3167850ebf2731.jpg",
+        "STEP_TIP": null,
+        "RN": 534,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "여기에 참치 1캔을 넣어주시는데요. 참치는 기름을 충분히 제거한 후에 넣어주세요.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/62a03ed6a2353b20638e9f9e6965b11b1.jpg",
+        "STEP_TIP": null,
+        "RN": 535,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "다진마늘과 소금을 넣어 간을 해 준 후 참깨를 넣어주세요",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/0a4f122f506bb23c96ce99c02946659b1.jpg",
+        "STEP_TIP": null,
+        "RN": 536,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "갖은 재료를 넣었다면 거품기로 잘 섞어줍니다.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/84d6ffdd962537b0484e4defa0db72761.jpg",
+        "STEP_TIP": null,
+        "RN": 536,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "달궈진 팬에 기름을 두른 후 중약불로 조절한 후 계란물 2/3을 넣어 바닥면이 익기시작하면 뒤집개를 이용해 돌돌 말아줍니다.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/8f8a614132986fa0af7a908720bf9abf1.jpg",
+        "STEP_TIP": null,
+        "RN": 536,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "그리고 나머지 1/3의 계란물을 넣어 다시한 번 돌돌 말아주세요.",
+        "COOKING_NO": 7
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/03/5d6bf6fa59bc18a5d789b127eb2fe4991.jpg",
+        "STEP_TIP": null,
+        "RN": 536,
+        "RECIPE_ID": 97,
+        "COOKING_DC": "계란말이 완성!!!.",
+        "COOKING_NO": 8
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/24/49b30495d6f7884bd75495fc9ab6c4b21.jpg",
+        "STEP_TIP": "닭은 170도의 기름에 초벌로 2/3정도 익힌 후, 한 김 식혀 기름의 온도를 올려 닭을 넣었을 때 기름이 끓는 소리가 나는 상태로 튀겨준다. 닭이 다 익은 정도는 튀김 주위에서 기름방울이 뭉쳐있지 않으며, 건져보았을 때 기름이 튀김옷에 스며들지 않으면 닭이 다 익은 것이",
+        "RN": 537,
+        "RECIPE_ID": 98,
+        "COOKING_DC": "닭고기는 순살이라면 약 3-4cm크기로 잘라주시고, 소금, 후추, 생강, 맛술등으로 밑간(염지)를 해서 최소 1시간 이상 재워주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/24/e766586816fc6cf0897d47c9879c12271.jpg",
+        "STEP_TIP": null,
+        "RN": 538,
+        "RECIPE_ID": 98,
+        "COOKING_DC": "간이 밴 닭고기에 녹말가루를 묻혀 180°C 의 기름에 노릇하게 튀겨 낸다.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/24/0344603573e97c1d03124046e19ad50a1.jpg",
+        "STEP_TIP": null,
+        "RN": 539,
+        "RECIPE_ID": 98,
+        "COOKING_DC": "노릇노릇하게 튀겨질 때 쯤 건져내서 담아두고 소스를 만듭니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/24/5a3b3e5898b646a723c75a0036271dd11.jpg",
+        "STEP_TIP": null,
+        "RN": 540,
+        "RECIPE_ID": 98,
+        "COOKING_DC": "매운 양념은 처음에 식용유 한큰술과 고춧가루 반큰술을 약불에서 1분간 볶으면서 고춧기름을 내 주시고, 그 뒤에 물,간장, 케첩,고추장,물엿,설탕,마늘,계피가루 등을 넣어 중불에서 끓을 때까지 졸여 줍니다.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/24/3b8444f44be1f7fb4fb41256c3d39f871.jpg",
+        "STEP_TIP": null,
+        "RN": 540,
+        "RECIPE_ID": 98,
+        "COOKING_DC": "끓어오르기 시작하면 튀긴 닭고기를 소스에 넣으면서 불을 강불로 바꾸시고, 소스와 튀김을 버무리면서 약 1~2분간 볶아 주세요.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/24/281404e32f2bdf60eb32b6e90849ff7b1.jpg",
+        "STEP_TIP": null,
+        "RN": 540,
+        "RECIPE_ID": 98,
+        "COOKING_DC": "닭강정 완성!!!",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/24/85446307874c808ff091dee50e1af5671.jpg",
+        "STEP_TIP": null,
+        "RN": 589,
+        "RECIPE_ID": 108,
+        "COOKING_DC": "양파 청양고추 깻잎을 썰어주시고 부침가루 계란 물 소금 세꼬집을 넣고 반죽을 만들어주세요~.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/24/a8249aae4e358c04e94071e2cb63edcf1.jpg",
+        "STEP_TIP": null,
+        "RN": 590,
+        "RECIPE_ID": 108,
+        "COOKING_DC": "부추도 함께 섞어주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/24/397524688c59246847a6cc6d5862c7851.jpg",
+        "STEP_TIP": null,
+        "RN": 591,
+        "RECIPE_ID": 108,
+        "COOKING_DC": "팬에 기름을 넉넉히 두르고 반죽을 두국자 퍼서 놓은뒤 넓게 펼쳐주세요~.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/24/8b840c3434d082ade5e77e0e267114a71.jpg",
+        "STEP_TIP": null,
+        "RN": 592,
+        "RECIPE_ID": 108,
+        "COOKING_DC": "부침개를 뒤집은뒤에 중불로 낮추고 식용유를 한바퀴 두른후 3분정도 더 노릇노릇하게 익혀 주시면 완성~",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/05/30f1a592f6c6ea9742fdf727c38d6eb11.jpg",
+        "STEP_TIP": null,
+        "RN": 594,
+        "RECIPE_ID": 109,
+        "COOKING_DC": "큰 그릇에 간장 7큰술, 청주 3큰술, 매실 1큰술, 다진마늘 1큰술, 생강즙 1큰술, 참기름 1큰술, 후추 1/2작은술 을 넣고 양념을 만들어 줍니다.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/05/4cba267ad54a31da8950b56a56fc00351.jpg",
+        "STEP_TIP": null,
+        "RN": 595,
+        "RECIPE_ID": 109,
+        "COOKING_DC": "그리고 양념이 고르게 배도록 위, 아래 위치를 한번 씩 바꿔 40분 이상을 재워 주세요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/05/ad4a0619449f00253fa50af41f76a23d1.jpg",
+        "STEP_TIP": null,
+        "RN": 596,
+        "RECIPE_ID": 109,
+        "COOKING_DC": " 달군 팬에 기름을 살짝이 두르고 양념이 밴 목살을 앞, 뒤 노릇하니 바싹하게 구워 줍니다. ",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/07/03/7a9f2c9011b617d3c935aa8a2906e4fa1.jpg",
+        "STEP_TIP": null,
+        "RN": 597,
+        "RECIPE_ID": 109,
+        "COOKING_DC": "완성!!!",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/11/19/14d427995604b46d5ee71e90b7a2b8221.jpg",
+        "STEP_TIP": null,
+        "RN": 818,
+        "RECIPE_ID": 152,
+        "COOKING_DC": "우선 볼에 부침가루를 듬뿍4스푼 넣고 완전 묽게 반죽을 해줍니다. 여기에 고추장도 듬뿍1스푼 넣어주고요~",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/11/19/211a67e3c1a4a55dde3b148b0181656c1.jpg",
+        "STEP_TIP": null,
+        "RN": 819,
+        "RECIPE_ID": 152,
+        "COOKING_DC": "고추장을 부침반죽에 잘 풀어서 준비해줍니다. 고추장이 들어가면 묽었던 반죽이 걸쭉해지는 정도로 농도가 비슷해져요.",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/11/19/2f9253abca07adc52fc22d0256a792ec1.jpg",
+        "STEP_TIP": null,
+        "RN": 820,
+        "RECIPE_ID": 152,
+        "COOKING_DC": "고추장 반죽에 돼지다짐육, 다진양파, 으깬두부를 넣어 소금간 살짝 해줍니다.",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/11/19/26dc3c62cefa8ab1eeea5d442ac9c92d1.jpg",
+        "STEP_TIP": null,
+        "RN": 821,
+        "RECIPE_ID": 152,
+        "COOKING_DC": "비닐장갑끼고 잘 섞일 수 있도록 찰기돌게 반죽해줍니다.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/11/19/88d189bf0fff573f6f1e6ab1110d10a71.jpg",
+        "STEP_TIP": null,
+        "RN": 822,
+        "RECIPE_ID": 152,
+        "COOKING_DC": "후라이팬을 달군 후 식용유를 넉넉하게 넣고~ 가스불은 약불인 상태로 반죽을 한주먹 넉넉하게 떼어내 펼쳐가며 동그랗게 모양을 잡아줍니다.",
+        "COOKING_NO": 5
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/11/19/8815a3aa910067d863c642414fb8ec7f1.jpg",
+        "STEP_TIP": null,
+        "RN": 823,
+        "RECIPE_ID": 152,
+        "COOKING_DC": "앞 뒤로 노릇노릇하게 부쳐주시면 완성!!!.",
+        "COOKING_NO": 6
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/22/37357d60d963cb605fe826ac236050db1.jpg",
+        "STEP_TIP": null,
+        "RN": 1584,
+        "RECIPE_ID": 299,
+        "COOKING_DC": "제일먼저 열무김치를 먹기 좋게 잘라서 준비해주세요.",
+        "COOKING_NO": 1
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/22/c030cf1aaf883a8ba2dfa5db6b311c591.jpg",
+        "STEP_TIP": null,
+        "RN": 1585,
+        "RECIPE_ID": 299,
+        "COOKING_DC": "고추장1스푼,참기름1스푼,올리고당1스푼,깨1스푼,마늘1/3스푼,간장1스푼으로 양념장을 만들어주세요",
+        "COOKING_NO": 2
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/22/5e913157c6c5aea85c69a31286932beb1.jpg",
+        "STEP_TIP": null,
+        "RN": 1586,
+        "RECIPE_ID": 299,
+        "COOKING_DC": "큰볼에 밥1공기,기름뺀 참치,열무김치,양념장을 모두 넣고~",
+        "COOKING_NO": 3
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/22/5c854564035c8cc646ec441d3a2e93061.jpg",
+        "STEP_TIP": null,
+        "RN": 1587,
+        "RECIPE_ID": 299,
+        "COOKING_DC": "마구마구 비벼 줍니다.",
+        "COOKING_NO": 4
+        },
+        {
+        "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/06/22/7db1bc2f323fdfb238f8404add25344d1.jpg",
+        "STEP_TIP": null,
+        "RN": 1588,
+        "RECIPE_ID": 299,
+        "COOKING_DC": "그 위에 계란 후라이를 올리면 완성!!.",
+        "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/01/fcb2e71c4ccdf46ecf21f275e694e9c81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 320,
+            "COOKING_DC": "양념을 분량대로 섞어주세요",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/01/d5ca70143930274c78a42d6f408482021.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 320,
+            "COOKING_DC": "김치도 꺼내고 스팸도 먹기 좋은 크기로 썰어주었어요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/01/51b62058476c3ec5eae2c0569f950f661.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 320,
+            "COOKING_DC": "달궈진 팬에 기름을 살짝만 둘러 햄을 넣고 먼저 튀겨내듯 볶아주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/01/965c0e1f953aa160663c86fa3a63826e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 320,
+            "COOKING_DC": "그리고 기름 1작은술을 더 두른 후 김치를 넣어 중불에서 달달 볶아주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/01/a376092fae04a70f4d4bf717032f65dc1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 320,
+            "COOKING_DC": "김치가 투명해지기 시작하면 밥을 넣은 후 미리 만들어두었던 비법양념장을 넣어 골고루 섞어가며 볶아주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/94eb9ee2e763e1a6d9fc31611af4efbd1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "무 1개 중 1/2개만 필요해요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/76bcfde853515cccacc093038b5f46931.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "무를 썰어서 냄비 바닥에 놓아주세요. 청주와 물(소주컵) 2개 정도의 물을 넣어주세요. 물은 눋지 않을 정도로만~~ 뚜껑 닫고 5분 정도 끓여주세요. 끓는 동안 양념 만들 거예요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/c4bceff45d3fc5a0de0f116781d2b6d21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "수북 된 장 1스푼~~",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/9b7cfb1c1e38e9d105949aeee1141cd81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "양념 준비는 이렇게 모아 놓았어요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/8af9944e15fc9a57ea55f6e161d135c51.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "양념 준비할 동안 이렇게 끓고 있어요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/d4aba59632066129d9bff463705dd3031.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "고등어를 무 위에 올려주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/177c01b78bfb50cf55a08e1fdabbcf3a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "파만 빼 놓고 양념을 섞어주세요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/902e3212af9e1e3fa47d9913fa4a67341.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "고등어 위에 양념을 얹어 주고 물 2컵( 종이컵 양) 360ml 중 소주컵 2컵 뺀 나머지 물을 넣어주세요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/bbb31809daa65889d7e3746152da9dcf1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 352,
+            "COOKING_DC": "파를 넣고 더 끓여주세요. 매콤하게 드시고 싶으면 청양 고추 넣으시면 돼요.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/e626b343d8543fd3b652f4255c97752f1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 407,
+            "COOKING_DC": "대파는 다지고 돼지고기는 키친타월로 핏물을 제거한 뒤 한 입 크기로 썬다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/eb97d7a9f99547775ec80ac78911c42f1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 407,
+            "COOKING_DC": "볼에 양념 재료를 넣고 양념장을 만든다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/6615a002ccecad2dbef547fed5c8aefd1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 407,
+            "COOKING_DC": "양념장에 돼지고기를 넣고 버무린다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/08/a681df309b7f12e19d1592d3971883881.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 407,
+            "COOKING_DC": "달군 팬에 식용유를 약간 두르고 양념한 돼지고기를 넣어 중불에서 구운 뒤 통깨를 뿌려 완성한다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/62c2b8f9a6f831d9e205b65d820b796e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "재료 준비",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/ae2d68ce15b31de65f30fd8878fc22a01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "절임 고추 흐르는 물에 헹구기, 양파, 당근 얇게 채썰기, 파 송송 썰기",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/4f0949a4692491d981c107e6d191561e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "고추장, 고춧가루, 물엿, 설탕만 넣어 섞어주기",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/6f443fbdc4d2123dca8119fc403b35841.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "준비한 나머지 재료 넣어 버무리기",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/b9eecdc8baa7379c25d6d66256cc653e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "버무린 후 색이 부족할 땐 고춧가루를 추가해주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/67495d82f2931e23684e7342065638041.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "참기름 2~3방울 넣은 후 버무려 마무리하기",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/11/29/82ad6705c6b75228f82bd8634c6c81c11.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 200,
+            "COOKING_DC": "밑반찬, 고추장아찌무침 완성~!!",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/26/5449557037d8b91ff01ca044c9cff4e41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 202,
+            "COOKING_DC": "소고기는 작게 썰어서 준비하고 무는 사각형 모양으로 얇게 썰어주세요. 둘 다 한입에 쏙쏙 들어갈 수 있는 크기로 준비하시면 됩니다. 저는 양지머리를 사용했는데 입맛에 따라 다른 부위도 괜찮아요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/26/afebec87932f5fd7fc9af23e643b80de1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 202,
+            "COOKING_DC": "준비한 물 1L를 냄비에 넣고 끓을 때 소고기와 무를 넣어주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/26/b24be9609bd6808322d4e28ca8e7906b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 202,
+            "COOKING_DC": "팔팔 끓이면 탁한 거품이 나와요. 꼼꼼하게 걷어내주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/26/08492b6f5796ec544cccd2bdc6931a471.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 202,
+            "COOKING_DC": "국간장 1큰술, 굵은 소금 반큰술을 넣어서 간을 맞춰주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/26/f5ebe222abebb6490a74cc9d66640e991.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 202,
+            "COOKING_DC": "후추는 취향에 따라 선택하시면 될 것 같아요. 어릴적 자주 먹었던 엄마의 탕국에는 후추가 들어가지 않았지만, 저는 살짝 매콤한 것이 좋아서 조금 넣었어요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/26/edcd90c71f9b4ff5de42160d85aa08191.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 202,
+            "COOKING_DC": "마무리는 참기름 1큰술 넣어주시면 됩니다. 참기름은 꼭 불을 끄고 넣어주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/a0d7280c908cac3b44d738263ff776961.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "콩나물은 씻어준비해주시고 대파는 3~4센티 길이로 잘라주신후 반씩 가르어주세요",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/e366344ab1d23f80166f7a7f618761911.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "무반개를 나박하게 썰어주시고 소고기 양지자른것을 준비해주세요",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/aea2433722473dd03c72a5a18c5442001.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "냄비에 자른대파를 넣고 참기름/올리브유를 넣고 1~2분을 달달 볶아주시다가 소고기양지/다진마늘을 넣고 소고기가 살짝익을정도로만 볶아주시다가 고추가루를 넣고 30초간 볶아주시면 고추기름이 만들어 지면서 감칠맛이 더욱 좋아요. 30초뒤에 바로 물이나 다시육수를 부어주세요",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/4856849e2212c7cdf0394bace92061c21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "썰어두신 무를 넣어주시고 버섯과 애호박을 넣어주세요",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/f089d5aeec93b6819c0153ec50dc4bea1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "펄펄 끓여주시면서 국간장과 소금으로 국물의 밑간을 해주세요 후추가루는 취향껏 넣고 빼세요",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/7a889d8b14a6ae18c01cd6dc36cd76961.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "15분을 센불에서 펄펄 끓여주시고 콩나물을 넣고 5분을 더 끓여주세요",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2021/01/28/56057601b0260cd7559db4c775c2efe01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 204,
+            "COOKING_DC": "육개장은 손이 많이가고 어렵게 생각하지마시고 이젠 소고기양지로 쉽고간단하게 끓여보세요",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/3ec5f3282e5c1cd713f8290d934b9c991.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "간장 5큰술, 청주 2큰술, 참기름 1큰술, 후추 1/2작은술, 다진마늘 1큰술,다긴생강 1/2큰술, 매실청 1큰술, 올리고당 1큰술, 쌍화탕 1병 을 넣고 고루 잘 섞어 줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/6d4fe47c46bfefd82c8a99f6e648046c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "그리고 목살 500g을 한장씩 넣어 양념에 잠시 재워 줍니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/978244be3bc2883ae6720d59d1e9bac21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "대파 2대 를 준비해 흰부분을 길게 반으로 갈라 곱게 어슷하니 채썰어 줍니다. 깻잎 10장도 곱게 채썰어 줍니다. ",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/15014d2e36db766c8030ef7d88f026d01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "채썬 대파와 깻잎은 찬물에 잠시 담궈 둔 후 흐르는 물에 한번 씻어 건져 탈수기에 돌려 물기를 최대한 빼 줍니다. ",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/4ffdbb3f67de146f11c9f39c4b0d5d171.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "달군 팬에 불을 중~약불로 줄여 양념한 목살을 넣고 구워 줍니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/efa9aa86d293e77a0165a14619b473c81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "양념을 후라이팬 바닥에 살짝 깔리도록 부어 준후 양념과 함께 졸이듯 듯 구워 주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/22/85e1e5ce5c87cab2bcc87f5e57c7a9be1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 48,
+            "COOKING_DC": "양념이 쏙 배어들고 타지않게 노릇하니 구워 한입크기로 잘라 양념하지 않은 파, 깻잎 채와 함께 드시면 되겠습니다.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/540c0ac4ff51781c6d638172a64fd8821.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "소고기는 기름기가 없는 부위로 다짐육도 좋습니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/c4357e4a26e5bf9ac33d0340a5a3351b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "키친타올로 핏물을 제거합니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/76b3ec34c0680c3116dae064a46487591.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "두부는 잘게 잘라 주시고 마늘은 다져주세요. 대파는 흰부분만 총총 썰어줍니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/df177c968dc539fe869b1757362408691.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "떡도 미리 불려주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/0d88c7a1c162d4c8f91ae3eb00fdac441.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "팬에 소고기를 먼저 분량의 재료로 밑간을합니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/d35b9a6c563c0afc3a6e2a2ca1a2bf711.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "밑간한 소고기는 중불에서 핏기가 없어질 때까지 볶다가 두부를 넣고 고기가 완전히 익을 때까지 볶아서 마무리합니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/89854421e42e22a3121807237146d41d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "멸치와 다시마 넣고 끓이다가 물이 팔팔 끓으면 다시마는 건져내고 10분 정도 더 끓이다가 멸치도 건져냅니다.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/b8659c894b5170e0b8c205d9ae2f5dff1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "육수에 불린 떡을 넣어 끓여서 고명얹어 드세요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/30/d8d4669cabad587907aa3c826775a1631.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 169,
+            "COOKING_DC": "고명 얹어 드시면서 소고기 꾸미로 간을 맞추면 됩니다",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/01/29/46959e9eac590a0386b0bfae834aa91f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 297,
+            "COOKING_DC": "청양고추는 송송 썰고 닭다리살을 한 입 크기로 썬다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/01/29/d7e68d0ab550676412411f434b34fffb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 297,
+            "COOKING_DC": "닭다리살에 밑간 재료를 넣고 10분간 밑간 한다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/01/29/864424ec0d4c98b0d77f456edb7418891.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 297,
+            "COOKING_DC": "볼에 양념 재료를 넣고 양념장을 만든다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/01/29/879696088f8636b63bcacc0d358306a71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 297,
+            "COOKING_DC": "달군 팬에 기름을 두르고 닭다리살을 익히다가 반쯤 익으면 양념장을 넣어 볶는다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/01/29/6ef47222dc01e2c528709b2afef639841.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 297,
+            "COOKING_DC": "고기가 다 익으면 가래떡과 청양고추를 넣고 섞어 완성한다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/10/2f565c616713dd1613eab6864f94a6b41.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 105,
+            "COOKING_DC": "돼지고기는 소금,후추로 밑간을 살짝 해줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/10/f71a1e9d081a30d59efecd1d33f2ce2e1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 105,
+            "COOKING_DC": "튀김가루에 물을 넣어서 날가루가 없어질만큼 섞어준 뒤, 기름을 넣어서 호떡같은 반죽을 만들어주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/10/394db44a8a6f32ddfb182afe1405aa771.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 105,
+            "COOKING_DC": "반죽에 고기를 넣어서 한방향으로 돌려가며 잘 섞어주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/10/8232e2b90f3ec217d9ee09065a96ff3e1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 105,
+            "COOKING_DC": "튀김냄비에 기름을 올리고 1차튀김을 해주세요. 겉이 바삭한 정도에서 꺼냅니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/10/9c84a8729a374f65e86c535bb1596bb91.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 105,
+            "COOKING_DC": "기름온도를 살짝 높여서 2차로 노릇한 색이 나게 튀겨줍니다. 튀겨낸 고기는 채망에 올려 기름을 잘 털어내주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/12/10/e671d1ad0208077728fe473bf24879011.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 105,
+            "COOKING_DC": "탕수육소스를 냄비에 넣고 끓여주시고, 끓어오르면 준비한 채소를 넣어서 한소큼 더 끓여요. 그리고 전분물을 넣어서 농도를 맞춰줍니다. 농도는 원하는 대로 하셔도 좋아요. 진득한 것을 원한다면 전분물 추가하셔요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/c397e6e09afce888ad3b4c0655de2e3f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "표고버섯, 양파, 파프리카를 한입 크기로 썰어 준비하시고 목이버섯은 찬물에 불려주세요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/156a5e0b425ef53081fddea53bb1560d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "죽순통조림의 죽순을 반으로 갈라 빗살모양을 살려 썰어주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/0dfa916f0dbe8c35a5707d9d08722bc01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "웍에 식용유 6큰술을 두르고 길이로 썬 대파와 마늘, 생강을 편으로 썰어 넣고 볶아 향신기름을 만들어줍니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/ae4743800e92e3982f60621cb8d728c31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "양파, 표고버섯을 넣어 볶다가 진간장을 웍 가장자리로 둘러 넣어 태우듯 볶아 불맛을 내줍니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/ad3b18cb0ec4d309e3568cd5836e54991.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "물오징어는 껍질을 벗겨 몸통 안쪽에 칼집을 넣어 한입 크기로 썰어주시고 대하는 깨끗이 씻어 그대로 넣으시거나 머리와 꼬리 한마디를 남긴채로 껍질을 벗겨 사용하세요. 오징어와 대하를 넣고 청주를 넣어 볶아줍니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/630746cedb36293b6ec7604158305cfa1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "물을 붓고 치킨스톡을 넣어 끓여주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/7179f913a670718124ad3898b13b465e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "대하가 거의 익었을때 파프리카, 죽순, 목이버섯을 넣고 굴소스를 넣어 간을 맞춰주세요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/cd1d8d735148bf1cebcf75d4f32a08501.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "한소큼 끓어오르면 청경채를 넣고 녹말물을 풀어 살짝 걸죽하게 농도를 맞춰주세요. 후추가루로 마무리하시고 기호에 따라 참기름을 넣어주세요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/826ea10f45b8b0c5fabb97b8bc1feaf11.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "해물누룽지탕용 찹쌀누룽지를 완전히 달궈진 기름에 튀겨주세요.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/08/26/fa891fc06953b639a25959649a159ca81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 162,
+            "COOKING_DC": "그릇에 갓 튀겨낸 찹쌀누룽지를 담고 그 위에 해물누룽지탕 소스를 끼얹으면 소리까지 맛있는 퍼포먼스가 가득!",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/eec176ede80963660e41807b4924bd111.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "닭다리와 닭날개는 미리 우유에 재워서 잡내를 제거해 줍니다. 한 30분정도 재워 놓았습니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/48026a981c77de8fcd3155ab9581b28a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "우유에 재워 놓으면 잡내도 없어지지만 고기의 육질을 부드럽게 해주는 역할을 하기도 하지요. 30분 동안 재워 놓았던 닭다리와 닭날개를 한번 깨끗하게 씻어 주시고요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/760234d00032a688b6a629b0996073581.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "이제 밑간을 해 줍니다. 다진마늘, 썬파, 생강가루, 후추를 넣어 주시고요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/c90572bc97f4d7d3a0fdea4367df1eaf1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "굴소스를 넣고 감칠맛과 간을 해 줍니다. 굴소스만 넣는 것이 아닌 액젓, 멸치액젓도 넣어 주려고요. 그리고 단맛이 필요하니까 꿀을 넣어 주었습니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/07e4f8303e6d31fb59cdfefedeacdda31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "멸치액젓을 넣고 약간의 매콤한 맛을 내기 위해서 고춧가루를 조금 넣어 주었습니다. 그리고 양념이 골고루 베이도록 잘 무쳐 주세요. 닭날개는 조금 단순하게 굴소스, 액젓, 꿀, 후추만 넣어 주었습니다. 다진마늘이나 썬파, 생강가루, 빵가루, 고춧가루는 모두 빼고 단순하게 재워 놓았습니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/b1da45270199d65cc836aab52a3e9f2f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "양념이 겉돌지 않고 착착 감길 수 있도록 빵가루를 넣어 주었습니다. 그럼 양념이 걸쭉해지면서 약간의 바삭한 식감도 날 것 같아서요. 요것은 예전에 어느 프로에서 본 것도 같기도 하고요. 한번 도전해 보는 것이기도 해요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/c6cdc211a8dc38fdf8dc6cd5f25f4cb91.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "골고루 잘 섞으면서 양념이 닭다리에 잘 뭍도록 해 줍니다. 그리고는 잠시 냉장고에 보관해서 재워 놓습니다. 닭날개는 빵가루를 입히지 않은 상태에서 굴소스, 액젓만을 가지고 양념을 해 주었어요. 그럼 어떤 차이를 보이는지도 궁금해서요. 물론 둘다 에어프라이어로 튀겨낼 예정이지요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/9d8cd349b621f1c3f4fb8a17b5f134ad1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "에어프라이어를 180도에 맞추고는 10분동안 예열을 해 줍니다. 그리고 닭다리를 넣고 구워 줍니다. 10분간 돌리고 꺼내어서 뒤집어 주고는 또다시 10분~~ 그리고 다시한번 뒤집어 준 후 5분 정도 더 추가로 구워 주었습니다.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/07/25/112548056583bb9bd56ebb103ddddc6e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 256,
+            "COOKING_DC": "바로 굴소스와 액젓, 꿀만 넣고 만든 닭날개구이이지요. 역시 통깨를 솔솔 뿌려 주었고요. 완전히 갈색으로 변해서 구워졌어요. 짭쪼름한 맛도 훨씬 강한 편이고요. 그렇다고 짜지는 않았고요. 닭날개의 승리로 끝난 한판이였습니다.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/19/c05114a15b7831c6f6cd960b499357331.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 301,
+            "COOKING_DC": "당근, 양파, 대파, 고추는 깨끗하게 씻어 채썰기 해주세요. 당근, 양파는 채썰기/ 대파, 고추는 어슷썰기로 썰어주세요. 사실 모양은 많이 상관 없어요. 잡채에 들어가는 재료들처럼 가늘고 얇게 썬다고 생각하시면 편하실 것 같아요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/19/0e97414d471744bf582275ce2a0adfe61.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 301,
+            "COOKING_DC": "버섯은 따로 세척하지 않고 이물질만 털어내고 밑둥을 잘라주세요. 새송이, 표고같은 넓고 큰 버섯은 얇게 슬라이스 해주시고, 만가닥, 송이버섯 같은 것들은 밑둥을 자른 후 잘게 찢어주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/19/620089b4dbc990606b8753290cf928301.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 301,
+            "COOKING_DC": "식용유를 두른 후, 약불에서 다진 마늘을 넣어 살짝 볶다가 고추기름을 넣어주세요. 고추기름과 다진 마늘을 섞어준 후, 고춧가루와 간장, 설탕을 넣어 눌어붙지 않게 잘 저어가며 볶아주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/19/e7416a2cf2f165b48015249aec3f39381.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 301,
+            "COOKING_DC": "고춧가루와 간장이 어우러져 양념이 자작하게 되면, 버섯과 손질한 야채들을 넣어주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/19/74d52e75fa05c0d1f11ae8c717488f881.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 301,
+            "COOKING_DC": "버섯과 야채를 넣은 후, 굴소스+물(약간)을 넣어주세요. * 굴소스에 물을 약간 넣어 잘 섞은 후 넣어주세요. *",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/19/708bea0458f74b150111d1640ea156061.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 301,
+            "COOKING_DC": "양념이 잘 배어들게 요리 조리 잘 섞어가며 버섯이 숨이 죽을 정도로 볶아주시면 됩니다. 간은 맛소금으로 조절해주시고, 후추의 양은 개인 취향에 따라 넣어주시면 돼요. 저희는 맛소금 3꼬집 정도에 후추 2꼬집 정도 넣었습니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/562623fe152ce051242d733cc59341a61.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "냉동실에서 찾아낸 재료들.. 자연해동하니 이런 모습이네요.. 생물보다는 못하겠지만 그래도 이렇게 냉동식품으로 먼가 만들수있다는것도 행복한 일인거 같아요~",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/aa04bbf82eb0c5127a69e756cbe7ee731.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "대파나 잔파 준비해주시는데요.. 굳이 없으면 안넣으셔도 되지만 맛이나 향을 위해서 넣어주시면 좋답니다..",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/a0cc60ee31adcbd25b0858559ecea3781.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "물과 녹말가루를 1 : 1 비율로 물녹말 미리 만들어 준비해두시구요..",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/85d95689cfb6e66fdd1f30c25dd458471.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "굴소스도 미리 준비해주세요~",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/911ce36e75c11fb4d329a801e8e0bf641.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "목살로 150g 정도 준비해 먹기좋은 크기로 썰어준다음 소금약간,후추,마늘,청주,생강즙,녹말가루를 넣어주세요~",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/ea376052045f603bc53bf93a3ec7ce3f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "양념이 잘 베이도록 조물조물 무쳐서 잠시 재워두세요..",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/9649b2a05f6c790691c6d8b6f2356eb31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "달구어진팬에 포도씨유두르고 마늘을 먼저볶아 향을 내준뒤 고기와 새우를 넣고 볶아줍니다",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/0c5e75b9908fb24a833cba38acc357431.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "고기와 새우가 익으면 푸른색 야채를 제외한 나머지 재료들을 넣어주세요~",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/e04fca3f1aae94b56f9e557d9e266d711.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "재료가 익으면 굴소스로 간을 해주시구요..",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/ac0be07687d2b1e91c6470c27c4683881.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "생수나 육수를 반컵정도 넣고 보글보글 끓여주세요~",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/881876a17727f9bb9eb46da336796aa31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "미리 만들어둔 녹말물을 한수저씩 떠 넣으면서 농도를 맞춰주심 됩니다.",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/f2f58ac86bbbca24afa644c7e9d10c721.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "마지막에 초록색 야채를 넣어주심 끝~",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/0511e2ac12ee7fbffdb087dcb33d21f51.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "마지막에 참기름 한방울 넣어주시는 쎈쑤~",
+            "COOKING_NO": 13
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/04/23/8c995be3f6c1823b80fac097cc9e33021.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 308,
+            "COOKING_DC": "류산슬 완성",
+            "COOKING_NO": 14
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/f8063351c1f415427a6439527291e9fc1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "물에 닭가슴살, 대파, 생강을 넣고 약불로 30분간 끓여 육수를 낸다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/ae24351818ff63c557272d159775c40d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "삶은 닭고기는 손으로 만질 수 있을 정도로 식히고, 손으로 잘게 찢는다. 대파 1대는 채썰어둔다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/272ebcff835961afcb0357c03f3bc01a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "육수는 한 번 체에 걸러서 간장, 치킨스탁을 넣고 소금, 후추로 간해 국물을 만든다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/7ad5c5ed1fd0192308fddf4fbfc77e531.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "에그누들을 3~4분정도 삶아준다.(소면대체 가능)",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/3f189dfb22833512da547efd7efa9a6b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "식용유를 끓여준다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/c99e7804f3cfd838a28f576424260dcf1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "끓는 식용유를 닭고기와 대파 위에 부은 뒤, 잘 섞어준다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/15/2ac9a6ce88046639303b916ea1e4d06b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 333,
+            "COOKING_DC": "면을 그릇에 담고 국물을 부은뒤 파와 닭고기 고명을 얹으면 완성.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/f3959983596d60f431ffa8ec92d330a91.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "생새우를 까서 준비하실때도 마찬가지겠지만. 새우의 이 뾰족한 물총 부분이 튀겼을때 물 때문에 펑터져 다칠 염려가 있거든요. 꼭 제거하고 튀겨주시는게 좋아요. 저는 껍질을 완전히 벗겨 주었어요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/a7a01831629d76daf75b5ec19876d7451.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "손질한 새우에는 후춧가루를 약간 뿌려주고, 소금을 살짝, 청주를 살짝 뿌려 밑간을 해 주세요. (저는 청주가 없어서 소주를 1T 뿌려주었어요.)",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/62ce14ebb8df04e1510fe9e07b0615581.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "소스를 만들어요. 고추기름이 있다면 더 좋겠지만 저는 고추기름 만들기 귀찮아 고춧가루와 식용유를 1T씩 넣어 주었어요. 그래도 괜찮더라구요..^^ 고춧가루1T, 식용유1T (이거대신 고추기름2T가 더 좋아요.) 식초1T, 물3T, 간장1T, 굴소스1t, 설탕1T, 칠리소스4T 넣고 섞어주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/d7c90976f28c0a92cbb4090da3e64efe1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "튀김옷을 만들어요. 전분가루5T에 계란한개, 물2T를 넣고 잘 섞어주세요. 전분으로 튀김옷을 만들경우 전분이 밑에 가라앉아 굳어져서 튀김옷을 묻히기 전에 한번 잘 저어주어야 해요. 저어줄때 절대!!!! 당황하지 마세요. 딱딱한 전분때문에 당황하시는 분들 있을거에요. 저어주면 다시 풀어집니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/75ac8c4ef0c5ba3016cfbb2bac40f25d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "그래서 손으로 전분튀김옷을 입혀 주시는게 좋아요. 손으로는 감촉을 느낄 수 있으니까요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/9133505d760f9fe471728e1b5ec5af501.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "170도 기름에 잠깐 1차 튀겨줄거에요, 새우는 금방 익으니까 오래 튀길 필요는 없어요. 튀김옷을 한방울 넣었을때 하나 둘 셋.. 정도에 떠오르면 적당한 거에요.^^ 요렇게 살짝만 튀겨요... 튀김가루로 튀길때랑은 전혀 다른 느낌이 나거든요... 저는 전분가루로 튀긴 걸 참 좋아해요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/bd61d18fa2f440b6fd10b6caa4eeebd71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "180도 기름에 잠깐 2차 튀겨줄거에요. 1차보다 조금 온도를 높게 노릇노릇하게 먹음직스럽게 튀겨요~^^",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/b341a2b7d7d7b0f7e3ee2537cc291d8e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "약불로 예열된 웍에 준비 된 양념을 넣어주세요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/e4988e9f10e9456a6fe12934e97f4ca21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "여기에 다진마늘과 다진파를 넣어주세요.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/2a49907e90789a993c8a654e1808fc991.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "보글보글 끓기 시작하면 전분가루1T, 물1T를 섞은 전분물을 넣고 섞어주세요.",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/fe791e82dba66689d25f188be4bba7a41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "이제 불을 끄고 튀겨놓았던 새우를 넣고 섞어주세요.",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/09/14/cfeae872b9cd87923884924c2166f4f21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 367,
+            "COOKING_DC": "칠리새우 완성!",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/5b5cfe919368a933666b83b7deeb7f891.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "양파 대파 청양고추 버섯 알맞게 잘라주세요~ 청양고추 매콤한게 싫으면 생략가능. 버섯도 생략가능. 마파두부니까 두부만 있음 되죠~",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/766737b703909e292d8bc6ed1fa1878c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "간돼지고기는 간장1 참기름1 맛술1 다진마늘1을 넣고 조물조물 간이 베게 해주세요^^",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/cd0735809e4d289a2762dcc11c4876181.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "전분가루 1에 물2정도 준비해주세요! 저으면서 물을 넣어줘야 안굳어요~",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/7377aca3ebe0037e9d1dd982e9d645661.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "올리브유에 두부를 살짝 구웠어요. 안 깨질정도로만.. 바삭한 두부식감을 원하시는 분들은 더 바삭하게 구워주세요~",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/36b862f38efa06424ea30c31770719151.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "조물조물했던 돼지고기를 올리브유에 볶아 핏기 없이 해주세요~",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/7ef6706699fef02fff1e92c8cd17c1a81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "야채도 넣어서 같이 볶아주세요. (먼저 대파 고춧가루를 기름에 볶아 주기도 하는데 저의 레시피는 두반장, 고추기름없이 간단하게 마파두부만들기가 포인트입니다.)",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/92521ca45f09f0387c4279bcc8888db71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "두부와 물한컵을 넣고 고춧가루2 굴소스1 설탕0.5 간장1 고추장0.5 된장0.5 전분가루를 저으면서 넣어주세요. 걸죽해지면 완성이랍니다",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/19/2d62b2a60604bf674cbd023bbd823bdb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 383,
+            "COOKING_DC": "이쁜 접시에 담아 먹으주세요~!",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/061da6ef3ea57a7d3436097892634c011.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "브로콜리는 송이부위로준비 느타리버섯은 잘게찢어요. 양배추는 굵게썰고 목이버섯은 불려요. 오이는 반으로 자르고 길게어슷썰고 토마토나 파프리카도 채썰거나 굵게 썰어줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/ef9d70adf22adffa4c7ad56293ee56181.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "고기는 마늘가루.소금.후추.넛맥등으로 밑간을 합니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/2b3693d412d9c0220670640688f095eb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "달걀과 전분을 넣고 튀김 준비를 합니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/d4276f2b93235b7b6e80f404ff09ea9c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "170도에서 한번튀겨줍니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/a89a4bfd7a4843f62d1bdfc1bd4b1b541.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "건져낸후 노릇하게 튀기고 팬에 기름을 약2스푼정도남기고 남은기름은 처리해주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/93556fcd01d0341d35682c3cbec74ec71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "팬에 파.마늘.생강.고추를 차례대로 넣고 향을 내주어요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/67c6662e891f880b9b7e6bfe2a229fc31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "목이버섯.브로콜리를 넣고 볶다가 양배추와 느타리버섯을 넣고 볶아줍니다.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/dced621d61157a7ce3529630770c8aec1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "고춧가루 한숟가락넣고 육수를 넣고 끓여줍니다.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/93aa1b92ec32a3dbaa0a8e54a7b236fe1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "굴소스와 간장으로 간을해요.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/a64499963d86fac48a2a97c0a8a9a52f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "소스가 끓으면 물전분을 넣어서 재빨리 섞어줍니다.",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/6ed82793544043930412e074d68a71951.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "소스가 어느정도 졸았으면 튀긴고기를 넣어 버무려줘요.",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/20f9f2f105a67b7de1016a4df2e5a6911.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "색상이있는 채소는 불끄고 넣어줍니다.",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/fe9fee163afbb8a3a4f372b4f4fcec0a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "참기름 한방울 넣어마무리.",
+            "COOKING_NO": 13
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/12/24/ad42b1bd43b3e4f487695cf067d8e2ea1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 390,
+            "COOKING_DC": "접시에 담아줍니다.",
+            "COOKING_NO": 14
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/aa6d3bd9c6fffa445fcbdece00131c531.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "닭다리살은 먹기 좋은 크기로 잘라 닭 밑간 재료를 넣고 버무린다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/3951002cad39cece365ef8b13d5fb37f1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "흰자, 불린전분을 넣고 버무려 식용유에 2번 튀겨낸다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/e1a35fdc9316b7d34a5ae41cb47372b21.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "마늘, 대파는 편 썰고, 생강은 다져서 팬에 고추기름을 두르고 볶는다.",
+            "COOKING_NO":3 
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/adc5c0bb4cddb378ef6db36cb22528441.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "술, 간장으로 불맛을 내고 편으로 썬 피망, 표고, 죽순과 건고추를 넣는다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/0077b31780dda7c720d07643152f155e1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "볶음 재료, 닭육수를 넣고 끓인다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/fe0e253d5379a04f02709ff65dd85d0c1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "물전분으로 걸죽하게 농도를 내준다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/07/8562e4a94032dc283164daf5c4b569831.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 409,
+            "COOKING_DC": "튀긴 닭, 참기름을 치고 그릇에 담아 완성한다.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/5508177b73bd23d2f1d9ed70288830711.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "피망과 청양고추는 씻어서 물기를 빼 줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/5bc8b7dc8b2aa800e17eefe39af238e41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "피망과 청양고추는 모두 채를 썰어 주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/ca6efd8a875eaa4654fd47bf69f8d8121.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "채썬 피망과 청양고추가 준비가 되었지요. 그럼 돼지고기만 준비하시면 끝이지요. 무지하게 간단합니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/8157197701c9f31a48e67f9af53c32c31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "잡채용 돼지고기를 큰 볼에 준비해 주시고요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/f34e5379fbe56a21949754cebcab5cba1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "돼지고기에 전분가루를 넣어 줍니다. 이렇게 하면 보다 고기가 부드러운 식감이 될 수 있어요. 보들보들 야들야들한 돼지고기가 되지요. 요것은 이연복셰프님이 알려주신 방법이지요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/94dbd827b385b75988e829f5958e5f041.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "전분가루가 골고루 입혀지도록 잘 섞어 줍니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/ded262838cdb3ff663739bf15993751f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "이제 팬에 기름을 두르시고 대파, 다진마늘을 넣어 볶아 주세요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/115337fd549332508f8f77e251b42f2b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "생강가루도 조금 넣고 볶아 주세요. 고기의 잡내를 제거하기 위함이지요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/b546320c4a9c23348f50f7bb609dcbf41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "이제 고기를 넣고는 같이 볶아 줍니다. 볶는 중간에 청주를 조금 넣어서 냄새도 잡아 주세요. 없으시면 패스하셔도 됩니다.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/c318c5f0bcae55bf71ccb145d6e6cd3b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "고기가 어느정도 익었다면 이제 채썰어 놓았던 피망과 청양고추를 넣고 같이 볶아 줍니다. 불은 쎈불에서 무조건 빠르게 볶아 주세요.",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/72086523ab88e802376054ce94eee95b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "여기에 집밥백선생에서 만든 만능중국소스를 넣어 줍니다. 만능중국소스는 1/3컵만 넣어 주세요. XO소스도 들어가기 때문에요. 만능중국소스는 간장 1/2컵, 굴소스 1/2컵, 설탕 1/5컵, 물 2컵, 전분 1/3컵 그런데 이 양은 상당히 많은 편이니 조금 하시려면 비율을 생각하셔서 만드셔야 합니다. 저는 이 용량으로 버섯볶음과 고추잡채 두가지를 다 했어요.",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/4e626e157376494076f40284311536f91.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "여기에 XO소스도 넣어 주고는 잘 섞어서 볶아 줍니다.",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/4aebebf6ce4169220db23520760eccff1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "후추도 조금 넣어 주시고요. 소스가 전체적으로 고기와 고추에 잘 입혀지도록 볶아준 후에는 불을 끄시고 참기름을 둘러서 마무리하시면 고추잡채 완성입니다.",
+            "COOKING_NO": 13
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/99db2e49706c8ec8e2b32ea92befb71b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "꽃빵은 간단하게 전자렌즈에 1분정도만 돌려도 따뜻하고 포실포실하게 드실 수 있어요. 굳이 찜통에 찌지 않아도요. 마트에 가면 냉동칸에 꽃빵이나 화권이라는 이름으로 팔더라구요. 그거 구입해서 렌즈에 돌려서 고추잡채와 함께 드시면 아주 맛있죠.",
+            "COOKING_NO": 14
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/31/5d6797c3c3e061a0cfba598465e9eae41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 479,
+            "COOKING_DC": "꽃빵을 완성접시 가장자리에 올려 주고는 고추잡채를 가운데에 수북하게 올려 주고 통깨 솔솔 뿌려주면 집밥백선생의 만능중국소스와 XO소스로 만든 고추잡채와 꽃빵 완성입니다.",
+            "COOKING_NO": 15
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/15/01e901f2891f8de623d4ceac8aebc0521.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 3,
+            "COOKING_DC": "당면은 찬물에 미리 충분히 불려 준비한다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/15/8ed3b0bef151e1daad881f86afcb05471.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 3,
+            "COOKING_DC": "돼지고기는 가늘게 채썰고 양배추,당근,표고,대파도 모두 채썰어 준비한다. 양념장을 만들어 놓는다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/15/1a921e03b30763873d38af4c492c5bc01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 3,
+            "COOKING_DC": "팬을 달구어 기름을 두르고 돼지고기를 볶는다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/15/bf134be735661cde4dd98101797d83871.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 3,
+            "COOKING_DC": "고기가 노릇하게 익어가면 채싼 채소들을 넣어 볶으며",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/15/101b983cfb1900e894388e78aef0f6721.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 3,
+            "COOKING_DC": "불린 당면도 넣어 볶는다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/05/15/f8929f11dd01ce643494491f50eb55251.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 3,
+            "COOKING_DC": "만들어 놓은 양념장을 부어 재빨리 휘리릭 볶아 밥위에 얹는다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/6de5c1e5c957c8b0d412ac6afec63c101.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "준비한 간장에 굴소스, 물엿, 식초, 다진마늘, 청양 고추를 넣어 섞어줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/cbd551f38a1f8ca7c4efe2c3aaad488f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "마지막으로 물을 넣고 잘 섞어주세요. 이때 간 한번 보시고 부족한 부분은 소스 재료를 추가해주세요!",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/59eef73d1aa237c5676aae81d0a849451.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "양파를 최대한 얇게 썰어 찬물에 담궈둡니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/76ae8a3fc7e59b934b067745eb6d4d481.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "파채를 썰어 찬물에 담궈둡니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/640fa982adcbb3d765e061aaa6a6f72e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "홍고추도 총총 썰어서준비하시구요",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/5fa101e453f3f00a73033c7f2b3444f81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "흰살 생선을 준비합니다. 그리고 반으로 갈라서 만약에 가시가 있다면 가시를 전부 제거해줍니다",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/acd7c4a108c0639f0847690348a1a46e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "손질된 생선은 비린내를 잡기위해 레몬즙이나 쌀뜨물에 담궈두셔도 좋아요~",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/ce1e50bd1908efe8d36add144584e8af1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "기름을 두르지 않은 팬에 앞뒤로 노릇하게 구워줍니다",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/6d3db1c2d80407f83674dd0261f02a931.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "생선이 구워지는 동안 소스를 냄비에 넣고 강불에 팔팔 끓여줍니다.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/cdbf7dbdb6301e5603a660c0a73f80fd1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "잘구워진 생선을 약간 오목하고 넓은 접시에 담아주세요",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/64897962710d7b82b788fc9609b7da8f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "그리고 위에 양파와 파채를 올려줍니다",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/7918473f3ddd584afddd7f5ae4d012b31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "그리고 이때 끓이던 소스의 불을 끄고 바로 위에 소스를 부어줍니다",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/04/18/ce2db86f7b20179224749541d1c2516b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 47,
+            "COOKING_DC": "마지막으로 홍고추를 올려 완성~!",
+            "COOKING_NO": 13
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/f2187a1d655d3e82050129dc6f19469a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "당근, 양파, 파, 햄은 먹기 좋게 잘게 썰어주세요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/326aa86ce394d06b72a13b5c6b7845381.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "밥은 미리 식혀주어야, 볶음밥을 할 때 꼬들꼬들하니 더 맛있답니다. 반드시 찬밥으로 해주세요~!!",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/0a098a0e772b63c3fad2f9f1416d9b3f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "예열한 프라이팬에 기름을 두르고, 햄을 충분히 볶아주세요. 충분히 볶아주셨으면 파를 넣고 같이 볶아주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/d75881af6f68c38217645cda7e19ec9d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "다 볶고 난 후, 햄과 파를 키친타월 위에 놓고 기름기를 빼줍시다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/5791a91c9032cdfa56a684471eba9b401.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "다시 프라이팬에 기름을 살짝 두르고 당근을 먼저 넣고 1분 정도 볶아주다가, 다음으로 양파와 완두콩을 넣고 1분 정도 더 볶아주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/9d70c0b60ec4113380f24075c751fb871.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "이것도 위에 재료들과 마찬가지로, 키친타월 위에 놓고 기름기를 빼줍시다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/bb36ce13864b1dcaa9bbe9acb329f2051.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "마지막으로 칵테일 새우만 기름 없이 살짝만 데운 듯 만 듯 데워주세요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/dc3ffe82f90cd00a105d00db05d241591.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "이제 계란 2개를 그릇에 풀은 다음, 젓가락으로 휘저어서 계란물로 만들어주세요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/4dc526abfe95e4cc1c6d8aa9e123ce0a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "예열된 프라이팬에 기름을 두르고, 계란물을 뿌린 다음 젓가락으로 십자 모양으로 왔다 갔다 해줘서 스크램블 에그를 완성시켜주세요.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/7ad9de9c0642bbf5bedd89b99c8a0ee91.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "이제 여기에 다 식은 밥과 소금 1/4T을 넣은 다음에, 프라이팬에 기름을 1T 넣고 밥알 한 알 한 알에 코팅한다는 느낌으로 5분 정도 볶아주세요.",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/82c2135ead0d8aa553ddd4efb46a412c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "이제 여기에 햄, 파, 양파, 당근, 강낭콩, 칵테일을 넣고 1분 정도 볶아주세요. 1분 후에 물 1T을 가쪽에다 두르고 다시 1분 정도 볶아주세요.",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/2c1b2ff53fb35ac792df2c7a0cafa2cb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "이제 완성한 볶음밥을 그릇에 꾹꾹 눌러 담아주세요.",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/04/01/4b5eeef5fca6db18e0a71442a82a9d501.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 118,
+            "COOKING_DC": "이렇게 눌러서 담은 볶음밥을, 크고 평평한 그릇 위에 거꾸로 뒤집어서 밥을 빼주면 집에서도 볶음밥 모양이 예쁘게 잡힌답니다.",
+            "COOKING_NO": 13
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/31/3410600fd3b79ba3eecf48161f00c6de1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 316,
+            "COOKING_DC": "다진 생새우, 소고기다짐육, 돼지고기다짐육, 물밤다진것, 죽순다진것, 다진마늘, 다진생강, 맛술, 썬쪽파, 달걀흰자, 소금, 후추넣고 치대 줍니다. 슬라이스죽순은 믹서기에 갈아서 갈아 주고 역시 물밤도 믹서기에 넣고 갈아 줍니다. 생새우는 껍질과 대가리를 제거 한 후에 칼로 다져 주세요. 믹서기가 아니라 칼로요. 다짐육들은 모두 다져진 것을 구입했습니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/31/b6a51444c94783f9f4fcbe58e6fa4bf41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 316,
+            "COOKING_DC": "이렇게 질척질척해 질때까지 한쪽 방향으로 치대면서 반죽을 만들어 주세요. 물만두에는 참기름이 추가로 들어갑니다. 고기기름이 있으면 좋겠지만 없으니 참기름으로 대체해 줍니다. 만약 젤라틴이 있으시면 젤라틴을 녹여서 넣어 주셔도 육즙의 역할을 할 수 있습니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/31/157ecd6803ff7d384c1b1f5053b1e5441.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 316,
+            "COOKING_DC": "물만두는 속을 너무 많이 넣지 않으셔도 됩니다. 딱 한입에 들어갈 정도면 되고요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/31/bd7671c5d14bb055b426676afc899c6e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 316,
+            "COOKING_DC": "팔팔 끓은 물에 만두를 넣어 줍니다. 겉 만두피가 투명해질때끼자 센불에서 팔팔 끓여 주세요. 만두가 투명해지면서 둥둥 뜨게 되면 체에 걸러서 완성접시에 담아 줍니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/31/9582f49e39536a697fac73c477e01d931.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 316,
+            "COOKING_DC": "통깨와 참기름을 살짝 둘러서 드시면 더욱 맛있습니다. 물만두 완성입니다. 담백하면서도 든든한 한끼가 되는 물만두이지요. 수제 물만두입니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/30/227758748d28e4d6af32c3818ed114fa1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 336,
+            "COOKING_DC": "닭가슴살은 한입크기로 썰어 와인약간, 소금, 허브, 후추 해서 잠시 둔다 샐러리, 당근, 버섯, 양파, 마늘은 다 먹기 좋은 크기로 잘게 썰어두기",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/30/d235ce92af645e20d337dd01dd98ac091.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 336,
+            "COOKING_DC": "펜네면 삶아두기 (정해진 시간보다 약간 덜 익히면 됨) 다른 큰 냄비에 올리브유 넉넉히 두르고 잠시 당근, 마늘 볶다가 닭고기 살짝 볶기",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/30/0ee77b7556e8223628d84092349c78b31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 336,
+            "COOKING_DC": "겉면만 하얗게 익으면 마저 샐러리, 버섯, 양파 넣고 조금만 더 볶아주고 타지 않게 주의하다가 바로 물 약 1L붓기 치킨스톡 넣고, 월계수잎, 화이트와인 약 1~2t정도 넣어 강한불에 끓이기 (끓이다가 간 보면서 치킨스톡은 필요시 더 넣기, 부족한 간은 소금, 후추로) 치킨 수프 냄비가 바글바글 끓으면 불 약간 줄여 마저 더 익히는데 당근 익은 정도와 간을 봐 가면서 시간 조절하기, 위에 둥둥 뜨는 거품과 불순물 등은 건져주기 중간에 펜네 면 넣기",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/05/30/ce0a9d9c3e02d15bd299aff3ebe7c99f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 336,
+            "COOKING_DC": "바르르 끓으면 마지막 간 보고, 레몬 반개 짜서 접시에 담고 후추나 파슬리 톡톡 해서 내기",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/05/0f60bbcc7af7524b950a5791abe6972e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 9,
+            "COOKING_DC": "청피망, 양파, 토마토를 먹기좋은 사이즈로 다져주세요~",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/05/830d82f562d0f33c52ab161d64fb82801.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 9,
+            "COOKING_DC": "계란은 오므라이스커버 지단을위해 잘 풀어놔주세요~",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/05/1eafa40748787e8110152e4c5c93f2161.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 9,
+            "COOKING_DC": "양파볶고 > 청피망볶고 > 칵테일새우볶고 > 후추(0.1) 뿌리고 > 토마토볶고 >",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/05/fd130c6506229fff31691e28671d4b971.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 9,
+            "COOKING_DC": "여기까지만 해서 케찹빼고 소금으로 간을해서드시면 새우볶음밥인거고요~ 이제 커버 지단을 부칠껀데요, 최대한 약불에서 손목을 돌려서 원을 그려가며 계란물을 익혀주세요~ 2/3정도 익었으면 지단 가운데쯤에 밥을 덜어주시고 양끝면을 뒤집게로 감싸주신후 그릇에 담아내면 완성~",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/09/05/0d41fd046c4f09f4fe23e559a6b3e17c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 9,
+            "COOKING_DC": "오므라이스 완성~",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/06/44ebea62504203779d9d02d0cc6ee8f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 369,
+            "COOKING_DC": "감자와 호박, 샐러리, 당근, 양배추, 양파는 1*1cm 크기로 썬다. 브로콜리는 먹기 좋게 썰고 통조림 완두콩은 체에 밭쳐 물기를 제거한다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/06/3fda91838428b75a62930df0fab5c1cd.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 369,
+            "COOKING_DC": "냄비에 올리브유를 두르고 다진 마늘을 넣어 향을 낸 뒤 감자와 호박, 브로콜리, 샐러리, 당근, 양배추, 양파, 완두콩을 넣고 볶는다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/06/0993bfc5a5e42464ee0b95cb160dd2b9.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 369,
+            "COOKING_DC": "양파가 투명해지기 시작하면 물과 치킨스톡, 월계수잎을 넣고 중간 불로 10분 정도 끓인다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/08/06/6395a28efadaaf232f415c2fe27486f2.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 369,
+            "COOKING_DC": "채소가 푹 익으면 토마토 소스를 넣고 끓인다. 소금과 후추로 간을 맞춰 마무리한다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/37e19b954065f2a42f02365c96ef801e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "감자두개는 껍질을 벗겨서 익혀줍니다. 시간단축을위해 반 잘라서 익혔어요",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/7724627e10cb0fb2cb9fbde6622079131.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "냄비에 버터 1/2T를 녹이고 양파1/2개를 볶아줍니다 (숟가락계량)",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/cec55e6fc266e366dd15d12f28910e8a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "삶은 감자를 넣고",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/7e3efd5ea53a63b3a65c606a0ed2aa211.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "우유두컵을 부어준뒤",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/664b6d71490d0ed1f60522dd5d98c39d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "핸드블랜더로 갈아줍니다. 핸드블랜더가 없을땐 믹서기에 넣고 갈아주심 되요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/7e8668b4c44452dcaacab2ccfb0dad701.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "곱게 갈아준뒤 약불에서 저으면서 끓여줍니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/26e30a2cd035c5f38d92d5250aa831831.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "농도가 되직하다싶으면 중간중간 우유를 추가해서 원하시는 농도로 맞추면 되요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/03/05/d248c2af355d5a190aee7149aa32877b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 334,
+            "COOKING_DC": "보글보글 약5분이상 끓여주고 원하는 농도가 맞춰지면 소금간 살짝해서 마무리.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/02/1d2ff37c1bf008ebaf2e121e28eb0e461.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 346,
+            "COOKING_DC": "소고기에 소금반큰술과 후추 1/3큰술을 앞뒤로 뿌려준 뒤 손으로 두드려 밑간을 해줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/02/fc46deecd84bc49f4c4ee0e10a62102d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 346,
+            "COOKING_DC": "소고기에 칼집을 낸뒤 올리브유 한큰술을 앞뒤로 충분히 발라준 뒤 냉장고에 넣어 30분간 숙성시켜줍니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/02/25bffaa66722ad55250644f5972e52af1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 346,
+            "COOKING_DC": "팬에 올리브유5큰술을 넣어 팬에 연기가살짝 오를 정도로 팬을 달궈줍니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/02/8118eab752459181feee87c06ad852e11.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 346,
+            "COOKING_DC": "달군팬에 밑간을한 소고기를 올려줍니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/02/731acf3cce09155488a1917ca0d4ea5f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 346,
+            "COOKING_DC": "소고기는 튀긴듯이 구워줍니다. 겉면을 순식간에 익혀줘야 육즙이 빠져나오지 않기때문에 살짝 탔다고 생각될때까지 구워줘야합니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/06/02/16faf2482f46b2a192e69d522eeb90ee1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 346,
+            "COOKING_DC": "팬을 기울여 소고기 옆면도 바짝 구워줘야 육즙이 빠지지 않습니다. 겉면이 익으면 불세기를 약불로 바꿔 원하는 익힘으로 구워줍니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/8807b7c86f3d4a2e20c1fcac6dcdb92b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "마늘을 전부 편으로 썰어주세요",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/153e455e642ba8d435b2a2bfdd0bb52d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "해물믹스에 후추를 뿌려 간을 해주세요",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/8f0eb7e8144119fbeebd2b609b1ab9631.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "냄비에 물을 받아주신 다음에 준비한 굵은 소금을 넣고 물을 끓여주세요 그리고 물이 끓기 시작하면 스파게티 면을 넣고 8분 정도 삶아주세요",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/3a7e5852aa72a1aa7a74ce8063e9f5c21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "면수 1국자를 따로 보과해주신 다음 삶아준 파스타 면을 건져내어 자연스럽게 물기를 빼주시고 서로 달라붙지 않도록 올리브유를 뿌려주어 골고루 섞어주세요",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/995ba672356d079e505ca4f16c1cd4541.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "프라이팬에 올리브유를 넉넉히 둘러주신 다음 마늘을 넣고 볶아주세요",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/2c34a78637d639a333ac0dc24f7118fd1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "마늘을 노릇노릇 볶아주었으면 양파를 넣고 볶아주세요",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/1ec65124afe0cc9833523c80d069d0a81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "양파가 투명 빛으로 변하기 시작하면 해물믹스를 넣고 볶아주세요",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/4d3b37e55b2888b6ff946cb20e1f97d81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "해물믹스가 익으면 토마토 스파게티 소스와 면수 1국자를 넣고 볶아주세요",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/5eabf5553ecee6acd69837870055d4a51.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "삶아준 스파게티 면을 넣고 볶아주세요",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/12/2162edbfdd3dd669626c3a6c938acf1f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 349,
+            "COOKING_DC": "완성된 토마토 스파게티는 예쁘게 플레이팅 해주신 다음에 위에 파슬리를 뿌려 마무리해주세요",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/01/11/e5bd084462ab9381c426fe9fde8612051.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 354,
+            "COOKING_DC": "재료를 준비해주세요",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/01/11/26778d10462e4b236c71a4f98fc5c0cc1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 354,
+            "COOKING_DC": "준비한 재료를 손질해 주세요",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/01/11/4b0ff25e69a60d17aa2fb564617e6dd11.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 354,
+            "COOKING_DC": "끓는 물에 삶은 고구마를 으깨주세요",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/01/11/21555b7d2997247cafef7dc728d852f21.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 354,
+            "COOKING_DC": "다져둔 재료와 스위트콘을 볶아주세요",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/01/11/0f5b3ceed721d8b49620bd83207f77d51.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 354,
+            "COOKING_DC": "으깬 고구마와 볶은 채소를 섞어준 후 프라이팬 위에 깔고, 준비한 치즈로 덮어주세요",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2017/01/11/206fa72d1e3f162a381628fa597e2fb91.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 354,
+            "COOKING_DC": "약불로 치즈가 녹을 때 까지 익혀주면 끝!",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/a451ed2593e2eeb5df0f89111d7159f51.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "고구마 4개는 흐르는 물로 세척해서 표면에 묻은 흙을 씻어주세요. 고구마가 잠길 정도의 물을 냄비에 채우고 < 강불 >로 가열 후, 물이 끓기 시작하면 고구마 4개를 모두 넣어주세요. 뚜껑을 열고 15분, 뚜껑을 닫고 20분 가량 삶아주세요. 뚜껑을 열고 강불에서 15분 삶아주시고 뚜껑을 닫고 20분 더 삶아주세요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/39b63e7567586e790458442eeca6e0071.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "껍질 제거 후 으깨기 고구마 껍질을 제거 해주시고 큰 볼에 넣어주세요. 포크를 이용해서 충분히 으깨주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/ffd52987d93ddcbbaab2284e7c0086501.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "믹서에 갈기 으깬 고구마를 믹서기 볼에 모두 넣어주시고 꿀 1스푼, 생크림 80ml를 넣은 후 곱게 갈아주세요. 그리고 믹서볼에 담긴 채로 냉장고에 30분 이상 냉장고에서 휴지 후 사용하시면 됩니다. ' 묽은 농도를 단단하게 하기 위함이에요 '",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/65a2b6e9195c6e4a7c42c6db2e5280671.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "믹서볼에 담긴 채로 냉장고에 30분 이상 휴지 시켜주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/4c2c7e1a7d922f989e91ad38c289cc031.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "고구마 종류에 따라 믹서 후 농도가 다를 수 있기에 생크림으로 농도를 맞춰주셔야 한답니다. 생크림 대신 우유, 꿀 대신 올리고당으로 대체하셔도 됩니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/0e2624984bd1a2f27990933b529b078c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "식빵 9장은 밀대로 밀어 납작하게 만들어주시고 테두리 부분은 잘라내 주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/8d050933d708965e211fee18f6271efd1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "압축한 식빵 중앙에 고구마무스 1스푼 정도를 올리고 달걀노른자를 식빵 테두리에 발라주세요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/d71eaac9bcb9b4ade9c2653646a12e431.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "빵을 절반으로 접고 테두리 부분은 포크로 눌러 찝어 주세요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/3ec2016491fb47bd4c316da7e5de5b5d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "식빵 윗부분에만 노른자 물을 적당히 발라주시고 구울 때 생기는 내부 압압력 완화 및 예쁜 모양을 위해 칼집을 내주세요.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/05/06/2688b9e7b11410aaa8b12321f8ff627d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 180330,
+            "COOKING_DC": "유산지나 테플론 시트에 올려주시고 180도로 예열된 오븐에 20분 구워주세요. 저는 3단 높이에서 구워주었는데요. 집집마다 출력과 단 높이가 다르니 5분마다 체크하며 고구마파이를 구워주세요!",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/30/e2f6dd811dc100f41e8e3097efb7226c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 491,
+            "COOKING_DC": "냄비에 물을 넣고 유리병을 거꾸로 담가 끓이면서 병을 소독해 주신 후 꺼내어 물기를 제거해주세요. 오이는 1cm 두께로, 적 양배추와 파프리카, 양파는 3cm 크기로 잘라주세요. 무는 1cm x 4cm 길이로 잘라주시고 고추는 2~3등분, 레몬은 슬라이스해주세요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/30/8d83ecb0ecf5ebe4e289a01f6ba96cca1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 491,
+            "COOKING_DC": "피클주스 재료를 냄비에 넣고 끓여주세요. 소독한 유리병에 채소를 골고루 섞어 담고 끓인 피클주스를 뜨거울 때 부어주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/30/5a8d8d26df57fdb95181e1de4d4364251.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 491,
+            "COOKING_DC": "한 김 식힌 후 뚜껑을 닫고 2~3일 정도 냉장보관 해주세요. 이때 2~3일간 뚜껑을 열지 않아야 피클이 아삭아삭한 맛을 잃지 않아요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/15/c1a839ba5b063dda18f1287b82787bdc1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 474,
+            "COOKING_DC": "양상추와 치커리는 한입크기로 뚣어서 찬물에 담가 싱싱함을 살려주세오.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/15/5d61fd1c9244b55d9b0573774ef373b41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 474,
+            "COOKING_DC": "치킨또는 닭가슴살은 한입크기로 잘라서준비해주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/15/961a75c96c3802bc34a030c07ccb6e831.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 474,
+            "COOKING_DC": "양파반개는 얇게 슬라이스해서 찬물에 10분정도 담가 양파의 매운맛을 제거해주세요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/15/d9574287e95d9ee8aef152da4fa695cb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 474,
+            "COOKING_DC": "당근 오이 파프리카 등둥 야채들은 아삭한맛이 있도록 너무얆지않게 채를썰어서 준비해주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/15/6a554db3b249f9025b352eb63e20889d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 474,
+            "COOKING_DC": "잘손질된야채와 닭고기를한곳에 모아 섞어주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/06/15/ef9aacf9cfac4fbd826b19eb8bf698ec1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 474,
+            "COOKING_DC": "크림치즈드레싱재료를 모두 한곳에 넣고 덩어리지지않게 잘섞어서 샐러드에 원하는만큼 뿌려드시면 된니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/ee5ac47f9393caf3f6bf713b240c637c1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "등갈비는 2시간 이상 물에 담가 핏물을 뺀다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/726ecc04db21338854d270de0e8173801.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "불투명한 막을 벗겨낸 뒤 뼈 사이사이에 칼집을 넣어 손질한다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/6dfe1fc02a4542bcacb11d02b6354b8b1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "등갈비 데칠 물을 끓인 뒤 통후추와 대파 파란잎, 등갈비를 넣고 센 불에 올려 끓어오르면 청주를 뿌린다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/bad13ae35f58fef1c1b92fb042a7b9511.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "한 번 더 끓어오르면 떠오르는 거품을 제거한 뒤 중약 불로 줄여 30분간 삶아 건진다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/f674f2100f13a2473fca73c14a51b1bf1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "팬에 소스를 붓고 중간 불에 올려 바글바글 끓기시작하면 등갈비를 넣고 간이 배도록 조린다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/502b9b34b85fb447fa64c06e255130c21.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "삶은 감자를 볼에 담고 뜨거울 때 버터와 소금, 후춧가루를 넣고 으깬다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/09/30/54fe8a5d29db8b4ba54b7fc1982153cc1.png",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 472,
+            "COOKING_DC": "그릇에 담는다.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://mblogthumb-phinf.pstatic.net/20150808_198/jadish_1439011706471BUzEj_JPEG/EZ0A4739.jpg?type=w2",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 398,
+            "COOKING_DC": "호밀빵은 버터 1개에 노릇하게 구워준다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://mblogthumb-phinf.pstatic.net/20150808_6/jadish_1439011706685mM4pf_JPEG/EZ0A4744.jpg?type=w2",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 398,
+            "COOKING_DC": "샐러드용 채소를 준비하세요. 양파와 무순은 세척 후 키친타올에 올려 물기를 제거하여 준비하세요. ",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://mblogthumb-phinf.pstatic.net/20150808_26/jadish_1439011707159moYx8_JPEG/EZ0A4760.jpg?type=w2",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 398,
+            "COOKING_DC": "호밀빵에 크림치즈와 홀그레인 머스타드를 담뿍 발라주세요. ",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://mblogthumb-phinf.pstatic.net/20150808_47/jadish_1439015889407sHD4j_JPEG/EZ0A4834.jpg?type=w2",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 398,
+            "COOKING_DC": "듬뿍 바른 소스 위에 채소, 양파, 케이퍼를 올리고 연어를 반으로 접어 올립니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/08/01/bc29fc565c950d3ecb193658b4e1efcb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 389,
+            "COOKING_DC": "토마토는 8등분 해 주고 양상추는 씻어 준 후에 물기를 빼 주고는 손으로 마구마구 찢어서 넣어 주었습니다. 맛살은 어슷하게 썰어서 넣어 줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/08/01/f83d1ea30135ba517e59ac34ad7c9a601.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 389,
+            "COOKING_DC": "올리브오일 듬뿍 넣어 주시고 소금과 후추 간을 해 주고는 향을 위해서 바질가루를 뿌려 주고 상큼한 맛을 위해서 레몬즙을 넣어 줍니다. 그리고 단맛을 위해서 꿀을 약간 첨가해서 잘 섞어 주시면 누구나가 좋아할 수 있고 야채를 싫어하는 분들도 맛있게 드실 수 있는 그런 샐러드가 간단하게 만들어 집니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/08/01/948c69411ba4971d19e67598904e05fd1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 389,
+            "COOKING_DC": "매운 음식을 먹을때에 같이 먹어도 좋고 느끼한 음식을 먹을때에도 함께 먹으면 신선함을 느끼게 하는 토마토양상추샐러드 완성입니다. 짭쪼름한 간도 좋고 단맛도 나면서요. 레몬즙의 새콤함도 나고요. 여기에 트러플오일을 뿌려 주셔도 좋겠네요.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/0af47c025264fbb92e97fa758e0d44a71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "빵은 먹기좋은 크기로 자유롭게 잘라주세요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/06638ca18a9566cea8ab083cee1563891.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "통마늘을 사용할경우 믹서기에 곱게 갈아주세요~.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/0c6481515f06e0dad36b2f41de2886a31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "아무것도 넣지않은 팬에 잘 다져진 마늘을 넣고 중불로 2분간 볶아주세요~.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/b0f8adefff43d7e7c104e2de5d957b051.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "볶은 마늘. 버터. 설탕또는연유. 파슬리를 넣고 잘섞어주세요~.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/8ce11591259aff1b81b148797922cb821.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "아까 잘라놓은 식빵에 5번의 마늘크림을 펴발라주세요~.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/2b1ba647ff78ec61a340de40cb87c9801.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "아무것도 넣지않은 팬에 마늘크림을 바른 식빵면부터 약불로 2분 구워주세요~.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/10/03/bd49d7cc08d1d2fb97e053f6b6d4fa181.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 335,
+            "COOKING_DC": "뒤집어서 약불로 3분구워주시면 완성입니다~.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/47cfdf99fa133c68ec29b5ef4890524d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "모든 재료를 씻어서 준비해주세요. 이재료 외 집에 남는 자투리 야채로를 이용하여 만드셔도 좋습니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/b177bc4f44bec97bf17d9461cd78222a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "대파는 반을 갈라 손가락 마디 크기로 잘라주시고 마늘은 편으로 잘라서 준비합니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/60f434cfab89ac4603c06e05b61a0ca71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "모든 야채와 버섯은 한입크기로 잘라서 준비해주세요",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/ed0190b5a687beccda9cec4ca439355e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "고추기름 2큰술에 준비한 대파와마늘을 볶아 향을 내주세요. 중간불에 1분간 볶았습니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/72b7bb189163e7b4d26607790142a9f71.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "충분히 향을 낸후 모든 재료를 넣고 살짝 볶아줍니다. 너무 많이 볶으시면 안됩니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/464f19c088b1b9154dc29544716df75b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "물 120ml 넣고 강불로 끓여주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/a765604d8ee95d4069eba630362c19b41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "굴소스2큰술과 msg 한 꼬집(1g)을 넣아주세요. ",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2020/09/10/d0e3e0f55c3878d6d3e639ba48a330ef1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 328,
+            "COOKING_DC": "전분물(물1큰술과 감자전분1큰술)을 잘섞어서 1큰술 반을 골고루 삮어줍니다.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/67f0ca2d39ab289c8c08e8143b1f89ff1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "1] 먼저 샐러드로 함께 곁들일 양배추는 0.5cm 두께로 채 썰어 준비할게요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/3393caecd7516d365fe479b92c6be8321.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "돼지고기 등심은 칼등을 이용해 얇게 펴 주시고 소금1/2T, 후추1/3t으로 살짝 간해 주세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/2f7fbce3006dffbf21bf156df5200c851.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "모짜렐라 치즈를 얇게 저며주시고 고기 사이에 넣고 잘 덮어주세요. 고기는 250g 짜리 덩어리를 절반으로 슬라이스해 사용하시면 더욱 편리합니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/fa2092ed78f23a56a91925a044bf58c11.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "가운데에 치즈를 잘 넣었다면 랩을 단단히 씌우고 냉동실에 15분간 넣어 주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/5ca16a3524f6379de61b3857704041bf1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "파인애플 슬라이스를 강불로 3분간 예열한 팬에 그릴 자국이 남게 구워줄게요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/8196e4e48e7428a5846b95ee7261ede01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "시판 돈까스 소스 200mL, 토마토소스 100mL 이렇게 넣고 한번 끓여 소스를 만들어 주세요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/7dfb436d3d5a28a40397f1033a3c48fb1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "식용유 500mL를 중불에서 5분 정도 예열해 주세요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/4e246f742889219a92b3914d78b872ac1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "밀가루, 달걀옷, 빵가루(우유 두 스푼 첨가) 순으로 묻혀주시고 예열 된 기름에 넣고 튀기기 시작해 주세요. 돈까스를 넣고 강불로 높여 기름 온도가 떨어지지 않게 해 주셔야 더 바삭해요. 4~5분 정도 충분히 튀기고 잠시 건져 내 기름을 강불에서 1분 다시 예열 후 재벌 튀김을 2~3분 더 해 주세요. 이렇게 황금빛으로 튀겨졌다면 완성입니다.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/07/02/63c27ada69d8fc639da20fef04e800d81.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 288,
+            "COOKING_DC": "접시에 돈까스, 양배추 샐러드와 폰즈소스 두 스푼, 구운 파인애플, 그리고 돈까스 소스를 곁들여 주시면 집에서 만드는 치즈 돈까스 만들기 완성입니다.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/5e06abac857221868f251f1a746b190d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "먼저 약간의 브로콜리를 데쳐서 준비합니다. 전 데쳐서 먹던 브로콜리가 있어서 그걸로 사용했어요. 치킨스톡은 따뜻한 물 50ml 에 미리 녹여서 준비합니다. 달군 팬이나 냄비에 불을 약불로 줄이고 버터를 녹입니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/4dd42d4d59f1afc1b39e3a6a837232f01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "버터는 금방 타니까 지켜보고 있다가 버터가 녹으면 밀가루를 넣고 고루 섞으면서 타지않게 볶아주세요. 이것이 스프의 기본이 되는 루를 만드는 과정인데 이 과정에 따라 스프맛이 좌우되니까 태우지않게 주의하세요.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/3768a2b7e15154aa2b81b21dc32c8e5c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "약간 갈색빛이 돌면서 구수한 냄새가 나면",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/714a5f89b6e90139158db446dd02bba61.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "우유를 조금씩 넣으면서 멍울이 없도록 계속 저어주세요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/a79dd36b94d4492c93631feaf1648f751.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "여기에 치킨스톡 녹인 물도 넣어주세요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/1d0acf24699ef948076da1fd27e175361.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "밑이 눌을 수 있으므로 약불에서 계속 저어줘야 합니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/d75b7574e1bafe02edadac6581cba55a1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "거품기로 계속 젓다보면 어느순간 농도가 뻑뻑해지는데 이때 데친 브로콜리를 약간 다져서 넣어주고 나머지는 장식으로 남겨두세요. 소금과 후추로 간을 한 다음 불을 끄고 좀 더 저어주세요. 남은 열기에 밑이 눌을 수 있어서 그러는 겁니다. 치킨스톡이 들어갔으므로 소금은 간을 보고 조금만 하세요. 만약 치킨스톡이 없다면 소금과 후추로만 하셔도 되지만 맛은 좀 덜해요.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/10/05/e307ce9107cf8988b7be49de38f1be4f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 284,
+            "COOKING_DC": "브로콜리 크림스프를 그릇에 담고 남겨 둔 브로콜리를 장식으로 올린다음 맛있게 드시면 됩니다. 그루통이나 빵이 있으면 찍어서 드셔도 맛있어요.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/29b6e67c2011e613ab00f99ea5585c8e1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "버섯과 파프리카는 너무 두껍지 않게 길게 잘라줍니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/54ef178f1fe3ea4a841fb60b7a477c321.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "닭가슴살은 포를 뜨듯 칼집을 내서 얇게 펴준다음 통후추를 갈아서 뿌리고 맛술도 뿌려서 잠시 재워둡니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/879dbd4ffdaa124df649fb2952e377991.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "팬에 오일을 두르고 파프리카와 버섯을 볶아줍니다. 천일염을 넣어 간을 해주는데 간을 해줄 수 있는 타이밍은 이때뿐이므로 입맛에 맞게 잘 맞춰줍니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/34c1e391b36effb9749bb6189f855cfe1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "닭가슴살을 펼칩니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/a793977cd7f1b328e7150746680a11351.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "깻잎을 한장 깔아줍니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/57006cdcee70773667f979b2aa0742341.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "치즈를 올려줍니다.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/f778965ea3cfcdf7130758cf118a2e3f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "볶은 버섯과 파프리카를 적당히 올려줍니다.",
+            "COOKING_NO": 7
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/6de556a146ab3841edf5cf790ff409a41.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "김밥 말듯이 돌돌 말아줍니다.",
+            "COOKING_NO": 8
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/629674a3b8ae1981e67d154c9f4cda151.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "모양이 흐트러지지 않게 산적꽂이로 찔러서 고정합니다.",
+            "COOKING_NO": 9
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/991c02db3dcf6565db08d336381c101f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "팬에 오일을 두르고 약불에 올려줍니다.",
+            "COOKING_NO": 10
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/d5fbf105744833be16f6c0b6ffae3ea11.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "이음새부분이 먼저 팬에 닿게 해서 딱 붙도록 해주면 모양이 풀리지 않아요. 모양이 잡히면 꽂이는 빼주고 뚜껑을 덮고 약불에 천천히 익혀줍니다.",
+            "COOKING_NO": 11
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/31cf304dd9c4afe8327553976d9cfdd31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "잘 익은 치킨롤은 꺼내서 잠시 식힌다음 적당한 크기로 잘라줍니다.",
+            "COOKING_NO": 12
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/11/23/7cffc0c3d8f13909f419ae33931336311.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 276,
+            "COOKING_DC": "퍽퍽하지 않고 촉촉한 치킨롤 완성.",
+            "COOKING_NO": 13
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/28/57f32b3dd1c77c0a05362ce1ab66036b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 216,
+            "COOKING_DC": "두부는 키친타월을 이용해 물기를 최대한 제거하고 모양을 살려 작게 깍둑썰기를 해주세요. 대파는 다져서 3숟가락 정도 준비합니다. 대파를 많이 넣으면 맛있어요.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/28/6546f1a5bea57eb818c2665fb693cc1f1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 216,
+            "COOKING_DC": "그릇에 달걀 3개를 깨서 넣고 양념재료인 연두순1을 넣고",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/28/ba96bf886537561e7c70956da13c27d01.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 216,
+            "COOKING_DC": "후춧가루를 살짝 넣어 달걀을 고루 풀어주세요. 이어 준비해 놓은 대파, 두부를 한데 넣어 고루 잘 섞어주세요 거품이 많이 나지 않게 살살 풀어 줍니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/28/ebab3a807e5f45c90f1d7facedac91ae1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 216,
+            "COOKING_DC": "달군 팬에 기름을 두르고 달걀 푼 것을 반을 붓고 중불에서 노릇하게 부쳐 줍니다.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/28/debd7d588b8df761dcbce5fa44e7982b1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 216,
+            "COOKING_DC": "아랫면이 익으면 찢어지지 않게 반으로 접어 부쳐주세요. 같은 방법으로 한 개 더 만들어 주심 된답니다. 오믈렛이니깐 속을 완벽하게 익히지 않아도 된답니다. 슬쩍 덜 익은 듯 만들어 주심 촉촉하고 부드러운 게 식감이 훨씬 좋아요.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/28/06c4b3c6703ca0448f3d810f5f8f97ee1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 216,
+            "COOKING_DC": "먹기 좋게 썰어 그릇에 담아주면 두부 달걀 오믈렛 완성.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/e06d30b3b98aa88332b7e3d96276691d1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "닭 날개는 냉동이라 찬물에 담가 해동한 뒤 사용했구요. 날개 끄트머리는 가위로 잘라줍니다. 그런다음 밑간재료를 넣고 조물조물 무쳐 30분 정도 버무려 둡니다.",
+            "COOKING_NO": 1
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/470270430365d2767f66c1581f0c3c641.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "30분 후.. 치킨 튀김가루와 튀김가루를 섞어서 반죽을 하는대요. 물은 종이컵 두컵 정도면 될거 같아요. 이건 조금씩 부어서 농도를 맞춰줍니다.",
+            "COOKING_NO": 2
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/b01eb5878df83704c6ac08323f621aa31.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "여기에 케이준 스파이스 가루를 뿌려줍니다. 이걸 넣음 살짝 매콤한 맛이 납니다.",
+            "COOKING_NO": 3
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/ad4141a32a93aa5ef938bdc155b2dc811.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "이렇게 반죽이 완성됐어요.",
+            "COOKING_NO": 4
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/f5136f83589882fc5f0c98dc730b43ea1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "기름을 넉넉히 부어 달궈 줍니다.",
+            "COOKING_NO": 5
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/76ea182af63ab707648e9e1132d1a97c1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "이제 날개 하나 하나 집어 넣어 튀겨줍니다. 220도 온도에 8분 정도 두번 튀겨냈어요.",
+            "COOKING_NO": 6
+        },
+        {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2018/12/17/f6127861228873df4b2dd594dcf219ac1.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 160,
+            "COOKING_DC": "두 번 튀겨 내면 닭 날개 튀김 완성입니다.",
+            "COOKING_NO": 7
+        }
+    ]
+}

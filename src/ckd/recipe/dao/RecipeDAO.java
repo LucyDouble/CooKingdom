@@ -29,22 +29,6 @@ public class RecipeDAO {
 		
 		return result;
 	}
-	public int deleteIngredientAll(Connection conn) throws SQLException {
-		PreparedStatement pstmt = null;
-		int result = 0;
-		
-		String sql = "delete from ingredient";
-		
-		pstmt = conn.prepareStatement(sql);
-		result = pstmt.executeUpdate();
-		
-		if(result > 0) {
-			JDBCConnection.commit(conn);
-		}
-		JDBCConnection.close(pstmt);
-		
-		return result;
-	}
 	
 	public int insertRecipeAll(Connection conn, List<Recipe> recipes) throws SQLException {
 		PreparedStatement pstmt = null;
@@ -93,44 +77,10 @@ public class RecipeDAO {
 		System.out.println("resultCntDAO : " + resultCnt);
 		return resultCnt;
 	}
-	public int insertIngredientAll(Connection conn, List<Ingredient> ingredients) throws SQLException {
-		PreparedStatement pstmt = null;
-		int resultCnt = 0;
-		
-		String sql = "insert into ingredient values(?, ?, ?, ?, ?)";
-		
-		pstmt = conn.prepareStatement(sql);
-		
-		
-		for(int i = 0; i < ingredients.size(); i++) {
-			Ingredient ingredient = ingredients.get(i);
-			
-			pstmt.setInt(1, ingredient.getRecipeCode());
-			pstmt.setString(2, ingredient.getIngName());
-			pstmt.setString(3, ingredient.getIngTypeName());
-			pstmt.setInt(4, ingredient.getIngTypeCode());
-			pstmt.setString(5, ingredient.getIngQty());
-			
-			pstmt.addBatch();
-		}
-		
-		int[] result = pstmt.executeBatch();
-		System.out.println("resultLength : " + result.length);
-		
-		for(int i = 0; i < result.length; i++) {
-			if(result[i] == -2) {
-				resultCnt++;
-			}
-		}
-		if(resultCnt == ingredients.size()) {
-			JDBCConnection.commit(conn);
-		}
-		
-		JDBCConnection.close(pstmt);
-		
-		System.out.println("resultCntDAO : " + resultCnt);
-		return resultCnt;
-	}
+
+	
+	
+	// ----------------------------- JSON 입력관련 메소드 끝 ---------------------------------------------
 	
 	public int getRecipeCount(Connection conn, String search) throws SQLException {
 		int cnt = 0;

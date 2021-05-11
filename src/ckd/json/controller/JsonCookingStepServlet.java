@@ -13,19 +13,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import ckd.recipe.service.RecipeService;
+import ckd.recipe.vo.CookingStep;
 import ckd.recipe.vo.Ingredient;
 
 /**
  * Servlet implementation class JsonServlet
  */
-@WebServlet("/jsonIngredient.do")
-public class JsonIngredientServlet extends HttpServlet {
+@WebServlet("/jsonCookingStep.do")
+public class JsonCookingStepServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public JsonIngredientServlet() {
+    public JsonCookingStepServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,40 +40,38 @@ public class JsonIngredientServlet extends HttpServlet {
 		String command = request.getParameter("command");
 //		// 만약 요청이 list라면?
 		if(command.equals("list")) {
-			response.sendRedirect("./json/jsonIngredient.jsp");
+			response.sendRedirect("./json/jsonCookingStep.jsp");
 		} else if(command.equals("listdb")) {
 			try {
-				new RecipeService().removeIngredientAll();
+				new RecipeService().removeCookingStepAll();
 				
-				String[] jsonIngredient = request.getParameterValues("jsonIngredient");
-				System.out.println("jsonIngredient : " + jsonIngredient);
+				String[] jsonCookingStep = request.getParameterValues("jsonCookingStep");
 				
-				List<Ingredient> ingredients = new ArrayList<Ingredient>();
+				List<CookingStep> cookingSteps = new ArrayList<CookingStep>();
 				
-				for(int i = 0; i < jsonIngredient.length; i++) {
-					String[] temp = jsonIngredient[i].split("@");
+				for(int i = 0; i < 4; i++) {
+					String[] temp = jsonCookingStep[i].split("@");
+					
 //					System.out.println(temp[i]);
+					CookingStep cookingStep = new CookingStep();
+					cookingStep.setRecipeCode(Integer.parseInt(temp[0]));
+					cookingStep.setCookingStep(Integer.parseInt(temp[1]));
+					cookingStep.setCookingDesc(temp[2]);
+					cookingStep.setCookingImage(temp[3]);
 					
-					Ingredient ingredient = new Ingredient();
-					ingredient.setRecipeCode(Integer.parseInt(temp[0]));
-					ingredient.setIngName(temp[1]);
-					ingredient.setIngTypeName(temp[2]);
-					ingredient.setIngTypeCode(Integer.parseInt(temp[3]));
-					ingredient.setIngQty(temp[4]);
-					
-					ingredients.add(ingredient);
+					cookingSteps.add(cookingStep);
 				}
 				
 
 //					int resultCnt = new RecipeService().regesterRecipeAll(recipes);
-					int resultCnt = new RecipeService().regesterIngredientAll(ingredients);
-					System.out.println("ingredients : " + ingredients.size());
+					int resultCnt = new RecipeService().regesterCookingStepAll(cookingSteps);
+					System.out.println("cookingSteps : " + cookingSteps.size());
 					System.out.println("resultCntServlet : " + resultCnt);
 					
-					if(resultCnt == ingredients.size()) {
-						jsResponse("db 저장성공", "./jsonIngredient.do?command=list", response);
+					if(resultCnt == cookingSteps.size()) {
+						jsResponse("db 저장성공", "./jsonCookingStep.do?command=list", response);
 					} else {						
-						jsResponse("db 저장실패", "./jsonIngredient.do?command=list", response);
+						jsResponse("db 저장실패", "./jsonCookingStep.do?command=list", response);
 					}
 					
 					
