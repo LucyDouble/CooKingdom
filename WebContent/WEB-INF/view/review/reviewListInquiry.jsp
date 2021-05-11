@@ -4,12 +4,18 @@
 <link href="css/deleteModal.css" rel="stylesheet" type="text/css">
 <!-- TODO -->
 <%-- Member m = (Member)session.getAttribute("member"); --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page isELIgnored="false" language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%
 	int recipeCode2 = Integer.parseInt(request.getParameter("recipeCode"));
 %>
+<hr>
+aaaaasddf
+${pageCntaaaaa }<br>
+<%= (String)request.getAttribute("pageCntaaaaa") %>
+<hr>
         <div class="tabBoard">
             <div class="tab">
                 <button class="tablinks active" onclick="openCont(event, 'review');">리뷰</button>
@@ -18,7 +24,7 @@
         </div>
         <!-- TODO -->
 	        <input type="hidden" name="email" value= "abc" id="email"/>
- 			<input type="hidden" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />
+ 			<input type="text" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />
         <div class="board" id="board">
             <div id="review" class="tabcontent">
 				
@@ -30,14 +36,14 @@
                     <div id="line"></div>
                     <!-- 각 리뷰의 목록을 보여주는 div-->
                     <c:if test="${empty reviewList}" >
-				       		첫번째 리뷰를 작성해 보세요!
+				       	첫번째 리뷰를 작성해 보세요!
 			        </c:if>
 			        <c:if test="${not empty reviewList}" >
 			        <c:forEach items="${reviewList}" var="r">             
                     <div class="review_Inq">         	
                         <table>
                             <tr>
-                                <td class="reviewTitle rnum">${r.reviewNo}</td>
+                                <td class="reviewTitle rnum"><input type="hidden" value="${r.reviewNo}" /></td>
                                 <td class="reviewTitle">
                                     <a href="#"><img src="http://placehold.it/50x80"></a>
                                 </td>
@@ -79,6 +85,7 @@
                     </div>
                     </c:forEach>
                     </c:if>
+                    <c:if test=" ${not empty reviewList}">
  					<div id= "pageCount">	
 	                    <c:if test="${startPage != 1 }">
 							<a href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${startPage-1}">이전</a> 
@@ -90,8 +97,9 @@
 							<a href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${endPage+1}">다음</a>
 						</c:if>
 					</div>
+					</c:if>
 					<br>
-                    <button type="button" id="writeReview" onclick= "window.location ='<%=request.getContextPath()%>/registerReview';">글쓰기</button>
+                    <button type="button" id="writeReview" onclick= "window.location ='<%=request.getContextPath()%>/registerReview?recipeCode=<%=recipeCode2%>';">글쓰기</button>
                 </form>  
             </div>
             
@@ -103,25 +111,52 @@
                     </div>
                     <div id="line"></div>
 			        	<div class="comment_Inq">
+        				<input type="hidden" name="commentNo" value=""  />
+        				<input type="hidden" name="commentDepth" value=""  />
+						<input type="hidden" name="commentGroup" value="1" id="commentGroup-" />
+						<input type="hidden" name="commentSorts" value=""  />
                         <table>
                             <tr>
-                                <td class="reviewTitle rwriter">
-                                    <span>김또비</span>
+                                <td class="cwriter">
+                                   	 김또비
                                 </td>
-                                <td class="reviewTitle rsub" id="rsubjs">
-                                    <span><a href="#">파래무침이라니!ㅋㅋㅋㅋㅋ</a></span>
+                                <td class="csub">
+                                   	파래무침이라니!ㅋㅋㅋㅋㅋ
                                 </td>
-                                <td class="reviewTitle rdate">
-                                    <span>2021-05-11 11:51:00</span>
+                                <td class="cdate">
+                                    2021-05-11 11:51:00
                                 </td>                        
                             </tr>
                         </table> 
-                        <div>
-                        	<button type="button">댓글쓰기</button>
-                        	<button type="button">수정</button>
-                        	<button type="button">삭제</button>
+                        <div class="commentBtn">
+                        	<button type="button" class="cbtn" onclick="goReple();" id="">댓글쓰기</button>
+                        	<button type="button" class="cbtn">수정</button>
+                        	<button type="button" class="cbtn">삭제</button>
                         </div>
                    	 	</div>	
+                   	 	<br><br>
+                   	 	<!-- 대댓글 -->
+                   	 	<div class="comment_Inq">
+                        <table>
+                            <tr>
+                                <td class="cwriter2">
+                                   	 김또비
+                                </td>
+                                <td class="csub2">
+                                   	파래무침이라니!ㅋㅋㅋㅋㅋ
+                                </td>
+                                <td class="cdate">
+                                    2021-05-11 11:51:00
+                                </td>                        
+                            </tr>
+                        </table> 
+                        <div class="commentBtn">
+                        	<button type="button" class="cbtn">수정</button>
+                        	<button type="button" class="cbtn">삭제</button>
+                        </div>
+                   	 	</div>	
+                   	 	
+                   	 	
                        <br><br>
                    <input type="text" id="commentInput" /><input type="button" value="글 등록" id="commentSubmit" onclick="goReview();">                 
                 </form>
@@ -129,8 +164,8 @@
         </div>
 		<jsp:include page="../modal/DeleteModal.jsp"></jsp:include>	  
 	</div>
+	<script type="text/javascript" src="js/reviewListInquiry2.js"></script>
 	<script type="text/javascript" src="js/reviewListInquiry.js"></script>
-	<script type="text/javascript" src="js/comment.js"></script>
 	<script type="text/javascript" src="js/reviewRemove.js"></script>
 	<script type="text/javascript" src="js/commentRegister.js"></script>
 </body>

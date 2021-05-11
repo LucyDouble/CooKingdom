@@ -26,6 +26,8 @@ function openCont(evt, cont) {
     evt.currentTarget.className += " active";
 }
 
+
+
 /*리뷰 내용이 보이고 안보이고~ */
 
  $("body").on("click", "[id^=rsub-]", function(event) {    
@@ -56,7 +58,9 @@ function openCont(evt, cont) {
 	}
 	
  });	
-	
+
+
+
 	
 	
 	

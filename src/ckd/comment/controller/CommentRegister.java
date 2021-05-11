@@ -41,10 +41,12 @@ public class CommentRegister extends HttpServlet {
 		String email = request.getParameter("email");
 		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
 		String commentContent = request.getParameter("commentContent");
-		
+		int commentGroup = Integer.parseInt(request.getParameter("commentGroup"));
+
 		comment.setEmail(email);
 		comment.setRecipeCode(recipeCode);
 		comment.setCommentContent(commentContent);
+		comment.setCommentGroup(commentGroup);
 		
 		int result = new CommentService().insertComment(comment);
 	

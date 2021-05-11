@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
+.comment_Inq .cwriter {
+    width: 100px;
+    padding-right : 40px;
+}
+.csub {
+    width: 300px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.cdate{
+    width: 120px;
+    position: absolute;
+    right : 0;
+}
+
+.comment_Inq .cwriter2 {
+    width: 100px;
+    padding-left : 60px;
+    padding-right : 40px;
+}
+.csub2 {
+    width: 300px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
 #commentInput {
 	width:680px;
 	height:50px;
@@ -16,4 +43,14 @@
 	cursor : pointer;
 	color : #fff;
 	border-radius: 12px;
+}
+.commentBtn {
+	position: absolute;
+	right : 0;
+}
+.cbtn{
+	outline : none;
+	background : none;
+	border : none;
+	cursor : pointer;
 }

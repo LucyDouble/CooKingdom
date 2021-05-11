@@ -73,7 +73,7 @@
 				data : formData,
 				success : function(data){
 					console.log(data);
-					window.location = "<%=request.getContextPath()%>/reviewListInquiry";
+					history.back();
 				},
 				error : function(request, status, error){
 					console.log(error);

@@ -17,6 +17,9 @@
 <%--
 	//TODO reviewSubjectrequest.getSession();
 --%>
+<%
+	int recipeCode2 = Integer.parseInt(request.getParameter("recipeCode"));
+%>
 <div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<div id="reviewReg">     
@@ -27,7 +30,7 @@
                 <!-- TODO -->
                 	<input type="hidden" name="email" value= "abc" id="email"/>
                 	<!-- ${param.email}-->
-                	<input type="hidden" name="recipeCode" value= "347"  id="recipeCode" />        
+                	<input type="text" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />        
                 	<!--  ${param.recipeCode}  -->	
                     <table>
                         <tr class="tr1">
@@ -63,6 +66,8 @@
 			formData.append('reviewPhoto',document.getElementById("reviewPhoto").files[0]);
 			formData.append('reviewContent',document.getElementById("reviewContent").value);
 			alert("글 등록 성공!");
+			var i = document.getElementById("recipeCode").value;
+			console.log(i);
 			
 			
 			$.ajax({
@@ -73,8 +78,17 @@
 	            contentType: false,
 				data : formData,
 				success : function(data){
-					console.log(data);
-					window.location = "<%=request.getContextPath()%>/reviewListInquiry";
+					$.ajax({
+						url : "<%=request.getContextPath()%>/recipeinquery.do",
+						type : "POST",
+						data : {
+							recipeCode : i
+						},
+						success : function(data){
+							console.log("잘갔음!");
+							history.back();
+						}
+					});
 				},
 				error : function(request, status, error){
 					console.log(error);

@@ -12,10 +12,10 @@ import ckd.review.vo.Review;
 
 public class ReviewService {
 
-	public List<Review> selectReviewList(int start, int end){
+	public List<Review> selectReviewList(int start, int end, int recipeCode){
 		List<Review> list = null;
 		Connection conn = JDBCConnection.getConnection();
-		list = new ReviewDAO().selectReviewList(conn, start, end);
+		list = new ReviewDAO().selectReviewList(conn, start, end, recipeCode);
 		JDBCConnection.close(conn);
 		return list;
 	}
@@ -45,10 +45,10 @@ public class ReviewService {
 		return result;
 	}
 	
-	public int getReviewTotalCount() {
+	public int getReviewTotalCount(int recipeCode) {
 		int cnt = 0;
 		Connection conn = JDBCConnection.getConnection();
-		cnt = new ReviewDAO().getReviewTotalCount(conn);
+		cnt = new ReviewDAO().getReviewTotalCount(conn, recipeCode);
 		return cnt;
 	}
 	

@@ -47,11 +47,15 @@ public class ReviewListInquiry extends HttpServlet {
 		final int pageSize = 3;  // 한페이지당 글 수
 		final int pageBlock = 5;  // 화면에 나타날 페이지 링크 수   dP) 화면 하단에 1 2 3 
 		
+		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
+//		System.out.println("recipeCode : "+ recipeCode);
+		
 		ReviewService rsv = new ReviewService();
-			
+		
+//		System.out.println("리뷰리스트서블릿 들어옴!");
 		
 		int cnt = 0;   // 총 글 개수
-		cnt = rsv.getReviewTotalCount();
+		cnt = rsv.getReviewTotalCount(recipeCode);
 	
 		/*페이지 조회*/
 		int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
@@ -84,19 +88,22 @@ public class ReviewListInquiry extends HttpServlet {
 		int startRnum = (currentPage-1)*pageSize +1;
 		int endRnum = startRnum + pageSize - 1;
 		if(endRnum > cnt) 
-			endRnum = cnt;
+			endRnum = cnt;			
+		
 		
 		List<Review> list = null;
-		//TODO  list조회시 어떤 레시피에 대한 리뷰인지 확인하는 recipeCode 던져줘야함. 
-		list =rsv.selectReviewList(startRnum, endRnum);
+
+		list =rsv.selectReviewList(startRnum, endRnum, recipeCode);
 		
-//		System.out.println("pageCnt : " + pageCnt);
-//		System.out.println("pageSize : " + pageSize);
-//		System.out.println("startRnum : " + startRnum);
-//		System.out.println("endRnum : " + endRnum);
-//		System.out.println("currentPage : " + currentPage);
-		
-		request.setAttribute("pageCnt", pageCnt);
+		System.out.println("pageCnt : " + pageCnt);
+		System.out.println("pageSize : " + pageSize);
+		System.out.println("startRnum : " + startRnum);
+		System.out.println("endRnum : " + endRnum);
+		System.out.println("currentPage : " + currentPage);
+		System.out.println("reviewList : " + list);
+		System.out.println("cnt : " + cnt);
+		System.out.println("[ejkim]");
+		request.setAttribute("pageCntaaaaa", pageCnt);
 		request.setAttribute("startPage", startPage);
 		request.setAttribute("endPage", endPage);
 		request.setAttribute("currentPage", currentPage);

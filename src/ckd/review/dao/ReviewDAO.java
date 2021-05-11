@@ -34,29 +34,36 @@ public class ReviewDAO {
 	}
 	
 	/*review page split*/
-	public List<Review> selectReviewList(Connection conn, int start, int end){
+	public List<Review> selectReviewList(Connection conn, int start, int end, int recipeCode){
 		List<Review> list = null;
 		String sql_1 ="(SELECT REVIEW_NO, NICKNAME, RECIPE_NAME, REVIEW_SUBJECT, REVIEW_CONTENT, REVIEW_PHOTO, REVIEW_DATE, HIT " + 
 				"FROM REVIEW LEFT JOIN USERS " + 
 				"ON review.email = users.email " + 
 				"LEFT JOIN RECIPE " + 
 				"ON review.recipe_code = recipe.recipe_code " + 
-				"where review.recipe_code = 347 " +  //TODO 
+				"where review.recipe_code = ? " +   
 				"ORDER BY REVIEW_NO DESC) D " ;
 		
 		String sql_2 = "(SELECT ROWNUM R, D.* FROM " + sql_1 +") " ;
 				
-		String sql = "SELECT * FROM" + sql_2 +"WHERE R >= ? AND R<= ?";
+		String sql = "SELECT * FROM " + sql_2 +" WHERE R >= ? AND R<= ?";
 
-		
+		System.out.println("리뷰리스트 다오 옴");
 		pstmt = null; rs = null;
 		
 		try {
+			System.out.println("dao recipeCode : "+ recipeCode);
+			System.out.println("dao start : "+ start);
+			System.out.println("dao end : "+ end);
+			System.out.println("sql : "+sql);
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, start);
-			pstmt.setInt(2, end);
+			pstmt.setInt(1, recipeCode);
+			pstmt.setInt(2, start);
+			pstmt.setInt(3, end);
 			rs = pstmt.executeQuery();
+			System.out.println("rs.next" + rs.next());
 			if(rs.next()) {
+				
 				list = new ArrayList<Review>();
 				do {
 					Review vo = new Review();
@@ -69,6 +76,7 @@ public class ReviewDAO {
 					vo.setReviewDate(rs.getDate("REVIEW_DATE"));
 					vo.setHit(rs.getInt("HIT"));
 					list.add(vo);
+					
 				}while(rs.next());
 			}
 		} catch (Exception e) {
@@ -163,14 +171,15 @@ public class ReviewDAO {
 	
 	
 	/*review total Count*/
-	public int getReviewTotalCount(Connection conn) {
+	public int getReviewTotalCount(Connection conn, int recipeCode) {
 		int cnt = 0;
-		String sql = "select COUNT(*) from review where review.recipe_code = 347";
+		String sql = "select COUNT(*) from review where review.recipe_code = ?";
 		
 
 		pstmt = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, recipeCode);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
 				cnt = rs.getInt(1);

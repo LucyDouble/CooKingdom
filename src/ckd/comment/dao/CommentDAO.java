@@ -83,6 +83,7 @@ public class CommentDAO {
 		int result = 0;
 		int commentDepth = 0;
 		int commentSorts = 0;
+		int commentGroup = 0;
 		
 		//COMMENT_NO
 		String sqlMaxBno = "select NVL(max(COMMENT_NO),0)+1 from COMMENTS";
@@ -93,13 +94,13 @@ public class CommentDAO {
 		
 		//대댓글 등록
 		String sqlUpdate = "UPDATE COMMENTS SET "
-				+ "COMMENT_DEPTH = 1 "
+				+ "COMMENT_DEPTH = 1 , SORTS = SORTS+1"
 				+ "WHERE COMMENT_NO <> COMMENT_GROUP AND COMMENT_GROUP =?";
 				
 		pstmt = null; rs= null;
 		
 		try {
-			//다음 bno 번호 붙이기
+			//다음  COMMENT_NO 번호 붙이기
 			pstmt = conn.prepareStatement(sqlMaxBno); 
 			rs = pstmt.executeQuery(); //sql문 돌려서
 			if(rs.next()) {
@@ -110,10 +111,20 @@ public class CommentDAO {
 			}
 			close();  // 다음에 나올 글쓰기 쿼리를 위해 기존 것을 삭제함.
 					
-//			if(comment.getCommentNo() != 0) {
-//				pstmt = conn.prepareStatement(sqlUpdate);
-//			}
+			if(comment.getCommentNo() != 0) {
+				pstmt = conn.prepareStatement(sqlUpdate);
+				pstmt.setInt(1, comment.getCommentGroup());
+				result = pstmt.executeUpdate();
+				close();
+				commentGroup = comment.getCommentGroup();
+				commentDepth = comment.getCommentDepth();
+				commentSorts = comment.getCommentSorts();
+			}else {
+				commentGroup = max;
+			}
 	
+			
+			//댓글쓰기
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, max);
 			pstmt.setString(2, comment.getEmail());
