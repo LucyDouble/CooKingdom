@@ -34,7 +34,7 @@ public class RecipeDAO {
 		PreparedStatement pstmt = null;
 		int resultCnt = 0;
 		
-		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		pstmt = conn.prepareStatement(sql);
 		
@@ -56,6 +56,7 @@ public class RecipeDAO {
 			pstmt.setString(12, recipe.getIngType());
 			pstmt.setString(13, recipe.getRecipeUrl());
 			pstmt.setInt(14, recipe.getLikes());
+			pstmt.setInt(15, recipe.getPrice());
 			
 			pstmt.addBatch();
 		}

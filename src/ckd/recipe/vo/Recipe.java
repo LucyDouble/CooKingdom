@@ -32,14 +32,15 @@ public class Recipe {
 	private String ingType;
 	private String recipeUrl;
 	private int likes;
+	private int price;
 	
 	@Override
 	public String toString() {
 		return "Recipe [recipeCode=" + recipeCode + ", recipeName=" + recipeName + ", typeCode=" + typeCode
 				+ ", typeCag=" + typeCag + ", recipeInfo=" + recipeInfo + ", recipeTypeCode=" + recipeTypeCode
 				+ ", recipeCag=" + recipeCag + ", cookingTime=" + cookingTime + ", calorie=" + calorie + ", recipeQty="
-				+ recipeQty + ", recipeLevel=" + recipeLevel + ", ingType=" + ingType + ", likes=" + likes
-				+ ", recipeUrl=" + recipeUrl + "]";
+				+ recipeQty + ", recipeLevel=" + recipeLevel + ", ingType=" + ingType + ", recipeUrl=" + recipeUrl
+				+ ", likes=" + likes + ", price=" + price + "]";
 	}
 
 	public int getRecipeCode() {
@@ -138,6 +139,14 @@ public class Recipe {
 		this.ingType = ingType;
 	}
 
+	public String getRecipeUrl() {
+		return recipeUrl;
+	}
+
+	public void setRecipeUrl(String recipeUrl) {
+		this.recipeUrl = recipeUrl;
+	}
+
 	public int getLikes() {
 		return likes;
 	}
@@ -146,14 +155,14 @@ public class Recipe {
 		this.likes = likes;
 	}
 
-	public String getRecipeUrl() {
-		return recipeUrl;
+	public int getPrice() {
+		return price;
 	}
 
-	public void setRecipeUrl(String recipeUrl) {
-		this.recipeUrl = recipeUrl;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	
-
+	
 }

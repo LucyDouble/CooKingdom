@@ -67,7 +67,7 @@ public class JsonRecipeServlet extends HttpServlet {
 					recipe.setIngType(temp[11]);
 					recipe.setRecipeUrl(temp[12]);
 					recipe.setLikes(0);
-					
+					recipe.setPrice(Integer.parseInt(temp[13]));
 					
 					recipes.add(recipe);
 				}
