@@ -1,3 +1,4 @@
+<%@page import="ckd.member.vo.User"%>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/reviewListInquiry.css" rel="stylesheet" type="text/css">
 <link href="css/comment.css" rel="stylesheet" type="text/css">
@@ -7,7 +8,10 @@
 <%@ page isELIgnored="false" language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%
+                User user = (User)session.getAttribute("User");
+				String email = user.getEmail();
+%>
 <%
 	int recipeCode2 = Integer.parseInt(request.getParameter("recipeCode"));
 %>
@@ -17,13 +21,13 @@
                 <button class="tablinks" onclick="openCont(event, 'comment');">댓글</button>
             </div>
         </div>
-        <!-- TODO -->
-	        <input type="hidden" name="email" value= "kimttobi@ttobi.com" id="email"/>
+	        <input type="hidden" name="email" value= <%=email %> id="email"/>
+	        
  			<input type="hidden" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />
         <div class="board" id="board">
             <div id="review" class="tabcontent">
 				
-                <form action="" name="frmList" >
+                <form id="frmReview">
  <!-- 리뷰 -->
                     <div id="title_txt">
                         <h3>리뷰 (<c:out value= "${cnt}" /> review)</h3>
@@ -31,7 +35,7 @@
                     <div id="line"></div>
                     <!-- 각 리뷰의 목록을 보여주는 div-->
          			<div id="rev">
-	    	            <div class="review_Inq" >         	
+	    	            <!--  <div class="review_Inq" >         	
 	                        <table>
 	                            <tr>
 	                                <td class="reviewTitle rnum"><input type="hidden" value="${r.reviewNo}" /></td>
@@ -71,28 +75,18 @@
 	                            </div>
 	                            <br>
 	                        </div>
-	                    </div>
+	                    </div>-->
                     </div>
-                    <c:if test=" ${not empty reviewList}">
  					<div id= "pageCount">	
-	                    <c:if test="${startPage != 1 }">
-							<a href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${startPage-1}">이전</a> 
-						</c:if>
-						<c:forEach begin="${startPage}" end="${endPage}" var="s" step="1">
-							<a class="focus${(currentPage == s)? 'Page' : ''}" href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${s}">${s}</a> 
-						</c:forEach>
-						<c:if test="${endPage < pageCnt }">
-							<a href="<%=request.getContextPath() %>/reviewListInquiry?pageNum=${endPage+1}">다음</a>
-						</c:if>
+ 
 					</div>
-					</c:if>
 					<br>
                     <button type="button" id="writeReview" onclick= "window.location ='<%=request.getContextPath()%>/registerReview?recipeCode=<%=recipeCode2%>';">글쓰기</button>
                 </form>  
             </div>
 <!-- 댓글 -->     
             <div id="comment"  class="tabcontent">
-                <form action="" name="frmComment">
+                <form " name="frmComment">
                     <div class="title_txt">
                         <h3>댓글( comment)</h3>
                     </div>

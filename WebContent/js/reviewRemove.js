@@ -4,9 +4,9 @@
 var rnoText = "";
 $("body").on("click", "[id^=rsub-]", function(event) {    
     var vId = this.id;
-	var v = document.getElementById(vId);
-	var rno = $(v).prev().prev().prev().prev().prev().prev();
-	rnoText = $(rno).text();
+	var rno = vId.split("rsub-")[1];
+	rnoText = rno;
+	
 });
 
 function goList(){
@@ -22,7 +22,8 @@ function goList(){
 		},
 		success : function(data){
 			console.log("성공!");
-			window.location = "reviewListInquiry";
+			//window.location = "/recipeinquery.do?recipeCode="+recipeCode+"";
+			location.reload();
 		},
 		error : function(request, status, error){
 			console.log(request);

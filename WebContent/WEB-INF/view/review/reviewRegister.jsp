@@ -1,3 +1,4 @@
+<%@page import="ckd.member.vo.User"%>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/reviewRegister.css" rel="stylesheet" type="text/css">
@@ -14,9 +15,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<%--
-	//TODO reviewSubjectrequest.getSession();
---%>
+<%
+        User user = (User)session.getAttribute("User");
+		String email = user.getEmail();
+%>
 <%
 	int recipeCode2 = Integer.parseInt(request.getParameter("recipeCode"));
 %>
@@ -28,7 +30,7 @@
             <div id="frmCS">
                 <form id="frm" enctype="multipart/form-data">
                 <!-- TODO -->
-                	<input type="hidden" name="email" value= "kimttobi@ttobi.com" id="email"/>
+                	<input type="hidden" name="email" value= <%=email %> id="email"/>
                 	<!-- ${param.email}-->
                 	<input type="hidden" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />        
                 	<!--  ${param.recipeCode}  -->	

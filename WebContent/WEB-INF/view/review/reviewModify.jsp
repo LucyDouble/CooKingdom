@@ -1,3 +1,4 @@
+<%@page import="ckd.member.vo.User"%>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/reviewRegister.css" rel="stylesheet" type="text/css">
@@ -13,8 +14,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<%-- TODO --%>
-<%-- Member m = (Member)session.getAttribute("member"); --%>
+<%
+                User user = (User)session.getAttribute("User");
+				String email = user.getEmail();
+%>
 <div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<div id="reviewReg">     
@@ -22,11 +25,9 @@
             <div id="line"></div>
             <div id="frmCS">
                 <form id="frm" enctype="multipart/form-data">
-                	<!-- ${param.email}-->
-                	<!--  ${param.recipeCode}  -->		 
                 	<input type="hidden" name="reviewNo" id="reviewNo" value="${reviewNo}" />
                 	<input type="hidden" name="recipeCode" id="recipeCode" value="${recipeCode}" />
-                	<input type="hidden" name="email" id="email" value="${email}" />
+                	<input type="hidden" name="email" id="email" value=<%=email %> />
                 	<input type="hidden" name="nickname" id="nickname" value="${nickname}" />
                     <table>
                         <tr class="tr1">
@@ -73,7 +74,7 @@
 				data : formData,
 				success : function(data){
 					console.log(data);
-					window.location="<%=request.getContextPath()%>/recipeinquery.do";
+					history.back();
 				},
 				error : function(request, status, error){
 					console.log(error);

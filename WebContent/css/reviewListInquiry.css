@@ -68,6 +68,9 @@
 }
 
 /*리뷰*/
+.review_Inq{
+	margin-top : 30px;
+}
 .reviewTitle{
    padding-left: 10px;
 }
@@ -138,4 +141,7 @@
     right: 0;
 }
 
-
+/*페이밍*/
+#pageCount{
+	margin-top : 20px;
+}

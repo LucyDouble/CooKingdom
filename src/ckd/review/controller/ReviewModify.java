@@ -40,6 +40,7 @@ public class ReviewModify extends HttpServlet {
 
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("레시피 수정서블릿1 옴");
 		ReviewService rsv = new ReviewService();
 		Review review = new Review();
 		
@@ -51,8 +52,6 @@ public class ReviewModify extends HttpServlet {
 		String reviewSubject = request.getParameter("reviewSubject");
 		String reviewContent = request.getParameter("reviewContent");
 
-		
-		
 		
 		request.setAttribute("reviewNo", reviewNo);
 		request.setAttribute("recipeCode", recipeCode);

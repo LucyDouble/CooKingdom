@@ -37,20 +37,9 @@ function openCont(evt, cont) {
 	console.log("num : "+ num);
 	var content = "review_content-"+num;
 	var contentSelector = "#"+content;
-	//console.log("con : "+$("#"+content).css("display"));
-	//var v = document.getElementById(vId);
-	//var vParent = $(this).parent().parent().parent().next().next();
-	//var pId = vParent.id;
-	//var p = document.getElementById(pId);
-	//var hit = $(v).next().next().next().next().next().next();
-	//var rno = $(v).prev().prev().prev().prev().prev().prev();
-	//var rnoText = $(rno).innerHTML;
-	//var rnoVal = $(rno).innerText;
-	//var hitTag = "#rev > div:nth-child("+num+") > table > tbody > tr > td.reviewTitle.rcnt > span";
-	//var hit = document.getElementById("hitTag").text;
-	//console.log("hitTag : "+hitTag);
-	//console.log("hit : "+hit);
 	
+	var hit = $(this).closest("table").find(".rcnt").children().text();
+	console.log("hit : "+ hit);
 	
 	if($(contentSelector).css("display") === "block"){
 		$(contentSelector).css("display","none");
@@ -60,9 +49,10 @@ function openCont(evt, cont) {
 		$.ajax({
 			url:"reviewHitUpdate",
 			type:"POST",
-			data: { reviewNo : rnoText},
+			data: { reviewNo : num},
 			success: function(data){				
 				$(hit).text(data);
+				//location.reload();
 			}
 	 });
 		

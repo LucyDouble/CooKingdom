@@ -49,6 +49,8 @@ public class ReviewHitUpdate extends HttpServlet {
 		
 		int reviewNo = Integer.parseInt(request.getParameter("reviewNo"));
 		
+//		System.out.println("hit가 가져간 reviewNo의 값은?  " + reviewNo);
+		
 		int hit = rsv.getReviewHit(reviewNo);
 		out.print(hit);
 		out.flush();
