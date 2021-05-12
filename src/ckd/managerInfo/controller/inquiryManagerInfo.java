@@ -29,7 +29,7 @@ public class inquiryManagerInfo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		request.getRequestDispatcher("/WEB-INF/view/managerInfo/managerSignup.jsp").forward(request, response); 
 	}
 
 	/**
@@ -38,12 +38,13 @@ public class inquiryManagerInfo extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Manager manager = new Manager();
+		int result = 0;
 		
 		String email = request.getParameter("email");
 		String name = request.getParameter("name");
 		String pwd = request.getParameter("pwd");
 		String rePwd = request.getParameter("rePwd");
-		String phone = request.getParameter("phone");
+		int phone = Integer.parseInt(request.getParameter("phone"));
 		String serial = request.getParameter("serial");
 		
 		manager.setEmail(email);
@@ -53,7 +54,7 @@ public class inquiryManagerInfo extends HttpServlet {
 		manager.setPhone(phone);
 		manager.setSerial(serial);
 		
-		int result = new managerManagementService().inquiryManagerInfo(manager);
+		result = new managerManagementService().inquiryManagerInfo(manager);
 		
 		if (result == 0) {
 			System.out.println("회원가입 실패");

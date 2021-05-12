@@ -1,4 +1,4 @@
-package ckd.managerInfo.controller;
+package ckd.login.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class modifyManagerInfo
+ * Servlet implementation class logout
  */
-@WebServlet("/modifyManagerInfo")
-public class modifyManagerInfo extends HttpServlet {
+@WebServlet("/logout")
+public class logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public modifyManagerInfo() {
+    public logout() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,14 +26,19 @@ public class modifyManagerInfo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/WEB-INF/view/managerInfo/managerModify.jsp").forward(request, response);
+		request.getSession().removeAttribute("User");
+		request.getSession().removeAttribute("Manager");
+		request.getSession().removeAttribute("Director");
+		request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

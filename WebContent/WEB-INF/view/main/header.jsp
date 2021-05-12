@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="ckd.member.vo.User"%>
+<%@ page import="ckd.member.vo.Manager" %>
+
 <header id="header">
             <div id="hamburgerM">
                 <a href="#"><img src="image/header/menu.png" alt=""></a>
@@ -10,7 +13,19 @@
             <ul id="my">
                 <li class="my"><a href="#"><img src="image/header/delivery.png"></a></li>
                 <li class="my"><a href="CartListInquiry"><img src="image/header/cart.png"></a></li>
-                <li class="my"><a href="#"><img src="image/header/myPage.png"></a></li>
+                <%
+                User user = (User)session.getAttribute("User");
+            	Manager manager = (Manager)session.getAttribute("Manager");
+            	Manager director = (Manager)session.getAttribute("Director"); 
+            	if (user == null && manager == null && director == null) {%>
+            		<li class="my"><a href="loginUser"><img src="image/header/myPage.png"></a></li>
+            	<%} else if (user != null) {%>
+            		<li class="my"><a href="modifyUserInfo"><img src="image/header/myPage.png"></a></li>
+            	<%} else if (manager != null) {%>
+            		<li class="my"><a href="modifyManagerInfo"><img src="image/header/myPage.png"></a></li>
+            	<%} else if (director != null) {%>
+            		<li class="my"><a href="modifyDirectorInfo"><img src="image/header/myPage.png"></a></li>
+            	<%}%>               
             </ul>
 </header>
 <nav id="nav">
@@ -21,8 +36,16 @@
                 <li class="menu"><a href="#">메뉴4</a></li>
                 <li class="menu"><a href="#">메뉴5</a></li>
             </ul>
-            <ul>
-                <li id="join"><a href="#">회원가입</a></li>
-                <li id="login"><a href="#">로그인</a></li>
+            <ul>	
+                <% if (user == null && manager == null && director == null) {%>
+               		<li id="join"><a href="inquiryUser">회원가입</a></li>
+                	<li id="login"><a href="loginUser">로그인</a></li>
+                <%} else if (user != null) {%>
+                	<li id="join"><a href="logout">로그아웃</a></li>
+                <%} else if (manager != null) {%>
+                	<li id="join"><a href="logout">로그아웃</a></li>
+                <%} else if (director != null) {%>
+                	<li id="join"><a href="logout">로그아웃</a></li>
+                <%}%>
             </ul>
 </nav>

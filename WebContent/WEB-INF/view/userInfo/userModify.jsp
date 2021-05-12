@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<jsp:include page="../main/header.jsp"></jsp:include>
 	<h5 style="text-align: center;">사용자 정보수정</h5>
 	<hr style="margin-bottom: 30px; width: 500px;">
 	<form action="#" method="POST">
@@ -43,7 +44,8 @@
 		</table>
 		<br> <input type="submit" value="정보수정" id="btn"> <input
 			type="button" value="회원탈퇴" id="btn">
-		</table>
+		
 	</form>
+	<jsp:include page="../main/footer.jsp"></jsp:include>
 </body>
 </html>
