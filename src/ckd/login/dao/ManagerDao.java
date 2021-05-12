@@ -32,8 +32,7 @@ public class ManagerDao {
 		String query = "select * from MANAGER where email=?";
 		
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
+
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1,  manager.getEmail());
 			rs = pstmt.executeQuery();
@@ -60,4 +59,29 @@ public class ManagerDao {
 		return result;
 	}
 	
+	public int checkPwd(Connection conn, Manager manager) {
+		
+		String query = "select * from MANAGER where email=? and password=?";
+		
+		try {
+			
+			System.out.println("getElmail = " + manager.getEmail());
+			System.out.println("getPwd = " + manager.getPwd());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, manager.getEmail());
+			pstmt.setString(2, manager.getPwd());
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				return 1;
+			} else {
+				return 0;
+			} 
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return -1;
+	}
 }

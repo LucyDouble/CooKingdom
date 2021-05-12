@@ -29,6 +29,7 @@ public class logout extends HttpServlet {
 		request.getSession().removeAttribute("User");
 		request.getSession().removeAttribute("Manager");
 		request.getSession().removeAttribute("Director");
+		System.out.println("로그아웃 되었습니다.");
 		request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
 
 	}

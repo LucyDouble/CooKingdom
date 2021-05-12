@@ -43,13 +43,13 @@
 				console.log(data);
 				console.log(data.result);
 				if (data.result == "fail") {
-					console.log("유저 비밀번호 불일치");
+					console.log("비밀번호 불일치");
 					document.getElementById("msg1").style.display = "none";
 					document.getElementById("msg2").style.display = "block";
 					flag = false;
 					console.log(flag);
 				} else {
-					console.log("유저 비밀번호 일치")
+					console.log("비밀번호 일치")
 					document.getElementById("msg1").style.display = "none";
 					document.getElementById("msg2").style.display = "none";
 					flag = true;

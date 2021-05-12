@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.simple.JSONObject;
 
 import ckd.login.service.loginService;
+import ckd.member.vo.Manager;
 import ckd.member.vo.User;
 
 /**
@@ -42,6 +43,7 @@ public class checkPwd extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		
 		User user = new User();
+		Manager manager = new Manager();
 		
 		String email = request.getParameter("email");
 		String pwd = request.getParameter("pwd");
@@ -49,17 +51,31 @@ public class checkPwd extends HttpServlet {
 		System.out.println("pwd : " + pwd);
 		user.setPwd(pwd);
 		user.setEmail(email);
+		manager.setPwd(pwd);
+		manager.setEmail(email);
 		
-		int result = new loginService().checkPwd(user);
+		int result1 = new loginService().checkUserPwd(user);
+		int result2 = new loginService().checkManagerPwd(manager);
+		int result3 = new loginService().checkDirectorPwd(manager);
 		
-		System.out.println("result = " + result);
+		
+		System.out.println("userResult = " + result1);
+		System.out.println("managerResult = " + result2);
+		System.out.println("directorResult = " + result3);
 		JSONObject jobj = new JSONObject();
-		if (result == 1) {
+		
+		if (result1 != 1 && result2 != 1 && result3 != 1) {
+			System.out.println("아이디 없음 or 비밀번호 불일치");
+			jobj.put("result", "fail");
+		} else if (result1 == 1) {
 			System.out.println("사용자 비밀번호 일치");
 			jobj.put("result", "ok");
-		} else if (result == 0) {
-			System.out.println("사용자 비밀번호 불일치");
-			jobj.put("result", "fail");
+		} else if (result2 == 1) {
+			System.out.println("관리자 비밀번호 일치");
+			jobj.put("result", "ok");
+		} else if (result3 == 1) {
+			System.out.println("책임자 비밀번호 일치");
+			jobj.put("result", "ok");
 		}
 		response.getWriter().println(jobj);
 		response.getWriter().flush();

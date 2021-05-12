@@ -63,5 +63,31 @@ public class DirectorDao {
 		}
 		return result;
 	}
+	
+	public int checkPwd(Connection conn, Manager manager) {
+		
+		String query = "select * from DiRECTOR where email=? and password=?";
+		
+		try {
+			
+			System.out.println("getEmail = " + manager.getEmail());
+			System.out.println("getPwd = " + manager.getPwd());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, manager.getEmail());
+			pstmt.setString(2, manager.getPwd());
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				return 1;
+			} else {
+				return 0;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally { 
+			close();
+		}
+		return -1;
+	}
 
 }

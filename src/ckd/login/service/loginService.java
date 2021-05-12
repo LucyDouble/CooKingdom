@@ -39,10 +39,26 @@ public class loginService {
 		return result;
 	}
 	
-	public int checkPwd(User user) {
+	public int checkUserPwd(User user) {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new UserDao().checkPwd(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int checkManagerPwd(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ManagerDao().checkPwd(conn, manager);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int checkDirectorPwd(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new DirectorDao().checkPwd(conn, manager);
 		JDBCConnection.close(conn);
 		return result;
 	}
