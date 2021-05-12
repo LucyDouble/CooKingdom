@@ -33,7 +33,7 @@ public class Main extends HttpServlet {
 			} else if(command.equals("recipeRegester")){
 				request.getRequestDispatcher("/WEB-INF/view/recipe/recipeRegister.jsp").forward(request, response);
 			}
-			
+		
 	}
 
 	/**
