@@ -15,18 +15,53 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
 	function login() {
-		var email = document.getElementById("email");
-		if (email.value == "") {
+		var email = document.getElementById("email").value;
+		var pwd = document.getElementById("pwd").value;
+		var flag = true;
+		console.log(email.value);
+		if (email == "") {
+			console.log("아이디 입력되지 않음");
+			document.getElementById("msg2").style.display = "none";
 			document.getElementById("msg1").style.display = "block";
-			console.log("이메일 없음");
 			return false;
 		} else {
+			console.log("아이디 입력되었음");
 			document.getElementById("msg1").style.display = "none";
-			console.log("이메일 있음");
 		}
-		var email = document.getElementById("email");
-		var pwd = document.getElementById("pwd");
-	
+		console.log("ajax 준비");
+		$.ajax({
+			type : "POST",
+			url : "checkPwd",
+			data : {
+				email : email,
+				pwd : pwd
+			},
+			dataType : "json",
+			async: false,
+			success : function(data) {
+				console.log("success 진입");
+				console.log(data);
+				console.log(data.result);
+				if (data.result == "fail") {
+					console.log("유저 비밀번호 불일치");
+					document.getElementById("msg1").style.display = "none";
+					document.getElementById("msg2").style.display = "block";
+					flag = false;
+					console.log(flag);
+				} else {
+					console.log("유저 비밀번호 일치")
+					document.getElementById("msg1").style.display = "none";
+					document.getElementById("msg2").style.display = "none";
+					flag = true;
+					console.log(flag)
+				}
+			},
+			error : function(error) {
+				console.log("에러 발생!")
+			}
+		});
+		console.log(flag);
+		return flag;
 	}
 </script>
 <body>
