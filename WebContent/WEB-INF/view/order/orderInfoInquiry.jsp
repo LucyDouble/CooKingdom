@@ -2,7 +2,7 @@
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/orderInfoInquiry.css" rel="stylesheet" type="text/css">
-
+<%@ page import="ckd.member.vo.User"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -14,6 +14,9 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+<%
+	User user = (User)session.getAttribute("User");
+%>
 	<div class="wrapper">
 
 		<jsp:include page="../main/header.jsp"></jsp:include>
@@ -32,24 +35,24 @@
 				<table>
 					<tr>
 						<th>이름</th>
-						<td>${ordermember.name }</td>
+						<td id="userName"><%= user.getName() %></td>
 					</tr>
 					<tr>
 						<th>휴대폰번호</th>
-						<td>${ordermember.phone }</td>
+						<td id="userPhone"><%= user.getPhone() %></td>
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td>${ordermember.email }</td>
+						<td id="userEmail"><%= user.getEmail() %>}</td>
 					</tr>
 					<tr>
 						<th>주소</th>
-						<td>${ordermember.address }</td>
+						<td id="userAddress"><%= user.getAddress() %></td>
 					</tr>
 				</table>
 
 				<hr id="bhr">
-				<div id="order_head2">
+				<div class="order_head2">
 					<strong>배송정보</strong> <input type="checkbox" id="check_orderer" class="orderer_info" /><label
 						for="check_orderer"><span></span>주문자 정보와 동일</label>
 				</div>
@@ -75,7 +78,7 @@
 				</table>
 
 				<hr id="bhr">
-				<div id="order_head2">
+				<div class="order_head2">
 					<strong>주문상품</strong>
 				</div>
 				<hr>
@@ -109,7 +112,7 @@
 				</table>
 
 				<hr id="bhr">
-				<div id="order_head2">
+				<div class="order_head2">
 					<strong>결제방법</strong>
 				</div>
 				<hr>
@@ -199,53 +202,7 @@
 		</div>
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
-	<script>
-	function defaultBtn() {
-		var tabcontent = document.getElementsByClassName("tabcontent");
-		var tablinks = document.getElementsByClassName("tablinks");
-		tabcontent[0].style.display = "block";
-		tablinks[0].style.display = "block";
-		tablinks[0].className += " active";
-	}
-	
-	defaultBtn();
-	
-	function payoption(evt, payName) {
-	  	var i, tabcontent, tablinks;
-	  	tabcontent = document.getElementsByClassName("tabcontent");
-	  	
-	  	for (i = 0; i < tabcontent.length; i++) {
-	    	tabcontent[i].style.display = "none";
-	  	}
-	  	
-	  	tablinks = document.getElementsByClassName("tablinks");
-	  	
-	  	for (i = 0; i < tablinks.length; i++) {
-	    	tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  	}
-	  	
-	  	document.getElementById(payName).style.display = "block";
-	  	
-	  	evt.currentTarget.className += " active";
-	}
-	
-	// 배송정보 주문자 동일 체크박스
-	$("#check_orderer").click(function(){
-		var chk = $(this).is(":checked");//.attr('checked');
-		if(chk) {
-			$("#buyer_name").val('${ordermember.name }'); 
-			$("#buyer_phone").val('${ordermember.phone }'); 
-			$("#buyer_email").val('${ordermember.email }'); 
-			$("#buyer_address").val('${ordermember.address }'); 
-		}
-		else {
-			$("#buyer_name").val(''); 
-			$("#buyer_phone").val(''); 
-			$("#buyer_email").val(''); 
-			$("#buyer_address").val(''); 
-		}
-	});
 
-	</script>
+	<script src="js/orderInfoInquiry.js"></script>
 </body>
 </html>

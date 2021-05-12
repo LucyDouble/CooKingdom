@@ -1467,6 +1467,14 @@
             "COOKING_NO": 5
         },
         {
+            "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2015/06/01/e42ab7dd5fc4d40ac65d1a93f801e0d51.jpg",
+            "STEP_TIP": null,
+            "RN": 1,
+            "RECIPE_ID": 320,
+            "COOKING_DC": "완성!!!!!!!",
+            "COOKING_NO": 6
+        },
+        {
             "STRE_STEP_IMAGE_URL": "https://recipe1.ezmember.co.kr/cache/recipe/2016/03/23/94eb9ee2e763e1a6d9fc31611af4efbd1.jpg",
             "STEP_TIP": null,
             "RN": 1,
@@ -3423,7 +3431,7 @@
             "STEP_TIP": null,
             "RN": 1,
             "RECIPE_ID": 180330,
-            "COOKING_DC": "믹서에 갈기 으깬 고구마를 믹서기 볼에 모두 넣어주시고 꿀 1스푼, 생크림 80ml를 넣은 후 곱게 갈아주세요. 그리고 믹서볼에 담긴 채로 냉장고에 30분 이상 냉장고에서 휴지 후 사용하시면 됩니다. ' 묽은 농도를 단단하게 하기 위함이에요 '",
+            "COOKING_DC": "믹서에 갈기 으깬 고구마를 믹서기 볼에 모두 넣어주시고 꿀 1스푼, 생크림 80ml를 넣은 후 곱게 갈아주세요. 그리고 믹서볼에 담긴 채로 냉장고에 30분 이상 냉장고에서 휴지 후 사용하시면 됩니다. 묽은 농도를 단단하게 하기 위함이에요 ",
             "COOKING_NO": 3
         },
         {

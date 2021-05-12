@@ -8,7 +8,7 @@
                 <a href="#"><img src="image/header/menu.png" alt=""></a>
             </div>
             <div id="logo">
-                <a href="<%=request.getContextPath()%>/cookingDom"><img src="image/header/logo.png"  ></a>
+                <a href="<%=request.getContextPath()%>/cookingDom?command=Main"><img src="image/header/logo.png"  ></a>
             </div>
             <ul id="my">
                 <li class="my"><a href="#"><img src="image/header/delivery.png"></a></li>

@@ -102,8 +102,6 @@
   padding-left: 12px;
   width: 30px;
   height: 20px;
-  font-family: "NanumR";
-  src: url("../font/NanumBarunpenR.ttf");
 }
 .CountBtn_up {
   position: absolute;
@@ -168,14 +166,3 @@
   cursor: pointer;
 }
 
-#total_price {
-	border:none; 
-	text-align:right;
-	font-family: "NanumR";
-    src: url("../font/NanumBarunpenR.ttf");
-    font-size: 20px;
-}
-
-#total_price:focus {
-	outline:none;
-}

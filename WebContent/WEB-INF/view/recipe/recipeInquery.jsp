@@ -18,50 +18,47 @@
 	<div class="wrapper">
 		<jsp:include page="../main/header.jsp"></jsp:include>
 
-		<form id="recipe_frm">  <!-- [사용자email, 요리 대표이미지url, 밀키트명, 수량, 가격] form태그와 js이용해서 post로 전송  -->
-			<input type="hidden" name="email" value="kimttobi@ttob.com">
+		<form id="recipe_frm">  <!-- [요리 대표이미지url, 밀키트명, 수량, 가격] form태그와 js이용해서 get방식으로 전송  -->
 			<input type="hidden" name="imgURL" value="${recipeInquery.recipeUrl }">
 			<input type="hidden" name="mkName" value="${recipeInquery.recipeName }">
 			<!-- name="mkNum" value="0"  98행에 있는거 읽어옴 -->
 			<!-- name="total_price" value="0" 113행에 있는거 읽어옴-->
-			
-			
-		<div id="recipeInquery">
-			<header class="recipeInquery_header">
-				<img
-					src="${recipeInquery.recipeUrl }"
-					alt="img">
-				<div>
-					<span>${recipeInquery.recipeName }</span> <span>${recipeInquery.recipeInfo }</span>
-				</div>
-			</header>
 
-			<nav class="recipeInquery_nav">
-				<div>
-					<ul>
-						<li>${recipeInquery.recipeCag }</li>
-						<li>${recipeInquery.typeCag }</li>
-						<li>${recipeInquery.recipeQty }</li>
-						<li>${recipeInquery.cookingTime }</li>
-						<li>${recipeInquery.calorie }</li>
-						<li>${recipeInquery.recipeLevel }</li>
-					</ul>
-					<ul>
-						<li>url복사</li>
-						<li><i class="far fa-heart"></i></li>
-					</ul>
-				</div>
-			</nav>
 
-			<main class="recipeInquery_main">
-				<div>
-					<ul>
-                    <li><strong>필요 재료</strong></li>
-                    <c:forEach items="${ingredientInquery }" var="v">
-                    <li>${v.ingTypeName } : ${v.ingName }  ${v.ingQty }</li>
-                    </c:forEach>
-					</ul>
-				</div>
+			<div id="recipeInquery">
+				<header class="recipeInquery_header">
+					<img src="${recipeInquery.recipeUrl }" alt="img">
+					<div>
+						<span>${recipeInquery.recipeName }</span> <span>${recipeInquery.recipeInfo }</span>
+					</div>
+				</header>
+
+				<nav class="recipeInquery_nav">
+					<div>
+						<ul>
+							<li>${recipeInquery.recipeCag }</li>
+							<li>${recipeInquery.typeCag }</li>
+							<li>${recipeInquery.recipeQty }</li>
+							<li>${recipeInquery.cookingTime }</li>
+							<li>${recipeInquery.calorie }</li>
+							<li>${recipeInquery.recipeLevel }</li>
+						</ul>
+						<ul>
+							<li>url복사</li>
+							<li><i class="far fa-heart"></i></li>
+						</ul>
+					</div>
+				</nav>
+
+				<main class="recipeInquery_main">
+					<div>
+						<ul>
+							<li><strong>필요 재료</strong></li>
+							<c:forEach items="${ingredientInquery }" var="v">
+								<li>${v.ingTypeName }: ${v.ingName } ${v.ingQty }</li>
+							</c:forEach>
+						</ul>
+					</div>
 
 				<div>
 					<div>
@@ -107,16 +104,19 @@
 		<br>
 		<br>
 		
-		<div class="recipeInquery_content">
-			<c:forEach items="${cookingStepInquery }" var="v">		
-	        	<img src="${v.CookingImage }" alt="img">
-	        	<p>${v.CookingDesc }</p>
+		
+		<c:forEach items="${cookingStepInquery }" var="v">
+			<div class="recipeInquery_content">		
+		        	<img src="${v.cookingImage }" alt="img">
+		        	<p>${v.cookingDesc }</p>
+			</div>
 			</c:forEach>
-    	</div>
-		<jsp:include page="../review/reviewListInquiry.jsp">
-			<jsp:param name="recipeCode" value="${recipeInquery.recipeCode }" />
-		</jsp:include>
+
+			<jsp:include page="../review/reviewListInquiry.jsp">
+				<jsp:param name="recipeCode" value="${recipeInquery.recipeCode }" />
+			</jsp:include>
 		</form>
+
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
 	

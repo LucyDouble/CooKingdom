@@ -47,19 +47,24 @@ public class JsonCookingStepServlet extends HttpServlet {
 				
 				String[] jsonCookingStep = request.getParameterValues("jsonCookingStep");
 				
+				System.out.println(jsonCookingStep.length);
 				List<CookingStep> cookingSteps = new ArrayList<CookingStep>();
 				
-				for(int i = 0; i < 4; i++) {
-					String[] temp = jsonCookingStep[i].split("@");
+				try {
 					
-//					System.out.println(temp[i]);
-					CookingStep cookingStep = new CookingStep();
-					cookingStep.setRecipeCode(Integer.parseInt(temp[0]));
-					cookingStep.setCookingStep(Integer.parseInt(temp[1]));
-					cookingStep.setCookingDesc(temp[2]);
-					cookingStep.setCookingImage(temp[3]);
-					
-					cookingSteps.add(cookingStep);
+					for(int i = 0; i < jsonCookingStep.length; i++) {
+						String[] temp = jsonCookingStep[i].split("@");
+						
+						CookingStep cookingStep = new CookingStep();
+						cookingStep.setRecipeCode(Integer.parseInt(temp[0]));
+						cookingStep.setCookingStep(Integer.parseInt(temp[1]));
+						cookingStep.setCookingDesc(temp[2]);
+						cookingStep.setCookingImage(temp[3]);
+						
+						cookingSteps.add(cookingStep);
+					}
+				} catch(ArrayIndexOutOfBoundsException e) {
+					e.printStackTrace();
 				}
 				
 
