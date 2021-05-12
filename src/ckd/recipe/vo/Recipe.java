@@ -33,6 +33,7 @@ public class Recipe {
 	private String recipeUrl;
 	private int likes;
 	private int price;
+	private String rfilePath;
 	
 	@Override
 	public String toString() {
@@ -40,7 +41,7 @@ public class Recipe {
 				+ ", typeCag=" + typeCag + ", recipeInfo=" + recipeInfo + ", recipeTypeCode=" + recipeTypeCode
 				+ ", recipeCag=" + recipeCag + ", cookingTime=" + cookingTime + ", calorie=" + calorie + ", recipeQty="
 				+ recipeQty + ", recipeLevel=" + recipeLevel + ", ingType=" + ingType + ", recipeUrl=" + recipeUrl
-				+ ", likes=" + likes + ", price=" + price + "]";
+				+ ", likes=" + likes + ", price=" + price + ", rfilePath=" + rfilePath + "]";
 	}
 
 	public int getRecipeCode() {
@@ -162,7 +163,14 @@ public class Recipe {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
+
+	public String getRfilePath() {
+		return rfilePath;
+	}
+
+	public void setRfilePath(String rfilePath) {
+		this.rfilePath = rfilePath;
+	}
 	
 	
 }

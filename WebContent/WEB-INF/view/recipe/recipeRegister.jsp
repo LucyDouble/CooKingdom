@@ -54,7 +54,13 @@
 	                        </td>
 	                    </tr>
 	                    <tr>
-	                        <th>음식 종류</th>
+	                        <th>나라</th>
+	                        <td>
+	                            <input required type="text" name="recipeType" placeholder="내용을 입력하세요">
+	                        </td>
+	                    </tr>
+	                    <tr>
+	                        <th>종류</th>
 	                        <td>
 	                            <input required type="text" name="recipeType" placeholder="내용을 입력하세요">
 	                        </td>

@@ -12,27 +12,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-	.recipeInquery_content {
-  padding: 0 60px 0 60px;
-  display: flex;
-  justify-content: center;
-}
-
-.recipeInquery_content img {
-  margin-bottom: 90px;
-  width: 500px;
-  height: 500px;
-}
-
-.recipeInquery_content p {
-  margin: 0;
-  padding: 0 0 0 70px;
-  width: 900px;
-  font-size: 25px;
-  line-height: 70px;
-}
-</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>

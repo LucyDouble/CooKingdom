@@ -36,35 +36,7 @@
 		});
 	});
 </script>
-<style>
-.goodsList_card_inner {
-	position: relative;
-}
 
-#likeBtn {
-	position: absolute;
-	bottom: 8px;
-	right: 5px;
-}
-
-.goodsList_card img {
-	width: 300px;
-	height: 400px;
-}
-
-.goodsList_card button {
-	outline: none;
-	background: white;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 7px;
-	font-weight: bold;
-	padding: 5px;
-}
-
-.goodsList_card i {
-	cursor: pointer;
-}
-</style>
 </head>
 <body>
 	<div class="wrapper">

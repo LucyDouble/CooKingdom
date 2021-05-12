@@ -65,10 +65,14 @@ public class RecipeRegester extends HttpServlet {
 		
 		Recipe vo = new Recipe();
 		vo.setRecipeCode(Integer.parseInt(request.getParameter("recipeCode")));
-//		vo.setRecipeInfo(recipeInfo);
-//		vo.setRecipeQty(recipeQty);
-//		vo.setCalorie(calorie);
-//		vo.set
+		vo.setRecipeInfo(request.getParameter("recipeName"));
+		vo.setRecipeQty(request.getParameter("recipeQty"));
+		vo.setCalorie(request.getParameter("calorie"));
+		vo.setTypeCag(request.getParameter("typeCag"));
+		vo.setRecipeCag(request.getParameter("recipeCag"));
+		vo.setRecipeLevel(request.getParameter("recipeLevel"));
+		vo.setCookingTime(request.getParameter("cookingTime"));
+		// 재료
 	}
 
 	/**
