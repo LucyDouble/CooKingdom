@@ -6,7 +6,7 @@ public class Manager {
 	private String name;
 	private String pwd;
 	private String rePwd;
-	private String phone;
+	private int phone;
 	private String serial;
 	
 	public String getEmail() {
@@ -33,10 +33,10 @@ public class Manager {
 	public void setRePwd(String rePwd) {
 		this.rePwd = rePwd;
 	}
-	public String getPhone() {
+	public int getPhone() {
 		return phone;
 	}
-	public void setPhone(String phone) {
+	public void setPhone(int phone) {
 		this.phone = phone;
 	}
 	public String getSerial() {

@@ -32,15 +32,18 @@ public class inquiryUserInfo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		request.getRequestDispatcher("/WEB-INF/view/userInfo/userSignup.jsp").forward(request, response); 
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
 		
 		User user = new User();
+		int result = 0;
 		
 		String email = request.getParameter("email");
 		String name = request.getParameter("name");
@@ -48,7 +51,7 @@ public class inquiryUserInfo extends HttpServlet {
 		String birth = request.getParameter("birth");
 		String pwd = request.getParameter("pwd");
 		String rePwd = request.getParameter("rePwd");
-		String phone = request.getParameter("phone");
+		int phone = Integer.parseInt(request.getParameter("phone"));
 		String address = request.getParameter("address");
 		
 		user.setEmail(email);
@@ -60,7 +63,7 @@ public class inquiryUserInfo extends HttpServlet {
 		user.setPhone(phone);
 		user.setAddress(address);
 		
-		int result = new userManagementService().inquiryUserInfo(user);
+		result = new userManagementService().inquiryUserInfo(user);
 		
 		if (result == 0) {
 			System.out.println("회원가입 실패");

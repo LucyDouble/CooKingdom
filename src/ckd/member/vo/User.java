@@ -10,7 +10,7 @@ public class User {
 	private String birth;
 	private String pwd;
 	private String rePwd;
-	private String phone;
+	private int phone;
 	private String address;
 	
 	public String getEmail() {
@@ -49,10 +49,10 @@ public class User {
 	public void setRePwd(String rePwd) {
 		this.rePwd = rePwd;
 	}
-	public String getPhone() {
+	public int getPhone() {
 		return phone;
 	}
-	public void setPhone(String phone) {
+	public void setPhone(int phone) {
 		this.phone = phone;
 	}
 	public String getAddress() {
