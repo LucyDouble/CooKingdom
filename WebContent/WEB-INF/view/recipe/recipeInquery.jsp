@@ -86,7 +86,12 @@
 							</tr>
 							<tr>
 								<th class="paybill_total">총 주문 금액</th>
-								<td class="paybill_total_price"><span><input type="text" value="0" readonly id="total_price" name="total_price" size="8" >원</span></td>
+								<td class="paybill_total_price">
+									<div style="white-space:nowrap">
+										<input type="text" value="0" readonly id="total_price" name="total_price" size="8" class="test" >
+										<label for="total_price">원</label>
+									</div>
+								</td>
 							</tr>
 						</table>
 					</div>

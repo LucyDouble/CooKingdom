@@ -28,12 +28,16 @@ function count(type)  {
 
 //구매하기 버튼
 function order() {
+	alert('로그인이 되어있지 않으면 오류!');
+	getOrder();
+};
+
+function getOrder() {
 	var frm = document.getElementById("recipe_frm");
 	frm.action="./orderInfoInquiry";
 	frm.method="get";
 	frm.submit();
-};
-
+}
 
 
 //장바구니 버튼

@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>주문결제</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -20,12 +20,14 @@
 	<div class="wrapper">
 
 		<jsp:include page="../main/header.jsp"></jsp:include>
-
+		
+		<form id="orderInfo_frm">
+		
 		<div class="order_head1">
 			<h2>주문결제</h2>
 		</div>
 
-		<div class="order_wrap">
+		<div class="orderInfoInquiry">
 			<div class="order_content">
 				<hr id="bhr">
 				<div id="order_head2">
@@ -90,14 +92,14 @@
 							src="${imgURL }" alt="http://ipsumimage.appspot.com/100x100" width="100" /></td>
 						<td width="300">${mkName }</td>
 						<td width="400">${mkNum }개</td>
-						<td width="400">${total_price }원</td>
+						<td width="400" class="orderPrice">${total_price }원</td>
 					</tr>
 					<tr>
 						<td width="100"><img
 							src="http://ipsumimage.appspot.com/100x100" /></td>
 						<td width="300">밀키트명1</td>
 						<td width="400">1개</td>
-						<td width="400">20,000원</td>
+						<td width="400" class="orderPrice">20000원</td>
 					</tr>
 				</table>
 				<hr>
@@ -107,7 +109,7 @@
 							src="http://ipsumimage.appspot.com/100x100" /></td>
 						<td width="300">재료명2</td>
 						<td width="400">3개</td>
-						<td width="400">30,000원</td>
+						<td width="400" class="orderPrice">30000원</td>
 					</tr>
 				</table>
 
@@ -179,7 +181,7 @@
 					<table class="paybill">
 					<tr>
 						<th>주문 금액</th>
-						<td class="paybill_right">50,000원</td>
+						<td class="paybill_right" id="sumPrice">50,000원</td>
 					</tr>
 					<tr>
 						<th>상품 할인 금액</th>
@@ -187,19 +189,20 @@
 					</tr>
 					<tr>
 						<th>배송비</th>
-						<td class="paybill_right">2,500원</td>
+						<td class="paybill_right">2500원</td>
 					</tr>
 					<tr>
 						<th class="paybill_total">총 주문 금액</th>
-						<td class="paybill_total_price"><strong>52,500원</strong></td>
+						<td class="paybill_total_price" id="sumPriceShip"><strong>52,500원</strong></td>
 					</tr>
 					</table>
 					</div>
 					<br>
-					<button class="payBtn">결제하기</button>
+					<button class="payBtn" onClick="getOrderList();">결제하기</button>
 				</div>
 			</div>
 		</div>
+		</form>
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
 

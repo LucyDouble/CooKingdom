@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="<%= request.getContextPath() %>/cookingDom?command=Main">메인페이지로 이동</a>
+
+	<script>
+	goMain();
+	
+	function goMain() {
+		var link = '<%= request.getContextPath() %>/cookingDom?command=Main';
+		location.href=link;
+	};
+	</script>
 </body>
 </html>

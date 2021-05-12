@@ -102,6 +102,8 @@
   padding-left: 12px;
   width: 30px;
   height: 20px;
+  font-family: "NanumR";
+  src: url("../font/NanumBarunpenR.ttf");
 }
 .CountBtn_up {
   position: absolute;
@@ -153,13 +155,27 @@
   line-height: 70px;
   font-size: 20px;
   text-align: right;
+  font-weight: bold;
+}
+
+#total_price {
+	border:none;
+	font-family: "NanumB";
+    src: url("../font/NanumBarunpenB.ttf");
+    font-size: 20px;
+  	text-align: right;
+  	font-weight: bold;
+}
+
+#total_price:focus {
+	outline:none;
 }
 
 .payBtn {
   background-color: #6e8c03;
   color: white;
   padding: 9px 0px;
-  width: 230px;
+  width: 250px;
   font-size: 17px;
   border: none;
   border-radius: 10px;

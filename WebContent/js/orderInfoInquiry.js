@@ -48,3 +48,30 @@ $("#check_orderer").click(function(){
 		$("#buyer_address").val(''); 
 	}
 });
+
+function sumPrice() {
+	var i, orderPrice, sum, sumPrice, sumPriceShip;
+	orderPrice = document.getElementsByClassName("orderPrice");
+	sum = 0;
+	sumPrice = document.getElementById("sumPrice");
+	sumPriceShip = document.getElementById("sumPriceShip");
+	
+	for(i=0;i<orderPrice.length;i++ ) {
+		sum += parseInt(orderPrice[i].innerText);
+	}
+	
+	sumPrice.innerText = sum+'원';
+	sumPriceShip.innerText = (sum+2500)+'원';
+};
+
+sumPrice();
+
+
+function getOrderList() {
+	var frm = document.getElementById("orderInfo_frm");
+	frm.action="./orderListInquiry";
+	frm.method="get";
+	frm.submit();
+};
+
+
