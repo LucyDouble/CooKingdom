@@ -106,7 +106,7 @@
 						<table class="paybill">
 							<tr>
 								<th>밀키트 가격</th>
-								<td class="paybill_right" id="mealkit_price">10000원</td>
+								<td class="paybill_right" id="mealkit_price">${recipeInquery.price }원</td>
 							</tr>
 							<tr>
 								<th class="paybill_total">총 주문 금액</th>

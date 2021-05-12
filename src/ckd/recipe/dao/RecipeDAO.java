@@ -162,6 +162,7 @@ public class RecipeDAO {
 				vo.setIngType(rs.getString("ing_type"));
 				vo.setLikes(rs.getInt("likes"));
 				vo.setRecipeUrl(rs.getString("recipe_url"));
+				vo.setPrice(rs.getInt("price"));
 				
 				list.add(vo);
 			} while(rs.next());
@@ -200,6 +201,7 @@ public class RecipeDAO {
 			vo.setIngType(rs.getString("ing_type"));
 			vo.setLikes(rs.getInt("likes"));
 			vo.setRecipeUrl(rs.getString("recipe_url"));
+			vo.setPrice(rs.getInt("price"));
 		}
 		
 		JDBCConnection.close(rs);
