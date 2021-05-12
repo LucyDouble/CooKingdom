@@ -78,8 +78,6 @@ public class UserDao {
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			System.out.println("getEmail = " + user.getEmail());
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, user.getEmail());
@@ -104,8 +102,6 @@ public class UserDao {
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			System.out.println("getNickName = " + user.getNickName());
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, user.getNickName());
@@ -127,13 +123,26 @@ public class UserDao {
 	public int ModifyUserInfo(Connection conn, User user) {
 		int result = 0;
 		
-		if (user.getEmail() != null) {
+		if (user.getEmail() != "") {
 			System.out.println("이메일 값이 있습니다");
-			String queryEmail = "update USERS set EMAIL=?";
+			String queryEmail = "update USERS set EMAIL=? where PASSWORD=?";
+			try {
+				System.out.println("email : " + user.getEmail());
+				pstmt = conn.prepareStatement(queryEmail);
+				pstmt.setString(1, user.getEmail());
+				pstmt.setString(2, user.getPwd());
+				
+				result = pstmt.executeUpdate();
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				close();
+			}
+			return result;
 		} else {
 			System.out.println("이메일 값이 없습니다.");
-		}
-		return result;
+		} 
+		return result; 
 	}
 
 }

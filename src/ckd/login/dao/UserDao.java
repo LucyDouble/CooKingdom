@@ -61,8 +61,32 @@ public class UserDao {
 		} finally {
 			close();
 		}
-		return result;
-		
+		return result;	
 	}
 	
+	public int checkPwd(Connection conn, User user) {
+		
+		String query = "select * from USERS where email=? and password=?";
+		
+		try {
+			
+			System.out.println("getEmil = " + user.getEmail());
+			System.out.println("getPwd = " + user.getPwd());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getEmail());
+			pstmt.setString(2, user.getPwd());
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				return 1;
+			} else {
+				return 0;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return -1;
+	}
 }

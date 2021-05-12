@@ -1,6 +1,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/login.css?ver=1.0" rel="stylesheet" type="text/css">
+<link href="css/login.css?ver=1.1" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <%@ page import="ckd.member.vo.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -18,12 +18,15 @@
 		var email = document.getElementById("email");
 		if (email.value == "") {
 			document.getElementById("msg1").style.display = "block";
-			alert("아이디를 입력하세요.");
+			console.log("이메일 없음");
 			return false;
 		} else {
 			document.getElementById("msg1").style.display = "none";
+			console.log("이메일 있음");
 		}
-
+		var email = document.getElementById("email");
+		var pwd = document.getElementById("pwd");
+	
 	}
 </script>
 <body>
@@ -50,6 +53,7 @@
 			<a href="inquiryManager"> 관리자이신가요?</a><br>
 		</div>
 		<p id="msg1" style="color: red; display: none; margin-top: 0;">입력된 이메일이 없습니다.</p>
+		<p id="msg2" style="color: red; display: none; margin-top: 0;">아이디 또는 비밀번호가 틀렸습니다.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="로그인" id="btn">
 		</div>

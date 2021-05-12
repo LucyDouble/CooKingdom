@@ -34,5 +34,13 @@ public class userManagementService {
 		return result;
 	}
 	
+	public int ModifyUserInfo(User user) {
+		int result = 0;
+		Connection conn = getConnection();
+		result = new UserDao().ModifyUserInfo(conn, user);
+		close(conn);
+		return result;
+	}
+	
 
 }

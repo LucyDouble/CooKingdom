@@ -5,6 +5,7 @@ public class Manager {
 	private String email;
 	private String name;
 	private String pwd;
+	private String newPwd;
 	private String rePwd;
 	private int phone;
 	private String serial;
@@ -26,6 +27,12 @@ public class Manager {
 	}
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
+	}
+	public String getNewPwd() {
+		return newPwd;
+	}
+	public void setNewPwd(String newPwd) {
+		this.newPwd = newPwd;
 	}
 	public String getRePwd() {
 		return rePwd;

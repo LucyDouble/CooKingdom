@@ -47,13 +47,9 @@
 			</tr>
 			<tr>
 				<td id="info">비밀번호 변경</td>
-				<td id="input"></td>
+				<td id="input"><input type="password" name="pwd"></td>
 				<td id="input">
-					
-					<input type="password" name="pwd"><br><br>
-					
 					<input type="password" name="newPwd"><br><br>
-					
 					<input type="password" name="rePwd">
 				</td>
 			</tr>

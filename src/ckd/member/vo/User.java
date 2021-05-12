@@ -9,6 +9,7 @@ public class User {
 	private String nickName;
 	private String birth;
 	private String pwd;
+	private String newPwd;
 	private String rePwd;
 	private int phone;
 	private String address;
@@ -42,6 +43,12 @@ public class User {
 	}
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
+	}
+	public String getNewPwd() {
+		return newPwd;
+	}
+	public void setNewPwd(String newPwd) {
+		this.newPwd = newPwd;
 	}
 	public String getRePwd() {
 		return rePwd;

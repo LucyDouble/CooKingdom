@@ -39,4 +39,12 @@ public class loginService {
 		return result;
 	}
 	
+	public int checkPwd(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().checkPwd(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
 }
