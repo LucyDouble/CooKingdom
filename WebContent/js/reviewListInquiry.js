@@ -32,19 +32,30 @@ function openCont(evt, cont) {
 
  $("body").on("click", "[id^=rsub-]", function(event) {    
     var vId = this.id;
-	var v = document.getElementById(vId);
-	var vParent = v.parentNode.parentNode.parentNode.nextSibling.nextSibling;
-	var pId = vParent.id;
-	var p = document.getElementById(pId);
-	var hit = v.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling;
-	var rno = v.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling;
-	var rnoText = $(rno).text();
-	console.log(rnoText);
-	var rnoVal = $(rno).val();
-	if(p.style.display === "block"){
-		p.style.display = "none";
+	console.log("vId : "+ vId);
+	var num = vId.split("rsub-")[1];
+	console.log("num : "+ num);
+	var content = "review_content-"+num;
+	var contentSelector = "#"+content;
+	//console.log("con : "+$("#"+content).css("display"));
+	//var v = document.getElementById(vId);
+	//var vParent = $(this).parent().parent().parent().next().next();
+	//var pId = vParent.id;
+	//var p = document.getElementById(pId);
+	//var hit = $(v).next().next().next().next().next().next();
+	//var rno = $(v).prev().prev().prev().prev().prev().prev();
+	//var rnoText = $(rno).innerHTML;
+	//var rnoVal = $(rno).innerText;
+	//var hitTag = "#rev > div:nth-child("+num+") > table > tbody > tr > td.reviewTitle.rcnt > span";
+	//var hit = document.getElementById("hitTag").text;
+	//console.log("hitTag : "+hitTag);
+	//console.log("hit : "+hit);
+	
+	
+	if($(contentSelector).css("display") === "block"){
+		$(contentSelector).css("display","none");
 	}else {
-		p.style.display = "block";
+		$(contentSelector).css("display","block");
 		
 		$.ajax({
 			url:"reviewHitUpdate",
@@ -52,13 +63,12 @@ function openCont(evt, cont) {
 			data: { reviewNo : rnoText},
 			success: function(data){				
 				$(hit).text(data);
-			},
-		});
+			}
+	 });
 		
-	}
+}
 	
  });	
-
 
 
 	

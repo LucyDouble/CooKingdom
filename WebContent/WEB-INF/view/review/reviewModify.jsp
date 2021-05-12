@@ -73,7 +73,7 @@
 				data : formData,
 				success : function(data){
 					console.log(data);
-					history.back();
+					window.location="<%=request.getContextPath()%>/recipeinquery.do";
 				},
 				error : function(request, status, error){
 					console.log(error);

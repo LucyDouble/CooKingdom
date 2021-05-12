@@ -5,7 +5,7 @@ var rnoText = "";
 $("body").on("click", "[id^=rsub-]", function(event) {    
     var vId = this.id;
 	var v = document.getElementById(vId);
-	var rno = v.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling;
+	var rno = $(v).prev().prev().prev().prev().prev().prev();
 	rnoText = $(rno).text();
 });
 

@@ -61,9 +61,7 @@ public class ReviewDAO {
 			pstmt.setInt(2, start);
 			pstmt.setInt(3, end);
 			rs = pstmt.executeQuery();
-			System.out.println("rs.next" + rs.next());
 			if(rs.next()) {
-				
 				list = new ArrayList<Review>();
 				do {
 					Review vo = new Review();

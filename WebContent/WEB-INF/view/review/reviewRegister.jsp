@@ -28,9 +28,9 @@
             <div id="frmCS">
                 <form id="frm" enctype="multipart/form-data">
                 <!-- TODO -->
-                	<input type="hidden" name="email" value= "abc" id="email"/>
+                	<input type="hidden" name="email" value= "kimttobi@ttobi.com" id="email"/>
                 	<!-- ${param.email}-->
-                	<input type="text" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />        
+                	<input type="hidden" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />        
                 	<!--  ${param.recipeCode}  -->	
                     <table>
                         <tr class="tr1">

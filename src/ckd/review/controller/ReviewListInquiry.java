@@ -1,6 +1,10 @@
 package ckd.review.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -8,6 +12,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 import ckd.review.service.ReviewService;
 import ckd.review.vo.Review;
@@ -87,14 +96,12 @@ public class ReviewListInquiry extends HttpServlet {
 		
 		int startRnum = (currentPage-1)*pageSize +1;
 		int endRnum = startRnum + pageSize - 1;
-		if(endRnum > cnt) 
-			endRnum = cnt;			
+		
 		
 		
 		List<Review> list = null;
 
 		list =rsv.selectReviewList(startRnum, endRnum, recipeCode);
-		
 		System.out.println("pageCnt : " + pageCnt);
 		System.out.println("pageSize : " + pageSize);
 		System.out.println("startRnum : " + startRnum);
@@ -102,13 +109,62 @@ public class ReviewListInquiry extends HttpServlet {
 		System.out.println("currentPage : " + currentPage);
 		System.out.println("reviewList : " + list);
 		System.out.println("cnt : " + cnt);
-		System.out.println("[ejkim]");
-		request.setAttribute("pageCntaaaaa", pageCnt);
-		request.setAttribute("startPage", startPage);
-		request.setAttribute("endPage", endPage);
-		request.setAttribute("currentPage", currentPage);
-		request.setAttribute("cnt", cnt);
-		request.setAttribute("reviewList", list);
-		request.getRequestDispatcher("/WEB-INF/view/review/reviewListInquiry.jsp").forward(request, response);
+		
+		
+		
+		// JsonObject 생성
+		JsonObject jsonObject = new JsonObject();
+		jsonObject.addProperty("pageCnt", pageCnt);
+		jsonObject.addProperty("pageSize", pageSize);
+		jsonObject.addProperty("startRnum", startRnum);
+		jsonObject.addProperty("endRnum", endRnum);
+		jsonObject.addProperty("currentPage", currentPage);
+		jsonObject.addProperty("cnt", cnt);
+		try {
+			JsonArray jArray = new JsonArray();
+			for(int i=0; i<list.size(); i++) {
+				JsonObject jobj = new JsonObject();
+				jobj.addProperty("reviewNo", list.get(i).getReviewNo());
+				jobj.addProperty("recipeName", list.get(i).getRecipeName());
+				jobj.addProperty("reviewSubject", list.get(i).getReviewSubject());
+				jobj.addProperty("nickname", list.get(i).getNickname());
+				DateFormat sdFormat = new SimpleDateFormat("yyyy-MM-dd");
+				Date nowDate = list.get(i).getReviewDate();
+				String today = sdFormat.format(nowDate);
+				jobj.addProperty("reviewDate", today);				
+				jobj.addProperty("hit", list.get(i).getHit());
+				jobj.addProperty("reviewPhoto", list.get(i).getReviewPhoto());
+				jobj.addProperty("reviewContent", list.get(i).getReviewContent());
+				jArray.add(jobj);
+			}
+			jsonObject.add("reviewList", jArray);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		                
+		System.out.println("JsonObject 생성 : " + jsonObject.toString() + "\n");
+		        
+		// Parse Pretty
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//		Gson gson = new GsonBuilder().setDateFormat("YYYY-MM-DD").create();
+		String jsonOutput = gson.toJson(jsonObject);
+		
+		System.out.println(jsonOutput);
+		response.getWriter().write(jsonOutput.toString());
+//		PrintWriter out = response.getWriter();
+//		
+//		out.print(jsonOutput);
+//		out.flush();
+//		out.close();
+		
+//		request.setAttribute("Abc", 10);
+//		request.setAttribute("pageCnt", pageCnt);
+//		request.setAttribute("startPage", startPage);
+//		request.setAttribute("endPage", endPage);
+//		request.setAttribute("currentPage", currentPage);
+//		request.setAttribute("cnt", cnt);
+//		request.setAttribute("reviewList", list);
+//		request.getRequestDispatcher("/WEB-INF/view/review/a.jsp").forward(request, response);
+//		request.getRequestDispatcher("/WEB-INF/view/review/reviewListInquiry.jsp").forward(request, response);
 	}
 }
