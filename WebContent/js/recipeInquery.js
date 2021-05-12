@@ -30,7 +30,7 @@ function count(type)  {
 function order() {
 	var frm = document.getElementById("recipe_frm");
 	frm.action="./orderInfoInquiry";
-	frm.method="post";
+	frm.method="get";
 	frm.submit();
 };
 
