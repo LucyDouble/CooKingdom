@@ -95,7 +95,6 @@ public class login extends HttpServlet {
 		response.getWriter().println(jobj);
 		response.getWriter().flush();
 		response.getWriter().close();
-		
 	}
 
 }

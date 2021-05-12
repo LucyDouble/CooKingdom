@@ -32,7 +32,10 @@ public class Main extends HttpServlet {
 				request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
 			} else if(command.equals("recipeRegester")){
 				request.getRequestDispatcher("/WEB-INF/view/recipe/recipeRegister.jsp").forward(request, response);
+			} else if(command.equals("login")) {
+				request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
 			}
+ //		request.getRequestDispatcher("/WEB-INF/view/main/index.jsp").forward(request, response);
 		
 	}
 

@@ -5,6 +5,7 @@ import static ckd.common.jdbc.JDBCConnection.getConnection;
 
 import java.sql.Connection;
 
+import ckd.common.jdbc.JDBCConnection;
 import ckd.managerInfo.dao.ManagerDao;
 import ckd.member.vo.Manager;
 import ckd.member.vo.User;
@@ -14,9 +15,9 @@ public class managerManagementService {
 	
 	public int inquiryManagerInfo(Manager manager) {
 		int result = 0;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new ManagerDao().inquiryManagerInfo(conn, manager);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	

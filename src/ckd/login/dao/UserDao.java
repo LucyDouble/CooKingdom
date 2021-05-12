@@ -33,8 +33,6 @@ public class UserDao {
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1,  user.getEmail());
 			rs = pstmt.executeQuery();
@@ -45,7 +43,7 @@ public class UserDao {
 				if (user.getPwd().equals(rs.getString("password"))) {
 					System.out.println("유저 비밀번호가 서로 일치");
 					result = new User();
-					result.setEmail(rs.getNString("email"));
+					result.setEmail(rs.getString("email"));
 					result.setName(rs.getString("name"));
 					result.setNickName(rs.getString("nickname"));
 					result.setPwd(rs.getString("password"));

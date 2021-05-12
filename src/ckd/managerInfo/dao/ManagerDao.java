@@ -29,9 +29,6 @@ private PreparedStatement pstmt = null;
 	
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			
 			pstmt = conn.prepareStatement(query);
 			
@@ -58,8 +55,6 @@ private PreparedStatement pstmt = null;
 			}
 			
 		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} finally {
 			close();

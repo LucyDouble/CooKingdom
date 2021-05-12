@@ -1,6 +1,5 @@
 package ckd.userInfo.dao;
 
-import java.security.spec.RSAKeyGenParameterSpec;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -35,8 +34,8 @@ public class UserDao {
 	
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
+//			Class.forName("oracle.jdbc.driver.OracleDriver");
+//			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			
 			pstmt = conn.prepareStatement(query);
 			System.out.println(user.getEmail());
@@ -66,8 +65,6 @@ public class UserDao {
 			}
 			
 		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} finally {
 			close();
@@ -127,5 +124,16 @@ public class UserDao {
 		return -1;
 	}
 	
+	public int ModifyUserInfo(Connection conn, User user) {
+		int result = 0;
+		
+		if (user.getEmail() != null) {
+			System.out.println("이메일 값이 있습니다");
+			String queryEmail = "update USERS set EMAIL=?";
+		} else {
+			System.out.println("이메일 값이 없습니다.");
+		}
+		return result;
+	}
 
 }

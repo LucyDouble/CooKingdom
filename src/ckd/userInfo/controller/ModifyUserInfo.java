@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ckd.member.vo.User;
+
 /**
  * Servlet implementation class ModifyUserInfo
  */
@@ -33,7 +35,36 @@ public class ModifyUserInfo extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
+		User user = new User();
+		
+		String email = request.getParameter("email");
+		String name = request.getParameter("name");
+		String nickName = request.getParameter("nickName");
+		String birth = request.getParameter("birth");
+		int phone = Integer.parseInt(request.getParameter("phone"));
+		String newPwd = request.getParameter("newPwd");
+		String address = request.getParameter("address");
+		
+		user.setEmail(email);
+		user.setName(name);
+		user.setNickName(nickName);
+		user.setBirth(birth);
+		user.setPhone(phone);
+		user.setPwd(newPwd);
+		user.setAddress(address);
+		
+		System.out.println(user.getEmail());
+		System.out.println(user.getName());
+		System.out.println(user.getNickName());
+		System.out.println(user.getBirth());
+		System.out.println(user.getPhone());
+		System.out.println(user.getPwd());
+		System.out.println(user.getAddress());
+		
+		
 	}
 
 }

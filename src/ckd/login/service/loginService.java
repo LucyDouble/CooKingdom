@@ -5,6 +5,7 @@ import static ckd.common.jdbc.JDBCConnection.getConnection;
 
 import java.sql.Connection;
 
+import ckd.common.jdbc.JDBCConnection;
 import ckd.login.dao.DirectorDao;
 import ckd.login.dao.ManagerDao;
 import ckd.login.dao.UserDao;
@@ -16,25 +17,25 @@ public class loginService {
 
 	public User loginUser(User user) {
 		User result = null;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new UserDao().loginUser(conn, user);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	
 	public Manager loginManager(Manager manager) {
 		Manager result = null;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new ManagerDao().loginManager(conn, manager);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	
 	public Manager loginDirector(Manager manager) {
 		Manager result = null;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new DirectorDao().loginDirector(conn, manager);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	

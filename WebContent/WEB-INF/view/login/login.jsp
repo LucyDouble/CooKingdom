@@ -50,7 +50,7 @@
 	<br>
 	<h5 style="text-align: center;">회원이신가요?</h5>
 	<hr style="margin-bottom: 30px;">
-	<form action="<%=request.getContextPath() %>/cookingDom" method="POST" 
+	<form action="<%=request.getContextPath() %>/cookingDom?command=login" method="POST" 
 	style="text-align: center;" onsubmit="return login();">
 		<div id="index">
 			<p id="info">이메일</p>

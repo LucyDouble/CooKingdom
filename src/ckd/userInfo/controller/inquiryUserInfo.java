@@ -70,7 +70,7 @@ public class inquiryUserInfo extends HttpServlet {
 		} else {
 			System.out.println("회원가입 성공");
 		}
-		request.getRequestDispatcher("/test").forward(request, response);
+		request.getRequestDispatcher("/cookingDom?command=Main").forward(request, response);
 	}
 
 }

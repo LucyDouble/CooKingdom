@@ -1,6 +1,8 @@
 package ckd.userInfo.service;
 
 import static ckd.common.jdbc.JDBCConnection.*;
+
+import ckd.common.jdbc.JDBCConnection;
 import ckd.member.vo.*;
 import ckd.userInfo.dao.*;
 
@@ -10,9 +12,9 @@ public class userManagementService {
 
 	public int inquiryUserInfo(User user) {
 		int result = 0;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new UserDao().inquiryUserInfo(conn, user);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	
