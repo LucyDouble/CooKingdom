@@ -154,11 +154,11 @@ RECIPE_CODE NUMBER(7) NOT NULL CONSTRAINT LIKES_RECIPE_CODE_FK REFERENCES RECIPE
 CREATE TABLE COOKING_STEPS (
     RECIPE_CODE NUMBER(7) CONSTRAINT COOKING_STEP_RECIPE_CODE_FK REFERENCES RECIPE NOT NULL,
     COOKING_STEP NUMBER(3),
-    COOKING_DESC VARCHAR2(400),
-    COOKING_IMAGE VARCHAR2(300)
+    COOKING_DESC VARCHAR2(800),
+    COOKING_IMAGE VARCHAR2(400)
 );
 
 
---ÀÓÀÇÀÇ »ç¿ëÀÚÁ¤º¸ INSERT
-INSERT INTO USERS VALUES('kimttobi@ttobi.com', '¶Ç¶Çºñ', '±è¶Çºñ', '1234ttobi', '2019-03-01', 01012345678, '¼­¿ïÆ¯º°½Ã Áß±¸ ³²´ë¹®·Î 120 ´ëÀÏºôµù 2F, 3F');
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ INSERT
+INSERT INTO USERS VALUES('kimttobi@ttobi.com', 'ï¿½Ç¶Çºï¿½', 'ï¿½ï¿½Çºï¿½', '1234ttobi', '2019-03-01', 01012345678, 'ï¿½ï¿½ï¿½ï¿½Æ¯ï¿½ï¿½ï¿½ï¿½ ï¿½ß±ï¿½ ï¿½ï¿½ï¿½ë¹®ï¿½ï¿½ 120 ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ 2F, 3F');
 COMMIT;
