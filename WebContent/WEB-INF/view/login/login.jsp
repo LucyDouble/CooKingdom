@@ -19,28 +19,11 @@
 		if (email.value == "") {
 			document.getElementById("msg1").style.display = "block";
 			alert("아이디를 입력하세요.");
+			return false;
 		} else {
 			document.getElementById("msg1").style.display = "none";
 		}
-		$.ajax({
-			url: "loginUser",
-			type: "POST",
-			data: {
-				email: $("#email").val(),
-				pwd: $("#pwd").val()
-			},
-			dataType: "JSON",
-			success: function(data) {
-				console.log(data);
-				console.log(data.result);
-				console.log(data.email);
-				if (data.result == "ok"){
-					console.log("로그인 성공!!");
-				} else {
-					console.log("로그인 실패!!");
-				}
-			}
-		})
+
 	}
 </script>
 <body>
@@ -50,7 +33,7 @@
 	<br>
 	<h5 style="text-align: center;">회원이신가요?</h5>
 	<hr style="margin-bottom: 30px;">
-	<form action="<%=request.getContextPath() %>/cookingDom?command=login" method="POST" 
+	<form action="loginUser" method="POST" 
 	style="text-align: center;" onsubmit="return login();">
 		<div id="index">
 			<p id="info">이메일</p>

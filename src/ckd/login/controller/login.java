@@ -61,40 +61,28 @@ public class login extends HttpServlet {
 		result2 = new loginService().loginManager(manager);
 		result3 = new loginService().loginDirector(manager);
 		
-		JSONObject jobj = new JSONObject();
 		if (result1 != null){
 			System.out.println("유저 로그인 성공");
-			jobj.put("result", "ok");
-			jobj.put("email", result1.getEmail());
 			request.getSession().setAttribute("User", result1);
 			System.out.println("유저에 세션 값 넣기?");
 		} else {
 			System.out.println("유저 로그인 실패");
-			jobj.put("result", "fail");
 			if (result2 != null) {
 				System.out.println("관리자 로그인 성공");
-				jobj.put("result", "ok");
-				jobj.put("email", result2.getEmail());
 				request.getSession().setAttribute("Manager", result2);
 				System.out.println("관리자에 세션 값 넣기?");
 			} else {
 				System.out.println("관리자 로그인 실패");
-				jobj.put("result", "fail");
 				if (result3 != null) {
 					System.out.println("책임자 로그인 성공");
-					jobj.put("result", "ok");
-					jobj.put("email", result3.getEmail());
 					request.getSession().setAttribute("Director", result3);
 					System.out.println("책임자에 세션 값 넣기?");
 				} else {
 					System.out.println("책임자 로그인 실패");
-					jobj.put("result", "fail");
 				}
 			}
 		}
-		response.getWriter().println(jobj);
-		response.getWriter().flush();
-		response.getWriter().close();
+		response.sendRedirect("cookingDom?command=Main");
 	}
 
 }
