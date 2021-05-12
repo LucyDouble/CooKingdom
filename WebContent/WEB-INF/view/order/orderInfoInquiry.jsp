@@ -79,14 +79,15 @@
 					<strong>주문상품</strong>
 				</div>
 				<hr>
-
+				
 				<table>
+<!--jstl 태그로 각 주문건 별로 밀키트 정보(이름 수량 등)/ hr태그 생성하도록 나중에 만들자 -->
 					<tr>
 						<td width="100"><img
 							src="${imgURL }" alt="http://ipsumimage.appspot.com/100x100" width="100" /></td>
 						<td width="300">${mkName }</td>
-						<td width="400">${mkNum }</td>
-						<td width="400">${total_price }</td>
+						<td width="400">${mkNum }개</td>
+						<td width="400">${total_price }원</td>
 					</tr>
 					<tr>
 						<td width="100"><img

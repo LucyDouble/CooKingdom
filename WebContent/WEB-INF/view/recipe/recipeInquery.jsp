@@ -71,12 +71,12 @@
 					</div>
 					<div class="CountBtn">
 	                    <span>
-	                        <button type="button" class="CountBtn_up" onclick='count("plus")'>
-	                            <i class="fas fa-plus"></i>
+	                        <button type="button" class="CountBtn_up" onclick='count("minus")'>
+	                            <i class="fas fa-minus"></i>
 	                        </button>
 	                        <input type="text" value="0" readonly class="CountBtn_number" id="CountBtn_result" name="mkNum">
-	                        <button type="button" class="CountBtn_down" onclick='count("minus")'>
-	                            <i class="fas fa-minus"></i>
+	                        <button type="button" class="CountBtn_down" onclick='count("plus")'>
+	                            <i class="fas fa-plus"></i>
 	                        </button>
 	                    </span>
                 	</div>
@@ -89,7 +89,7 @@
 							</tr>
 							<tr>
 								<th class="paybill_total">총 주문 금액</th>
-								<td class="paybill_total_price"><input type="text" value="0" readonly id="total_price" name="total_price"></td>
+								<td class="paybill_total_price"><span><input type="text" value="0" readonly id="total_price" name="total_price" size="8" >원</span></td>
 							</tr>
 						</table>
 					</div>
@@ -120,6 +120,8 @@
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
 	<script>
+	
+	//화살표 증감 함수
 	function count(type)  {
 		  // 결과를 표시할 element
 		  const resultElement = document.getElementById('CountBtn_result');
@@ -142,15 +144,16 @@
 		  resultElement.value = number;
 		  resultPrice.value = parseInt(mealkitPrice.innerText)*number;
 	};
-	
+
+	//구매하기 버튼
 	function order() {
 		var frm = document.getElementById("recipe_frm");
 		frm.action="<%=request.getContextPath() %>/orderInfoInquiry";
 		frm.method="post";
 		frm.submit();
 	};
-	
-	
+
+	//장바구니 버튼
 	function cart() {
 		var frm = document.getElementById("recipe_frm");
 		frm.action="<%=request.getContextPath() %>/CartListInquiry";
