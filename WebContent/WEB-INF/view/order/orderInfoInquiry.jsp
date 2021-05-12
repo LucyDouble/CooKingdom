@@ -83,10 +83,10 @@
 				<table>
 					<tr>
 						<td width="100"><img
-							src="http://ipsumimage.appspot.com/100x100" /></td>
-						<td width="300">재료명1</td>
-						<td width="400">2개</td>
-						<td width="400">10,000원</td>
+							src="${imgURL }" alt="http://ipsumimage.appspot.com/100x100" width="100" /></td>
+						<td width="300">${mkName }</td>
+						<td width="400">${mkNum }</td>
+						<td width="400">${total_price }</td>
 					</tr>
 					<tr>
 						<td width="100"><img

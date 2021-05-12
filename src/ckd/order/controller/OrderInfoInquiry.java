@@ -43,12 +43,23 @@ public class OrderInfoInquiry extends HttpServlet {
 		OrderService sv = new OrderService();
 		
 		OrderMember vo = new OrderMember();
-		String str = request.getParameter("email");
-		if (str != null) {
-			vo.setEmail(str);
+		String email = request.getParameter("email");
+		String url = request.getParameter("imgURL");
+		String mkName = request.getParameter("mkName");
+		String mkNum = request.getParameter("mkNum");
+		String total_price = request.getParameter("total_price");
+		
+		
+		
+		if (email != null) {
+			vo.setEmail(email);
 			vo = sv.getUserRead(vo);
 			if(vo != null) {
 				request.setAttribute("ordermember", vo);
+				request.setAttribute("imgURL", url);
+				request.setAttribute("mkName", mkName);
+				request.setAttribute("mkNum", mkNum);
+				request.setAttribute("total_price", total_price);
 				request.getRequestDispatcher("/WEB-INF/view/order/orderInfoInquiry.jsp").forward(request, response);
 			} else {
 				System.out.println("VO is null");
