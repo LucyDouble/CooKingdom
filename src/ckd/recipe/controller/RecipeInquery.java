@@ -66,6 +66,8 @@ public class RecipeInquery extends HttpServlet {
 						request.getRequestDispatcher("/WEB-INF/view/recipe/recipeInquery.jsp").forward(request, response);
 					} else {
 						System.out.println("데이터가 없어서 레시피 정보 조회가 불가능합니다.");
+						request.setAttribute("errorMsg", "데이터가 없어서 레시피 정보 조회가 불가능합니다.");
+						request.getRequestDispatcher("/error/nullVoError.jsp").forward(request, response);
 					}
 				}
 			} catch (SQLException e) {

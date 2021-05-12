@@ -62,7 +62,9 @@ public class OrderInfoInquiry extends HttpServlet {
 				request.setAttribute("total_price", total_price);
 				request.getRequestDispatcher("/WEB-INF/view/order/orderInfoInquiry.jsp").forward(request, response);
 			} else {
-				System.out.println("VO is null");
+				System.out.println("사용자 VO가 Null입니다.");
+				request.setAttribute("errorMsg", "사용자 VO가 Null입니다.");
+				request.getRequestDispatcher("/error/nullVoError.jsp").forward(request, response);
 			}
 		}
 	
