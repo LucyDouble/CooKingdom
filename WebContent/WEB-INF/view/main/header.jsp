@@ -9,7 +9,7 @@
             </div>
             <ul id="my">
                 <li class="my"><a href="#"><img src="image/header/delivery.png"></a></li>
-                <li class="my"><a href="#"><img src="image/header/cart.png"></a></li>
+                <li class="my"><a href="CartListInquiry"><img src="image/header/cart.png"></a></li>
                 <li class="my"><a href="#"><img src="image/header/myPage.png"></a></li>
             </ul>
 </header>
