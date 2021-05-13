@@ -30,7 +30,7 @@ public class UserDao {
 
 	public int inquiryUserInfo(Connection conn, User user) {
 		int result = 0;
-		String query = "insert into USERS values(?,?,?,to_date(?,'yyyy-dd-mm'),?,?,?)";
+		String query = "insert into USERS values(?,?,?,to_date(?,'yyyy-mm-dd'),?,?,?)";
 	
 		try {
 			

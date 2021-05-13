@@ -78,6 +78,13 @@ public class UserDao {
 			rs = pstmt.executeQuery();
 			
 			if (rs.next()) {
+				user.setEmail(rs.getString("email"));
+				user.setName(rs.getString("name"));
+				user.setNickName(rs.getString("nickName"));
+				user.setBirth(rs.getString("birth"));
+				user.setPwd(rs.getString("password"));
+				user.setPhone(rs.getInt("phone"));
+				user.setAddress(rs.getString("address"));
 				return 1;
 			} else {
 				return 0;

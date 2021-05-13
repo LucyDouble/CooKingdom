@@ -6,21 +6,14 @@ td {
 
 #info {
 	background-color: #D2D9D8;
-	font-size: 4px;
+	font-size: 7px;
 }
 
 #input {
 	background-color: white;
-	width: 180px;
-	text-align: center;
-	font-size: 4px;
-}
-
-#user {
-	background-color: #D2D9D8;
-	width: 180px;
-	text-align: center;
-	font-size: 4px;
+	width: 150px;
+	text-align: left;
+	font-size: 13px;
 }
 
 table {
@@ -29,7 +22,7 @@ table {
 	margin-bottom: 16px;
 }
 
-form {
+#form {
 	text-align: center;
 }
 
@@ -38,4 +31,24 @@ form {
 	width: 100px;
 	height: 50px;
 	border-radius: 10px;
+}
+
+#email {
+	border: none;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
+	text-align: left;
+	outline: none;
+}
+
+#button {
+    background-color: white;
+	width: 150px;
+	text-align: right;
+	font-size: 13px;
+}
+
+#tr {
+    border: 1px solid #ccc;
 }

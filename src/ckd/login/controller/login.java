@@ -65,6 +65,7 @@ public class login extends HttpServlet {
 			System.out.println("유저 로그인 성공");
 			request.getSession().setAttribute("User", result1);
 			request.getSession().setAttribute("email", result1.getEmail());
+			request.setAttribute("User", result1);
 			System.out.println("유저에 세션 값 넣기?");
 		} else {
 			System.out.println("유저 로그인 실패");

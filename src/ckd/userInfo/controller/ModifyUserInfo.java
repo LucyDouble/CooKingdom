@@ -41,23 +41,21 @@ public class ModifyUserInfo extends HttpServlet {
 		
 		User user = new User();
 		
-		String email = request.getParameter("email");
+		
 		String newEmail = request.getParameter("newEmail");
 		String name = request.getParameter("name");
 		String nickName = request.getParameter("nickName");
 		String birth = request.getParameter("birth");
 		int phone = Integer.parseInt(request.getParameter("phone"));
-		String pwd = request.getParameter("pwd");
 		String newPwd = request.getParameter("newPwd");
 		String address = request.getParameter("address");
 		
-		user.setEmail(email);
+//		user.setEmail(email);
 		user.setNewEmail(newEmail);
 		user.setName(name);
 		user.setNickName(nickName);
 		user.setBirth(birth);
 		user.setPhone(phone);
-		user.setPwd(pwd);
 		user.setNewPwd(newPwd);
 		user.setAddress(address);
 		
@@ -67,16 +65,15 @@ public class ModifyUserInfo extends HttpServlet {
 		System.out.println(user.getNickName());
 		System.out.println(user.getBirth());
 		System.out.println(user.getPhone());
-		System.out.println(user.getPwd());
 		System.out.println(user.getAddress());
 		
-		int result = new userManagementService().ModifyUserInfo(user);
-		
-		if (result == 0) {
-			System.out.println("유저 정보수정 실패");
-		} else {
-			System.out.println("유저 정보수정 성공");
-		}
+//		int result = new userManagementService().ModifyUserInfo(user);
+//		
+//		if (result == 0) {
+//			System.out.println("유저 정보수정 실패");
+//		} else {
+//			System.out.println("유저 정보수정 성공");
+//		}
 		
 		
 	}
