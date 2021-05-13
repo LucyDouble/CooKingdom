@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .orderListInquiry {
-	padding: 0 60px 0 60px;
+	padding: 0 60px;
 }
 
 .order_head1 {
@@ -12,14 +12,19 @@
 }
 
 .periodBtn {
-	width: 100px;
-	background-color:  #6E8C03;
-	color: white;
+	width: 110px;
+	background-color:  white;
 	padding: 9px 0px;
 	font-size: 12px;
-	border: none;
+	border : 1px solid #6E8C03;
 	border-radius: 20px;
 	cursor: pointer;
+	font-size: 12px;
+}
+
+.periodBtn:hover {
+	background-color:  #6E8C03;
+	color: white;
 }
 
 .orderListInquiry_period {
@@ -27,6 +32,57 @@
 }
 
 .orderListInquiry_box {
-	padding: 0 40px 0 40px;
+	display: none;
+}
+
+.eachbox {
+	margin: 30px;
+	padding: 10px 25px 0 25px;
+	border : 3px solid #f2f2f2;
+	border-radius: 20px;
+}
+
+.eachbox > p {
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+.eachbox > div {
+	margin: 10px;
+	padding: 0 20px;
+	border : 3px solid #f2f2f2;
+	border-radius: 20px;
 	
+}
+
+.eachbox table {
+	border-spacing: 15px;
+}
+.product {
+	line-height : 200%;
+}
+
+.inboxBtn1 {
+	margin: 5px 3px;
+	padding: 8px;
+	width: 180px;
+	background-color:  white;
+	border : 3px solid #6E8C03;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6E8C03;
+}
+
+.inboxBtn2{
+	margin: 5px 3px;
+	padding: 8px;
+	width: 180px;
+	background-color:  white;
+	border : 3px solid #f2f2f2;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
 }

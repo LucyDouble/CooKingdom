@@ -45,7 +45,7 @@
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td id="userEmail"><%= user.getEmail() %>}</td>
+						<td id="userEmail"><%= user.getEmail() %></td>
 					</tr>
 					<tr>
 						<th>주소</th>
@@ -120,8 +120,8 @@
 				<hr>
 
 				<div class="tab">
-					<button class="tablinks" onclick="payoption(event, 'Card')">신용카드</button>
-					<button class="tablinks" onclick="payoption(event, 'Transfer')">무통장입금</button>
+					<button class="tablinks" onclick="payoption(event, 'Card'); return false;">신용카드</button>
+					<button class="tablinks" onclick="payoption(event, 'Transfer'); return false;">무통장입금</button>
 				</div>
 
 				<div id="Card" class="tabcontent">
