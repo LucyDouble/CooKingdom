@@ -98,7 +98,7 @@
 					<br>
 	                <div>
 	                    <button class="payBtn" id="order_btn" onClick="order();">바로 결제</button>
-	                    <button class="payBtn" id="cart_btn" onClick="cart();">장바구니 담기</button>
+	                    <button class="payBtn" id="cart_btn" onClick="cart('${email}');">장바구니 담기</button>
 	                </div>
 				</div>
 			</main>

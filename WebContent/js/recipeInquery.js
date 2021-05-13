@@ -40,10 +40,19 @@ function getOrder() {
 }
 
 
+
 //장바구니 버튼
-function cart() {
-	var frm = document.getElementById("recipe_frm");
-	frm.action="./CartListInquiry";
-	frm.method="post";
-	frm.submit();
+function cart(email) {
+	if(email == ""){ 
+		alert("로그인이 필요합니다. 회원 가입 또는 로그인을 해주세요");
+		var frm = document.getElementById("recipe_frm");
+		frm.action="./loginUser";
+		frm.method="get";
+		frm.submit();
+	} else {
+		var frm = document.getElementById("recipe_frm");
+		frm.action="./CartInfoRegister";
+		frm.method="get";
+		frm.submit();
+	}
 }
