@@ -13,6 +13,8 @@ import ckd.recipe.vo.Recipe;
 
 public class RecipeDAO {
 	
+	// ----------------------------- JSON 입력관련 메소드  ---------------------------------------------
+	
 	public int deleteRecipeAll(Connection conn) throws SQLException {
 		PreparedStatement pstmt = null;
 		int result = 0;
@@ -80,9 +82,7 @@ public class RecipeDAO {
 		return resultCnt;
 	}
 
-	
-	
-	// ----------------------------- JSON 입력관련 메소드 끝 ---------------------------------------------
+//	------------------------ 레시피 조회 관련 메소드 -----------------------------------------
 	
 	public int getRecipeCount(Connection conn, String search) throws SQLException {
 		int cnt = 0;
@@ -90,7 +90,10 @@ public class RecipeDAO {
 		ResultSet rs = null;
 		String sql = "select COUNT(*) from recipe";
 		if (search != null) {
-			sql += " where bsubject like '%" + search+ "%' or bcontent like '%"+ search+ "%'";
+//			sql += " where bsubject like '%" + search+ "%' or bcontent like '%"+ search+ "%'";
+			
+			sql += " where RECIPE_NAME like '%" + search+ "%' or TYPE_CAG like '%"+ search+ "%'"
+					+ " RECIPE_CAG like '%" + search + "%'";
 		}
 		
 		pstmt = conn.prepareStatement(sql);
@@ -209,5 +212,103 @@ public class RecipeDAO {
 		JDBCConnection.close(pstmt);
 		
 		return vo;
+	}
+	
+	
+//	------------------------ 여기까지 레시피 등록, 수정, 삭제  관련 메소드 -----------------------------------------
+	
+	public int insertRecipe(Recipe recipe, Connection conn) throws SQLException {
+		int result = 0;
+		PreparedStatement pstmt = null;
+		
+		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		
+		pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, recipe.getRecipeCode());
+		pstmt.setString(2, recipe.getRecipeName());
+		switch(recipe.getTypeCag()) {
+		case "한식" :
+			pstmt.setInt(3, 3020001);
+			break;
+		case "서양" :
+			pstmt.setInt(3, 3020002);
+			break;
+		case "일본" :
+			pstmt.setInt(3, 3020003);
+			break;
+		case "중국" :
+			pstmt.setInt(3, 3020004);
+			break;
+		default :
+			System.out.println("DAO 레시피 입력 실패");
+			break;
+		}
+		
+		pstmt.setString(4, recipe.getTypeCag());
+		pstmt.setString(5, recipe.getRecipeInfo());
+		
+		switch(recipe.getRecipeCag()) {
+		case "밥" :
+			pstmt.setInt(6, 3010001);
+			break;
+		case "밑반찬/김치" :
+			pstmt.setInt(6, 3010002);
+			break;
+		case "찜" :
+			pstmt.setInt(6, 3010003);
+			break;
+		case "부침" :
+			pstmt.setInt(6, 3010004);
+			break;
+		case "조림" :
+			pstmt.setInt(6, 3010005);
+			break;
+		case "구이" :
+			pstmt.setInt(6, 3010006);
+			break;
+		case "튀김/커틀릿" :
+			pstmt.setInt(6, 3010007);
+			break;
+		case "볶음" :
+			pstmt.setInt(6, 3010008);
+			break;
+		case "찌개/전골/스튜" :
+			pstmt.setInt(6, 3010009);
+			break;
+		case "만두/면류" :
+			pstmt.setInt(6, 3010010);
+			break;
+		case "나물/생채/샐러드" :
+			pstmt.setInt(6, 3010011);
+			break;
+		case "그라탕/리조또" :
+			pstmt.setInt(6, 3010012);
+			break;
+		default :
+			System.out.println("DAO 레시피 입력 실패");
+			break;
+		}
+		
+		pstmt.setString(7, recipe.getRecipeCag());
+		pstmt.setString(8, recipe.getCookingTime());
+		pstmt.setString(9, recipe.getCalorie());
+		pstmt.setString(10, recipe.getRecipeQty());
+		pstmt.setString(11, recipe.getRecipeLevel());
+		pstmt.setString(12, "x");
+		pstmt.setString(13, "");
+		pstmt.setInt(14, 0);
+		pstmt.setInt(15, recipe.getPrice());
+		pstmt.setString(16, recipe.getRfilePath());
+		
+		System.out.println("pstmt 직전 레시피의 레시피 코드 : " + recipe.getRecipeCode());
+		
+		result = pstmt.executeUpdate();
+		
+		JDBCConnection.close(pstmt);
+		
+
+		
+		return result;
+		
 	}
 }

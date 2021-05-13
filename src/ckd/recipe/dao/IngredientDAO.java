@@ -108,4 +108,48 @@ public class IngredientDAO {
 		
 		return list;
 	}
+	
+	public int insertIngredient(Ingredient ingredient, Connection conn)  {
+		int result = 0;
+		PreparedStatement pstmt = null;
+		
+		String sql = "insert into ingredient values(?, ?, ?, ?, ?)";
+		try {
+		pstmt = conn.prepareStatement(sql);
+		
+		pstmt.setInt(1, ingredient.getRecipeCode());
+		pstmt.setString(2, ingredient.getIngName());
+		pstmt.setString(3, ingredient.getIngTypeName());
+		switch(ingredient.getIngTypeName()) {
+		case "주재료" :
+			pstmt.setInt(4, 3060001);
+			break;
+		case "부재료" :
+			pstmt.setInt(4, 3060002);
+			break;
+		case "양념" :
+			pstmt.setInt(4, 3060003);
+			break;
+		default :
+			System.out.println("DAO 재료 입력 실패");
+			break;
+		}
+		pstmt.setString(5, ingredient.getIngQty());
+		
+		result = pstmt.executeUpdate();
+		
+		System.out.println("pstmt 직전 재료 레시피 코드 : " + ingredient.getRecipeCode());
+		System.out.println("pstmt 직전 재료 이름 : " + ingredient.getIngName());
+		System.out.println("pstmt 직전 재료 타입 이름 : " + ingredient.getIngTypeName());
+		System.out.println("pstmt 직전 재료 타입 코드 : " + ingredient.getIngTypeCode());
+		System.out.println("pstmt 직전 재료 분량 : " + ingredient.getIngQty());
+		JDBCConnection.close(pstmt);
+		
+		
+		System.out.println(result);
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 }

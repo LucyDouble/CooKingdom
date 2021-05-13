@@ -14,6 +14,8 @@ import ckd.recipe.vo.Recipe;
 
 public class RecipeService {
 	
+//	------------------------ JSON 입력 관련 메소드 -----------------------------------------
+	
 	public int removeRecipeAll() throws SQLException {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
@@ -60,9 +62,10 @@ public class RecipeService {
 		return result;
 	}
 	
+//	------------------------ 조회 관련 메소드 -----------------------------------------
 	
 	
-	
+//	------------------------ 레시피 ------------------------------------------------
 	public int getRecipeCount(String search) throws SQLException {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
@@ -83,17 +86,47 @@ public class RecipeService {
 		Recipe vo = new RecipeDAO().selectRecipe(conn, inputVo);
 		JDBCConnection.close(conn);
 		return vo;
+
+		
+//	---------------------- 재료 --------------------------------
 	}
 	public List<Ingredient> inqueryIngredient(Ingredient inputVo) throws SQLException {
 		Connection conn = JDBCConnection.getConnection();
 		List<Ingredient> list = new IngredientDAO().selectIngredient(conn, inputVo);
 		JDBCConnection.close(conn);
 		return list;
+//	----------------------- 조리 과정 --------------------------------
 	}
 	public List<CookingStep> inqueryCookingStep(CookingStep inputVo) throws SQLException {
 		Connection conn = JDBCConnection.getConnection();
 		List<CookingStep> list = new CookingStepDAO().selectCookingStep(conn, inputVo);
 		JDBCConnection.close(conn);
 		return list;
+	}
+	
+	
+//	------------------------ 레시피 등록, 수정, 삭제  관련 메소드 -----------------------------------------
+	
+//	-------------------------- 레시피 -----------------------------------------
+	
+	public int registerRecipe(Recipe recipe) throws SQLException {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new RecipeDAO().insertRecipe(recipe, conn);
+		if(result == 1) {
+			JDBCConnection.commit(conn);
+		}
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+//	-------------------------- 재료 -----------------------------------------
+	
+	public int registerIngredient(Ingredient ingredient) throws SQLException {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new IngredientDAO().insertIngredient(ingredient, conn);
+		JDBCConnection.close(conn);
+		return result;
 	}
 }

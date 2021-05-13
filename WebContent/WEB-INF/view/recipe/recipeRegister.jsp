@@ -2,95 +2,123 @@
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/recipeRegester.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/summernote/summernote-lite.css">
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<jsp:include page="../main/header.jsp"></jsp:include>
-		
+
 		<main class="recipeRegester">
-	        <form action="">
-	            <div class="recipeRegester_title">
-	                <h3>레시피 등록</h3>
-	            </div>
-	
-	            <table class="recipeRegester_table">
-	                <tbody>                
-	                    <tr>
-	                        <th>레시피 코드</th>
-	                        <td>
-	                            <input required type="text" name="recipeCode" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>레시피명</th>
-	                        <td>
-	                            <input required type="text" name="recipeName" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>레시피 요약</th>
-	                        <td>
-	                            <input required type="text" name="recipeInfo" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>분량</th>
-	                        <td>
-	                            <input required type="text" name="recipeQty" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>칼로리</th>
-	                        <td>
-	                            <input required type="text" name="recipeCalorie" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>나라</th>
-	                        <td>
-	                            <input required type="text" name="recipeType" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>종류</th>
-	                        <td>
-	                            <input required type="text" name="recipeType" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>조리 난이도</th>
-	                        <td>
-	                            <input required type="text" name="recipeLevel" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>조리 시간</th>
-	                        <td>
-	                            <input required type="text" name="" placeholder="내용을 입력하세요">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>주재료</th>
-	                        <td>
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                            <input type="text" name="" placeholder="주재료">
-	                        </td>
-	                    </tr>
+			<form id="frm" enctype="multipart/form-data">
+				<div class="recipeRegester_title">
+					<h3>레시피 등록</h3>
+				</div>
+
+				<table class="recipeRegester_table">
+					<tbody>
+						<tr>
+							<th>레시피 코드</th>
+							<td><input required type="text" name="recipeCode"
+								placeholder="숫자만 입력해주세요"></td>
+						</tr>
+						<tr>
+							<th>레시피명</th>
+							<td><input required type="text" name="recipeName"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>레시피 요약</th>
+							<td><input required type="text" name="recipeInfo"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>가격</th>
+							<td><input required type="text" name="recipePrice"
+								placeholder="숫자만 입력해주세요"></td>
+						</tr>
+						<tr>
+							<th>나라</th>
+							<td><select name="recipeNation" id="recipeNation">
+									<option value="한식">한식</option>
+									<option value="서양">서양</option>
+									<option value="일본">일본</option>
+									<option value="중국">중국</option>
+							</select></td>
+						</tr>
+						<tr>
+							<th>종류</th>
+							<td><select name="recipeType" id="recipeType">
+									<option value="밥">밥</option>
+									<option value="밑반찬/김치">밑반찬/김치</option>
+									<option value="찜">찜</option>
+									<option value="부침">부침</option>
+									<option value="조림">조림</option>
+									<option value="구이">구이</option>
+									<option value="튀김/커틀릿">튀김/커틀릿</option>
+									<option value="볶음">볶음</option>
+									<option value="찌개/전골/스튜">찌개/전골/스튜</option>
+									<option value="만두/면류">만두/면류</option>
+									<option value="나물/생채/샐러드">나물/생채/샐러드</option>
+									<option value="그라탕/리조또">그라탕/리조또</option>
+							</select></td>
+						</tr>
+						<tr>
+							<th>분량</th>
+							<td><select name="recipeQty" id="recipeQty">
+									<option value="1인분">1인분</option>
+									<option value="2인분">2인분</option>
+									<option value="3인분">3인분</option>
+									<option value="4인분">4인분</option>
+							</select></td>
+						</tr>
+						<tr>
+							<th>칼로리</th>
+							<td><input required type="text" name="recipeCalorie"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>조리 시간</th>
+							<td><input required type="text" name="CookingTime"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>조리 난이도</th>
+							<td><input required type="text" name="recipeLevel"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>메인 이미지</th>
+							<td><input type="file" name="rfilepath" id="rfilepath">
+							</td>
+						</tr>
+						<tr>
+							<th>재료 이름</th>
+							<td><input required type="text" name="ingName"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>재료 분량</th>
+							<td><input required type="text" name="ingQty"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>재료 종류</th>
+							<td><select name="ingTypeName" id="ingTypeName">
+									<option value="주재료">주재료</option>
+									<option value="부재료">부재료</option>
+									<option value="양념">양념</option>
+							</select></td>
+						</tr>
+<!--
 	                    <tr>
 	                        <th>부재료</th>
 	                        <td>
@@ -119,27 +147,33 @@
 	                            <input type="text" name="" placeholder="양념">
 	                        </td>
 	                    </tr>
-	                    <tr>
-	                        <th>메인 이미지</th>
-	                        <td>
-	                            <input type="file" name="bfilepath" id="bfilepath">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>상품 소개</th>
-	                        <td>
-	                            <div id="editor" contenteditable="true">
-	                                
-	                            </div>
-	                        </td>
-	                    </tr>
-	                </tbody>
-	            </table>
-	            <button class="regesterBtn" id="regesterBtn">등록</button>
-	        </form>
-    	</main>
-	
+
+						<tr>
+							<th>재료 이름</th>
+							<td><input required type="text" name="ingName"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>재료 분량</th>
+							<td><input required type="text" name="ingQty"
+								placeholder="내용을 입력하세요"></td>
+						</tr>
+						<tr>
+							<th>상품 소개</th>
+							<td><textarea id="summernote" name="editordata"></textarea>
+							</td>
+						</tr>
+-->
+					</tbody>
+				</table>
+				<button type="button" class="regesterBtn" id="regesterBtn" >등록</button>
+			</form>
+		</main>
+
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
+	<script src="js/recipeRegester.js"></script>
+	<script src="js/summernote/summernote-lite.js"></script>
+	<script src="js/summernote/lang/summernote-ko-KR.js"></script>
 </body>
 </html>
