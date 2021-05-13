@@ -32,14 +32,14 @@ function openCont(evt, cont) {
 
  $("body").on("click", "[id^=rsub-]", function(event) {    
     var vId = this.id;
-	console.log("vId : "+ vId);
+	//console.log("vId : "+ vId);
 	var num = vId.split("rsub-")[1];
-	console.log("num : "+ num);
+	//console.log("num : "+ num);
 	var content = "review_content-"+num;
 	var contentSelector = "#"+content;
 	
 	var hit = $(this).closest("table").find(".rcnt").children().text();
-	console.log("hit : "+ hit);
+	//console.log("hit : "+ hit);
 	
 	if($(contentSelector).css("display") === "block"){
 		$(contentSelector).css("display","none");

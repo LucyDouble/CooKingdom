@@ -145,3 +145,6 @@
 #pageCount{
 	margin-top : 20px;
 }
+.page{
+	cursor : pointer;
+}

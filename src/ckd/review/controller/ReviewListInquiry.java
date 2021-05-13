@@ -70,6 +70,10 @@ public class ReviewListInquiry extends HttpServlet {
 		int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
 		
 		int currentPage = 1;  // 현재 페이지. 기본 세팅 1. 클릭되면 바뀌게 됨.
+		String cPage = request.getParameter("currentPage");
+		if(cPage != null && !cPage.equals("")) {
+			currentPage = Integer.parseInt(request.getParameter("currentPage"));			
+		}
 		String pageNum = request.getParameter("pageNum");
 		if(pageNum != null) {  // 클린 된 숫자를 가지고 온다면
 			try {
@@ -102,13 +106,13 @@ public class ReviewListInquiry extends HttpServlet {
 		List<Review> list = null;
 
 		list =rsv.selectReviewList(startRnum, endRnum, recipeCode);
-//		System.out.println("pageCnt : " + pageCnt);
-//		System.out.println("pageSize : " + pageSize);
-//		System.out.println("startRnum : " + startRnum);
-//		System.out.println("endRnum : " + endRnum);
-//		System.out.println("currentPage : " + currentPage);
-//		System.out.println("reviewList : " + list);
-//		System.out.println("cnt : " + cnt);
+		System.out.println("pageCnt : " + pageCnt);
+		System.out.println("pageSize : " + pageSize);
+		System.out.println("startRnum : " + startRnum);
+		System.out.println("endRnum : " + endRnum);
+		System.out.println("currentPage : " + currentPage);
+		System.out.println("reviewList : " + list);
+		System.out.println("cnt : " + cnt);
 		
 		
 		
@@ -149,7 +153,7 @@ public class ReviewListInquiry extends HttpServlet {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String jsonOutput = gson.toJson(jsonObject);
 		
-//		System.out.println("jsonOutput : "+ jsonOutput);
+		System.out.println("jsonOutput : "+ jsonOutput);
 		
 		response.getWriter().write(jsonOutput.toString());
 //		PrintWriter out = response.getWriter();
