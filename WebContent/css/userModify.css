@@ -13,12 +13,20 @@ td {
 	background-color: white;
 	width: 180px;
 	text-align: center;
+	font-size: 4px;
+}
+
+#user {
+	background-color: #D2D9D8;
+	width: 180px;
+	text-align: center;
+	font-size: 4px;
 }
 
 table {
 	display: inline-block;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 16px;
 }
 
 form {

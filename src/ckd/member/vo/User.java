@@ -5,12 +5,12 @@ import java.sql.Date;
 public class User {
 	
 	private String email;
+	private String newEmail;
 	private String name;
 	private String nickName;
 	private String birth;
 	private String pwd;
 	private String newPwd;
-	private String rePwd;
 	private int phone;
 	private String address;
 	
@@ -19,6 +19,12 @@ public class User {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getNewEmail() {
+		return newEmail;
+	}
+	public void setNewEmail(String newEmail) {
+		this.newEmail = newEmail;
 	}
 	public String getName() {
 		return name;
@@ -49,12 +55,6 @@ public class User {
 	}
 	public void setNewPwd(String newPwd) {
 		this.newPwd = newPwd;
-	}
-	public String getRePwd() {
-		return rePwd;
-	}
-	public void setRePwd(String rePwd) {
-		this.rePwd = rePwd;
 	}
 	public int getPhone() {
 		return phone;

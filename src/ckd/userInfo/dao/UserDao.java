@@ -123,22 +123,30 @@ public class UserDao {
 	public int ModifyUserInfo(Connection conn, User user) {
 		int result = 0;
 		
-		if (user.getEmail() != "") {
+		if (user.getNewEmail() != "") {
 			System.out.println("이메일 값이 있습니다");
-			String queryEmail = "update USERS set EMAIL=? where PASSWORD=?";
+			String queryEmail = "update USERS set EMAIL=? where EMAIL=?";
 			try {
 				System.out.println("email : " + user.getEmail());
+				System.out.println("new email : " + user.getNewEmail());
 				pstmt = conn.prepareStatement(queryEmail);
-				pstmt.setString(1, user.getEmail());
-				pstmt.setString(2, user.getPwd());
-				
+				pstmt.setString(1, user.getNewEmail());
+				pstmt.setString(2, user.getEmail());
 				result = pstmt.executeUpdate();
+				System.out.println("result : " + result);
+				if (result > 0) {
+					System.out.println("result가 0보다 큼");
+					conn.commit();
+				} else {
+					System.out.println("result가 0보다 크지 않음");
+					conn.rollback();
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
 				close();
 			}
-			return result;
+			return result; 
 		} else {
 			System.out.println("이메일 값이 없습니다.");
 		} 

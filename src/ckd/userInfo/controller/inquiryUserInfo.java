@@ -50,7 +50,6 @@ public class inquiryUserInfo extends HttpServlet {
 		String nickName = request.getParameter("nickName");
 		String birth = request.getParameter("birth");
 		String pwd = request.getParameter("pwd");
-		String rePwd = request.getParameter("rePwd");
 		int phone = Integer.parseInt(request.getParameter("phone"));
 		String address = request.getParameter("address");
 		
@@ -59,10 +58,17 @@ public class inquiryUserInfo extends HttpServlet {
 		user.setNickName(nickName);
 		user.setBirth(birth);
 		user.setPwd(pwd);
-		user.setRePwd(rePwd);
 		user.setPhone(phone);
 		user.setAddress(address);
 		
+		System.out.println(user.getEmail());
+		System.out.println(user.getName());
+		System.out.println(user.getNickName());
+		System.out.println(user.getBirth());
+		System.out.println(user.getPwd());
+		System.out.println(user.getPhone());
+		System.out.println(user.getAddress());
+			
 		result = new userManagementService().inquiryUserInfo(user);
 		
 		if (result == 0) {

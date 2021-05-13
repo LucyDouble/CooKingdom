@@ -42,6 +42,7 @@ public class ModifyUserInfo extends HttpServlet {
 		User user = new User();
 		
 		String email = request.getParameter("email");
+		String newEmail = request.getParameter("newEmail");
 		String name = request.getParameter("name");
 		String nickName = request.getParameter("nickName");
 		String birth = request.getParameter("birth");
@@ -51,6 +52,7 @@ public class ModifyUserInfo extends HttpServlet {
 		String address = request.getParameter("address");
 		
 		user.setEmail(email);
+		user.setNewEmail(newEmail);
 		user.setName(name);
 		user.setNickName(nickName);
 		user.setBirth(birth);
@@ -60,6 +62,7 @@ public class ModifyUserInfo extends HttpServlet {
 		user.setAddress(address);
 		
 		System.out.println(user.getEmail());
+		System.out.println(user.getNewEmail());
 		System.out.println(user.getName());
 		System.out.println(user.getNickName());
 		System.out.println(user.getBirth());
