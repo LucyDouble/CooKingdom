@@ -36,7 +36,7 @@ public class ReviewDAO {
 	/*review page split*/
 	public List<Review> selectReviewList(Connection conn, int start, int end, int recipeCode){
 		List<Review> list = null;
-		String sql_1 ="(SELECT REVIEW_NO, NICKNAME, RECIPE_NAME, REVIEW_SUBJECT, REVIEW_CONTENT, REVIEW_PHOTO, REVIEW_DATE, HIT " + 
+		String sql_1 ="(SELECT REVIEW_NO, review.email, NICKNAME, RECIPE_NAME, REVIEW_SUBJECT, REVIEW_CONTENT, REVIEW_PHOTO, REVIEW_DATE, HIT " + 
 				"FROM REVIEW LEFT JOIN USERS " + 
 				"ON review.email = users.email " + 
 				"LEFT JOIN RECIPE " + 
@@ -48,14 +48,9 @@ public class ReviewDAO {
 				
 		String sql = "SELECT * FROM " + sql_2 +" WHERE R >= ? AND R<= ?";
 
-		System.out.println("리뷰리스트 다오 옴");
 		pstmt = null; rs = null;
 		
 		try {
-			System.out.println("dao recipeCode : "+ recipeCode);
-			System.out.println("dao start : "+ start);
-			System.out.println("dao end : "+ end);
-			System.out.println("sql : "+sql);
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, recipeCode);
 			pstmt.setInt(2, start);
@@ -66,6 +61,7 @@ public class ReviewDAO {
 				do {
 					Review vo = new Review();
 					vo.setReviewNo(rs.getInt("REVIEW_NO"));
+					vo.setEmail(rs.getString("email"));
 					vo.setNickname(rs.getString("NICKNAME"));
 					vo.setRecipeName(rs.getString("RECIPE_NAME"));
 					vo.setReviewSubject(rs.getString("REVIEW_SUBJECT"));
@@ -129,7 +125,6 @@ public class ReviewDAO {
 		
 		pstmt = null;
 		try {
-			System.out.println("DAO왔어욤~~");
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, review.getReviewSubject());
 			pstmt.setString(2, review.getReviewContent());

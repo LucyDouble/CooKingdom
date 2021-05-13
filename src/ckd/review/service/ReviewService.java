@@ -20,7 +20,6 @@ public class ReviewService {
 		return list;
 	}
 	
-	
 	public int registerReview(Review review) {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();

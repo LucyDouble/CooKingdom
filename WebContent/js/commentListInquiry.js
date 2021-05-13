@@ -6,7 +6,6 @@ $(document).load(function(){
 	var recipeCode = document.getElementById("recipeCode").value; 
 	
 	$.ajax({
-	
 		url : "commentListInquiry",
 		type : "POST",
 		data : {

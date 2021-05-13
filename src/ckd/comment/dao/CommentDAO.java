@@ -35,11 +35,11 @@ public class CommentDAO {
 	
 	public List<Comment> selectCommentList(Connection conn, int recipeCode){
 		List<Comment> list = null;
-		String sql = "SELECT COMMENT_NO, NICKNAME, TO_CHAR(COMMENT_DATE,'YYYYMMDDHH24MISS'), COMMENT_CONTENT, COMMENT_DEPTH, COMMENT_GROUP, COMMENT_SORTS "
+		String sql = "SELECT COMMENT_NO,comments.email, NICKNAME, to_char(COMMENT_DATE, 'YY-MM-DD HH24:MI:SS')as cDate, COMMENT_CONTENT, COMMENT_DEPTH, COMMENT_GROUP, COMMENT_SORTS "
 				+ "FROM COMMENTS LEFT JOIN USERS "
 				+ "ON comments.email = users.email "
-				+ "WHERE RECIPE_CODE = ?";
-		
+				+ "WHERE RECIPE_CODE = ?"
+				+ "ORDER BY COMMENT_NO DESC";
 		pstmt = null; rs = null;
 		try {
 			pstmt = conn.prepareStatement(sql);
@@ -49,13 +49,14 @@ public class CommentDAO {
 				list = new ArrayList<Comment>();
 				do {
 					Comment comment = new Comment();
-					comment.setCommentNo(rs.getInt("commentNo"));
-					comment.setNickname(rs.getString("nickname"));
-					comment.setCommentDate(rs.getDate("commentDate"));
-					comment.setCommentContent(rs.getString("commentContent"));
-					comment.setCommentDepth(rs.getInt("commentDepth"));
-					comment.setCommentGroup(rs.getInt("commentGroup"));
-					comment.setCommentSorts(rs.getInt("commentSorts"));			
+					comment.setCommentNo(rs.getInt("COMMENT_NO"));
+					comment.setEmail(rs.getString("email"));
+					comment.setNickname(rs.getString("NICKNAME"));
+					comment.setCommentDate(rs.getString("cDate"));
+					comment.setCommentContent(rs.getString("COMMENT_CONTENT"));
+					comment.setCommentDepth(rs.getInt("COMMENT_DEPTH"));
+					comment.setCommentGroup(rs.getInt("COMMENT_GROUP"));
+					comment.setCommentSorts(rs.getInt("COMMENT_SORTS"));			
 					list.add(comment);
 				}while(rs.next());
 			}
@@ -111,17 +112,17 @@ public class CommentDAO {
 			}
 			close();  // 다음에 나올 글쓰기 쿼리를 위해 기존 것을 삭제함.
 					
-			if(comment.getCommentNo() != 0) {
-				pstmt = conn.prepareStatement(sqlUpdate);
-				pstmt.setInt(1, comment.getCommentGroup());
-				result = pstmt.executeUpdate();
-				close();
-				commentGroup = comment.getCommentGroup();
-				commentDepth = comment.getCommentDepth();
-				commentSorts = comment.getCommentSorts();
-			}else {
-				commentGroup = max;
-			}
+//			if(comment.getCommentNo() != 0) {
+//				pstmt = conn.prepareStatement(sqlUpdate);
+//				pstmt.setInt(1, comment.getCommentGroup());
+//				result = pstmt.executeUpdate();
+//				close();
+//				commentGroup = comment.getCommentGroup();
+//				commentDepth = comment.getCommentDepth();
+//				commentSorts = comment.getCommentSorts();
+//			}else {
+//				commentGroup = max;
+//			}
 	
 			
 			//댓글쓰기
@@ -143,6 +144,67 @@ public class CommentDAO {
 		
 		return result;
 	} 
+	
+	/*Update*/
+	public int updateComment(Connection conn, Comment comment ) {
+		int result = 0;
+		String sql = "UPDATE COMMENTS SET COMMENT_CONTENT = ? WHERE COMMENT_NO = ? ";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, comment.getCommentContent());
+			pstmt.setInt(2, comment.getCommentNo());
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	
+	/*DELETE*/
+	public int deleteComment(Connection conn, Comment comment ) {
+		int result = 0;
+		String sql = "DELETE FROM COMMENTS WHERE COMMENT_NO = ? AND RECIPE_CODE=?";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, comment.getCommentNo());
+			pstmt.setInt(2, comment.getRecipeCode());
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		
+		
+		return result;
+	}
+	
+	
+	/*comment total Count*/
+	public int getCommentCount(Connection conn, int recipeCode) {
+		int cnt = 0;
+		String sql = "select COUNT(*) from COMMENTS where comments.recipe_code = ?";
+		
+
+		pstmt = null;
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, recipeCode);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				cnt = rs.getInt(1);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}		
+		return cnt;
+	}
+	
 	
 	
 }

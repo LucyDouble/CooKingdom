@@ -11,16 +11,16 @@ import ckd.comment.service.CommentService;
 import ckd.comment.vo.Comment;
 
 /**
- * Servlet implementation class CommentRegister
+ * Servlet implementation class CommentModify
  */
-@WebServlet("/commentRegister")
-public class CommentRegister extends HttpServlet {
+@WebServlet("/commentModify")
+public class CommentModify extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CommentRegister() {
+    public CommentModify() {
         super();
     }
 
@@ -28,26 +28,27 @@ public class CommentRegister extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		execute(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		execute(request, response);
+	}
+
+	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		CommentService csv = new CommentService();
 		Comment comment = new Comment();
 		
-		String email = request.getParameter("email");
-		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
 		String commentContent = request.getParameter("commentContent");
-
-		comment.setEmail(email);
-		comment.setRecipeCode(recipeCode);
-		comment.setCommentContent(commentContent);
+		int commentNo = Integer.parseInt(request.getParameter("commentNo"));
 		
-		int result = new CommentService().insertComment(comment);
-	
+		comment.setCommentContent(commentContent);
+		comment.setCommentNo(commentNo);
+		
+		int result = csv.updateComment(comment);
 	}
-
 }

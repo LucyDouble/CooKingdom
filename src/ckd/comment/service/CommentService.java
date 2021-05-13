@@ -27,7 +27,28 @@ public class CommentService {
 		return result;
 	}
 	
+	public int updateComment( Comment comment ) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new CommentDAO().updateComment(conn, comment);
+		JDBCConnection.close(conn);
+		return result;
+	}
 	
+	public int deleteComment( Comment comment ) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new CommentDAO().deleteComment(conn, comment);
+		JDBCConnection.close(conn);
+		return result;
+	}
 	
+	public int getCommentCount(int recipeCode) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new CommentDAO().getCommentCount(conn, recipeCode);
+		JDBCConnection.close(conn);
+		return result;
+	}
 	
 }

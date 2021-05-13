@@ -119,8 +119,8 @@
 /*수정 */
 .showWriter{
     display: inline-block;
-    position: absolute;
-    right: 0;
+    padding-left : 550px;
+    width : 100px; 
 }
 .showWriter button {
     border: 0;

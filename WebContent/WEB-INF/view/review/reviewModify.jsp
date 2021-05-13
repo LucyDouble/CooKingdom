@@ -74,7 +74,7 @@
 				data : formData,
 				success : function(data){
 					console.log(data);
-					history.back();
+					history.go(-1);
 				},
 				error : function(request, status, error){
 					console.log(error);

@@ -8,7 +8,7 @@ public class Comment {
 	private String email;
 	private String nickname;
 	private int recipeCode;
-	private Date commentDate;
+	private String commentDate;
 	private String commentContent;
 	private int commentDepth;
 	private int commentGroup;
@@ -16,7 +16,7 @@ public class Comment {
 	
 	public Comment() {}
 
-	public Comment(int commentNo, String email, String nickname, int recipeCode, Date commentDate,
+	public Comment(int commentNo, String email, String nickname, int recipeCode, String commentDate,
 			String commentContent, int commentDepth, int commentGroup, int commentSorts) {
 		super();
 		this.commentNo = commentNo;
@@ -69,11 +69,11 @@ public class Comment {
 		this.recipeCode = recipeCode;
 	}
 
-	public Date getCommentDate() {
+	public String getCommentDate() {
 		return commentDate;
 	}
 
-	public void setCommentDate(Date commentDate) {
+	public void setCommentDate(String commentDate) {
 		this.commentDate = commentDate;
 	}
 

@@ -1,6 +1,9 @@
 package ckd.comment.controller;
 
 import java.io.IOException;
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -8,6 +11,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 import ckd.comment.service.CommentService;
 import ckd.comment.vo.Comment;
@@ -48,13 +56,42 @@ public class CommentListInquiry extends HttpServlet {
 		CommentService scv = new CommentService();
 		
 		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
+		int cnt = 0;   // 총 글 개수
+		cnt = scv.getCommentCount(recipeCode);
+		
+		
 		
 		List<Comment> list = null;
-		//TODO  list조회시 어떤 레시피에 대한 리뷰인지 확인하는 recipeCode 던져줘야함. 
 		list =scv.selectCommentList(recipeCode);
-		System.out.println("list : "+ list);		
-		request.setAttribute("commentList", list);
 		
-		request.getRequestDispatcher("/WEB-INF/view/review/reviewListInquiry.jsp").forward(request, response);
+		// JsonObject 생성
+		JsonObject jsonObject = new JsonObject();
+		jsonObject.addProperty("cnt", cnt);
+		try {
+			JsonArray jArray = new JsonArray();
+			for(int i=0; i<list.size(); i++) {
+				JsonObject jobj = new JsonObject();
+				jobj.addProperty("commentNo", list.get(i).getCommentNo());
+				jobj.addProperty("email", list.get(i).getEmail());
+				jobj.addProperty("nickname", list.get(i).getNickname());
+				jobj.addProperty("commentDate", list.get(i).getCommentDate());				
+				jobj.addProperty("commentContent", list.get(i).getCommentContent());
+				jArray.add(jobj);
+			}
+			jsonObject.add("commentList", jArray);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		                
+		        
+		// Parse Pretty
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		String jsonOutput = gson.toJson(jsonObject);
+		
+		response.getWriter().write(jsonOutput.toString());
+		
+		
+		
+		
 	}
 }

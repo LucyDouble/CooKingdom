@@ -9,18 +9,20 @@ import javax.servlet.http.HttpServletResponse;
 
 import ckd.comment.service.CommentService;
 import ckd.comment.vo.Comment;
+import ckd.review.service.ReviewService;
+import ckd.review.vo.Review;
 
 /**
- * Servlet implementation class CommentRegister
+ * Servlet implementation class CommentRemove
  */
-@WebServlet("/commentRegister")
-public class CommentRegister extends HttpServlet {
+@WebServlet("/commentRemove")
+public class CommentRemove extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CommentRegister() {
+    public CommentRemove() {
         super();
     }
 
@@ -28,26 +30,31 @@ public class CommentRegister extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		execute(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		execute(request, response);
+	}
+
+	
+	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("댓글 삭제 서블릿 들어오기 성공!");
 		
 		CommentService csv = new CommentService();
+		
+		int result = 0;
+		
 		Comment comment = new Comment();
+		comment.setRecipeCode(Integer.parseInt(request.getParameter("recipeCode")));
+		comment.setCommentNo(Integer.parseInt(request.getParameter("commentNo")));
 		
-		String email = request.getParameter("email");
-		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
-		String commentContent = request.getParameter("commentContent");
-
-		comment.setEmail(email);
-		comment.setRecipeCode(recipeCode);
-		comment.setCommentContent(commentContent);
+		result = csv.deleteComment(comment);
 		
-		int result = new CommentService().insertComment(comment);
-	
+		
 	}
 
 }

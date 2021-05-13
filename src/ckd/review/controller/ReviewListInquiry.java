@@ -102,13 +102,13 @@ public class ReviewListInquiry extends HttpServlet {
 		List<Review> list = null;
 
 		list =rsv.selectReviewList(startRnum, endRnum, recipeCode);
-		System.out.println("pageCnt : " + pageCnt);
-		System.out.println("pageSize : " + pageSize);
-		System.out.println("startRnum : " + startRnum);
-		System.out.println("endRnum : " + endRnum);
-		System.out.println("currentPage : " + currentPage);
-		System.out.println("reviewList : " + list);
-		System.out.println("cnt : " + cnt);
+//		System.out.println("pageCnt : " + pageCnt);
+//		System.out.println("pageSize : " + pageSize);
+//		System.out.println("startRnum : " + startRnum);
+//		System.out.println("endRnum : " + endRnum);
+//		System.out.println("currentPage : " + currentPage);
+//		System.out.println("reviewList : " + list);
+//		System.out.println("cnt : " + cnt);
 		
 		
 		
@@ -125,6 +125,7 @@ public class ReviewListInquiry extends HttpServlet {
 			for(int i=0; i<list.size(); i++) {
 				JsonObject jobj = new JsonObject();
 				jobj.addProperty("reviewNo", list.get(i).getReviewNo());
+				jobj.addProperty("email", list.get(i).getEmail());
 				jobj.addProperty("recipeName", list.get(i).getRecipeName());
 				jobj.addProperty("reviewSubject", list.get(i).getReviewSubject());
 				jobj.addProperty("nickname", list.get(i).getNickname());
@@ -142,14 +143,14 @@ public class ReviewListInquiry extends HttpServlet {
 			e.printStackTrace();
 		}
 		                
-		System.out.println("JsonObject 생성 : " + jsonObject.toString() + "\n");
+//		System.out.println("JsonObject 생성 : " + jsonObject.toString() + "\n");
 		        
 		// Parse Pretty
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-//		Gson gson = new GsonBuilder().setDateFormat("YYYY-MM-DD").create();
 		String jsonOutput = gson.toJson(jsonObject);
 		
-		System.out.println(jsonOutput);
+//		System.out.println("jsonOutput : "+ jsonOutput);
+		
 		response.getWriter().write(jsonOutput.toString());
 //		PrintWriter out = response.getWriter();
 //		
