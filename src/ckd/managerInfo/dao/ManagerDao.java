@@ -12,9 +12,13 @@ import ckd.member.vo.User;
 public class ManagerDao {
 
 private PreparedStatement pstmt = null;
+private ResultSet rs = null;
 	
 	private void close() {
 		try {
+			if (rs != null) {
+				rs.close();
+			}
 			if (pstmt != null) {
 				pstmt.close();
 			}
@@ -63,7 +67,7 @@ private PreparedStatement pstmt = null;
 	}
 	
 	public int checkId(Connection conn, Manager manager) {
-		ResultSet rs = null;
+		rs = null;
 		String query = "select * from USERS where email=?";
 		
 		try {

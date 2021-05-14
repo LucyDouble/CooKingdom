@@ -143,12 +143,14 @@ public class IngredientDAO {
 		System.out.println("pstmt 직전 재료 타입 이름 : " + ingredient.getIngTypeName());
 		System.out.println("pstmt 직전 재료 타입 코드 : " + ingredient.getIngTypeCode());
 		System.out.println("pstmt 직전 재료 분량 : " + ingredient.getIngQty());
-		JDBCConnection.close(pstmt);
+		
 		
 		
 		System.out.println(result);
 		} catch(SQLException e) {
 			e.printStackTrace();
+		} finally {
+			JDBCConnection.close(pstmt);
 		}
 		return result;
 	}
