@@ -85,6 +85,8 @@ public class RecipeRegester extends HttpServlet {
 		//	------------------- 레시피, 재료 등록 ----------------------------
 		Recipe Rvo = new Recipe();
 		List<Ingredient> IvoList = new ArrayList<Ingredient>();
+		String imgPath = "files/" + fileName;
+		
 			
 		Rvo.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
 		Rvo.setRecipeName(mReq.getParameter("recipeName"));
@@ -96,6 +98,7 @@ public class RecipeRegester extends HttpServlet {
 		Rvo.setCookingTime(mReq.getParameter("CookingTime"));
 		Rvo.setRecipeLevel(mReq.getParameter("recipeLevel"));
 		Rvo.setPrice(Integer.parseInt(mReq.getParameter("recipePrice")));
+		Rvo.setRecipeUrl(imgPath);
 
 		//	---------------- 재료를 입력한 개수 -------------------
 		int cnt = Integer.parseInt(mReq.getParameter("cnt"));

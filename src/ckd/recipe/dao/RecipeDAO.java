@@ -295,7 +295,7 @@ public class RecipeDAO {
 		pstmt.setString(10, recipe.getRecipeQty());
 		pstmt.setString(11, recipe.getRecipeLevel());
 		pstmt.setString(12, "x");
-		pstmt.setString(13, "");
+		pstmt.setString(13, recipe.getRecipeUrl());
 		pstmt.setInt(14, 0);
 		pstmt.setInt(15, recipe.getPrice());
 		pstmt.setString(16, recipe.getRfilePath());
