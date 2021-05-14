@@ -65,48 +65,19 @@ function getContextPath() {
     hostIndex = location.href.indexOf( location.host ) + location.host.length;
     return location.href.substring( hostIndex, location.href.indexOf('/', hostIndex + 1) );
 }
-var thisP = "";
-$("body").on("click","[class=page]",function(){
-	thisP = this.id;
-	$.ajax({
-		url: "reviewListInquiry",
-		type : "post", 
-		dataType : "json",
-		data : { 
-			currentPage : thisP, 
-			recipeCode : recipeCode 
-		},
-		success : reviewDisplay
-	});
-});
-
-$("body").on("click","[id=beforeP]", function(){
-	
+function pageGo(page){
+	console.log("pageGo:"+ page);
 	$.ajax({
 		url:"reviewListInquiry",
 		type:"post",
 		dataType : "json",
 		data : {
-			startPage : thisP-1,
+			currentPage : page,
 			recipeCode : recipeCode 
 		},
 		success : reviewDisplay
 	});
-});	
-
-$("body").on("click","[id=afterP]", function(){
-	
-	$.ajax({
-		url:"reviewListInquiry",
-		type:"post",
-		dataType : "json",
-		data : {
-			startPage : thisP+1,
-			recipeCode : recipeCode 
-		},
-		success : reviewDisplay
-	});
-});	
+}
 
 function reviewDisplay(data){
 		
@@ -159,15 +130,15 @@ function reviewDisplay(data){
 	
 	var page = "";
 	
-	if(data.startRnum >1){
-	page += "<a id='beforeP'>이전</a>";				
+	if(data.startPage != 1){
+	page += "<a id='beforeP' onclick='pageGo("+(data.startPage-1)+">이전</a>";				
 	}
-	for (var i = data.startRnum; i<data.endRnum; i++){
-	page += "<a id='"+i+"' class='page'>"+" "+ i +" "+"</a>";				
+	for (var i = data.startPage; i<=data.endPage; i++){
+	page += "<a class='page' onclick='pageGo("+i+")'>"+" "+ i +" "+"</a>";				
 	}
 	
-	if(data.endRnum< data.pageCnt)
-	page += "<a id='afterP'>다음</a>"
+	if(data.endPage < data.pageCnt)
+	page += "<a id='afterP' onclick='pageGo("+(data.endPage+1)+">다음</a>"
 	
 
 	$("#pageCount").html(page);

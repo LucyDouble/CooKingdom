@@ -145,6 +145,7 @@
 #pageCount{
 	margin-top : 20px;
 }
-.page{
+.page, #beforeP, #afterP{
 	cursor : pointer;
 }
+

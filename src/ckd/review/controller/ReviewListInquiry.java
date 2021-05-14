@@ -72,19 +72,22 @@ public class ReviewListInquiry extends HttpServlet {
 		int currentPage = 1;  // 현재 페이지. 기본 세팅 1. 클릭되면 바뀌게 됨.
 		String cPage = request.getParameter("currentPage");
 		if(cPage != null && !cPage.equals("")) {
-			currentPage = Integer.parseInt(request.getParameter("currentPage"));			
-		}
-		String pageNum = request.getParameter("pageNum");
-		if(pageNum != null) {  // 클린 된 숫자를 가지고 온다면
 			try {
-				currentPage = Integer.parseInt(pageNum);
-			}catch (Exception e){
+				currentPage = Integer.parseInt(request.getParameter("currentPage"));							
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		}
-		
+		}		
 		
 		int startPage = 1; // 화면에 나타날 시작 페이지
+		String sPage = request.getParameter("startPage");
+		if(sPage != null && !sPage.equals("")) {
+			try {
+				startPage = Integer.parseInt(request.getParameter("startPage"));							
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}		
 		int endPage = 1; // 화면에 나타날 마지막 페이지
 		
 		// 문제 구간 생김. currentPage가 pageBlock 배수인 경우 오류 발생 즉, 3,6,9..
@@ -100,6 +103,8 @@ public class ReviewListInquiry extends HttpServlet {
 		
 		int startRnum = (currentPage-1)*pageSize +1;
 		int endRnum = startRnum + pageSize - 1;
+		if(endRnum > cnt) 
+			endRnum = cnt;
 		
 		
 		
@@ -108,8 +113,11 @@ public class ReviewListInquiry extends HttpServlet {
 		list =rsv.selectReviewList(startRnum, endRnum, recipeCode);
 		System.out.println("pageCnt : " + pageCnt);
 		System.out.println("pageSize : " + pageSize);
+		System.out.println("pageBlock : " + pageBlock);
 		System.out.println("startRnum : " + startRnum);
+		System.out.println("startPage : " + startPage);
 		System.out.println("endRnum : " + endRnum);
+		System.out.println("endPage : " + endPage);
 		System.out.println("currentPage : " + currentPage);
 		System.out.println("reviewList : " + list);
 		System.out.println("cnt : " + cnt);
@@ -120,8 +128,8 @@ public class ReviewListInquiry extends HttpServlet {
 		JsonObject jsonObject = new JsonObject();
 		jsonObject.addProperty("pageCnt", pageCnt);
 		jsonObject.addProperty("pageSize", pageSize);
-		jsonObject.addProperty("startRnum", startRnum);
-		jsonObject.addProperty("endRnum", endRnum);
+		jsonObject.addProperty("startPage", startPage);
+		jsonObject.addProperty("endPage", endPage);
 		jsonObject.addProperty("currentPage", currentPage);
 		jsonObject.addProperty("cnt", cnt);
 		try {

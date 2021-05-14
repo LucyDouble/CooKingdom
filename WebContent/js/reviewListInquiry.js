@@ -38,7 +38,7 @@ function openCont(evt, cont) {
 	var content = "review_content-"+num;
 	var contentSelector = "#"+content;
 	
-	var hit = $(this).closest("table").find(".rcnt").children().text();
+	var hit = $(this).closest("table").find(".rcnt").children();
 	//console.log("hit : "+ hit);
 	
 	if($(contentSelector).css("display") === "block"){
@@ -50,9 +50,8 @@ function openCont(evt, cont) {
 			url:"reviewHitUpdate",
 			type:"POST",
 			data: { reviewNo : num},
-			success: function(data){				
+			success: function(data){					
 				$(hit).text(data);
-				//location.reload();
 			}
 	 });
 		
