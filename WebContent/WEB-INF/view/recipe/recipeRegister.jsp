@@ -12,6 +12,19 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+let cnt = 0;
+function addIng() {
+	let newIng = "<input type='text' name='' placeholder='재료'>";
+	let newIngType = "<input type='text' readonly>";
+	let addIng_cnt = document.getElementById("addIng_cnt");
+	
+	$("#ingAdded").append(newIngType);
+	$("#ingAdded").append(newIng);
+	
+	addIng_cnt.setAttribute('value', cnt++);
+};
+</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -121,55 +134,25 @@
 									<option value="양념">양념</option>
 							</select></td>
 						</tr>
-<!--
-	                    <tr>
-	                        <th>부재료</th>
-	                        <td>
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                            <input type="text" name="" placeholder="부재료">
-	                        </td>
-	                    </tr>
-	                    <tr>
-	                        <th>양념</th>
-	                        <td>
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                            <input type="text" name="" placeholder="양념">
-	                        </td>
-	                    </tr>
+						<tr>
+							<th>재료</th>
+							<td id="ingAdded">
+						</tr>
+						<tr>
+							<th>추가</th>
+							<td><input type="button" value="추가" onClick="addIng();">
+								<input id="addIng_cnt" type="hidden"></td>
+						</tr>
 
-						<tr>
-							<th>재료 이름</th>
-							<td><input required type="text" name="ingName"
-								placeholder="내용을 입력하세요"></td>
-						</tr>
-						<tr>
-							<th>재료 분량</th>
-							<td><input required type="text" name="ingQty"
-								placeholder="내용을 입력하세요"></td>
-						</tr>
 						<tr>
 							<th>상품 소개</th>
 							<td><textarea id="summernote" name="editordata"></textarea>
 							</td>
 						</tr>
--->
+
 					</tbody>
 				</table>
-				<button type="button" class="regesterBtn" id="regesterBtn" >등록</button>
+				<button type="button" class="regesterBtn" id="regesterBtn">등록</button>
 			</form>
 		</main>
 
