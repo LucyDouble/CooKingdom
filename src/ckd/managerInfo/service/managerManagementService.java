@@ -23,9 +23,9 @@ public class managerManagementService {
 	
 	public int checkId(Manager manager) {
 		int result = 0;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new ManagerDao().checkId(conn, manager);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	

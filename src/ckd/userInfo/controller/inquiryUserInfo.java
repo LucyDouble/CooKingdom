@@ -50,7 +50,7 @@ public class inquiryUserInfo extends HttpServlet {
 		String nickName = request.getParameter("nickName");
 		String birth = request.getParameter("birth");
 		String pwd = request.getParameter("pwd");
-		int phone = Integer.parseInt(request.getParameter("phone"));
+		String phone = request.getParameter("phone");
 		String address = request.getParameter("address");
 		
 		user.setEmail(email);

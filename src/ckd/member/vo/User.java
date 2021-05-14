@@ -11,7 +11,7 @@ public class User {
 	private String birth;
 	private String pwd;
 	private String newPwd;
-	private int phone;
+	private String phone;
 	private String address;
 	
 	public String getEmail() {
@@ -56,10 +56,10 @@ public class User {
 	public void setNewPwd(String newPwd) {
 		this.newPwd = newPwd;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getAddress() {

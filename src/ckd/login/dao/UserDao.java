@@ -48,7 +48,7 @@ public class UserDao {
 					result.setNickName(rs.getString("nickname"));
 					result.setPwd(rs.getString("password"));
 					result.setBirth(rs.getString("birth"));
-					result.setPhone(rs.getInt("phone"));
+					result.setPhone(rs.getString("phone"));
 					result.setAddress(rs.getString("address"));
 				} else {
 					System.out.println("유저 비밀번호가 서로 불일치");
@@ -83,7 +83,7 @@ public class UserDao {
 				user.setNickName(rs.getString("nickName"));
 				user.setBirth(rs.getString("birth"));
 				user.setPwd(rs.getString("password"));
-				user.setPhone(rs.getInt("phone"));
+				user.setPhone(rs.getString("phone"));
 				user.setAddress(rs.getString("address"));
 				return 1;
 			} else {
