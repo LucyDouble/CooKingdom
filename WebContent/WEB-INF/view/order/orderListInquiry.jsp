@@ -60,7 +60,7 @@
 						<tr>
 							<td></td>
 							<td></td>
-							<td style="text-align: right"><strong>&xvee;</strong></td>
+							<td style="text-align: right;"><strong style="cursor: pointer;">&xvee;</strong></td>
 						</tr>
 					</table>
 				</div>
@@ -93,7 +93,7 @@
 						<tr>
 							<td></td>
 							<td></td>
-							<td style="text-align: right"><strong>&xwedge;</strong></td>
+							<td style="text-align: right;"><strong style="cursor: pointer;">&xwedge;</strong></td>
 						</tr>
 					</table>
 				</div>

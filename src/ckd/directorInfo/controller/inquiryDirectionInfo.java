@@ -44,7 +44,7 @@ public class inquiryDirectionInfo extends HttpServlet {
 		String name = request.getParameter("name");
 		String pwd = request.getParameter("pwd");
 		String rePwd = request.getParameter("rePwd");
-		int phone = Integer.parseInt(request.getParameter("phone"));
+		String phone = request.getParameter("phone");
 		String serial = request.getParameter("serial");
 		
 		manager.setEmail(email);

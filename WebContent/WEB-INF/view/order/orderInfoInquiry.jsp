@@ -45,7 +45,7 @@
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td id="userEmail"><%= user.getEmail() %></td>
+						<td><%= user.getEmail() %></td>
 					</tr>
 					<tr>
 						<th>주소</th>
@@ -63,19 +63,19 @@
 				<table>
 					<tr>
 						<th>이름</th>
-						<td><input type="text" id="buyer_name" value="" /></td>
+						<td><input type="text" id="buyer_name" value="" name="sName"/></td>
 					</tr>
 					<tr>
 						<th>휴대폰번호</th>
-						<td><input type="text" size="30" id="buyer_phone" value="" /></td>
+						<td><input type="text" size="30" id="buyer_phone" value="" name="sPhone"/></td>
 					</tr>
 					<tr>
 						<th>이메일</th>
-						<td><input type="text" size="30" id="buyer_email" value="" /></td>
+						<td><%= user.getEmail() %></td>
 					</tr>
 					<tr>
 						<th>주소</th>
-						<td><input type="text" size="50" id="buyer_address" value="" /></td>
+						<td><input type="text" size="50" id="buyer_address" value="" name="sAddress"/></td>
 					</tr>
 				</table>
 
@@ -128,7 +128,7 @@
 					<table>
 						<tr>
 							<th>카드사
-							</td>
+							</th>
 							<td><select name="card" id="card">
 									<option value="" disabled selected>카드사를 선택해주세요</option>
 									<option value="kbcard">국민카드</option>
@@ -139,7 +139,7 @@
 						</tr>
 						<tr>
 							<th>할부개월
-							</td>
+							</th>
 							<td><select name="montly" id="monthly">
 									<option value="single">일시불</option>
 									<option value="2month">2개월</option>
@@ -193,15 +193,18 @@
 					</tr>
 					<tr>
 						<th class="paybill_total">총 주문 금액</th>
-						<td class="paybill_total_price" id="sumPriceShip"><strong>52,500원</strong></td>
+						<td class="paybill_total_price" id="sumPriceShip">
+							<strong>52,500원</strong>
+						</td>
 					</tr>
 					</table>
 					</div>
 					<br>
-					<button class="payBtn" onClick="getOrderList();">결제하기</button>
+					<button class="payBtn" onClick="orderRegister();">결제하기</button>
 				</div>
 			</div>
 		</div>
+		<input type="hidden" name="oTotal" value="100" id="oTotal">
 		</form>
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>

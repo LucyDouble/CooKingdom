@@ -28,7 +28,7 @@
 		document.getElementById("msg7").style.display = "none";
 		$.ajax({
 			type : "POST",
-			url : "modifyUserEmail",
+			url : "modifyUserInfo",
 			data : {
 				email : email,
 				newEmail : newEmail
@@ -71,7 +71,7 @@
 		document.getElementById("msg7").style.display = "none";
 		$.ajax({
 			type : "POST",
-			url : "modifyUserEmail",
+			url : "modifyUserInfo",
 			data : {
 				email : email,
 				newName : newName
@@ -113,7 +113,7 @@
 		document.getElementById("msg7").style.display = "none";
 		$.ajax({
 			type : "POST",
-			url : "modifyUserEmail",
+			url : "modifyUserInfo",
 			data : {
 				email : email,
 				newNickName : newNickName
@@ -155,7 +155,7 @@
 		document.getElementById("msg7").style.display = "none";
 		$.ajax({
 			type : "POST",
-			url : "modifyUserEmail",
+			url : "modifyUserInfo",
 			data : {
 				email : email,
 				newPhone : newPhone
@@ -197,7 +197,7 @@
 		document.getElementById("msg7").style.display = "none";
 		$.ajax({
 			type : "POST",
-			url : "modifyUserEmail",
+			url : "modifyUserInfo",
 			data : {
 				email : email,
 				newPwd : newPwd
@@ -239,7 +239,7 @@
 		document.getElementById("msg7").style.display = "none";
 		$.ajax({
 			type : "POST",
-			url : "modifyUserEmail",
+			url : "modifyUserInfo",
 			data : {
 				email : email,
 				newAddress : newAddress
@@ -309,7 +309,7 @@
 				<td id="button"><button id="btn" onclick="updatePhone();">휴대폰 번호 변경</button>				
 			</tr>
 			<tr id="tr">
-				<td id="info">비밀번호 변경</td>
+				<td id="info">비밀번호</td>
 				<td id="input">${User.pwd }</td>
 				<td id="input"><input type="text" class="text" id="newPwd" name="newPwd"></td>
 				<td id="button"><button id="btn" onclick="updatePwd();">비밀번호 변경</button></td>
@@ -331,4 +331,5 @@
 		<input type="button" value="나가기" id="out">
 	</div>
 	<jsp:include page="../main/footer.jsp"></jsp:include></body>
+</body>
 </html>

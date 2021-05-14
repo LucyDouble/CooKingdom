@@ -14,6 +14,7 @@ public class UserDao {
 	
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
+	private Connection conn = null;
 	
 	private void close() {
 		try {
@@ -22,6 +23,9 @@ public class UserDao {
 			}
 			if (rs != null) {
 				rs.close();
+			}
+			if (conn != null) {
+				conn.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -49,7 +49,7 @@
                    	<div id="cmt">
 					<!-- 댓글들을 보여주는 div-->
                    	</div>
-                   	<a id="moreBtn" href="javascript:moreContent('cmt',10);" >더보기(more)</a>
+                   	<div id="moreDiv"></div>
                    	 	<br><br>                                  	                    	 
                    <input type="text" id="commentInput" /><input type="button" value="글 등록" id="commentSubmit" onclick="goReview();"><input type="button" value="글 수정" id="commentModify" />
             </div> 

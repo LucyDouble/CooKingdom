@@ -72,12 +72,14 @@ public class login extends HttpServlet {
 			if (result2 != null) {
 				System.out.println("관리자 로그인 성공");
 				request.getSession().setAttribute("Manager", result2);
+				request.setAttribute("Manager", result2);
 				System.out.println("관리자에 세션 값 넣기?");
 			} else {
 				System.out.println("관리자 로그인 실패");
 				if (result3 != null) {
 					System.out.println("책임자 로그인 성공");
 					request.getSession().setAttribute("Director", result3);
+					request.setAttribute("Director", result3);
 					System.out.println("책임자에 세션 값 넣기?");
 				} else {
 					System.out.println("책임자 로그인 실패");

@@ -29,4 +29,35 @@ public class managerManagementService {
 		return result;
 	}
 	
+	public int modifyManagerEmail(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ManagerDao().modifyManagerEmail(conn, manager);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int modifyManagerName(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ManagerDao().modifyManagerName(conn, manager);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int modifyManagerPhone(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ManagerDao().modifyManagerPhone(conn, manager);
+		JDBCConnection.close(conn);
+		return result; 
+	}
+	
+	public int modifyManagerPwd(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ManagerDao().modifyManagerPwd(conn, manager);
+		JDBCConnection.close(conn);
+		return result;
+	}
 }
