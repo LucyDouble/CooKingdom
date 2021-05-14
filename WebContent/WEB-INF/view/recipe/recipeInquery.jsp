@@ -23,7 +23,11 @@
 			<input type="hidden" name="mkName" value="${recipeInquery.recipeName }">
 			<!-- name="mkNum" value="0"  98행에 있는거 읽어옴 -->
 			<!-- name="total_price" value="0" 113행에 있는거 읽어옴-->
-
+			
+			<div class="modify_delete">
+				<input type="button" value="수정">
+				<input type="button" value="삭제">
+			</div>
 
 			<div id="recipeInquery">
 				<header class="recipeInquery_header">

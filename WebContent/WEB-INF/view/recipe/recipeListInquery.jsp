@@ -83,8 +83,8 @@
 			</article>
 		</section>
 		
-		<div>
-			<button>
+		<div class="recipe_RbtnBox">
+			<button class="recipe_Rbtn">
 				<a href="<%= request.getContextPath() %>/cookingDom?command=recipeRegester">등록</a>
 			</button>
 		</div>
@@ -127,22 +127,25 @@
 
 
 
-		<c:if test="${startPage != 1 }">
-			<a
-				href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${startPage-1}&search=${search}">이전</a>
-		</c:if>
-		<c:forEach begin="${startPage }" end="${endPage }" var="s" step="1">
-			<a
-				href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${s }&search=${search}">${s }</a>
-		</c:forEach>
-		<c:if test="${endPage < pageCnt }">
-			<a
-				href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${endPage+1}&search=${search}">다음</a>
-		</c:if>
-
-		<form name="f">
+		<form id="search_frm" name="f">
+		<div>
+			<c:if test="${startPage != 1 }">
+				<a
+					href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${startPage-1}&search=${search}">이전</a>
+			</c:if>
+			<c:forEach begin="${startPage }" end="${endPage }" var="s" step="1">
+				<a
+					href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${s }&search=${search}">${s }</a>
+			</c:forEach>
+			<c:if test="${endPage < pageCnt }">
+				<a
+					href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${endPage+1}&search=${search}">다음</a>
+			</c:if>
+		</div>
+		<div class="searchBox">
 			<input type="search" name="search" id="search" value="${search}">
 			<button type="button" id="btnSearch">검색</button>
+		</div>
 		</form>
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>

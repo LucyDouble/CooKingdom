@@ -92,8 +92,11 @@
 						</tr>
 						<tr>
 							<th>조리 난이도</th>
-							<td><input required type="text" name="recipeLevel"
-								placeholder="내용을 입력하세요"></td>
+							<td><select name="recipeLevel" id="recipeLevel">
+									<option value="쉬움">쉬움</option>
+									<option value="보통">보통</option>
+									<option value="어려움">어려움</option>
+							</select></td>
 						</tr>
 						<tr>
 							<th>메인 이미지</th>

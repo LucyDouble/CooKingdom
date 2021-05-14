@@ -20,7 +20,7 @@ public class JDBCConnection {
 		try {
 			Context i1 = new InitialContext();
 			Context i2 = (Context) i1.lookup("java:/comp/env"); 
-			DataSource ds = (DataSource)i2.lookup("jdbc/chefLc");
+			DataSource ds = (DataSource)i2.lookup("jdbc/chef");
 			conn = ds.getConnection();
 			if(conn == null) {
 				System.out.println("***************연결실패***************");
