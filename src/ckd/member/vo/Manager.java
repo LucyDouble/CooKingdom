@@ -3,11 +3,12 @@ package ckd.member.vo;
 public class Manager {
 
 	private String email;
+	private String newEmail;
 	private String name;
 	private String pwd;
 	private String newPwd;
 	private String rePwd;
-	private int phone;
+	private String phone;
 	private String serial;
 	
 	public String getEmail() {
@@ -15,6 +16,12 @@ public class Manager {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getNewEmail() {
+		return newEmail;
+	}
+	public void setNewEmail(String newEmail) {
+		this.newEmail = newEmail;
 	}
 	public String getName() {
 		return name;
@@ -40,10 +47,10 @@ public class Manager {
 	public void setRePwd(String rePwd) {
 		this.rePwd = rePwd;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getSerial() {

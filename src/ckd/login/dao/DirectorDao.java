@@ -13,6 +13,7 @@ public class DirectorDao {
 	
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
+	private Connection conn = null;
 	
 	private void close() {
 		try {
@@ -21,6 +22,9 @@ public class DirectorDao {
 			}
 			if (rs != null) {
 				rs.close();
+			}
+			if (conn != null) {
+				conn.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -47,7 +51,7 @@ public class DirectorDao {
 					result.setEmail(rs.getString("email"));
 					result.setName(rs.getString("name"));
 					result.setPwd(rs.getString("password"));
-					result.setPhone(rs.getInt("phone"));
+					result.setPhone(rs.getString("phone"));
 				} else {
 					System.out.println("책임자 비밀번호가 서로 불일치");
 				}

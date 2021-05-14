@@ -12,6 +12,7 @@ public class ManagerDao {
 
 	private PreparedStatement pstmt = null;
 	private ResultSet rs = null;
+	private Connection conn = null;
 	
 	private void close() {
 		try {
@@ -20,6 +21,9 @@ public class ManagerDao {
 			}
 			if (rs != null) {
 				rs.close();
+			}
+			if (conn != null) {
+				conn.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -44,7 +48,8 @@ public class ManagerDao {
 					result.setEmail(rs.getString("email"));
 					result.setName(rs.getString("name"));
 					result.setPwd(rs.getString("password"));
-					result.setPhone(rs.getInt("phone"));
+					result.setPhone(rs.getString("phone"));
+					result.setSerial(rs.getString("serial"));
 				} else {
 					System.out.println("관리자 비밀번호가 서로 불일치");
 				}
@@ -73,6 +78,10 @@ public class ManagerDao {
 			rs = pstmt.executeQuery();
 			
 			if (rs.next()) {
+				manager.setEmail(rs.getString("email"));
+				manager.setName(rs.getString("name"));
+				manager.setPwd(rs.getString("password"));
+				manager.setPhone(rs.getString("phone"));
 				return 1;
 			} else {
 				return 0;

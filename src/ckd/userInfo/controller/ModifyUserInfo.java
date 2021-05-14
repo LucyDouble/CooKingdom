@@ -15,14 +15,14 @@ import ckd.userInfo.service.userManagementService;
 /**
  * Servlet implementation class ModifyUserInfo
  */
-@WebServlet("/modifyUserEmail")
-public class ModifyUserEmail extends HttpServlet {
+@WebServlet("/modifyUserInfo")
+public class ModifyUserInfo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ModifyUserEmail() {
+    public ModifyUserInfo() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -80,7 +80,6 @@ public class ModifyUserEmail extends HttpServlet {
 		} else if (resultEmail == 1) {
 			System.out.println("사용자 이메일 수정 성공");
 			jobj.put("result", "email");
-			request.getSession().removeAttribute("User");
 		} else if (resultName == 1) {
 			System.out.println("사용자 이름 수정 성공");
 			jobj.put("result", "name");
