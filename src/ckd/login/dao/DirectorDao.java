@@ -34,8 +34,6 @@ public class DirectorDao {
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1,  manager.getEmail());
 			rs = pstmt.executeQuery();

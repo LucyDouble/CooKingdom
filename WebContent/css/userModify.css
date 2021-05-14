@@ -14,6 +14,7 @@ td {
 	width: 150px;
 	text-align: left;
 	font-size: 13px;
+	padding-right: 0;
 }
 
 table {
@@ -26,11 +27,14 @@ table {
 	text-align: center;
 }
 
-#btn {
+#out {
 	text-align: center;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
 	width: 100px;
 	height: 50px;
 	border-radius: 10px;
+	box-shadow: none;
 }
 
 #email {
@@ -52,3 +56,21 @@ table {
 #tr {
     border: 1px solid #ccc;
 }
+
+#btn {
+	text-align: center;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: none;
+}
+
+.text {
+	width: 150px;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
+}
+

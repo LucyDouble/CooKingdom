@@ -20,27 +20,66 @@ public class userManagementService {
 	
 	public int checkId(User user) {
 		int result = 0;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new UserDao().checkId(conn, user);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	
 	public int checkNickName(User user) {
 		int result = 0;
-		Connection conn = getConnection();
+		Connection conn = JDBCConnection.getConnection();
 		result = new UserDao().checkNickName(conn, user);
-		close(conn);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	
-	public int ModifyUserInfo(User user) {
+	public int modifyUserEmail(User user) {
 		int result = 0;
-		Connection conn = getConnection();
-		result = new UserDao().ModifyUserInfo(conn, user);
-		close(conn);
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().modifyUserEmail(conn, user);
+		JDBCConnection.close(conn);
 		return result;
 	}
 	
+	public int modifyUserName(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().modifyUserName(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int modifyUserNickName(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().modifyUserNickName(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int modifyUserPhone(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().modifyUserPhone(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int modifyUserPwd(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().modifyUserPwd(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int modifyUserAddress(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().modifyUserAddress(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
 
 }

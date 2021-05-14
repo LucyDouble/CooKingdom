@@ -12,9 +12,13 @@ import ckd.member.vo.User;
 public class ManagerDao {
 
 private PreparedStatement pstmt = null;
+private ResultSet rs = null;
 	
 	private void close() {
 		try {
+			if (rs != null) {
+				rs.close();
+			}
 			if (pstmt != null) {
 				pstmt.close();
 			}
@@ -63,13 +67,11 @@ private PreparedStatement pstmt = null;
 	}
 	
 	public int checkId(Connection conn, Manager manager) {
-		ResultSet rs = null;
+		rs = null;
 		String query = "select * from USERS where email=?";
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			System.out.println("getEmail = " + manager.getEmail());
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, manager.getEmail());

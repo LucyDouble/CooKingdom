@@ -34,8 +34,6 @@ public class UserDao {
 	
 		try {
 			
-//			Class.forName("oracle.jdbc.driver.OracleDriver");
-//			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe", "chef", "chef11");
 			
 			pstmt = conn.prepareStatement(query);
 			System.out.println(user.getEmail());
@@ -44,7 +42,7 @@ public class UserDao {
 			pstmt.setString(3, user.getNickName());
 			pstmt.setString(4, user.getBirth());
 			pstmt.setString(5, user.getPwd());
-			pstmt.setInt(6, user.getPhone());
+			pstmt.setString(6, user.getPhone());
 			pstmt.setString(7, user.getAddress());
 			
 			System.out.println("email : " + user.getEmail());
@@ -120,37 +118,160 @@ public class UserDao {
 		return -1;
 	}
 	
-	public int ModifyUserInfo(Connection conn, User user) {
+	public int modifyUserEmail(Connection conn, User user) {
+		int result = 0;
+
+		String query = "update USERS set EMAIL=? where EMAIL=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			System.out.println("new email : " + user.getNewEmail());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getNewEmail());
+			pstmt.setString(2, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 이메일 수정 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 이메일 수정 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
+	
+	public int modifyUserName(Connection conn, User user) {
 		int result = 0;
 		
-		if (user.getNewEmail() != "") {
-			System.out.println("이메일 값이 있습니다");
-			String queryEmail = "update USERS set EMAIL=? where EMAIL=?";
-			try {
-				System.out.println("email : " + user.getEmail());
-				System.out.println("new email : " + user.getNewEmail());
-				pstmt = conn.prepareStatement(queryEmail);
-				pstmt.setString(1, user.getNewEmail());
-				pstmt.setString(2, user.getEmail());
-				result = pstmt.executeUpdate();
-				System.out.println("result : " + result);
-				if (result > 0) {
-					System.out.println("result가 0보다 큼");
-					conn.commit();
-				} else {
-					System.out.println("result가 0보다 크지 않음");
-					conn.rollback();
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-			} finally {
-				close();
+		String query = "update USERS set NAME=? where EMAIL=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			System.out.println("new Name : " + user.getName());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getName());
+			pstmt.setString(2, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 이름 수정 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 이름 수정 실패");
+				conn.rollback();
 			}
-			return result; 
-		} else {
-			System.out.println("이메일 값이 없습니다.");
-		} 
-		return result; 
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
+	
+	public int modifyUserNickName(Connection conn, User user) {
+		int result = 0;
+		
+		String query = "update USERS set NICKNAME=? where EMAIL=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			System.out.println("new nickName : " + user.getNickName());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getNickName());
+			pstmt.setString(2, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 닉네임 수정 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 닉네임 수정 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
+	
+	public int modifyUserPhone(Connection conn, User user) {
+		int result = 0;
+		
+		String query = "update USERS set PHONE=? where EMAIL=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			System.out.println("new phone : " + user.getPhone());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getPhone());
+			pstmt.setString(2, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 핸드폰 번호 수정 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 핸드폰 번호 수정 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
+	
+	public int modifyUserPwd(Connection conn, User user) {
+		int result = 0;
+		
+		String query = "update USERS set PASSWORD=? where EMAIL=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			System.out.println("new pwd : " + user.getPwd());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getPwd());
+			pstmt.setString(2, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 비밀번호 수정 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 비밀번호 수정 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
+	
+	public int modifyUserAddress(Connection conn, User user) {
+		int result = 0;
+		
+		String query = "update USERS set ADDRESS=? where EMAIL=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			System.out.println("new address : " + user.getAddress());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getAddress());
+			pstmt.setString(2, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 주소 수정 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 주소 수정 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
 	}
 
 }

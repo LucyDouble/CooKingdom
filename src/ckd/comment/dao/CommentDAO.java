@@ -112,18 +112,6 @@ public class CommentDAO {
 			}
 			close();  // 다음에 나올 글쓰기 쿼리를 위해 기존 것을 삭제함.
 					
-//			if(comment.getCommentNo() != 0) {
-//				pstmt = conn.prepareStatement(sqlUpdate);
-//				pstmt.setInt(1, comment.getCommentGroup());
-//				result = pstmt.executeUpdate();
-//				close();
-//				commentGroup = comment.getCommentGroup();
-//				commentDepth = comment.getCommentDepth();
-//				commentSorts = comment.getCommentSorts();
-//			}else {
-//				commentGroup = max;
-//			}
-	
 			
 			//댓글쓰기
 			pstmt = conn.prepareStatement(sql);
@@ -157,6 +145,8 @@ public class CommentDAO {
 			result = pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			close();
 		}
 		return result;
 	}

@@ -48,6 +48,7 @@ public class ReviewService {
 		int cnt = 0;
 		Connection conn = JDBCConnection.getConnection();
 		cnt = new ReviewDAO().getReviewTotalCount(conn, recipeCode);
+		JDBCConnection.close(conn);
 		return cnt;
 	}
 	
@@ -55,6 +56,7 @@ public class ReviewService {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new ReviewDAO().getReviewHit(conn, reviewNo);
+		JDBCConnection.close(conn);
 		return result;
 	}
 }
