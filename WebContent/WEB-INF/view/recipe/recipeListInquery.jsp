@@ -84,9 +84,7 @@
 		</section>
 		
 		<div class="recipe_RbtnBox">
-			<button class="recipe_Rbtn">
-				<a href="<%= request.getContextPath() %>/cookingDom?command=recipeRegester">등록</a>
-			</button>
+			<a href="<%= request.getContextPath() %>/cookingDom?command=recipeRegester"><button id="recipe_Rbtn">등록</button></a>
 		</div>
 
 		<c:if test="${not empty search }">

@@ -103,6 +103,8 @@
 	border-radius: 20px;
 	cursor: pointer;
 	font-size: 12px;
+	background-color: #6E8C03;
+	color: white;
 }
 
 /* 주문파트 */
