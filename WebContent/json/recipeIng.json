@@ -4393,7 +4393,44 @@
             "IRDNT_TY_NM": "양념",
             "RECIPE_ID": 297,
             "IRDNT_TY_CODE": "3060003"
-          }
+          },
+          {
+        "IRDNT_CPCTY": "1T",
+        "IRDNT_NM": "마요네즈",
+        "IRDNT_SN": 180333,
+        "RN": 6054,
+        "IRDNT_TY_NM": "주재료",
+        "RECIPE_ID": 497,
+        "IRDNT_TY_CODE": "3060001"
+      },
+      {
+        "IRDNT_CPCTY": "5쪽",
+        "IRDNT_NM": "식빵",
+        "IRDNT_SN": 180332,
+        "RN": 6055,
+        "IRDNT_TY_NM": "주재료",
+        "RECIPE_ID": 497,
+        "IRDNT_TY_CODE": "3060001"
+      },
+      {
+        "IRDNT_CPCTY": "2개(大)",
+        "IRDNT_NM": "고구마",
+        "IRDNT_SN": 180331,
+        "RN": 6056,
+        "IRDNT_TY_NM": "주재료",
+        "RECIPE_ID": 497,
+        "IRDNT_TY_CODE": "3060001"
+      },
+      {
+        "IRDNT_CPCTY": "1/2T",
+        "IRDNT_NM": "꿀",
+        "IRDNT_SN": 180334,
+        "RN": 6057,
+        "IRDNT_TY_NM": "주재료",
+        "RECIPE_ID": 497,
+        "IRDNT_TY_CODE": "3060001"
+      }
+          
           
     ]
 }

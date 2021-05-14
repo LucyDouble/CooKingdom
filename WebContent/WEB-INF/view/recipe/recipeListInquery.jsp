@@ -12,31 +12,7 @@
 <head>
 <meta charset="UTF-8">
 <title>CooKingDom RecipeList</title>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-	$(function() {
-		
-		$("#btnSearch").on("click", function() {
-			var search1 = $("#search").val();
-			
-			$.ajax({
-				url : "<%=request.getContextPath() %>/recipelistinquery.do",
-				type : "get",
-				data : {search : search1},
-				success : function(resultData) {
-					console.log(resultData.pageCnt);
-					console.log(resultData.startPage);
-					console.log(resultData.endPage);
-					console.log(resultData.currentPage);
-					console.log(resultData.boardList);
-					console.log(resultData.search); 
-				}
-			});
-		});
-	});
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -171,6 +147,8 @@
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
+	
+	<script src="js/recipeListInquery.js"></script>
 	<script src="https://kit.fontawesome.com/6a57affb8e.js"
 		crossorigin="anonymous"></script>
 </body>
