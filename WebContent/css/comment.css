@@ -59,3 +59,8 @@
 	border : none;
 	cursor : pointer;
 }
+
+/*더보기*/
+#moreBtn{
+	cursor : pointer;
+}

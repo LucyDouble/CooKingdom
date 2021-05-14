@@ -3,6 +3,7 @@
  */
 let recipeCode = ""
 let currentMail = "";
+var hiddenComment = "";
 window.onload = function(){
 	recipeCode = document.getElementById("recipeCode").value;
 	currentMail = document.getElementById("email").value;
@@ -29,14 +30,14 @@ window.onload = function(){
 			recipeCode : recipeCode
 		},
 		success : function(data){
-			console.log("댓글이다!!!");
 			var commentList = data.commentList;
-			console.log(commentList);
-			var contextPath = getContextPath();
 			var cv = "";
 			
-			$.each(commentList, function(i,list){
-					cv += "<div class='comment_Inq'>";
+			if(commentList == null || data.cnt == 0){
+				cv = "<p>첫번째 댓글을 작성해 보세요!</p>";
+			}else{
+				$.each(commentList, function(i,list){
+					cv += "<div class='comment_Inq' style='display:none;'>";
 					cv += "<input type='hidden' name='commentNo' value='"+commentList[i].commentNo+"' />";
 					cv += "<table><tr>";
 					cv += "<td class='cwriter'>"+commentList[i].nickname+"</td>";
@@ -49,18 +50,41 @@ window.onload = function(){
 					cv += "<button type='button' class='cbtn' id='cbtn-"+commentList[i].commentNo+"'>삭제</button>";
 					cv += "</div>";
 					}
-					cv += "</div>";
-					
-			});
+					cv += "</div>";					
+				});
+			}
+			
+			
 					$("#cmt").append(cv);
-					
-			
-			
+				
+				$(".comment_Inq").slice(0,5).show();
+
+				
+				
+				var morebtn = "<a id='moreBtn'>더보기(more)</a>";
+		
+				if(data.cnt > 5){
+					$("#moreDiv").append(morebtn);				
+				} 
+
 	
 			$("#comment_cnt").html("<h3>댓글 ("+data.cnt+" comments)</h3>");
 		}
 	});
+
 }
+$(document).on('click','#moreBtn',function(){
+		hiddenComment = $(".comment_Inq").filter(function(){
+			return $(this).css('display') == 'none';
+		});
+		count = hiddenComment.length;
+		if(count == 0){
+			$("#moreBtn").css("display","none");
+		}else{
+			$(hiddenComment).slice(0,5).show();
+		}
+			
+});
 
 
 function getContextPath() {
@@ -92,8 +116,14 @@ function reviewDisplay(data){
 	
 	$("#rev").empty();
 	
+	if(reviewList == null || data.cnt == 0){
+				rv = "<p>첫번째 리뷰를 작성해 보세요!</p>";
+				$("#rev").append(rv);
+			}
+	
+	
 	$.each(reviewList, function(i,list){
-			
+
 			rv = "<div class='review_Inq'>";
 			rv += "<input type='hidden' value='"+reviewList[i].reviewSubject+"' name='reviewSubject'>";
 			rv += "<input type='hidden' value='"+reviewList[i].reviewNo+"' name='reviewNo'>";
@@ -148,10 +178,6 @@ function reviewDisplay(data){
 	
 
 }
-
-
-
-
 
 
 

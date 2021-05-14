@@ -52,14 +52,13 @@ public class CommentListInquiry extends HttpServlet {
 	
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		final int pageSize = 5;  // 한페이지당 글 수
 		
 		CommentService scv = new CommentService();
 		
 		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
 		int cnt = 0;   // 총 글 개수
 		cnt = scv.getCommentCount(recipeCode);
-		
-		
 		
 		List<Comment> list = null;
 		list =scv.selectCommentList(recipeCode);

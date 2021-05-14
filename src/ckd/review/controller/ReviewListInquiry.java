@@ -67,7 +67,7 @@ public class ReviewListInquiry extends HttpServlet {
 		cnt = rsv.getReviewTotalCount(recipeCode);
 	
 		/*페이지 조회*/
-int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
+		int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
 		
 		int currentPage = 1;  // 현재 페이지. 기본 세팅 1. 클릭되면 바뀌게 됨.
 		String cPage = request.getParameter("currentPage");
@@ -116,6 +116,7 @@ int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지
 		System.out.println("reviewList : " + list);
 		System.out.println("cnt : " + cnt);
 		
+
 		
 		
 		// JsonObject 생성
