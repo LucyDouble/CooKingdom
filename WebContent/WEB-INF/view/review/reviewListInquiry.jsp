@@ -1,5 +1,4 @@
 <%@page import="ckd.member.vo.User"%>
-<link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/reviewListInquiry.css" rel="stylesheet" type="text/css">
 <link href="css/comment.css" rel="stylesheet" type="text/css">
 <link href="css/deleteModal.css" rel="stylesheet" type="text/css">

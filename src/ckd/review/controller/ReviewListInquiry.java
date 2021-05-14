@@ -54,7 +54,7 @@ public class ReviewListInquiry extends HttpServlet {
 	private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		final int pageSize = 3;  // 한페이지당 글 수
-		final int pageBlock = 5;  // 화면에 나타날 페이지 링크 수   dP) 화면 하단에 1 2 3 
+		final int pageBlock = 3;  // 화면에 나타날 페이지 링크 수   dP) 화면 하단에 1 2 3 
 		
 		int recipeCode = Integer.parseInt(request.getParameter("recipeCode"));
 //		System.out.println("recipeCode : "+ recipeCode);
@@ -67,27 +67,20 @@ public class ReviewListInquiry extends HttpServlet {
 		cnt = rsv.getReviewTotalCount(recipeCode);
 	
 		/*페이지 조회*/
-		int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
+int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
 		
 		int currentPage = 1;  // 현재 페이지. 기본 세팅 1. 클릭되면 바뀌게 됨.
 		String cPage = request.getParameter("currentPage");
 		if(cPage != null && !cPage.equals("")) {
 			try {
-				currentPage = Integer.parseInt(request.getParameter("currentPage"));							
-			} catch (Exception e) {
+				currentPage = Integer.parseInt(cPage);			
+			}catch (Exception e){
 				e.printStackTrace();
 			}
-		}		
+		}
+		
 		
 		int startPage = 1; // 화면에 나타날 시작 페이지
-		String sPage = request.getParameter("startPage");
-		if(sPage != null && !sPage.equals("")) {
-			try {
-				startPage = Integer.parseInt(request.getParameter("startPage"));							
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}		
 		int endPage = 1; // 화면에 나타날 마지막 페이지
 		
 		// 문제 구간 생김. currentPage가 pageBlock 배수인 경우 오류 발생 즉, 3,6,9..
@@ -103,6 +96,7 @@ public class ReviewListInquiry extends HttpServlet {
 		
 		int startRnum = (currentPage-1)*pageSize +1;
 		int endRnum = startRnum + pageSize - 1;
+		
 		if(endRnum > cnt) 
 			endRnum = cnt;
 		

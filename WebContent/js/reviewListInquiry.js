@@ -49,6 +49,7 @@ function openCont(evt, cont) {
 		$.ajax({
 			url:"reviewHitUpdate",
 			type:"POST",
+			async : false,
 			data: { reviewNo : num},
 			success: function(data){					
 				$(hit).text(data);

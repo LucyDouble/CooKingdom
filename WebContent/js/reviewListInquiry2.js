@@ -1,8 +1,8 @@
 /**
  * 
  */
-var recipeCode = ""
-var currentMail = "";
+let recipeCode = ""
+let currentMail = "";
 window.onload = function(){
 	recipeCode = document.getElementById("recipeCode").value;
 	currentMail = document.getElementById("email").value;
@@ -11,6 +11,7 @@ window.onload = function(){
 		url:"reviewListInquiry",
 		type:"POST",
 		dataType : "json",
+		async : false,
 		data: { 
 			recipeCode : recipeCode
 		},
@@ -23,6 +24,7 @@ window.onload = function(){
 		url:"commentListInquiry",
 		type:"POST",
 		dataType : "json",
+		async : false,
 		data: { 
 			recipeCode : recipeCode
 		},
@@ -71,6 +73,7 @@ function pageGo(page){
 		url:"reviewListInquiry",
 		type:"post",
 		dataType : "json",
+		async : false,
 		data : {
 			currentPage : page,
 			recipeCode : recipeCode 
@@ -130,15 +133,15 @@ function reviewDisplay(data){
 	
 	var page = "";
 	
-	if(data.startPage != 1){
-	page += "<a id='beforeP' onclick='pageGo("+(data.startPage-1)+">이전</a>";				
+	if(data.startPage > 1){
+	page += "<a id='beforeP' onclick='pageGo("+(data.startPage-1)+")'>이전</a>";				
 	}
 	for (var i = data.startPage; i<=data.endPage; i++){
 	page += "<a class='page' onclick='pageGo("+i+")'>"+" "+ i +" "+"</a>";				
 	}
 	
 	if(data.endPage < data.pageCnt)
-	page += "<a id='afterP' onclick='pageGo("+(data.endPage+1)+">다음</a>"
+	page += "<a id='afterP' onclick='pageGo("+(data.endPage+1)+")'>다음</a>"
 	
 
 	$("#pageCount").html(page);
