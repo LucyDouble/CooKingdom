@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -50,7 +52,8 @@ public class RecipeRegester extends HttpServlet {
 			throws ServletException, IOException {
 
 		RecipeService sv = new RecipeService();
-
+		
+		// ------------------ 파일 -------------------------
 		String saveDirectory = getServletContext().getRealPath("/files"); // 웹 서버 상의 절대 경로
 		String encType = "utf-8"; // 인코딩 타입
 		int maxSize = 5 * 1024 * 1024; // 업로드 파일의 최대크기 5Mb
@@ -79,43 +82,53 @@ public class RecipeRegester extends HttpServlet {
 			}
 		}
 
-		Recipe voR = new Recipe();
-		Ingredient voI = new Ingredient();
+		//	------------------- 레시피, 재료 등록 ----------------------------
+		Recipe Rvo = new Recipe();
+		List<Ingredient> IvoList = new ArrayList<Ingredient>();
+			
+		Rvo.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
+		Rvo.setRecipeName(mReq.getParameter("recipeName"));
+		Rvo.setRecipeInfo(mReq.getParameter("recipeInfo"));
+		Rvo.setTypeCag(mReq.getParameter("recipeNation"));
+		Rvo.setRecipeCag(mReq.getParameter("recipeType"));
+		Rvo.setRecipeQty(mReq.getParameter("recipeQty"));
+		Rvo.setCalorie(mReq.getParameter("recipeCalorie"));
+		Rvo.setCookingTime(mReq.getParameter("CookingTime"));
+		Rvo.setRecipeLevel(mReq.getParameter("recipeLevel"));
+		Rvo.setPrice(Integer.parseInt(mReq.getParameter("recipePrice")));
 
-		voR.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
-		voR.setRecipeName(mReq.getParameter("recipeName"));
-		voR.setRecipeInfo(mReq.getParameter("recipeInfo"));
-		voR.setTypeCag(mReq.getParameter("recipeNation"));
-		voR.setRecipeCag(mReq.getParameter("recipeType"));
-		voR.setRecipeQty(mReq.getParameter("recipeQty"));
-		voR.setCalorie(mReq.getParameter("recipeCalorie"));
-		voR.setCookingTime(mReq.getParameter("CookingTime"));
-		voR.setRecipeLevel(mReq.getParameter("recipeLevel"));
-		voR.setPrice(Integer.parseInt(mReq.getParameter("recipePrice")));
-
-		voI.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
-		voI.setIngName(mReq.getParameter("ingName"));
-		voI.setIngTypeName(mReq.getParameter("ingTypeName"));
-		voI.setIngQty(mReq.getParameter("ingQty"));
+		//	---------------- 재료를 입력한 개수 -------------------
+		int cnt = Integer.parseInt(mReq.getParameter("cnt"));
 		
-		System.out.println("voR 레시피 코드 : " + voR.getRecipeCode());
-		System.out.println("레시피 이름 : " + mReq.getParameter("recipeName"));
+		//	---------------- 개수 만큼 for문으로 Ivo에 데이터 입력 --------------
+		for(int i = 1; i <= cnt; i++) {
+			String ivoP = mReq.getParameter("p_" + i);
+			String ivoV = mReq.getParameter("v_" + i);
+			System.out.println(ivoP);
+			System.out.println(ivoV);
+			Ingredient Ivo = new Ingredient();
+			
+			Ivo.setRecipeCode(Integer.parseInt(mReq.getParameter("recipeCode")));
+			Ivo.setIngName(mReq.getParameter("v_" + i));
+			Ivo.setIngTypeName(mReq.getParameter("p_" + i));
+			Ivo.setIngQty(mReq.getParameter("q_" + i));
+			
+			IvoList.add(Ivo);	// 리스트에 데이터 추가
+			System.out.println("IvoList 확인1: " + IvoList);
+		}
 		
+		System.out.println("IvoList 확인2 : " + IvoList);
 		
-		System.out.println("서블릿 재료 이름 : " + mReq.getParameter("ingName"));
-		System.out.println("서블릿 재료 종류 : " + mReq.getParameter("ingTypeName"));
-		System.out.println("서블릿 재료 분량 : " + mReq.getParameter("ingQty"));
-		
-		
+		//	----------------- DAO로 이동 후 DB에 데이터 입력 ----------------------
 		try {
-			int resultR = sv.registerRecipe(voR);
-			int resultI = sv.registerIngredient(voI);
+			int resultR = sv.registerRecipe(Rvo);
+			int resultI = sv.registerIngredient(IvoList);
 
 			PrintWriter out = response.getWriter();
 			System.out.println("resultR : " + resultR);
 			System.out.println("resultI : " + resultI);
 			
-			if (resultR > 0 && resultI > 0) {
+			if (resultR > 0 && resultI == IvoList.size()) {
 				System.out.println("정상 입력");
 				String msg = "레시피 등록 완료";
 

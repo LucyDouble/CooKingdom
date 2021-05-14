@@ -15,14 +15,22 @@
 <script type="text/javascript">
 let cnt = 0;
 function addIng() {
-	let newIng = "<input type='text' name='' placeholder='재료'>";
-	let newIngType = "<input type='text' readonly>";
+	let ingTypeName = document.getElementById("ingTypeName").value;
+	cnt++;
+	let IngType = "<input class='newIngTypeText' name='p_"+cnt+"' type='text' readonly value='"+ingTypeName+"'>";
+	let IngName = "<input type='text' name='v_"+cnt+"' placeholder='재료 이름'>";
+	let IngQty = "<input type='text' name='q_"+cnt+"' placeholder='분량'><br>";
+	
 	let addIng_cnt = document.getElementById("addIng_cnt");
 	
-	$("#ingAdded").append(newIngType);
-	$("#ingAdded").append(newIng);
+	console.log(ingTypeName);
 	
-	addIng_cnt.setAttribute('value', cnt++);
+	$("#ingAdded").append(IngType);
+	$("#ingAdded").append(IngName);
+	$("#ingAdded").append(IngQty);
+	
+	addIng_cnt.value = cnt;
+	console.log(cnt);
 };
 </script>
 </head>
@@ -117,16 +125,6 @@ function addIng() {
 							</td>
 						</tr>
 						<tr>
-							<th>재료 이름</th>
-							<td><input required type="text" name="ingName"
-								placeholder="내용을 입력하세요"></td>
-						</tr>
-						<tr>
-							<th>재료 분량</th>
-							<td><input required type="text" name="ingQty"
-								placeholder="내용을 입력하세요"></td>
-						</tr>
-						<tr>
 							<th>재료 종류</th>
 							<td><select name="ingTypeName" id="ingTypeName">
 									<option value="주재료">주재료</option>
@@ -141,14 +139,14 @@ function addIng() {
 						<tr>
 							<th>추가</th>
 							<td><input type="button" value="추가" onClick="addIng();">
-								<input id="addIng_cnt" type="hidden"></td>
+								<input id="addIng_cnt" type="hidden" name="cnt"></td>
 						</tr>
 
-						<tr>
-							<th>상품 소개</th>
-							<td><textarea id="summernote" name="editordata"></textarea>
-							</td>
-						</tr>
+<!-- 						<tr> -->
+<!-- 							<th>상품 소개</th> -->
+<!-- 							<td><textarea id="summernote" name="editordata"></textarea> -->
+<!-- 							</td> -->
+<!-- 						</tr> -->
 
 					</tbody>
 				</table>

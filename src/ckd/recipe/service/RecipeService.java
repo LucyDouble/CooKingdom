@@ -122,10 +122,10 @@ public class RecipeService {
 	
 //	-------------------------- 재료 -----------------------------------------
 	
-	public int registerIngredient(Ingredient ingredient) throws SQLException {
+	public int registerIngredient(List<Ingredient> ingredients) throws SQLException {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
-		result = new IngredientDAO().insertIngredient(ingredient, conn);
+		result = new IngredientDAO().insertIngredient(ingredients, conn);
 		JDBCConnection.close(conn);
 		return result;
 	}

@@ -109,49 +109,61 @@ public class IngredientDAO {
 		return list;
 	}
 	
-	public int insertIngredient(Ingredient ingredient, Connection conn)  {
-		int result = 0;
+	public int insertIngredient(List<Ingredient> ingredients, Connection conn) throws SQLException  {
+		int resultCnt = 0;
 		PreparedStatement pstmt = null;
 		
 		String sql = "insert into ingredient values(?, ?, ?, ?, ?)";
-		try {
 		pstmt = conn.prepareStatement(sql);
 		
-		pstmt.setInt(1, ingredient.getRecipeCode());
-		pstmt.setString(2, ingredient.getIngName());
-		pstmt.setString(3, ingredient.getIngTypeName());
-		switch(ingredient.getIngTypeName()) {
-		case "주재료" :
-			pstmt.setInt(4, 3060001);
-			break;
-		case "부재료" :
-			pstmt.setInt(4, 3060002);
-			break;
-		case "양념" :
-			pstmt.setInt(4, 3060003);
-			break;
-		default :
-			System.out.println("DAO 재료 입력 실패");
-			break;
+		
+		for(int i = 0; i < ingredients.size(); i++) {
+			Ingredient ingredient = ingredients.get(i);
+			System.out.println("DAO 재료 vo get(i) : " + ingredients.get(i));
+			
+			pstmt.setInt(1, ingredient.getRecipeCode());
+			pstmt.setString(2, ingredient.getIngName());
+			pstmt.setString(3, ingredient.getIngTypeName());
+			System.out.println("DAO Insert 재료명 : " + ingredient.getIngTypeName());
+			switch(ingredient.getIngTypeName()) {
+			case "주재료" :
+				pstmt.setInt(4, 3060001);
+				System.out.println("주재료 입력 완료 ");
+				break;
+			case "부재료" :
+				pstmt.setInt(4, 3060002);
+				System.out.println("부재료 입력 완료 ");
+				break;
+			case "양념" :
+				pstmt.setInt(4, 3060003);
+				System.out.println("양념 입력 완료 ");
+				break;
+			default :
+				System.out.println("DAO 재료 입력 실패");
+				break;
+			}
+			pstmt.setString(5, ingredient.getIngQty());
+			
+			pstmt.addBatch();
 		}
-		pstmt.setString(5, ingredient.getIngQty());
 		
-		result = pstmt.executeUpdate();
+		int[] result = pstmt.executeBatch();
+		System.out.println("resultLength : " + result.length);
 		
-		System.out.println("pstmt 직전 재료 레시피 코드 : " + ingredient.getRecipeCode());
-		System.out.println("pstmt 직전 재료 이름 : " + ingredient.getIngName());
-		System.out.println("pstmt 직전 재료 타입 이름 : " + ingredient.getIngTypeName());
-		System.out.println("pstmt 직전 재료 타입 코드 : " + ingredient.getIngTypeCode());
-		System.out.println("pstmt 직전 재료 분량 : " + ingredient.getIngQty());
-		
-		
-		
-		System.out.println(result);
-		} catch(SQLException e) {
-			e.printStackTrace();
-		} finally {
-			JDBCConnection.close(pstmt);
+		for(int i = 0; i < result.length; i++) {
+			if(result[i] == -2) {
+				resultCnt++;
+			}
 		}
-		return result;
+		
+		if(resultCnt == ingredients.size()) {
+			JDBCConnection.commit(conn);
+		}
+
+		JDBCConnection.close(pstmt);
+		
+		return resultCnt;
+		
+		
 	}
 }
