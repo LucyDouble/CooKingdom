@@ -1,7 +1,6 @@
 package ckd.order.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import ckd.member.vo.User;
 import ckd.order.service.OrderService;
+import ckd.order.vo.OrderInfo;
 import ckd.order.vo.Orders;
 import ckd.order.vo.Ship;
 
@@ -46,7 +46,6 @@ public class OrderInfoRegister extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		OrderService sv = new OrderService();
-		
 
 		try {
 			Ship shipVo = new Ship();
@@ -54,42 +53,55 @@ public class OrderInfoRegister extends HttpServlet {
 			shipVo.setPhone(Integer.parseInt(request.getParameter("sPhone")));
 			shipVo.setAddress(request.getParameter("sAddress"));
 
-			int result = sv.registerShip(shipVo);
+			int result = sv.insertShip(shipVo);
 
-			PrintWriter out = response.getWriter();
 			if (result > 0) { // input success
 				System.out.println("배송 정보 정상 입력");
-				
+
 			} else {
 				System.out.println("배송 정보 입력이 실패하였습니다.");
 				request.setAttribute("errorMsg", "배송 정보 입력이 실패하였습니다.");
 				request.getRequestDispatcher("/error/nullVoError.jsp").forward(request, response);
 			}
-			
+
 			Orders ordersVo = new Orders();
-			
+
 			// get User VO from Session
-			HttpSession session = request.getSession(); 
-			User user = (User)session.getAttribute("User");
-			
+			HttpSession session = request.getSession();
+			User user = (User) session.getAttribute("User");
+
 			// X 주문코드(기본키) SEQ / 이메일(참조키) / x 배송코드(참조키) SEQ / x주문일자 / 총금액
 			ordersVo.setEmail(user.getEmail());
-			System.out.println("email값: "+user.getEmail());
-			
-			System.out.println("상품총금액:"+request.getParameter("oTotal"));
 			ordersVo.setTotalPrice(Integer.parseInt(request.getParameter("oTotal")));
-			result = sv.registerOrders(ordersVo);
+
+			result = sv.insertOrders(ordersVo);
 
 			if (result > 0) { // input success
 				System.out.println("주문 정보 정상 입력");
-				
-				request.getRequestDispatcher("WEB-INF/view/order/orderListInquiry.jsp").forward(request, response);
+
 			} else {
 				System.out.println("주문 정보 입력이 실패하였습니다.");
 				request.setAttribute("errorMsg", "주문 정보 입력이 실패하였습니다.");
 				request.getRequestDispatcher("/error/nullVoError.jsp").forward(request, response);
 			}
-			
+
+			OrderInfo orderInfoVo = new OrderInfo();
+
+			orderInfoVo.setRecipeCode(Integer.parseInt(request.getParameter("recipeCode")));
+			orderInfoVo.setMealkitQty(Integer.parseInt(request.getParameter("mkNum")));
+
+			result = sv.insertOrderInfo(orderInfoVo);
+
+			if (result > 0) { // input success
+				System.out.println("주문 내역 정보 정상 입력");
+
+				request.getRequestDispatcher("WEB-INF/view/order/orderInfoRegister.jsp").forward(request, response);
+			} else {
+				System.out.println("주문 내역 정보 입력이 실패하였습니다.");
+				request.setAttribute("errorMsg", "주문 내역 정보 입력이 실패하였습니다.");
+				request.getRequestDispatcher("/error/nullVoError.jsp").forward(request, response);
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

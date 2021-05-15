@@ -31,11 +31,13 @@ public class OrderInfoInquiry extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		String recipeCode = request.getParameter("recipeCode");
 		String url = request.getParameter("imgURL");
 		String mkName = request.getParameter("mkName");
 		String mkNum = request.getParameter("mkNum");
 		String total_price = request.getParameter("total_price");
 
+		request.setAttribute("recipeCode", recipeCode);
 		request.setAttribute("imgURL", url);
 		request.setAttribute("mkName", mkName);
 		request.setAttribute("mkNum", mkNum);

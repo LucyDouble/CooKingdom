@@ -19,6 +19,7 @@
 		<jsp:include page="../main/header.jsp"></jsp:include>
 
 		<form id="recipe_frm">  <!-- [요리 대표이미지url, 밀키트명, 수량, 가격] form태그와 js이용해서 get방식으로 전송  -->
+			<input type="hidden" name="recipeCode" value="${recipeInquery.recipeCode }">
 			<input type="hidden" name="imgURL" value="${recipeInquery.recipeUrl }">
 			<input type="hidden" name="mkName" value="${recipeInquery.recipeName }">
 			<!-- name="mkNum" value="0"  98행에 있는거 읽어옴 -->
@@ -101,7 +102,7 @@
 					</div>
 					<br>
 	                <div>
-	                    <button class="payBtn" id="order_btn" onClick="order();">바로 결제</button>
+	                    <button class="payBtn" id="order_btn" onClick="order('${email}');">바로 결제</button>
 	                    <button class="payBtn" id="cart_btn" onClick="cart('${email}');">장바구니 담기</button>
 	                </div>
 				</div>

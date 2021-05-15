@@ -205,6 +205,8 @@
 			</div>
 		</div>
 		<input type="hidden" name="oTotal" value="100" id="oTotal">
+		<input type="hidden" name="recipeCode" value="${recipeCode}" >
+		<input type="hidden" name="mkNum" value="${mkNum}" >
 		</form>
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>

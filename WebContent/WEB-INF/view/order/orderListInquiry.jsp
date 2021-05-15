@@ -2,8 +2,8 @@
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/orderListInquiry.css" rel="stylesheet" type="text/css">
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +32,29 @@
 		<hr>
 		
 		<div id="today" class="orderListInquiry_box">
+		<c:if test="${empty ordersList }">
+			주문건이 없습니다.
+		</c:if>
+		<c:if test="${not empty ordersList }">
+			<table border="1">
+				<tr>
+					<th>주문코드</th>
+					<th>이메일</th>
+					<th>배송코드</th>
+					<th>주문일자</th>
+					<th>총금액</th>
+				</tr>
+			<c:forEach items="${ordersList }" var="order">
+				<tr>
+					<th>${order.orderCode }</th>
+					<th>${order.email }</th>
+					<th>${order.shipCode }</th>
+					<th>${order.orderDate }</th>
+					<th>${order.totalPrice }</th>
+				</tr>
+			</c:forEach>
+			</table>
+		</c:if>
 			<div class="eachbox">
 				<p> 오늘 주문건    |   주문번호 : 202101425-01234567
 				<div>
