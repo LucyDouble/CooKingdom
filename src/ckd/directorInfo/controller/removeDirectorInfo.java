@@ -1,4 +1,4 @@
-package ckd.userInfo.controller;
+package ckd.directorInfo.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,22 +7,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.simple.JSONObject;
-
+import ckd.directorInfo.service.directorManagementService;
+import ckd.member.vo.Manager;
 import ckd.member.vo.User;
 import ckd.userInfo.service.userManagementService;
 
 /**
- * Servlet implementation class ModifyUserAddress
+ * Servlet implementation class removeDirectorInfo
  */
-@WebServlet("/ModifyUserAddress")
-public class ModifyUserAddress extends HttpServlet {
+@WebServlet("/removeDirectorInfo")
+public class removeDirectorInfo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ModifyUserAddress() {
+    public removeDirectorInfo() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -31,7 +31,7 @@ public class ModifyUserAddress extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 	}
 
 	/**
@@ -41,32 +41,23 @@ public class ModifyUserAddress extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		
-		User user = new User();
+		Manager manager = new Manager();
 		
 		String email = request.getParameter("email");
-		String newAddress = request.getParameter("newAddress");
 		
-		user.setEmail(email);
-		user.setAddress(newAddress);
+		manager.setEmail(email);
 		
-		System.out.println("email : " + user.getEmail());
-		System.out.println("address : " + user.getAddress());
+		System.out.println(manager.getEmail());
 		
-		int result = new userManagementService().modifyUserAddress(user);
-		
-		System.out.println("address : " + result);
-		JSONObject jobj = new JSONObject();
+		int result = new directorManagementService().deleteDirectorInfo(manager);
 		
 		if (result != 1) {
-			System.out.println("사용자 정보 수정 실패");
-			jobj.put("result","fail");
+			System.out.println("책임자 회원 탈퇴 실패");
 		} else {
-			System.out.println("사용자 주소 수정 성공");
-			jobj.put("reesult","address");
+			System.out.println("책임자 회원 탈퇴 성공");
+			request.getSession().removeAttribute("Director");
 		}
-		response.getWriter().println(jobj);
-		response.getWriter().flush();
-		response.getWriter().close();
+		response.sendRedirect("cookingDom?command=Main");
 	}
 
 }

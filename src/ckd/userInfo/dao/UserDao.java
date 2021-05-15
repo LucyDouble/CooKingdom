@@ -277,5 +277,29 @@ public class UserDao {
 		}
 		return result;
 	}
-
+	
+	public int deleteUserInfo(Connection conn, User user) {
+		int result = 0;
+		
+		String query ="delete USERS where email=?";
+		try {
+			System.out.println("email : " + user.getEmail());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, user.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("사용자 회원 탈퇴 성공");
+				conn.commit();
+			} else {
+				System.out.println("사용자 회원 탈퇴 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
+	
 }

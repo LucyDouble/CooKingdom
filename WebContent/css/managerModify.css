@@ -86,3 +86,7 @@ input::placeholder {
 	font-size: 2px;
 }
 
+body {
+	width: 1440px;
+	margin: 0 auto;
+}

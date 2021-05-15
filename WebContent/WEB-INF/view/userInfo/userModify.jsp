@@ -1,6 +1,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/userModify.css?ver=2.9" rel="stylesheet" type="text/css">
+<link href="css/userModify.css?ver=3.0" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <%@ page import="ckd.member.vo.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -310,6 +310,7 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		// 빈 칸 확인
 		if (newAddress == "") {
 			document.getElementById("msg10").style.display = "block";
 			document.getElementById("newAddress").focus();
@@ -319,7 +320,7 @@
 		}
 		$.ajax({
 			type : "POST",
-			url : "ModifyUserAddress",
+			url : "modifyUserAddress",
 			data : {
 				email : email,
 				newAddress : newAddress
@@ -347,7 +348,15 @@
 		console.log(flag);
 		return flag;
 	}
-	
+	// 회원 탈퇴
+	function removeUserInfo() {
+		var removeConfirm = confirm("회원탈퇴 하시겠습니까?");	
+		if (removeConfirm == true) {
+			document.form.submit();
+		} else {
+			return false;
+		}
+	}
 </script>
 <body>
 	<div id="form">
@@ -357,24 +366,25 @@
 	<br>
 	<h5 style="text-align: center;">사용자 정보수정</h5>
 	<hr style="margin-bottom: 30px; width: 500px;">
+		<form action="removeUserInfo" method="POST" onsubmit="return removeUserInfo();">
 		<table style="border-collapse:collapse;">
 			<tr id="tr">
 				<td id="info">이메일</td>
 				<td id="input"><input type="text" id="email" name="email" value="${User.email }" readonly></td>
 				<td id="input"><input type="text" class="text" id="newEmail" name="newEmail"></td>
-				<td id="button"><button id="btn" onclick="updateEmail();">이메일 변경</button></td>				
+				<td id="button"><button type="button" id="btn" onclick="updateEmail();">이메일 변경</button></td>				
 			</tr>
 			<tr id="tr">
 				<td id="info">이름</td>
 				<td id="input">${User.name }</td>
 				<td id="input"><input type="text" class="text" id="newName" name="newName"></td>
-				<td id="button"><button id="btn" onclick="updateName();">이름 변경</button></td>			
+				<td id="button"><button type="button" id="btn" onclick="updateName();">이름 변경</button></td>			
 			</tr>
 			<tr id="tr">
 				<td id="info">닉네임</td>
 				<td id="input">${User.nickName }</td>
 				<td id="input"><input type="text" class="text" id="newNickName" name="newNickName"></td>
-				<td id="button"><button id="btn" onclick="updateNickName();">닉네임 변경</button></td>				
+				<td id="button"><button type="button" id="btn" onclick="updateNickName();">닉네임 변경</button></td>				
 			</tr>
 			<tr id="tr">
 				<td id="info">생년월일</td>
@@ -386,7 +396,7 @@
 				<td id="info">휴대폰 번호</td>
 				<td id="input">${User.phone }</td>
 				<td id="input"><input type="text" class="text" id="newPhone" name="newPhone"></td>
-				<td id="button"><button id="btn" onclick="updatePhone();">휴대폰 번호 변경</button>				
+				<td id="button"><button type="button" id="btn" onclick="updatePhone();">휴대폰 번호 변경</button>				
 			</tr>
 			<tr id="tr">
 				<td id="info">비밀번호</td>
@@ -395,13 +405,13 @@
 					<input type="password" class="text" id="newPwd" name="newPwd" placeholder="새 비밀번호"><br><br>
 					<input type="password" class="text" id="rePwd" name="rePwd" placeholder="새 비밀번호 확인">
 				</td>
-				<td id="button"><button id="btn" onclick="updatePwd();">비밀번호 변경</button></td>
+				<td id="button"><button type="button" id="btn" onclick="updatePwd();">비밀번호 변경</button></td>
 			</tr>
 			<tr id="tr">
 				<td id="info">주소</td>
 				<td id="input">${User.address }</td>
 				<td id="input"><input type="text" class="text" id="newAddress" name="newAddress"></td>
-				<td id="button"><button id="btn" onclick="updateAddress();">주소 변경</button></td>				
+				<td id="button"><button type="button" id="btn" onclick="updateAddress();">주소 변경</button></td>				
 			</tr>	
 		</table><br>
 		<p id="msg1" style="color: red; display: none; margin-top: 0;">정보 수정을 실패했습니다.</p> 
@@ -414,7 +424,9 @@
 		<p id="msg8" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p> 
 		<p id="msg9" style="color: red; display: none; margin-top: 0;">8~15자까지 영문, 숫자, 특수문자를 포함해서 입력해주세요.</p> 
 		<p id="msg10" style="color: red; display: none; margin-top: 0;">정보를 입력해주세요.</p> 
+		<input type="submit" value="회원탈퇴" id="out">
 		<input type="button" value="나가기" id="out" onclick="location.href='index.jsp'">
+	</form>
 	</div>
 	<jsp:include page="../main/footer.jsp"></jsp:include></body>
 </body>

@@ -1,6 +1,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/managerModify.css?ver=1.2" rel="stylesheet" type="text/css">
+<link href="css/managerModify.css?ver=1.3" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -235,6 +235,15 @@
 		console.log(flag);
 		return flag;
 	}
+	// 회원 탈퇴
+	function removeManagerInfo() {
+		var removeConfirm = confirm("회원탈퇴 하시겠습니까?");	
+		if (removeConfirm == true) {
+			document.form.submit();
+		} else {
+			return false;
+		}
+	}
 </script>
 <body>
 	<div id="form">
@@ -244,6 +253,7 @@
 	<br>
 	<h5 style="text-align: center;">관리자 정보수정</h5>
 	<hr style="margin-bottom: 30px; width: 500px;">
+	<form action="removeManagerInfo" method="POST" onsubmit="return removeManagerInfo();">
 		<table style="border-collapse: collapse;">
 			<tr id="tr">
 				<td id="info">이메일</td>
@@ -287,7 +297,9 @@
 		<p id="msg6" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p> 
 		<p id="msg7" style="color: red; display: none; margin-top: 0;">8~15자까지 영문, 숫자, 특수문자를 포함해서 입력해주세요.</p> 
 		<p id="msg8" style="color: red; display: none; margin-top: 0;">정보를 입력해주세요.</p>
+		<input type="submit" value="회원탈퇴" id="out">
 		<input type="button" value="나가기" id="out" onclick="location.href='index.jsp'">
+	</form>
 	</div>
 	<jsp:include page="../main/footer.jsp"></jsp:include></body>
 </body>

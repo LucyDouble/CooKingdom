@@ -196,6 +196,30 @@ public class DirectorDao {
 		}
 		return result;
 	}
+	
+	public int deleteDirectorInfo(Connection conn, Manager manager) {
+		int result = 0;
+		
+		String query ="delete DIRECTOR where email=?";
+		try {
+			System.out.println("email : " + manager.getEmail());
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, manager.getEmail());
+			result = pstmt.executeUpdate();
+			if (result > 0) {
+				System.out.println("책임자 회원 탈퇴 성공");
+				conn.commit();
+			} else {
+				System.out.println("책임자 회원 탈퇴 실패");
+				conn.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return result;
+	}
 
 
 }

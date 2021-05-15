@@ -34,6 +34,11 @@
 	font-size: 13px;
 }
 
+body {
+	width: 1440px;
+	margin: 0 auto;
+}
+
 #check {
 	border-radius: 10px;
 	height: 26px;

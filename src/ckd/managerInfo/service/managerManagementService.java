@@ -60,4 +60,12 @@ public class managerManagementService {
 		JDBCConnection.close(conn);
 		return result;
 	}
+	
+	public int deleteManagerInfo(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new ManagerDao().deleteManagerInfo(conn, manager);
+		JDBCConnection.close(conn);
+		return result;
+	}
 }

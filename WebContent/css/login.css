@@ -39,3 +39,8 @@
 	src: url("../font/NanumBarunpenB.ttf");
 	font-size: 13px;
 }
+
+body {
+	width: 1440px;
+	margin: 0 auto;
+}

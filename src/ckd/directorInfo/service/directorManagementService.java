@@ -61,4 +61,12 @@ public class directorManagementService {
 		JDBCConnection.close(conn);
 		return result;
 	}
+	
+	public int deleteDirectorInfo(Manager manager) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new DirectorDao().deleteDirectorInfo(conn, manager);
+		JDBCConnection.close(conn);
+		return result;
+	}
 }

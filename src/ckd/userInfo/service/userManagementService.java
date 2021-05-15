@@ -82,4 +82,11 @@ public class userManagementService {
 		return result;
 	}
 
+	public int deleteUserInfo(User user) {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new UserDao().deleteUserInfo(conn, user);
+		JDBCConnection.close(conn);
+		return result;
+	}
 }
