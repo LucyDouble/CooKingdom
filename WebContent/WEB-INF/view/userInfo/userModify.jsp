@@ -319,7 +319,7 @@
 		}
 		$.ajax({
 			type : "POST",
-			url : "modifyUserInfo",
+			url : "ModifyUserAddress",
 			data : {
 				email : email,
 				newAddress : newAddress
