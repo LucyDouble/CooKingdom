@@ -146,6 +146,8 @@ public class ReviewListInquiry extends HttpServlet {
 				jArray.add(jobj);
 			}
 			jsonObject.add("reviewList", jArray);
+		} catch (NullPointerException e) {
+			System.out.println("리뷰 작성을 하지 않았거나 레시피 데이터 삭제");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -113,9 +113,14 @@ public class RecipeService {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new RecipeDAO().insertRecipe(recipe, conn);
-		if(result == 1) {
-			JDBCConnection.commit(conn);
-		}
+		JDBCConnection.close(conn);
+		return result;
+	}
+	
+	public int removeRecipe(int recipeCode) throws SQLException {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new RecipeDAO().deleteRecipe(conn, recipeCode);
 		JDBCConnection.close(conn);
 		return result;
 	}
@@ -126,6 +131,13 @@ public class RecipeService {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new IngredientDAO().insertIngredient(ingredients, conn);
+		JDBCConnection.close(conn);
+		return result;
+	}
+	public int removeIngredient(int recipeCode) throws SQLException {
+		int result = 0;
+		Connection conn = JDBCConnection.getConnection();
+		result = new IngredientDAO().deleteIngredient(conn, recipeCode);
 		JDBCConnection.close(conn);
 		return result;
 	}

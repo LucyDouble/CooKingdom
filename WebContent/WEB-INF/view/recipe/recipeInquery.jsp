@@ -26,8 +26,8 @@
 			<!-- name="total_price" value="0" 113행에 있는거 읽어옴-->
 			
 			<div class="modify_delete">
-				<input type="button" value="수정">
-				<input type="button" value="삭제">
+				<input id="recipe_modifyBtn" type="button" value="수정">
+				<input id="recipe_removeBtn" type="button" value="삭제" onClick="window.location='<%=request.getContextPath() %>/reciperemove?recipeCode=${recipeInquery.recipeCode }'">
 			</div>
 
 			<div id="recipeInquery">

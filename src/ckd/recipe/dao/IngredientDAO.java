@@ -166,4 +166,23 @@ public class IngredientDAO {
 		
 		
 	}
+	
+	public int deleteIngredient(Connection conn, int recipeCode) throws SQLException {
+		int result = 0;
+		PreparedStatement pstmt = null;
+		
+		String sql = "delete from ingredient where recipe_code = ?";
+		pstmt = conn.prepareStatement(sql);
+		
+		pstmt.setInt(1, recipeCode);
+		
+		result = pstmt.executeUpdate();
+		
+		JDBCConnection.close(pstmt);
+		
+		System.out.println("DAO 재료 삭제 결과 : " + result);
+		
+		return result;
+		
+	}
 }
