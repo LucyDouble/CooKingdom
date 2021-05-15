@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
+
 /*전체 가운데 정렬*/
 .wrapper{
-	<!-- add -->
 	min-height: 100% ;
-	
     position: relative;
     width: 1440px;
     margin: 0 auto;

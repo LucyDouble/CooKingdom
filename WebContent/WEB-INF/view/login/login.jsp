@@ -65,11 +65,12 @@
 	}
 </script>
 <body>
+	<div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<br>
 	<br>
 	<br>
-	<h5 style="text-align: center;">회원이신가요?</h5>
+	<h3 style="text-align: center;">회원이신가요?</h3>
 	<hr style="margin-bottom: 30px;">
 	<form action="loginUser" method="POST" 
 	style="text-align: center;" onsubmit="return login();">
@@ -90,9 +91,10 @@
 		<p id="msg1" style="color: red; display: none; margin-top: 0;">입력된 이메일이 없습니다.</p>
 		<p id="msg2" style="color: red; display: none; margin-top: 0;">아이디 또는 비밀번호가 틀렸습니다.</p>
 		<div style="text-align: center;">
-			<input type="submit" value="로그인" id="btn">
+			<input type="submit" value="로그인" id="btn" >
 		</div>
 	</form>
 	<jsp:include page="../main/footer.jsp"></jsp:include>
+	</div>
 </body>
 </html>

@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 #info {
-	font-size: 1px;
+	font-size: 13px;
 	text-align: left;
+	margin-bottom : 0;
 }
 
 .input {
@@ -26,7 +27,7 @@
 	display: inline-block;
 	font-family: "NanumB";
 	src: url("../font/NanumBarunpenB.ttf");
-	font-size: 1px;
+	font-size: 12px;
 }
 
 #btn {
@@ -35,12 +36,9 @@
 	border-radius: 10px;
 	background-color: #6e8c03;
 	color: white;
-	font-family: "NanumB";
-	src: url("../font/NanumBarunpenB.ttf");
 	font-size: 13px;
-}
-
-body {
-	width: 1440px;
-	margin: 0 auto;
+	cursor : pointer;
+	outline : 0;
+	border : none;
+	font-size : 14px;
 }

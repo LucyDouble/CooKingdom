@@ -37,9 +37,10 @@
 
 </head>
 <body>
+<div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<br><br><br><br>
-<div class="wrapper">
+
      <div id="section">
         <div id="teamM">
            <h1>요리하시조</h1>
@@ -55,8 +56,8 @@
             </ul>
         </div>
     </div>
+
+	<jsp:include page="../main/footer.jsp"></jsp:include>
 </div>	
-<jsp:include page="../main/footer.jsp"></jsp:include>
-	
 </body>
 </html>
