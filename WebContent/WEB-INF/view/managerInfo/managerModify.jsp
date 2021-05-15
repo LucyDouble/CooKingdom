@@ -1,6 +1,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/managerModify.css?ver=1.1" rel="stylesheet" type="text/css">
+<link href="css/managerModify.css?ver=1.2" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -23,6 +23,17 @@
 		document.getElementById("msg3").style.display = "none";
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
+		document.getElementById("msg6").style.display = "none";
+		document.getElementById("msg7").style.display = "none";
+		document.getElementById("msg8").style.display = "none";
+		// 빈 칸 확인
+		if (newEmail == "") {
+			document.getElementById("msg8").style.display = "block";
+			document.getElementById("newEmail").focus();
+			return false;
+		} else {
+			document.getElementById("msg8").style.display = "none";
+		}
 		$.ajax({
 			type : "POST",
 			url : "modifyManagerInfo",
@@ -63,6 +74,17 @@
 		document.getElementById("msg3").style.display = "none";
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
+		document.getElementById("msg6").style.display = "none";
+		document.getElementById("msg7").style.display = "none";
+		document.getElementById("msg8").style.display = "none";
+		// 빈 칸 확인
+		if (newName == "") {
+			document.getElementById("msg8").style.display = "block";
+			document.getElementById("newName").focus();
+			return false;
+		} else {
+			document.getElementById("msg8").style.display = "none";
+		}
 		$.ajax({
 			type : "POST",
 			url : "modifyManagerInfo",
@@ -103,6 +125,17 @@
 		document.getElementById("msg3").style.display = "none";
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
+		document.getElementById("msg6").style.display = "none";
+		document.getElementById("msg7").style.display = "none";
+		document.getElementById("msg8").style.display = "none";
+		// 빈 칸 확인
+		if (newPhone == "") {
+			document.getElementById("msg8").style.display = "block";
+			document.getElementById("newPhone").focus();
+			return false;
+		} else {
+			document.getElementById("msg8").style.display = "none";
+		}
 		$.ajax({
 			type : "POST",
 			url : "modifyManagerInfo",
@@ -138,11 +171,40 @@
 		var flag = true;
 		var email = document.getElementById("email").value;
 		var newPwd = document.getElementById("newPwd").value;
+		var rePwd = document.getElementById("rePwd").value;
+		var pwdForm = /^(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])(?=.*[0-9]).{8,16}$/;
 		document.getElementById("msg1").style.display = "none";
 		document.getElementById("msg2").style.display = "none";
 		document.getElementById("msg3").style.display = "none";
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
+		document.getElementById("msg6").style.display = "none";
+		document.getElementById("msg7").style.display = "none";
+		document.getElementById("msg8").style.display = "none";
+		// 빈 칸 확인
+		if (newPwd == "") {
+			document.getElementById("msg8").style.display = "block";
+			document.getElementById("newPwd").focus();
+			return false;
+		} else {
+			document.getElementById("msg8").style.display = "none";
+		}
+		// 비밀번호 양식
+		if (!pwdForm.test(newPwd)) {
+			document.getElementById("msg7").style.display = "block";
+			document.getElementById("newPwd").focus();
+			return false;
+		} else {
+			document.getElementById("msg7").style.display = "none";
+		}
+		// 비밀번호 일치
+		if (newPwd != rePwd) {
+			document.getElementById("msg6").style.display = "block";
+			document.getElementById("rePwd").focus();
+			return false;
+		} else {
+			document.getElementById("msg6").style.display = "none";
+		}
 		$.ajax({
 			type : "POST",
 			url : "modifyManagerInfo",
@@ -204,11 +266,14 @@
 			<tr id="tr">
 				<td id="info">비밀번호</td>
 				<td id="input">${Manager.pwd }</td>
-				<td id="input"><input type="text" class="text" id="newPwd" name="newPwd"></td>
+				<td id="input">
+					<input type="password" class="text" id="newPwd" name="newPwd" placeholder="새 비밀번호"><br><br>
+					<input type="password" class="text" id="rePwd" name="rePwd" placeholder="새 비밀번호 확인">
+				</td>
 				<td id="button"><button id="btn" onclick="updatePwd();">비밀번호 변경</button></td>
 			</tr>
 			<tr id="tr">
-				<td id="info">시리얼 넘버</td>
+				<td id="info">시리얼 번호</td>
 				<td id="input">${Manager.serial }</td>
 				<td id="input"></td>
 				<td id="button"></td>				
@@ -219,7 +284,10 @@
 		<p id="msg3" style="color: blue; display: none; margin-top: 0;">이름 수정을 성공했습니다.</p> 
 		<p id="msg4" style="color: blue; display: none; margin-top: 0;">휴대폰 번호 수정을 성공했습니다.</p> 
 		<p id="msg5" style="color: blue; display: none; margin-top: 0;">비밀번호 수정을 성공했습니다.</p> 
-		<input type="button" value="나가기" id="out">
+		<p id="msg6" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p> 
+		<p id="msg7" style="color: red; display: none; margin-top: 0;">8~15자까지 영문, 숫자, 특수문자를 포함해서 입력해주세요.</p> 
+		<p id="msg8" style="color: red; display: none; margin-top: 0;">정보를 입력해주세요.</p>
+		<input type="button" value="나가기" id="out" onclick="location.href='index.jsp'">
 	</div>
 	<jsp:include page="../main/footer.jsp"></jsp:include></body>
 </body>

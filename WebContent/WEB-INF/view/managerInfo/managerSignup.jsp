@@ -1,6 +1,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/managerSignup.css?ver=1.2" rel="stylesheet"
+<link href="css/managerSignup.css?ver=1.3" rel="stylesheet"
 	type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <%@ page language="java" contentType="text/html; charset=UTF-8"

@@ -1,13 +1,18 @@
 @charset "UTF-8";
 
 #info {
-	font-size: 1px;
 	text-align: left;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 1px;
 }
 
 .input {
 	width: 300px;
 	height: 20px;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
 }
 
 #index {
@@ -24,6 +29,9 @@
 	border-radius: 10px;
 	background-color: #6e8c03;
 	color: white;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
 }
 
 #check {
@@ -32,6 +40,9 @@
 	width: 70px;
 	background-color: #6e8c03;
 	color: white;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
 }
 
 #email {
@@ -40,5 +51,7 @@
 }
 
 input::placeholder {
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
 	font-size: 2px;
 }

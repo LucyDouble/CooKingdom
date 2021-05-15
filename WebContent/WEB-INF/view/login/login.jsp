@@ -1,6 +1,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/login.css?ver=1.1" rel="stylesheet" type="text/css">
+<link href="css/login.css?ver=1.2" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <%@ page import="ckd.member.vo.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

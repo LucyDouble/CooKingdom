@@ -52,6 +52,7 @@ public class DirectorDao {
 					result.setName(rs.getString("name"));
 					result.setPwd(rs.getString("password"));
 					result.setPhone(rs.getString("phone"));
+					result.setSerial(rs.getString("serial"));
 				} else {
 					System.out.println("책임자 비밀번호가 서로 불일치");
 				}

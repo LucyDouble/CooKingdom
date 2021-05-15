@@ -5,8 +5,11 @@ td {
 }
 
 #info {
-	background-color: #D2D9D8;
+	background-color: #f2f2f2;
 	font-size: 7px;
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 10px;
 }
 
 #input {
@@ -31,10 +34,12 @@ table {
 	text-align: center;
 	font-family: "NanumB";
 	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 13px;
 	width: 100px;
 	height: 50px;
-	border-radius: 10px;
-	box-shadow: none;
+	border-radius: 13px;
+	background-color: #6e8c03;
+	color: white;
 }
 
 #email {
@@ -50,7 +55,7 @@ table {
     background-color: white;
 	width: 150px;
 	text-align: right;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 #tr {
@@ -61,7 +66,7 @@ table {
 	text-align: center;
 	font-family: "NanumB";
 	src: url("../font/NanumBarunpenB.ttf");
-	font-size: 13px;
+	font-size: 14px;
 	width: 100px;
 	border-radius: 10px;
 	box-shadow: none;
@@ -72,5 +77,12 @@ table {
 	font-family: "NanumB";
 	src: url("../font/NanumBarunpenB.ttf");
 	font-size: 13px;
+
+}
+
+input::placeholder {
+	font-family: "NanumB";
+	src: url("../font/NanumBarunpenB.ttf");
+	font-size: 2px;
 }
 
