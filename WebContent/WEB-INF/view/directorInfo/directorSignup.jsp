@@ -78,11 +78,12 @@
 </script>
 </head>
 <body>
+<div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<br>
 	<br>
 	<br>
-	<h5 style="text-align: center;">회원가입</h5>
+	<h3 style="text-align: center;">회원가입</h3>
 	<hr style="margin-bottom: 30px;">
 	<form action="<%=request.getContextPath()%>/inquiryDirector"
 		method="POST" style="text-align: center;"
@@ -133,5 +134,6 @@
 		</div>
 	</form>
 	<jsp:include page="../main/footer.jsp"></jsp:include>
+</div>
 </body>
 </html>

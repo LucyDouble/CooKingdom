@@ -359,13 +359,14 @@
 	}
 </script>
 <body>
+	<div class="wrapper">
 	<div id="form">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<br>
 	<br>
 	<br>
-	<h5 style="text-align: center;">사용자 정보수정</h5>
-	<hr style="margin-bottom: 30px; width: 500px;">
+	<h3 style="text-align: center;">사용자 정보수정</h5>
+	<hr style="margin-bottom: 30px; width: 800px;">
 		<form action="removeUserInfo" method="POST" onsubmit="return removeUserInfo();">
 		<table style="border-collapse:collapse;">
 			<tr id="tr">
@@ -429,5 +430,6 @@
 	</form>
 	</div>
 	<jsp:include page="../main/footer.jsp"></jsp:include></body>
+	</div>
 </body>
 </html>

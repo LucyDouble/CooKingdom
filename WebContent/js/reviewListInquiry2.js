@@ -80,6 +80,7 @@ $(document).on('click','#moreBtn',function(){
 		count = hiddenComment.length;
 		if(count == 0){
 			$("#moreBtn").css("display","none");
+			alert("댓글 목록이 끝났습니다.");
 		}else{
 			$(hiddenComment).slice(0,5).show();
 		}

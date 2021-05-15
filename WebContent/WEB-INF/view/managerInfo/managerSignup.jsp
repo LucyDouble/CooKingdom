@@ -78,6 +78,7 @@
 </script>
 </head>
 <body>
+	<div class="wrapper">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<br>
 	<br>
@@ -133,5 +134,6 @@
 		</div>
 	</form>
 	<jsp:include page="../main/footer.jsp"></jsp:include>
+	</div>
 </body>
 </html>

@@ -246,13 +246,14 @@
 	}
 </script>
 <body>
-		<div id="form">
+<div class="wrapper">
+	<div id="form">
 	<jsp:include page="../main/header.jsp"></jsp:include>
 	<br>
 	<br>
 	<br>
-	<h5 style="text-align: center;">책임자 정보수정</h5>
-	<hr style="margin-bottom: 30px; width: 500px;">
+	<h3 style="text-align: center;">책임자 정보수정</h3>
+	<hr style="margin-bottom: 30px; width: 800px;">
 	<form action="removeDirectorInfo" method="POST" onsubmit="return removeDirectorInfo();">
 		<table style="border-collapse:collapse;">
 			<tr id="tr">
@@ -302,5 +303,6 @@
 	</form>
 	</div>
 	<jsp:include page="../main/footer.jsp"></jsp:include></body>
+</div>
 </body>
 </html>
