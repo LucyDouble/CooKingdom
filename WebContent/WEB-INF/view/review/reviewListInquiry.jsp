@@ -1,4 +1,5 @@
 <%@page import="ckd.member.vo.User"%>
+<%@ page import="ckd.member.vo.Manager" %>
 <link href="css/reviewListInquiry.css" rel="stylesheet" type="text/css">
 <link href="css/comment.css" rel="stylesheet" type="text/css">
 <link href="css/deleteModal.css" rel="stylesheet" type="text/css">
@@ -9,7 +10,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     User user = (User)session.getAttribute("User");
-	String email = user.getEmail();
+	Manager manager = (Manager)session.getAttribute("Manager");
+	Manager director = (Manager)session.getAttribute("Director"); 
 %>
 <%
 	int recipeCode2 = Integer.parseInt(request.getParameter("recipeCode"));
@@ -20,8 +22,20 @@
                 <button class="tablinks" onclick="openCont(event, 'comment'); return false">댓글</button>
             </div>
         </div>
+        	<%
+        	if (user == null && manager == null && director == null) {
+        	String email = "";%>
+        	 <input type="hidden" name="email" value= <%=email %> id="email"/>
+        	<%} else if (user != null) {
+        	String email = user.getEmail();%>
 	        <input type="hidden" name="email" value= <%=email %> id="email"/>
-	        
+	        <%} else if (manager != null) {
+	        String email = manager.getEmail();%>
+	        <input type="hidden" name="email" value= <%=email %> id="email"/>
+	        <%} else if (director != null) {
+	        String email = manager.getEmail();%>
+	        <input type="hidden" name="email" value= <%=email %> id="email"/>
+	        <%}%>
  			<input type="hidden" name="recipeCode" value= <%=recipeCode2%>  id="recipeCode" />
         <div class="board" id="board">
             <div id="review" class="tabcontent">
