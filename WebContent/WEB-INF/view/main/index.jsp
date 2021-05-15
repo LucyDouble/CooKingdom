@@ -20,15 +20,15 @@
 			<div class="slideshow-container">
 
 				<div class="mySlides fade">
-					<img src="image/header/main1.png" style="width: 100%">
+					<img src="image/header/마라탕.png" style="width: 100%">
 				</div>
 
 				<div class="mySlides fade">
-					<img src="http://placehold.it/300x100" style="width: 100%">
+					<img src="image/header/코로나할인.png" style="width: 100%">
 				</div>
 
 				<div class="mySlides fade">
-					<img src="http://placehold.it/300x100" style="width: 100%">
+					<img src="image/header/밥도둑.png" style="width: 100%">
 				</div>
 
 			</div>
@@ -40,13 +40,13 @@
 					<div id="mrImg">
 						<ul>
 							<li class="mR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/잡채밥.png"></a></li>
 							<li class="mR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/마라탕메뉴.png"></a></li>
 							<li class="mR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/아보카도 연어 샌드위치.png"></a></li>
 							<li class="mR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/캘리포니아롤.png"></a></li>
 						</ul>
 					</div>
 				</article>
@@ -56,31 +56,31 @@
 					<div>
 						<ul>
 							<li class="bR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/가리비 치즈 버터구이.png"></a></li>
 							<li class="bR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/순두부찌개.png"></a></li>
 							<li class="bR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/오코노미야끼.png"></a></li>
 							<li class="bR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/열무비빔밥.png"></a></li>
 						</ul>
 					</div>
 				</article>
 				<div id="banner">
-					<img src="image/header/banner.png">
+					<img src="image/header/국밥.png">
 				</div>
 				<article id="kingdomRecipe">
 					<h1>킹덤의 추천 레시피</h1>
 					<div>
 						<ul>
 							<li class="cR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/아보카도 연어 샌드위치.png"></a></li>
 							<li class="cR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/마늘빵.png"></a></li>
 							<li class="cR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/해물스파게티.png"></a></li>
 							<li class="cR"><a href="#"><img
-									src="image/header/newR.png"></a></li>
+									src="image/header/갈비찜.png"></a></li>
 						</ul>
 					</div>
 				</article>
@@ -100,9 +100,8 @@
 		    }
 		    slideIndex++;
 		    if (slideIndex > slides.length) {slideIndex = 1}    
-		    
 		    slides[slideIndex-1].style.display = "block";  
-		    setTimeout(showSlides, 3000); 
+		    setTimeout(showSlides, 4000); 
 		}
 	
 	</script>
