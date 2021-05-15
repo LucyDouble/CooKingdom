@@ -97,12 +97,12 @@
 	cursor: pointer;
 }
 
-#search_frm {
+.searchBox {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-#search_frm a {
+.searchBox a {
 	margin-right: 5px;
 }
 
@@ -125,7 +125,7 @@
 	font-size: 12px;
 }
 
-.searchBox {
+.search_innerBox {
 	margin-top: 12px;
 }
 

@@ -90,10 +90,7 @@ public class RecipeDAO {
 		ResultSet rs = null;
 		String sql = "select COUNT(*) from recipe";
 		if (search != null) {
-//			sql += " where bsubject like '%" + search+ "%' or bcontent like '%"+ search+ "%'";
-			
-			sql += " where RECIPE_NAME like '%" + search+ "%' or TYPE_CAG like '%"+ search+ "%'"
-					+ " RECIPE_CAG like '%" + search + "%'";
+			sql += " where recipe_name like '%" + search+ "%'";
 		}
 		
 		pstmt = conn.prepareStatement(sql);

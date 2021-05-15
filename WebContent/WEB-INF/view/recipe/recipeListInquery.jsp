@@ -87,9 +87,6 @@
 			<a href="<%= request.getContextPath() %>/cookingDom?command=recipeRegester"><button id="recipe_Rbtn">등록</button></a>
 		</div>
 
-		<c:if test="${not empty search }">
-			<h1>${search }에대한검색 결과입니다.</h1>
-		</c:if>
 		<c:if test="${empty recipeList }">
 			게시글이 없습니다.		
 		</c:if>
@@ -125,31 +122,35 @@
 
 
 
-		<form id="search_frm" name="f">
-		<div>
-			<c:if test="${startPage != 1 }">
-				<a
-					href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${startPage-1}&search=${search}">이전</a>
-			</c:if>
-			<c:forEach begin="${startPage }" end="${endPage }" var="s" step="1">
-				<a
-					href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${s }&search=${search}">${s }</a>
-			</c:forEach>
-			<c:if test="${endPage < pageCnt }">
-				<a
-					href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${endPage+1}&search=${search}">다음</a>
-			</c:if>
-		</div>
+		
 		<div class="searchBox">
-			<input type="search" name="search" id="search" value="${search}">
-			<button type="button" id="btnSearch">검색</button>
+			<div>
+				<c:if test="${startPage != 1 }">
+					<a
+						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${startPage-1}&search=${search}">이전</a>
+				</c:if>
+				<c:forEach begin="${startPage }" end="${endPage }" var="s" step="1">
+					<a
+						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${s }&search=${search}">${s }</a>
+				</c:forEach>
+				<c:if test="${endPage < pageCnt }">
+					<a
+						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${endPage+1}&search=${search}">다음</a>
+				</c:if>
+			</div>
+			
+			
+			<form id="search_frm" action="<%=request.getContextPath()%>/recipelistinquery.do" method="post" name="search_frm">
+			<div class="search_innerBox">
+				<input type="search" name="search" id="search" value="${search}">
+				<button type="submit" id="btnSearch">검색</button>
+			</div>
+			</form>
 		</div>
-		</form>
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
 	
-	<script src="js/recipeListInquery.js"></script>
 	<script src="https://kit.fontawesome.com/6a57affb8e.js"
 		crossorigin="anonymous"></script>
 </body>
