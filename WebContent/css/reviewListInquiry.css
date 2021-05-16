@@ -95,6 +95,11 @@
 
 .rdate{
     width: 100px;
+    padding-left : 50px;
+}
+
+.rcnt > span{
+	margin-left : 100px;
 }
 /*각 리뷰의 내용*/
 .review_content{

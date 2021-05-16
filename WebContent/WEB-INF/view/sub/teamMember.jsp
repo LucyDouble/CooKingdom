@@ -47,12 +47,12 @@
         </div>
         <div id="memberP">
             <ul>
-                <li class="t1"><h3>강수목</h3><img src="http://placehold.it/300x300" ></li>
-                <li class="t1"><h3>고현민(조장)</h3><img src="http://placehold.it/300x300" ></li>
+                <li class="t1"><h3>강수목</h3><img src="image/team/수목.png" ></li>
+                <li class="t1"><h3>고현민(조장)</h3><img src="image/team/현민.png" ></li>
                 <li class="t1"><h3>곽서현</h3><img src="image/team/서현.png" ></li>
                 <br>
                 <li class="t2" id="m4"><h3>김세훈</h3><img src="image/team/세훈.png" ></li>
-                <li class="t2"><h3>박준태</h3><img src="http://placehold.it/300x300" ></li>
+                <li class="t2"><h3>박준태</h3><img src="image/team/준태.png" ></li>
             </ul>
         </div>
     </div>
