@@ -133,17 +133,15 @@ function reviewDisplay(data){
 	var contextPath = getContextPath();
 	var rv = "";
 	
+	
+	
+	
 	$("#rev").empty();
-	
-	
-	
-	if(reviewList == null || data.cnt == 0){
-				rv = "<p>첫번째 리뷰를 작성해 보세요!</p>";
-				$("#rev").append(rv);
-			}
-	
 	if (currentMail == "null" ) {
 		rv = "<p>로그인 후 확인이 가능합니다.</p>";
+		$("#rev").append(rv);
+	}else if(currentMail != "null" && reviewList == null || data.cnt == 0  ){
+		rv = "<p>첫번째 리뷰를 작성해 보세요!</p>";
 		$("#rev").append(rv);
 	}else{
 		$.each(reviewList, function(i,list){
