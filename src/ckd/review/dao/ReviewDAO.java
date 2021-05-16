@@ -164,7 +164,7 @@ public class ReviewDAO {
 	
 	
 	/*review total Count*/
-	public int getReviewTotalCount(Connection conn, int recipeCode) {
+	public int getReviewCount(Connection conn, int recipeCode) {
 		int cnt = 0;
 		String sql = "select COUNT(*) from review where review.recipe_code = ?";
 		

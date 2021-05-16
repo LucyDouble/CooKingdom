@@ -92,12 +92,7 @@ public class CommentDAO {
 		
 		//댓글 등록
 		String sql = "INSERT INTO COMMENTS VALUES(?,?,?,SYSDATE,?,?,?,?)";
-		
-		//대댓글 등록
-		String sqlUpdate = "UPDATE COMMENTS SET "
-				+ "COMMENT_DEPTH = 1 , SORTS = SORTS+1"
-				+ "WHERE COMMENT_NO <> COMMENT_GROUP AND COMMENT_GROUP =?";
-				
+						
 		pstmt = null; rs= null;
 		
 		try {

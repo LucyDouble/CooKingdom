@@ -7,7 +7,12 @@ function goReview(){
 	var commentContent = document.getElementById("commentInput").value;
 	var email = document.getElementById("email").value;
 	var recipeCode = document.getElementById("recipeCode").value;
-	 
+
+	if(commentContent == "" || commentContent == "null" ){
+		alert("내용을 입력해주세요!");
+		return;
+	}
+	
 	$.ajax({
 		url: "commentRegister",
 		type:"POST",

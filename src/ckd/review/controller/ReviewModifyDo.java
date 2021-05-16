@@ -89,7 +89,7 @@ public class ReviewModifyDo extends HttpServlet {
 			review.setReviewPhoto(fileName);
 			review.setReviewContent(mReq.getParameter("reviewContent"));
 			
-			int result = rsv.updateReview(review);
+			int result = rsv.modifyReview(review);
 		
 		} catch (Exception e) {
 			e.printStackTrace();

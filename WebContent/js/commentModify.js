@@ -23,6 +23,11 @@ $("#commentModify").click(function(){
 	var commentContent = commentInput.value;
 	console.log("commentContent : "+commentContent);
 	
+	if(commentContent == "" || commentContent == "null" ){
+		alert("내용을 입력해주세요!");
+		return;
+	}
+	
 	$.ajax({
 		url : "commentModify",
 		type : "POST",

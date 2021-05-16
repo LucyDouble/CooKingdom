@@ -52,7 +52,7 @@ public class ReviewRemove extends HttpServlet {
 		review.setRecipeCode(Integer.parseInt(request.getParameter("recipeCode")));
 		review.setReviewNo(Integer.parseInt(request.getParameter("reviewNo")));
 		
-		result = rsv.deleteReview(review);
+		result = rsv.removeReview(review);
 		
 		
 	}

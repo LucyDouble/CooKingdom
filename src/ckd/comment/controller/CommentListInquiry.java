@@ -61,7 +61,7 @@ public class CommentListInquiry extends HttpServlet {
 		cnt = scv.getCommentCount(recipeCode);
 		
 		List<Comment> list = null;
-		list =scv.selectCommentList(recipeCode);
+		list =scv.inquiryCommentList(recipeCode);
 		
 		// JsonObject 생성
 		JsonObject jsonObject = new JsonObject();
