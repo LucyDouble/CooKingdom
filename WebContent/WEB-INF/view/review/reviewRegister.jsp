@@ -99,6 +99,9 @@
 						success : function(data){
 							console.log("잘갔음!");
 							history.back();
+						},error : function(){
+							console.log("왜이래!");
+							history.back();
 						}
 					});
 				},
