@@ -39,8 +39,8 @@ public class ReviewDAO {
 		String sql_1 ="(SELECT REVIEW_NO, review.email, NICKNAME, RECIPE_NAME, REVIEW_SUBJECT, REVIEW_CONTENT, REVIEW_PHOTO, REVIEW_DATE, HIT " + 
 				"FROM REVIEW LEFT JOIN USERS " + 
 				"ON review.email = users.email " + 
-				"LEFT JOIN RECIPE " + 
-				"ON review.recipe_code = recipe.recipe_code " + 
+				"LEFT JOIN mealkit " + 
+				"ON review.recipe_code = mealkit.recipe_code " + 
 				"where review.recipe_code = ? " +   
 				"ORDER BY REVIEW_NO DESC) D " ;
 		

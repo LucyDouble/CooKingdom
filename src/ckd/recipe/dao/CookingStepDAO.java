@@ -76,7 +76,7 @@ public class CookingStepDAO {
 		
 		System.out.println("inputVoCookingStepCode : " + inputVo.getRecipeCode());
 		String sql = "select c.cooking_step, c.cooking_desc, c.cooking_image"
-				+ " from recipe r join cooking_steps c"
+				+ " from mealkit r join cooking_steps c"
 				+ " on r.recipe_code = c.recipe_code"
 				+ " where c.recipe_code = ?"
 				+ " order by c.cooking_step";

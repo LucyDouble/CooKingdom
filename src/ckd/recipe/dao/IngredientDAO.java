@@ -79,7 +79,7 @@ public class IngredientDAO {
 		Ingredient vo = null;
 		
 		String sql = "select r.recipe_code, i.ing_name, i.ing_ty_nm, i.ing_ty_code, i.ing_cpcty"
-				+ " from recipe r join ingredient i"
+				+ " from mealkit r join ingredient i"
 				+ " on r.recipe_code = i.recipe_code"
 				+ " where r.recipe_code = ?"
 				+ " order by i.ing_ty_code";
