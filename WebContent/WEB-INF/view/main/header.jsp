@@ -30,10 +30,10 @@
 </header>
 <nav id="nav">
             <ul>
-                <li class="menu"><a href="recipelistinquery.do">레시피 목록</a></li>
+                <li class="menu"><a href="recipelistinquery">레시피 목록</a></li>
                 <li class="menu"><a href="teamMember">요리하시조 소개</a></li>
-                <li class="menu"><a href="recipelistinquery.do">맛있는 요리</a></li>
-                <li class="menu"><a href="recipelistinquery.do">집에서 만들어 먹어요!</a></li>
+                <li class="menu"><a href="recipelistinquery">맛있는 요리</a></li>
+                <li class="menu"><a href="recipelistinquery">집에서 만들어 먹어요!</a></li>
             </ul>
             <ul>	
                 <% if (user == null && manager == null && director == null) {%>

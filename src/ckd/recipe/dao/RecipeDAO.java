@@ -175,7 +175,7 @@ public class RecipeDAO {
 		return list;
 	}
 	
-	public Recipe selectRecipe(Connection conn, Recipe inputVo) throws SQLException {
+	public Recipe selectRecipe(Connection conn, Recipe recipeInput) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		Recipe vo = null;
@@ -183,7 +183,7 @@ public class RecipeDAO {
 		String sql = "select * from mealkit where recipe_code = ?";
 //		System.out.println("inputVoRecipeCode : " + inputVo.getRecipeCode());
 		pstmt = conn.prepareStatement(sql);
-		pstmt.setInt(1, inputVo.getRecipeCode());
+		pstmt.setInt(1, recipeInput.getRecipeCode());
 		rs = pstmt.executeQuery();
 		
 		if(rs.next()) {

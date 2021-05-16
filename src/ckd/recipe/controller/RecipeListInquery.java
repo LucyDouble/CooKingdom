@@ -18,7 +18,7 @@ import ckd.recipe.vo.Recipe;
 /**
  * Servlet implementation class RecipeListInquery
  */
-@WebServlet("/recipelistinquery.do")
+@WebServlet("/recipelistinquery")
 public class RecipeListInquery extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
