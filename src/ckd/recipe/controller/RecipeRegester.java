@@ -136,7 +136,7 @@ public class RecipeRegester extends HttpServlet {
 				String msg = "레시피 등록 완료";
 
 				out.println("<script>alert('" + msg + "')</script>");
-				out.println("<script>location.href='./recipelistinquery.do'</script>");
+				out.println("<script>location.href='./recipelistinquery'</script>");
 			} else {				
 				System.out.println("입력 실패");
 				

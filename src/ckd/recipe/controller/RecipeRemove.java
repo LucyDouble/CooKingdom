@@ -56,7 +56,7 @@ public class RecipeRemove extends HttpServlet {
 		if(resultR > 0 && resultI > 0) {
 			System.out.println("레시피 삭제 성공");
 			out.println("<script>alert('"+msg1+"')</script>");
-			out.println("<script>location.href='./recipelistinquery.do';</script>");
+			out.println("<script>location.href='./recipelistinquery';</script>");
 		} else {
 			System.out.println("레시피 삭제 실패");
 			out.println("<script>alert('"+msg2+"')</script>");
