@@ -154,7 +154,7 @@ function reviewDisplay(data){
 			rv += "<input type='hidden' value='"+reviewList[i].reviewContent+"' name='reviewContent'>";
 			rv += "<table><tr>"
 			rv += "<td class='reviewTitle rnum'><input type='hidden' value='"+reviewList[i].reviewNo+"'></td>";
-			rv += "<td class='reviewTitle rname><span><a href='#'>"+reviewList[i].recipeName+"</a></span></td>";
+			//rv += "<td class='reviewTitle rname><span><a href='#'>"+reviewList[i].recipeName+"</a></span></td>";
 			rv += "<td class='reviewTitle rsub' id='rsub-"+reviewList[i].reviewNo+"'><span><a href='#' onclick='return false'>"+reviewList[i].reviewSubject+"</a></span></td>";
 			rv += "<td class='reviewTitle rwriter'><span>"+reviewList[i].nickname+"</span></td>";
 			rv += "<td class='reviewTitle rdate'> <span>"+reviewList[i].reviewDate+"</span></td>";
