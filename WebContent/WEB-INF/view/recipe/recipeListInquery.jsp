@@ -13,6 +13,8 @@
 <meta charset="UTF-8">
 <title>CooKingDom RecipeList</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -82,16 +84,18 @@
 				</div>
 			</article>
 		</section>
-		
-		<div class="recipe_RbtnBox">
-			<a href="<%= request.getContextPath() %>/cookingDom?command=recipeRegester"><button id="recipe_Rbtn">등록</button></a>
+
+		<div class="recipe_RbtnBox" id="recipe_RbtnBox">
+			<a
+				href="<%=request.getContextPath()%>/cookingDom?command=recipeRegester"><button
+					id="recipe_Rbtn">등록</button></a>
 		</div>
 
 		<c:if test="${empty recipeList }">
 			게시글이 없습니다.		
 		</c:if>
 		<c:if test="${not empty recipeList }">
-		
+
 			<main class="goodsList">
 				<div class="goodsList_innerbox">
 					<ul>
@@ -99,8 +103,9 @@
 							<li>
 								<div class="goodsList_card">
 									<div class="goodsList_card_inner">
-										<a href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
-										<img src="${v.recipeUrl }" alt="img">
+										<a
+											href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
+											<img src="${v.recipeUrl }" alt="img">
 										</a>
 										<div id="likeBtn">
 											<button type="button">
@@ -108,8 +113,9 @@
 											</button>
 										</div>
 									</div>
-									<a class="goodsList_card_info" href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}"> <span>${v.recipeName }</span>
-										<span>${v.price }원</span>
+									<a class="goodsList_card_info"
+										href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
+										<span>${v.recipeName }</span> <span>${v.price }원</span>
 									</a>
 								</div>
 							</li>
@@ -122,7 +128,7 @@
 
 
 
-		
+
 		<div class="searchBox">
 			<div>
 				<c:if test="${startPage != 1 }">
@@ -138,19 +144,21 @@
 						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${endPage+1}&search=${search}">다음</a>
 				</c:if>
 			</div>
-			
-			
-			<form id="search_frm" action="<%=request.getContextPath()%>/recipelistinquery.do" method="post" name="search_frm">
-			<div class="search_innerBox">
-				<input type="search" name="search" id="search" value="${search}">
-				<button type="submit" id="btnSearch">검색</button>
-			</div>
+
+
+			<form id="search_frm"
+				action="<%=request.getContextPath()%>/recipelistinquery.do"
+				method="post" name="search_frm">
+				<div class="search_innerBox">
+					<input type="search" name="search" id="search" value="${search}">
+					<button type="submit" id="btnSearch">검색</button>
+				</div>
 			</form>
 		</div>
 
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
-	
+
 	<script src="https://kit.fontawesome.com/6a57affb8e.js"
 		crossorigin="anonymous"></script>
 </body>
