@@ -7,6 +7,7 @@ var hiddenComment = "";
 window.onload = function(){
 	recipeCode = document.getElementById("recipeCode").value;
 	currentMail = document.getElementById("email").value;
+	console.log("currentMail : "+currentMail);
 	/****************  리뷰     ******************/
 	$.ajax({
 		url:"reviewListInquiry",
@@ -33,9 +34,23 @@ window.onload = function(){
 			var commentList = data.commentList;
 			var cv = "";
 			
+			$("#cmt").empty();
+			
 			if(commentList == null || data.cnt == 0){
 				cv = "<p>첫번째 댓글을 작성해 보세요!</p>";
-			}else{
+				$("#cmt").append(cv);
+			}
+			
+			
+			if (currentMail == "null" ) {
+				cv = "<p>로그인 후 확인이 가능합니다.</p>";
+				$("#cmt").append(cv);
+			}
+			
+			$("#cmt").empty();
+			
+			
+			if(currentMail != null && currentMail != "null"){
 				$.each(commentList, function(i,list){
 					cv += "<div class='comment_Inq' style='display:none;'>";
 					cv += "<input type='hidden' name='commentNo' value='"+commentList[i].commentNo+"' />";
@@ -52,18 +67,21 @@ window.onload = function(){
 					}
 					cv += "</div>";					
 				});
+				
 			}
-			
-			
 					$("#cmt").append(cv);
+				
+				
+			
+			
 				
 				$(".comment_Inq").slice(0,5).show();
 
 				
 				
 				var morebtn = "<a id='moreBtn'>더보기(more)</a>";
-		
-				if(data.cnt > 5){
+				
+				if(currentMail != null && data.cnt > 5 && currentMail != 'null'){
 					$("#moreDiv").append(morebtn);				
 				} 
 
@@ -117,13 +135,18 @@ function reviewDisplay(data){
 	
 	$("#rev").empty();
 	
+	
+	
 	if(reviewList == null || data.cnt == 0){
 				rv = "<p>첫번째 리뷰를 작성해 보세요!</p>";
 				$("#rev").append(rv);
 			}
 	
-	
-	$.each(reviewList, function(i,list){
+	if (currentMail == "null" ) {
+		rv = "<p>로그인 후 확인이 가능합니다.</p>";
+		$("#rev").append(rv);
+	}else{
+		$.each(reviewList, function(i,list){
 
 			rv = "<div class='review_Inq'>";
 			rv += "<input type='hidden' value='"+reviewList[i].reviewSubject+"' name='reviewSubject'>";
@@ -157,6 +180,8 @@ function reviewDisplay(data){
 			$("#rev").append(rv);
 			
 	});
+	}
+	
 	
 	
 

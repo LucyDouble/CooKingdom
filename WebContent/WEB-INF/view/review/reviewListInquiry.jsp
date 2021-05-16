@@ -25,7 +25,7 @@
         	<%
         	if (user == null && manager == null && director == null) {
         	String email = "";%>
-        	 <input type="hidden" name="email" value= <%=email %> id="email"/>
+        	 <input type="hidden" name="email" value= "null" id="email"/>
         	<%} else if (user != null) {
         	String email = user.getEmail();%>
 	        <input type="hidden" name="email" value= <%=email %> id="email"/>
