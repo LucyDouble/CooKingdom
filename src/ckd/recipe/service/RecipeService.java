@@ -81,25 +81,25 @@ public class RecipeService {
 		return list;
 	}
 	
-	public Recipe inqueryRecipe(Recipe inputVo) throws SQLException {
+	public Recipe inqueryRecipe(Recipe recipeInput) throws SQLException {
 		Connection conn = JDBCConnection.getConnection();
-		Recipe vo = new RecipeDAO().selectRecipe(conn, inputVo);
+		Recipe vo = new RecipeDAO().selectRecipe(conn, recipeInput);
 		JDBCConnection.close(conn);
 		return vo;
 
 		
 //	---------------------- 재료 --------------------------------
 	}
-	public List<Ingredient> inqueryIngredient(Ingredient inputVo) throws SQLException {
+	public List<Ingredient> inqueryIngredient(Ingredient ingredientInput) throws SQLException {
 		Connection conn = JDBCConnection.getConnection();
-		List<Ingredient> list = new IngredientDAO().selectIngredient(conn, inputVo);
+		List<Ingredient> list = new IngredientDAO().selectIngredient(conn, ingredientInput);
 		JDBCConnection.close(conn);
 		return list;
 //	----------------------- 조리 과정 --------------------------------
 	}
-	public List<CookingStep> inqueryCookingStep(CookingStep inputVo) throws SQLException {
+	public List<CookingStep> inqueryCookingStep(CookingStep cookingStepInput) throws SQLException {
 		Connection conn = JDBCConnection.getConnection();
-		List<CookingStep> list = new CookingStepDAO().selectCookingStep(conn, inputVo);
+		List<CookingStep> list = new CookingStepDAO().selectCookingStep(conn, cookingStepInput);
 		JDBCConnection.close(conn);
 		return list;
 	}

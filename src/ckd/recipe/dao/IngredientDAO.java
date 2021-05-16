@@ -72,7 +72,7 @@ public class IngredientDAO {
 	
 	
 	
-	public List<Ingredient> selectIngredient(Connection conn, Ingredient inputVo) throws SQLException {
+	public List<Ingredient> selectIngredient(Connection conn, Ingredient ingredientInput) throws SQLException {
 		PreparedStatement pstmt = null;
 		List<Ingredient> list = null;
 		ResultSet rs = null;
@@ -85,7 +85,7 @@ public class IngredientDAO {
 				+ " order by i.ing_ty_code";
 		
 		pstmt = conn.prepareStatement(sql);
-		pstmt.setInt(1, inputVo.getRecipeCode());
+		pstmt.setInt(1, ingredientInput.getRecipeCode());
 		rs = pstmt.executeQuery();
 		
 		if(rs.next()) {

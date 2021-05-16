@@ -104,7 +104,7 @@
 								<div class="goodsList_card">
 									<div class="goodsList_card_inner">
 										<a
-											href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
+											href="<%= request.getContextPath()%>/recipeinquery?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
 											<img src="${v.recipeUrl }" alt="img">
 										</a>
 										<div id="likeBtn">
@@ -114,7 +114,7 @@
 										</div>
 									</div>
 									<a class="goodsList_card_info"
-										href="<%= request.getContextPath()%>/recipeinquery.do?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
+										href="<%= request.getContextPath()%>/recipeinquery?recipeCode=${v.recipeCode}&pageNum=${currentPage}&search=${search}">
 										<span>${v.recipeName }</span> <span>${v.price }원</span>
 									</a>
 								</div>
@@ -133,21 +133,21 @@
 			<div>
 				<c:if test="${startPage != 1 }">
 					<a
-						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${startPage-1}&search=${search}">이전</a>
+						href="<%=request.getContextPath() %>/recipelistinquery?pageNum=${startPage-1}&search=${search}">이전</a>
 				</c:if>
 				<c:forEach begin="${startPage }" end="${endPage }" var="s" step="1">
 					<a
-						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${s }&search=${search}">${s }</a>
+						href="<%=request.getContextPath() %>/recipelistinquery?pageNum=${s }&search=${search}">${s }</a>
 				</c:forEach>
 				<c:if test="${endPage < pageCnt }">
 					<a
-						href="<%=request.getContextPath() %>/recipelistinquery.do?pageNum=${endPage+1}&search=${search}">다음</a>
+						href="<%=request.getContextPath() %>/recipelistinquery?pageNum=${endPage+1}&search=${search}">다음</a>
 				</c:if>
 			</div>
 
 
 			<form id="search_frm"
-				action="<%=request.getContextPath()%>/recipelistinquery.do"
+				action="<%=request.getContextPath()%>/recipelistinquery"
 				method="post" name="search_frm">
 				<div class="search_innerBox">
 					<input type="search" name="search" id="search" value="${search}">

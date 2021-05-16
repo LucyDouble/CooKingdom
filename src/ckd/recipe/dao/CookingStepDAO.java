@@ -68,13 +68,13 @@ public class CookingStepDAO {
 	}
 	
 	
-	public List<CookingStep> selectCookingStep(Connection conn, CookingStep inputVo) throws SQLException {
+	public List<CookingStep> selectCookingStep(Connection conn, CookingStep cookingStepInput) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		CookingStep vo = null;
 		List<CookingStep> list = null;
 		
-		System.out.println("inputVoCookingStepCode : " + inputVo.getRecipeCode());
+		System.out.println("inputVoCookingStepCode : " + cookingStepInput.getRecipeCode());
 		String sql = "select c.cooking_step, c.cooking_desc, c.cooking_image"
 				+ " from mealkit r join cooking_steps c"
 				+ " on r.recipe_code = c.recipe_code"
@@ -82,7 +82,7 @@ public class CookingStepDAO {
 				+ " order by c.cooking_step";
 		
 		pstmt = conn.prepareStatement(sql);
-		pstmt.setInt(1, inputVo.getRecipeCode());
+		pstmt.setInt(1, cookingStepInput.getRecipeCode());
 		rs = pstmt.executeQuery();
 		
 		if(rs.next()) {
