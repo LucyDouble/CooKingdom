@@ -52,7 +52,10 @@
  					<!-- 페이지나오는곳 -->
 					</div>
 					<br>
+					<% if (user == null && manager == null && director == null) { %>
+					<%	} else {  %>	
                     <button type="button" id="writeReview" onclick= "window.location ='<%=request.getContextPath()%>/registerReview?recipeCode=<%=recipeCode2%>';">글쓰기</button>
+					<% }%> 
             </div>
 <!-- 댓글 -->     
             <div id="comment"  class="tabcontent">
@@ -64,8 +67,11 @@
 					<!-- 댓글들을 보여주는 div-->
                    	</div>
                    	<div id="moreDiv"></div>
-                   	 	<br><br>                                  	                    	 
+                   	 	<br><br>    
+                   	<% if (user == null && manager == null && director == null) { %>
+					<% } else {  %>	                              	                    	 
                    <input type="text" id="commentInput" /><input type="button" value="글 등록" id="commentSubmit" onclick="goReview();"><input type="button" value="글 수정" id="commentModify" />
+                   <% }%> 
             </div> 
         </div>
 		<jsp:include page="../modal/DeleteModal.jsp"></jsp:include>	  

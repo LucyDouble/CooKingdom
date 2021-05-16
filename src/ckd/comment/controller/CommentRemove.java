@@ -52,7 +52,7 @@ public class CommentRemove extends HttpServlet {
 		comment.setRecipeCode(Integer.parseInt(request.getParameter("recipeCode")));
 		comment.setCommentNo(Integer.parseInt(request.getParameter("commentNo")));
 		
-		result = csv.deleteComment(comment);
+		result = csv.removeComment(comment);
 		
 		
 	}

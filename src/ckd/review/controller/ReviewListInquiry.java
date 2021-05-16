@@ -64,7 +64,7 @@ public class ReviewListInquiry extends HttpServlet {
 //		System.out.println("리뷰리스트서블릿 들어옴!");
 		
 		int cnt = 0;   // 총 글 개수
-		cnt = rsv.getReviewTotalCount(recipeCode);
+		cnt = rsv.getReviewCount(recipeCode);
 	
 		/*페이지 조회*/
 		int pageCnt = (cnt / pageSize) + (cnt % pageSize == 0 ? 0 : 1); // 총 페이지 개수
@@ -104,7 +104,7 @@ public class ReviewListInquiry extends HttpServlet {
 		
 		List<Review> list = null;
 
-		list =rsv.selectReviewList(startRnum, endRnum, recipeCode);
+		list =rsv.inquiryReviewList(startRnum, endRnum, recipeCode);
 		System.out.println("pageCnt : " + pageCnt);
 		System.out.println("pageSize : " + pageSize);
 		System.out.println("pageBlock : " + pageBlock);

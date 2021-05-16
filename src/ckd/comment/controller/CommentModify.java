@@ -49,6 +49,6 @@ public class CommentModify extends HttpServlet {
 		comment.setCommentContent(commentContent);
 		comment.setCommentNo(commentNo);
 		
-		int result = csv.updateComment(comment);
+		int result = csv.modifyComment(comment);
 	}
 }

@@ -10,7 +10,7 @@ import ckd.common.jdbc.JDBCConnection;
 public class CommentService {
 
 	
-	public List<Comment> selectCommentList(int recipeCode){
+	public List<Comment> inquiryCommentList(int recipeCode){
 		List<Comment> list = null;
 		Connection conn = JDBCConnection.getConnection();
 		list = new CommentDAO().selectCommentList(conn, recipeCode);
@@ -19,7 +19,7 @@ public class CommentService {
 	}
 	
 	
-	public int insertComment(Comment comment) {
+	public int registerComment(Comment comment) {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new CommentDAO().insertComment(conn, comment);
@@ -27,7 +27,7 @@ public class CommentService {
 		return result;
 	}
 	
-	public int updateComment( Comment comment ) {
+	public int modifyComment( Comment comment ) {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new CommentDAO().updateComment(conn, comment);
@@ -35,7 +35,7 @@ public class CommentService {
 		return result;
 	}
 	
-	public int deleteComment( Comment comment ) {
+	public int removeComment( Comment comment ) {
 		int result = 0;
 		Connection conn = JDBCConnection.getConnection();
 		result = new CommentDAO().deleteComment(conn, comment);

@@ -56,6 +56,16 @@
 	
 		function goList(){
 			
+			var rsubject = document.getElementById("reviewSubject").value;
+			var rContent = document.getElementById("reviewContent").value;
+			if(rsubject == "" || rsubject == "null" ){
+				alert("제목을 입력해주세요!");
+				return;
+			}else if(rContent == "" || rContent == "null" ){
+				alert("내용을 입력해주세요!");
+				return;
+			}
+			
 			var formData = new FormData(document.getElementById("frm"));
 			formData.append('reviewNo',document.getElementById("reviewNo").value);
 			formData.append('recipeCode',document.getElementById("recipeCode").value);

@@ -46,7 +46,7 @@ public class CommentRegister extends HttpServlet {
 		comment.setRecipeCode(recipeCode);
 		comment.setCommentContent(commentContent);
 		
-		int result = new CommentService().insertComment(comment);
+		int result = new CommentService().registerComment(comment);
 	
 	}
 
