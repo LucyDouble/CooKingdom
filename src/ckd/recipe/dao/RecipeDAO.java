@@ -19,7 +19,7 @@ public class RecipeDAO {
 		PreparedStatement pstmt = null;
 		int result = 0;
 		
-		String sql = "delete from recipe";
+		String sql = "delete from mealkit";
 		
 		pstmt = conn.prepareStatement(sql);
 		result = pstmt.executeUpdate();
@@ -36,7 +36,7 @@ public class RecipeDAO {
 		PreparedStatement pstmt = null;
 		int resultCnt = 0;
 		
-		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into mealkit values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		pstmt = conn.prepareStatement(sql);
 		
@@ -88,7 +88,7 @@ public class RecipeDAO {
 		int cnt = 0;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String sql = "select COUNT(*) from recipe";
+		String sql = "select COUNT(*) from mealkit";
 		if (search != null) {
 			sql += " where recipe_name like '%" + search+ "%'";
 		}
@@ -110,7 +110,7 @@ public class RecipeDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		String sql_1 = "(select * from recipe ";
+		String sql_1 = "(select * from mealkit ";
 		if(search == null) {
 			sql_1 += " order by recipe_code) d";
 		} else {
@@ -180,7 +180,7 @@ public class RecipeDAO {
 		ResultSet rs = null;
 		Recipe vo = null;
 		
-		String sql = "select * from recipe where recipe_code = ?";
+		String sql = "select * from mealkit where recipe_code = ?";
 //		System.out.println("inputVoRecipeCode : " + inputVo.getRecipeCode());
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setInt(1, inputVo.getRecipeCode());
@@ -218,7 +218,7 @@ public class RecipeDAO {
 		int result = 0;
 		PreparedStatement pstmt = null;
 		
-		String sql = "insert into recipe values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into mealkit values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setInt(1, recipe.getRecipeCode());
@@ -313,7 +313,7 @@ public class RecipeDAO {
 		int result = 0;
 		PreparedStatement pstmt = null;
 		
-		String sql = "delete from recipe where recipe_code = ?";
+		String sql = "delete from mealkit where recipe_code = ?";
 		
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setInt(1, recipeCode);
