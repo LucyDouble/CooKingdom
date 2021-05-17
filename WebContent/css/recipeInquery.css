@@ -214,4 +214,8 @@
 #heartOn{
 	color : red;
 	display: none;
+	cursor:pointer;
+}
+#heartOff{
+	cursor:pointer;
 }
