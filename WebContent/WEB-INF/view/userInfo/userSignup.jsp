@@ -16,10 +16,15 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
 		function checkValue() {
+			document.getElementById("msg1").style.display = "none";
+			document.getElementById("msg2").style.display = "none";
+			document.getElementById("msg3").style.display = "none";
 			document.getElementById("msg4").style.display = "none";
 			document.getElementById("msg5").style.display = "none";
 			document.getElementById("msg6").style.display = "none";
 			document.getElementById("msg7").style.display = "none";
+			document.getElementById("msg8").style.display = "none";
+			document.getElementById("msg9").style.display = "none";
 			// 모든 항목 채우기
 			var checkAll = document.getElementsByClassName("input");
 			for (var i = 0; i < checkAll.length; i++) {
@@ -30,6 +35,15 @@
 				} else {
 					document.getElementById("msg1").style.display = "none";
 				}
+			}
+			// 생년월일 양식
+			var birth = document.getElementById("birth");
+			var birthForm = /^[1-2]{1}[0-9]{3}[0-1]{1}[0-9]{1}[0-3]{1}[0-9]{1}$/;
+			if (!birthForm.test(birth.value)) {
+				document.getElementById("msg9").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("msg9").style.display = "none";
 			}
 			// 비밀번호 양식
 			var pwd = document.getElementById("pwd");
@@ -65,8 +79,12 @@
 			document.getElementById("msg1").style.display = "none";
 			document.getElementById("msg2").style.display = "none";
 			document.getElementById("msg3").style.display = "none";
+			document.getElementById("msg4").style.display = "none";
+			document.getElementById("msg5").style.display = "none";
 			document.getElementById("msg6").style.display = "none";
 			document.getElementById("msg7").style.display = "none";
+			document.getElementById("msg8").style.display = "none";
+			document.getElementById("msg9").style.display = "none";
 			var email = document.getElementById("email").value;
 			$.ajax({
 				type : "POST",
@@ -97,6 +115,10 @@
 			document.getElementById("msg3").style.display = "none";
 			document.getElementById("msg4").style.display = "none";
 			document.getElementById("msg5").style.display = "none";
+			document.getElementById("msg6").style.display = "none";
+			document.getElementById("msg7").style.display = "none";
+			document.getElementById("msg8").style.display = "none";
+			document.getElementById("msg9").style.display = "none";
 			var nickName = document.getElementById("nickName").value;
 			$.ajax({
 				type : "POST",
@@ -151,7 +173,7 @@
 		<br>
 		<div id="index">
 			<p id="info">생년월일</p>
-			<input type="text" class="input" name="birth" placeholder="ex) 19961209">
+			<input type="text" class="input" name="birth" id="birth" placeholder="ex) 19961209">
 		</div>
 		<br>
 		<div id="index">
@@ -189,6 +211,8 @@
 		<p id="msg7" style="color: blue; display: none; margin-top: 0;">사용
 			가능한 닉네임 입니다.</p>
 		<p id="msg8" style="color: red; display: none; margin-top: 0;">핸드폰 번호
+			양식에 맞게 입력해주세요.</p>
+		<p id="msg9" style="color: red; display: none; margin-top: 0;">생년월일
 			양식에 맞게 입력해주세요.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
