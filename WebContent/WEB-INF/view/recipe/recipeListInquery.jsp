@@ -17,25 +17,7 @@
 <title>CooKingDom RecipeList</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-function likeClick0() {
-    var likeBtn0 = document.getElementById("likeBtn0");
-    var likeBtn1 = document.getElementById("likeBtn1");
-    var likeNumber = document.getElementById("likeNumber");
 
-    likeBtn0.style.display = "none";
-    likeBtn1.style.display = "block";
-    likeNumber.innerText = 1;
-}
-
-function likeClick1() {
-    var likeBtn0 = document.getElementById("likeBtn0");
-    var likeBtn1 = document.getElementById("likeBtn1");
-    var likeNumber = document.getElementById("likeNumber");
-
-    likeBtn0.style.display = "block";
-    likeBtn1.style.display = "none";
-    likeNumber.innerText = 0;
-}
 </script>
 </head>
 <body>
@@ -162,8 +144,8 @@ function likeClick1() {
 										</a>
 										<div id="likeBtn">
 											<button type="button">
-												<i id="likeBtn0" class="far fa-heart" onClick="likeClick();"></i>
-												<i id="likeBtn1" class="fas fa-heart" onClick="likeClick();"></i>
+												<i id="likeBtn0" class="far fa-heart" onClick="likeClick0();"></i>
+												<i id="likeBtn1" class="fas fa-heart" onClick="likeClick1();"></i>
 												<span id="likeNumber">0</span>
 											</button>
 										</div>
@@ -214,6 +196,7 @@ function likeClick1() {
 		<jsp:include page="../main/footer.jsp"></jsp:include>
 	</div>
 
+	<script src="js/recipeListInquery.js"></script>
 	<script src="https://kit.fontawesome.com/6a57affb8e.js"
 		crossorigin="anonymous"></script>
 </body>
