@@ -74,7 +74,7 @@
 							<li>
 								<a onclick="CopyUrlToClipboard()" id="urlBtn">url복사</a>						
 							</li>
-							<li><a onclick="like()"><i class="far fa-heart" id="heartOff"></i><i class="far fa-heart" id="heartOn"></i></a></li>
+							<li><a onclick="like()"><i class="far fa-heart" id="heartOff"></i><i class="fas fa-heart" id="heartOn"></i></a></li>
 						</ul>
 					</div>
 				</nav>
