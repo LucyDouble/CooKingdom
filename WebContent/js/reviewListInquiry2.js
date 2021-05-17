@@ -31,6 +31,8 @@ window.onload = function(){
 			recipeCode : recipeCode
 		},
 		success : function(data){
+			
+	
 			var commentList = data.commentList;
 			var cv = "";
 			
@@ -87,6 +89,7 @@ window.onload = function(){
 
 	
 			$("#comment_cnt").html("<h3>댓글 ("+data.cnt+" comments)</h3>");
+			
 		}
 	});
 

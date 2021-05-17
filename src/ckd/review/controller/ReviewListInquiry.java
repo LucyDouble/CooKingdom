@@ -105,16 +105,16 @@ public class ReviewListInquiry extends HttpServlet {
 		List<Review> list = null;
 
 		list =rsv.inquiryReviewList(startRnum, endRnum, recipeCode);
-		System.out.println("pageCnt : " + pageCnt);
-		System.out.println("pageSize : " + pageSize);
-		System.out.println("pageBlock : " + pageBlock);
-		System.out.println("startRnum : " + startRnum);
-		System.out.println("startPage : " + startPage);
-		System.out.println("endRnum : " + endRnum);
-		System.out.println("endPage : " + endPage);
-		System.out.println("currentPage : " + currentPage);
-		System.out.println("reviewList : " + list);
-		System.out.println("cnt : " + cnt);
+//		System.out.println("pageCnt : " + pageCnt);
+//		System.out.println("pageSize : " + pageSize);
+//		System.out.println("pageBlock : " + pageBlock);
+//		System.out.println("startRnum : " + startRnum);
+//		System.out.println("startPage : " + startPage);
+//		System.out.println("endRnum : " + endRnum);
+//		System.out.println("endPage : " + endPage);
+//		System.out.println("currentPage : " + currentPage);
+//		System.out.println("reviewList : " + list);
+//		System.out.println("cnt : " + cnt);
 		
 
 		
