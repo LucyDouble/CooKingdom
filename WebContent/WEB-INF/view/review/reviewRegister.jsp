@@ -72,9 +72,11 @@
 				return false;
 			}
 			
-			var fileMaxSize = 300000;
-			var fileSize = document.getElementById("reviewPhoto").files[0].size;
-			
+			if(document.getElementById("reviewPhoto").files[0] != null){
+				var fileMaxSize = 300000;
+				var fileSize = document.getElementById("reviewPhoto").files[0].size;
+			}
+
 			if(fileMaxSize<fileSize){
 				alert("파일크기가 초과되었습니다.");
 				return false;
