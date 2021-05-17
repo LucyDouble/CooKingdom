@@ -67,7 +67,7 @@
 					</div>
 				</article>
 				<div id="banner">
-					<img src="image/header/국밥.png">
+					<img src="image/header/밥도둑2.png">
 				</div>
 				<article id="kingdomRecipe">
 					<h1>킹덤의 추천 레시피</h1>
