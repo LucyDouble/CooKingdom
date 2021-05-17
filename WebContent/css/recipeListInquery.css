@@ -146,4 +146,19 @@
 	font-size: 12px;
 }
 
+#likeBtn0 {
+  display: block;
+  float: left;
+}
+#likeBtn1 {
+  display: none;
+  float: left;
+}
+#likeNumber {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+
+
 

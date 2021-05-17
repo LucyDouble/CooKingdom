@@ -15,16 +15,36 @@
 <head>
 <meta charset="UTF-8">
 <title>CooKingDom RecipeList</title>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+function likeClick0() {
+    var likeBtn0 = document.getElementById("likeBtn0");
+    var likeBtn1 = document.getElementById("likeBtn1");
+    var likeNumber = document.getElementById("likeNumber");
+
+    likeBtn0.style.display = "none";
+    likeBtn1.style.display = "block";
+    likeNumber.innerText = 1;
+}
+
+function likeClick1() {
+    var likeBtn0 = document.getElementById("likeBtn0");
+    var likeBtn1 = document.getElementById("likeBtn1");
+    var likeNumber = document.getElementById("likeNumber");
+
+    likeBtn0.style.display = "block";
+    likeBtn1.style.display = "none";
+    likeNumber.innerText = 0;
+}
+</script>
 </head>
 <body>
 
 	<%
-    User user = (User)session.getAttribute("User");
-	Manager manager = (Manager)session.getAttribute("Manager");
-	Manager director = (Manager)session.getAttribute("Director"); 
-%>
+		User user = (User) session.getAttribute("User");
+	Manager manager = (Manager) session.getAttribute("Manager");
+	Manager director = (Manager) session.getAttribute("Director");
+	%>
 
 	<div class="wrapper">
 		<jsp:include page="../main/header.jsp"></jsp:include>
@@ -95,25 +115,34 @@
 		</section>
 
 		<%
-        	if (user == null && manager == null && director == null) {
-        	String email = "";%>
-		<%} else if (user != null) {
-        	String email = user.getEmail();%>
-		<%} else if (manager != null) {
-	        String email = manager.getEmail();%>
+			if (user == null && manager == null && director == null) {
+			String email = "";
+		%>
+		<%
+			} else if (user != null) {
+		String email = user.getEmail();
+		%>
+		<%
+			} else if (manager != null) {
+		String email = manager.getEmail();
+		%>
 		<div class="recipe_RbtnBox" id="recipe_RbtnBox">
 			<a
 				href="<%=request.getContextPath()%>/cookingDom?command=recipeRegester"><button
 					id="recipe_Rbtn">등록</button></a>
 		</div>
-		<%} else if (director != null) {
-	        String email = manager.getEmail();%>
+		<%
+			} else if (director != null) {
+		String email = manager.getEmail();
+		%>
 		<div class="recipe_RbtnBox" id="recipe_RbtnBox">
 			<a
 				href="<%=request.getContextPath()%>/cookingDom?command=recipeRegester"><button
 					id="recipe_Rbtn">등록</button></a>
 		</div>
-		<%}%>
+		<%
+			}
+		%>
 
 		<c:if test="${empty recipeList }">
 			게시글이 없습니다.		
@@ -133,7 +162,9 @@
 										</a>
 										<div id="likeBtn">
 											<button type="button">
-												<i class="far fa-heart"></i> <span>${v.likes }</span>
+												<i id="likeBtn0" class="far fa-heart" onClick="likeClick();"></i>
+												<i id="likeBtn1" class="fas fa-heart" onClick="likeClick();"></i>
+												<span id="likeNumber">0</span>
 											</button>
 										</div>
 									</div>
