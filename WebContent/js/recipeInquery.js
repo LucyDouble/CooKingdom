@@ -54,11 +54,12 @@ function cart(email) {
 		frm.submit();
 	} else {
 		var frm = document.getElementById("recipe_frm");
-		frm.action="./CartInfoRegister";
+		frm.action="./cartRegister";
 		frm.method="get";
 		frm.submit();
 	}
 }
+
 
 //url 복사
 function CopyUrlToClipboard(){
@@ -74,5 +75,18 @@ function CopyUrlToClipboard(){
 
 
 	alert("URL이 클립보드에 복사되었습니다"); 
+}
 
+//좋아요
+function like (){
+	var heart = document.getElementById("heartOn");
+	var Bheart = document.getElementById("heartOff");
+	if(heart.style.display == "none"){
+		heart.style.display = "inline-block";	
+		Bheart.style.display = "none";	
+	}else{
+		heart.style.display = "none";	
+		Bheart.style.display = "inline-block";	
+	}
+	
 }

@@ -4,17 +4,18 @@ public class Cart {
 	private String cartNo;
 	private String email;
 	private int mealkitQty;
-	private int ingQty;
+	private int recipeCode;
 	private int totalPrice;
-	
-	public Cart() {}
 
-	public Cart(String cartNo, String email, int mealkitQty, int ingQty, int totalPrice) {
+	public Cart() {
+	}
+
+	public Cart(String cartNo, String email, int mealkitQty, int recipeCode, int totalPrice) {
 		super();
 		this.cartNo = cartNo;
 		this.email = email;
 		this.mealkitQty = mealkitQty;
-		this.ingQty = ingQty;
+		this.recipeCode = recipeCode;
 		this.totalPrice = totalPrice;
 	}
 
@@ -42,12 +43,12 @@ public class Cart {
 		this.mealkitQty = mealkitQty;
 	}
 
-	public int getIngQty() {
-		return ingQty;
+	public int getRecipeCode() {
+		return recipeCode;
 	}
 
-	public void setIngQty(int ingQty) {
-		this.ingQty = ingQty;
+	public void setRecipeCode(int recipeCode) {
+		this.recipeCode = recipeCode;
 	}
 
 	public int getTotalPrice() {

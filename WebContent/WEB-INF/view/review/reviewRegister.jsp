@@ -62,6 +62,24 @@
 		function goList(){
 			var rsubject = document.getElementById("reviewSubject").value;
 			var rContent = document.getElementById("reviewContent").value;
+			
+			var maxSize = 400;
+			var rContentSize = rContent.length;
+			
+			if(maxSize <rContentSize ){
+				alert("글자수를 초과했습니다. 1000자 이내로 입력해주세요");
+				rContent = "";
+				return false;
+			}
+			
+			var fileMaxSize = 300000;
+			var fileSize = document.getElementById("reviewPhoto").files[0].size;
+			
+			if(fileMaxSize<fileSize){
+				alert("파일크기가 초과되었습니다.");
+				return false;
+			}
+			
 			if(rsubject == "" || rsubject == "null" ){
 				alert("제목을 입력해주세요!");
 				return;
