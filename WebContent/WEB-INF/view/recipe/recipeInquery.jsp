@@ -1,3 +1,5 @@
+<%@page import="ckd.member.vo.User"%>
+<%@ page import="ckd.member.vo.Manager" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -15,6 +17,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+<%
+    User user = (User)session.getAttribute("User");
+	Manager manager = (Manager)session.getAttribute("Manager");
+	Manager director = (Manager)session.getAttribute("Director"); 
+%>
 	<div class="wrapper">
 		<jsp:include page="../main/header.jsp"></jsp:include>
 
@@ -24,6 +31,21 @@
 			<input type="hidden" name="mkName" value="${recipeInquery.recipeName }">
 			<!-- name="mkNum" value="0"  98행에 있는거 읽어옴 -->
 			<!-- name="total_price" value="0" 113행에 있는거 읽어옴-->
+			
+			<%
+        	if (user == null && manager == null && director == null) {
+        	String email = "";%>
+        	 <input type="hidden" name="email" value= "null" id="email"/>
+        	<%} else if (user != null) {
+        	String email = user.getEmail();%>
+	        <input type="hidden" name="email" value= <%=email %> id="email"/>
+	        <%} else if (manager != null) {
+	        String email = manager.getEmail();%>
+	        <input type="hidden" name="email" value= <%=email %> id="email"/>
+	        <%} else if (director != null) {
+	        String email = manager.getEmail();%>
+	        <input type="hidden" name="email" value= <%=email %> id="email"/>
+	        <%}%>
 			
 			<div class="modify_delete">
 				<input id="recipe_removeBtn" type="button" value="삭제" onClick="window.location='<%=request.getContextPath() %>/reciperemove?recipeCode=${recipeInquery.recipeCode }'">
