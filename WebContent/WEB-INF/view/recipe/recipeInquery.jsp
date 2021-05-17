@@ -35,21 +35,21 @@
 			<%
         	if (user == null && manager == null && director == null) {
         	String email = "";%>
-        	 <input type="hidden" name="email" value= "null" id="email"/>
         	<%} else if (user != null) {
         	String email = user.getEmail();%>
-	        <input type="hidden" name="email" value= <%=email %> id="email"/>
 	        <%} else if (manager != null) {
 	        String email = manager.getEmail();%>
-	        <input type="hidden" name="email" value= <%=email %> id="email"/>
-	        <%} else if (director != null) {
-	        String email = manager.getEmail();%>
-	        <input type="hidden" name="email" value= <%=email %> id="email"/>
-	        <%}%>
-			
-			<div class="modify_delete">
+	        <div class="modify_delete">
 				<input id="recipe_removeBtn" type="button" value="삭제" onClick="window.location='<%=request.getContextPath() %>/reciperemove?recipeCode=${recipeInquery.recipeCode }'">
 			</div>
+	        <%} else if (director != null) {
+	        String email = manager.getEmail();%>
+	       	<div class="modify_delete">
+				<input id="recipe_removeBtn" type="button" value="삭제" onClick="window.location='<%=request.getContextPath() %>/reciperemove?recipeCode=${recipeInquery.recipeCode }'">
+			</div>
+	        <%}%>
+			
+
 
 			<div id="recipeInquery">
 				<header class="recipeInquery_header">

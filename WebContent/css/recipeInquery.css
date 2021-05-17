@@ -94,8 +94,7 @@
     top: 0px;
 }
 
-.modify_delete input {
-/* 	display: none; */
+.modify_delete input {	/*	수정 버튼*/
 	width: 110px;
 	background-color:  white;
 	padding: 9px 0px;

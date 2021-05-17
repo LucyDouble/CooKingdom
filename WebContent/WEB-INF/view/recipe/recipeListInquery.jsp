@@ -1,3 +1,5 @@
+<%@page import="ckd.member.vo.Manager"%>
+<%@page import="ckd.member.vo.User"%>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
@@ -7,17 +9,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>CooKingDom RecipeList</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-	
-</script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+
+	<%
+    User user = (User)session.getAttribute("User");
+	Manager manager = (Manager)session.getAttribute("Manager");
+	Manager director = (Manager)session.getAttribute("Director"); 
+%>
+
 	<div class="wrapper">
 		<jsp:include page="../main/header.jsp"></jsp:include>
 
@@ -86,11 +94,26 @@
 			</article>
 		</section>
 
+		<%
+        	if (user == null && manager == null && director == null) {
+        	String email = "";%>
+		<%} else if (user != null) {
+        	String email = user.getEmail();%>
+		<%} else if (manager != null) {
+	        String email = manager.getEmail();%>
 		<div class="recipe_RbtnBox" id="recipe_RbtnBox">
 			<a
 				href="<%=request.getContextPath()%>/cookingDom?command=recipeRegester"><button
 					id="recipe_Rbtn">등록</button></a>
 		</div>
+		<%} else if (director != null) {
+	        String email = manager.getEmail();%>
+		<div class="recipe_RbtnBox" id="recipe_RbtnBox">
+			<a
+				href="<%=request.getContextPath()%>/cookingDom?command=recipeRegester"><button
+					id="recipe_Rbtn">등록</button></a>
+		</div>
+		<%}%>
 
 		<c:if test="${empty recipeList }">
 			게시글이 없습니다.		
