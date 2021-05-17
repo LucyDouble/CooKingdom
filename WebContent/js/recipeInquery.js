@@ -28,18 +28,19 @@ function count(type)  {
 
 //구매하기 버튼
 function order() {
-	if(email == ""){ 
+	
+	currentMail = document.getElementById("email").value;
+	
+	if (currentMail == "null" ) {
 		alert("로그인이 필요합니다. 회원 가입 또는 로그인을 해주세요");
-		var frm = document.getElementById("recipe_frm");
-		frm.action="./loginUser";
-		frm.method="get";
-		frm.submit();
+		location.href="loginUser";
 	} else {
 		var frm = document.getElementById("recipe_frm");
 		frm.action="./orderInfoInquiry";
 		frm.method="get";
 		frm.submit();
 	}
+	
 };
 
 //장바구니 버튼
