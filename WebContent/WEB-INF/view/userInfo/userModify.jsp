@@ -29,6 +29,7 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		document.getElementById("msg11").style.display = "none";
 		if (newEmail == "") {
 			document.getElementById("msg10").style.display = "block";
 			document.getElementById("newEmail").focus();
@@ -82,6 +83,7 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		document.getElementById("msg11").style.display = "none";
 		if (newName == "") {
 			document.getElementById("msg10").style.display = "block";
 			document.getElementById("newName").focus();
@@ -134,6 +136,7 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		document.getElementById("msg11").style.display = "none";
 		if (newNickName == "") {
 			document.getElementById("msg10").style.display = "block";
 			document.getElementById("newNickName").focus();
@@ -173,6 +176,7 @@
 	}
 	// 핸드폰 번호 수정
 	function updatePhone() {
+
 		var flag = true;
 		var email = document.getElementById("email").value;
 		var newPhone = document.getElementById("newPhone").value;
@@ -186,6 +190,17 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		document.getElementById("msg11").style.display = "none";
+		// 핸드폰번호 양식
+		var phone = document.getElementById("newPhone");
+		var phoneForm = /^\d{3}-\d{3,4}-\d{4}$/; 
+		if (!phoneForm.test(phone.value)) {
+			document.getElementById("msg11").style.display = "block";
+			return false;
+		} else {
+			document.getElementById("msg11").style.display = "none";
+		}
+		// 빈칸 확인
 		if (newPhone == "") {
 			document.getElementById("msg10").style.display = "block";
 			document.getElementById("newPhone").focus();
@@ -240,6 +255,7 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		document.getElementById("msg11").style.display = "none";
 		// 빈 칸 확인
 		if (newPwd == "") {
 			document.getElementById("msg10").style.display = "block";
@@ -310,6 +326,7 @@
 		document.getElementById("msg8").style.display = "none";
 		document.getElementById("msg9").style.display = "none";
 		document.getElementById("msg10").style.display = "none";
+		document.getElementById("msg11").style.display = "none";
 		// 빈 칸 확인
 		if (newAddress == "") {
 			document.getElementById("msg10").style.display = "block";
@@ -396,7 +413,7 @@
 			<tr id="tr">
 				<td id="info">휴대폰 번호</td>
 				<td id="input">${User.phone }</td>
-				<td id="input"><input type="text" class="text" id="newPhone" name="newPhone"></td>
+				<td id="input"><input type="text" class="text" id="newPhone" name="newPhone" placeholder="ex) 010-0000-0000"></td>
 				<td id="button"><button type="button" id="btn" onclick="updatePhone();">휴대폰 번호 변경</button>				
 			</tr>
 			<tr id="tr">
@@ -425,6 +442,7 @@
 		<p id="msg8" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p> 
 		<p id="msg9" style="color: red; display: none; margin-top: 0;">8~15자까지 영문, 숫자, 특수문자를 포함해서 입력해주세요.</p> 
 		<p id="msg10" style="color: red; display: none; margin-top: 0;">정보를 입력해주세요.</p> 
+		<p id="msg11" style="color: red; display: none; margin-top: 0;">핸드폰 번호 양식에 맞게 입력해주세요.</p>
 		<input type="submit" value="회원탈퇴" id="out">
 		<input type="button" value="나가기" id="out" onclick="location.href='index.jsp'">
 	</form>

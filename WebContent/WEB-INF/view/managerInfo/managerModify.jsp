@@ -26,6 +26,7 @@
 		document.getElementById("msg6").style.display = "none";
 		document.getElementById("msg7").style.display = "none";
 		document.getElementById("msg8").style.display = "none";
+		document.getElementById("msg9").style.display = "none";
 		// 빈 칸 확인
 		if (newEmail == "") {
 			document.getElementById("msg8").style.display = "block";
@@ -77,6 +78,7 @@
 		document.getElementById("msg6").style.display = "none";
 		document.getElementById("msg7").style.display = "none";
 		document.getElementById("msg8").style.display = "none";
+		document.getElementById("msg9").style.display = "none";
 		// 빈 칸 확인
 		if (newName == "") {
 			document.getElementById("msg8").style.display = "block";
@@ -128,6 +130,16 @@
 		document.getElementById("msg6").style.display = "none";
 		document.getElementById("msg7").style.display = "none";
 		document.getElementById("msg8").style.display = "none";
+		document.getElementById("msg9").style.display = "none";
+		// 핸드폰 번호 양식
+		var phone = document.getElementById("newPhone");
+		var phoneForm = /^\d{3}-\d{3,4}-\d{4}$/; 
+		if (!phoneForm.test(phone.value)) {
+			document.getElementById("msg9").style.display = "block";
+			return false;
+		} else {
+			document.getElementById("msg9").style.display = "none";
+		}
 		// 빈 칸 확인
 		if (newPhone == "") {
 			document.getElementById("msg8").style.display = "block";
@@ -181,6 +193,7 @@
 		document.getElementById("msg6").style.display = "none";
 		document.getElementById("msg7").style.display = "none";
 		document.getElementById("msg8").style.display = "none";
+		document.getElementById("msg9").style.display = "none";
 		// 빈 칸 확인
 		if (newPwd == "") {
 			document.getElementById("msg8").style.display = "block";
@@ -260,19 +273,19 @@
 				<td id="info">이메일</td>
 				<td id="input"><input type="text" id="email" name="email" value="${Manager.email }" readonly></td>
 				<td id="input"></td>
-				<td id="button"></button></td>				
+				<td id="button"></td>				
 			</tr>
 			<tr id="tr">
 				<td id="info">이름</td>
 				<td id="input">${Manager.name }</td>
 				<td id="input"><input type="text" class="text" id="newName" name="newName"></td>
-				<td id="button"><button id="btn" onclick="updateName();">이름 변경</button></td>			
+				<td id="button"><button type="button" id="btn" onclick="updateName();">이름 변경</button></td>			
 			</tr>
 			<tr id="tr">
 				<td id="info">휴대폰 번호</td>
 				<td id="input">${Manager.phone }</td>
-				<td id="input"><input type="text" class="text" id="newPhone" name="newPhone"></td>
-				<td id="button"><button id="btn" onclick="updatePhone();">휴대폰 번호 변경</button>				
+				<td id="input"><input type="text" class="text" id="newPhone" name="newPhone" placeholder="ex) 010-0000-0000"></td>
+				<td id="button"><button type="button" id="btn" onclick="updatePhone();">휴대폰 번호 변경</button>				
 			</tr>
 			<tr id="tr">
 				<td id="info">비밀번호</td>
@@ -281,7 +294,7 @@
 					<input type="password" class="text" id="newPwd" name="newPwd" placeholder="새 비밀번호"><br><br>
 					<input type="password" class="text" id="rePwd" name="rePwd" placeholder="새 비밀번호 확인">
 				</td>
-				<td id="button"><button id="btn" onclick="updatePwd();">비밀번호 변경</button></td>
+				<td id="button"><button type="button" id="btn" onclick="updatePwd();">비밀번호 변경</button></td>
 			</tr>
 			<tr id="tr">
 				<td id="info">시리얼 번호</td>
@@ -298,6 +311,7 @@
 		<p id="msg6" style="color: red; display: none; margin-top: 0;">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p> 
 		<p id="msg7" style="color: red; display: none; margin-top: 0;">8~15자까지 영문, 숫자, 특수문자를 포함해서 입력해주세요.</p> 
 		<p id="msg8" style="color: red; display: none; margin-top: 0;">정보를 입력해주세요.</p>
+		<p id="msg9" style="color: red; display: none; margin-top: 0;">핸드폰 번호 양식에 맞게 입력해주세요.</p>
 		<input type="submit" value="회원탈퇴" id="out">
 		<input type="button" value="나가기" id="out" onclick="location.href='index.jsp'">
 	</form>

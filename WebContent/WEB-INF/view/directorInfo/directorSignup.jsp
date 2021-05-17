@@ -114,7 +114,7 @@
 		onsubmit="return checkValue();">
 		<div id="index">
 			<p id="info">이메일</p>
-			<input type="text" class="input" name="email" id="email"> 
+			<input type="email" class="input" name="email" id="email"> 
 			<input type="button" id="check" value="중복확인" onclick="checkEmail();">
 		</div>
 		<br>
