@@ -7,7 +7,16 @@ function goReview(){
 	var commentContent = document.getElementById("commentInput").value;
 	var email = document.getElementById("email").value;
 	var recipeCode = document.getElementById("recipeCode").value;
-
+	var commentsize = 400;
+	var contentSize = 0;
+	contentSize = commentContent.length;
+	
+	if(commentsize <contentSize ){
+		alert("글자수를 초과했습니다. 1000자 이내로 입력해주세요");
+		commentContent = "";
+		return false;
+	}
+	console.log("contentSize : "+ contentSize);
 	if(commentContent == "" || commentContent == "null" ){
 		alert("내용을 입력해주세요!");
 		return;
