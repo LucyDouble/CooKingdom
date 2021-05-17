@@ -14,8 +14,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
 	function checkValue() {
+		document.getElementById("msg1").style.display = "none";
+		document.getElementById("msg2").style.display = "none";
+		document.getElementById("msg3").style.display = "none";
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
+		document.getElementById("msg6").style.display = "none";
 		// 모든 항목 채우기
 		var checkAll = document.getElementsByClassName("input");
 		for (var i = 0; i < checkAll.length; i++) {
@@ -46,12 +50,32 @@
 		} else {
 			document.getElementById("msg3").style.display = "none";
 		}
+		// 핸드폰 번호 양식
+		var phone = document.getElementById("phone");
+		var phoneForm = /^\d{3}-\d{3,4}-\d{4}$/; 
+		if (!phoneForm.test(phone.value)) {
+			document.getElementById("msg7").style.display = "block";
+			return false;
+		} else {
+			document.getElementById("msg7").style.display = "none";
+		}
+		// 시리얼 번호 확인
+		var serial = document.getElementById("serial");
+		if (serial.value != "MCKD123") {
+			document.getElementById("msg6").style.display = "block";
+			return false;
+		} else {
+			document.getElementById("msg6").style.display = "none";
+		}
 	}
 	// 중복 이메일 확인
 	function checkEmail() {
 		document.getElementById("msg1").style.display = "none";
 		document.getElementById("msg2").style.display = "none";
 		document.getElementById("msg3").style.display = "none";
+		document.getElementById("msg4").style.display = "none";
+		document.getElementById("msg5").style.display = "none";
+		document.getElementById("msg6").style.display = "none";
 		var email = document.getElementById("email").value;
 		$.ajax({
 			type : "POST",
@@ -83,7 +107,7 @@
 	<br>
 	<br>
 	<br>
-	<h5 style="text-align: center;">회원가입</h5>
+	<h3 style="text-align: center;">회원가입</h3>
 	<hr style="margin-bottom: 30px;">
 	<form action="<%=request.getContextPath()%>/inquiryManager"
 		method="POST" style="text-align: center;"
@@ -111,12 +135,12 @@
 		<br>
 		<div id="index">
 			<p id="info">휴대폰 번호</p>
-			<input type="text" class="input" name="phone">
+			<input type="text" class="input" name="phone" id="phone" placeholder="ex) 010-0000-0000">
 		</div>
 		<br>
 		<div id="index">
 			<p id="info">시리얼 넘버</p>
-			<input type="text" class="input" name="serial">
+			<input type="text" class="input" name="serial" id="serial">
 		</div>
 		<br>
 		<p id="msg1" style="color: red; display: none; margin-top: 0;">모든
@@ -129,6 +153,10 @@
 			이메일이 있습니다.</p>
 		<p id="msg5" style="color: blue; display: none; margin-top: 0;">사용
 			가능한 이메일 입니다.</p>
+		<p id="msg6" style="color: red; display: none; margin-top: 0;">시리얼
+			번호가 틀렸습니다.</p>
+		<p id="msg7" style="color: red; display: none; margin-top: 0;">핸드폰 번호
+			양식에 맞게 입력해주세요.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
 		</div>
