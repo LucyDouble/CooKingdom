@@ -34,25 +34,43 @@ public class OrderListInquiry extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		OrderService sv = new OrderService(); 
-		
-		HttpSession session = request.getSession();
-		User user = (User) session.getAttribute("User");
-		
-		Orders ordersVo = new Orders();
-		
-		List<Orders> ordersList = null;
-		
-		
-		if(user.getEmail()!=null) {
-			ordersVo.setEmail(user.getEmail());
-			ordersList = sv.selectOrders(ordersVo);
-			request.setAttribute("ordersList", ordersList);
+//		OrderService sv = new OrderService(); 
+//		
+//		HttpSession session = request.getSession();
+//		User user = (User) session.getAttribute("User");
+//		
+//		String periodStr = (String) session.getAttribute("period");
+//		int period = 0;
+//		
+//		System.out.println("받아온periodStr값:"+periodStr);
+//		
+//		if(periodStr.equals("today")) {
+//			period = 0;
+//		}else if(periodStr.equals("week")) {
+//			period = 7;
+//		}else if(periodStr.equals("month")) {
+//			period = 30;
+//		}else if(periodStr.equals("half")) {
+//			period = 180;
+//		}else if(periodStr.equals("whole")) {
+//			period = 365;
+//		}else {
+//			System.out.println("period 세션 값 오류");
+//		}
+//
+//		Orders ordersVo = new Orders();
+//		
+//		List<Orders> ordersList = null;
+//		
+//		if(user.getEmail()!=null) {
+//			ordersVo.setEmail(user.getEmail());
+//			ordersList = sv.selectOrders(ordersVo, period);
+//			request.setAttribute("ordersList", ordersList);
 			request.getRequestDispatcher("WEB-INF/view/order/orderListInquiry.jsp").forward(request, response);
-
-		}else {
-			System.out.println("User의 email이 Null입니다.");
-		}
+//
+//		}else {
+//			System.out.println("User의 email이 Null입니다.");
+//		}
 
 		
 	}

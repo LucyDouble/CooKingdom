@@ -94,15 +94,15 @@
 						<td width="400">${mkNum }개</td>
 						<td width="400" class="orderPrice">${total_price }원</td>
 					</tr>
-					<tr>
+<!--  				<tr>
 						<td width="100"><img
 							src="http://ipsumimage.appspot.com/100x100" /></td>
 						<td width="300">밀키트명1</td>
 						<td width="400">1개</td>
 						<td width="400" class="orderPrice">20000원</td>
-					</tr>
+					</tr> -->	
 				</table>
-				<hr>
+<!-- 			<hr>
 				<table>
 					<tr>
 						<td width="100"><img
@@ -111,7 +111,7 @@
 						<td width="400">3개</td>
 						<td width="400" class="orderPrice">30000원</td>
 					</tr>
-				</table>
+				</table>  -->	
 
 				<hr id="bhr">
 				<div class="order_head2">

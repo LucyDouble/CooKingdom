@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ckd.order.vo.OrderInfo;
+import ckd.order.vo.OrderList;
 import ckd.order.vo.Orders;
 import ckd.order.vo.Ship;
 
@@ -131,23 +132,35 @@ public class OrderDAO {
 	}
 
 // 주문코드(기본)/이메일(참조)/배송코드/주문일자/총금액
-	public List<Orders> selectOrders(Connection conn, Orders ordersVo) {
-		List<Orders> list = null;
-		String sql = "select * from orders where email = ?";
+	public List<OrderList> selectOrderList(Connection conn, Orders ordersVo, int period) {
+		List<OrderList> list = null;
+		String sql = "select * from (select * from orders where email = ?) natural join order_info natural join mealkit where order_date between to_date(sysdate-"
+				+ period + ") and to_date(sysdate+1) order by order_date desc";
+
+		if(period == 365) {
+			sql = "select * from orders natural join order_info natural join mealkit where email = ? order by order_date desc";
+		}
+		
 		pstmt = null; rs = null;
 		try {
+			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, ordersVo.getEmail());
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
-				list = new ArrayList<Orders>();
+				list = new ArrayList<OrderList>();
 				do {
-					Orders vo = new Orders();
+					OrderList vo = new OrderList();
 					vo.setOrderCode(rs.getInt("order_code"));
 					vo.setEmail(rs.getString("email"));
 					vo.setShipCode(rs.getInt("ship_code"));
 					vo.setOrderDate(rs.getDate("order_date"));
 					vo.setTotalPrice(rs.getInt("total_price"));
+					vo.setRecipeCode(rs.getInt("recipe_code"));
+					vo.setMealkitQty(rs.getInt("mealkit_qty"));
+					vo.setRecipeName(rs.getString("recipe_name"));
+					vo.setRecipeUrl(rs.getString("recipe_url"));
+					vo.setPrice(rs.getInt("price"));
 					list.add(vo);
 				}while(rs.next());
 			}
