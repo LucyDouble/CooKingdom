@@ -34,6 +34,7 @@ function order() {
 	if (currentMail == "null" ) {
 		alert("로그인이 필요합니다. 회원 가입 또는 로그인을 해주세요");
 		location.href="loginUser";
+		return false;
 	} else {
 		var frm = document.getElementById("recipe_frm");
 		frm.action="./orderInfoInquiry";
