@@ -41,11 +41,14 @@
             	Manager manager = (Manager)session.getAttribute("Manager");
             	Manager director = (Manager)session.getAttribute("Director"); 
             	if (user == null && manager == null && director == null) {%>
-                <li class="my"><a href="loginUser" onclick ="plzLogin()"><img src="image/header/delivery.png"></a></li>               
-                <% }else if (user != null) {%>
-                <li class="my"><a href="orderListInquiry"><img src="image/header/delivery.png"></a></li> 
-                 <% } %>
-                 
+                	<li class="my"><a href="loginUser" onclick ="plzLogin()"><img src="image/header/delivery.png"></a></li>               
+                <%} else if (user != null) {%>
+                	<li class="my"><a href="orderListInquiry"><img src="image/header/delivery.png"></a></li> 
+                <%} else if (manager != null) {%>
+                	<li class="my"><a href="<%=request.getContextPath()%>/cookingDom?command=Main" onclick ="cannotUsed()"><img src="image/header/delivery.png"></a></li>
+                <%} else if (director != null) {%>
+					<li class="my"><a href="<%=request.getContextPath()%>/cookingDom?command=Main" onclick ="cannotUsed()"><img src="image/header/delivery.png"></a></li>
+				<%} %>                 
                  
                 <!-- 카트 -->
                 <%
@@ -53,9 +56,11 @@
                 	<li class="my"><a href="loginUser" onclick ="plzLogin()"><img src="image/header/cart.png"></a></li>
             	<%} else if (user != null) {%>
                 	<li class="my"><a href="cartListInquiry"><img src="image/header/cart.png"></a></li>
-            	<%} else {%>               
+            	<%} else if (manager != null) {%>               
                 	<li class="my"><a href="<%=request.getContextPath()%>/cookingDom?command=Main" onclick ="cannotUsed()"><img src="image/header/cart.png"></a></li>
-            	<%}%>               
+            	<%} else if (director != null) {%>
+            		<li class="my"><a href="<%=request.getContextPath()%>/cookingDom?command=Main" onclick ="cannotUsed()"><img src="image/header/cart.png"></a></li>
+            	<%} %>               
                 
                 <!--유저정보/로그인 -->
                 <%	
