@@ -5,6 +5,8 @@
 <%@ page import="ckd.member.vo.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -382,7 +384,7 @@
 	<br>
 	<br>
 	<br>
-	<h3 style="text-align: center;">사용자 정보수정</h5>
+	<h3 style="text-align: center;">사용자 정보수정</h3>
 	<hr style="margin-bottom: 30px; width: 800px;">
 		<form action="removeUserInfo" method="POST" onsubmit="return removeUserInfo();">
 		<table style="border-collapse:collapse;">
@@ -406,7 +408,9 @@
 			</tr>
 			<tr id="tr">
 				<td id="info">생년월일</td>
-				<td id="input">${User.birth }</td>	
+				<c:set var="now" value="${User.birth }"/>
+				<fmt:parseDate var="now1" value="${now }" pattern="yyyy-MM-dd"/>
+				<td id="input"><fmt:formatDate value="${now1 }" pattern="yyyy-MM-dd"/></td>
 				<td id="input"></td>
 				<td id="button"></td>			
 			</tr>
