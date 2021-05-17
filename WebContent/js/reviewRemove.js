@@ -113,6 +113,7 @@ $(function () {
         action_popup.close(this);
 		event.preventDefault();
 		event.stopPropagation();
+
     });
 });
 

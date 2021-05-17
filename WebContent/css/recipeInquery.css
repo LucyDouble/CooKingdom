@@ -209,3 +209,9 @@
 #urlBtn{
 	cursor : pointer;
 }
+
+/*좋아요*/
+#heartOn{
+	color : red;
+	display: none;
+}
