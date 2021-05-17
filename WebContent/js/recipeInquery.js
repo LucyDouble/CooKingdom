@@ -46,13 +46,20 @@ function order() {
 
 //장바구니 버튼
 function cart(email) {
+	var cntBtnValue = document.getElementById("CountBtn_result").value;
 	if(email == ""){ 
 		alert("로그인이 필요합니다. 회원 가입 또는 로그인을 해주세요");
 		var frm = document.getElementById("recipe_frm");
 		frm.action="./loginUser";
 		frm.method="get";
 		frm.submit();
-	} else {
+	} else if(email == "" | cntBtnValue == 0) {
+		alert("1개 이상 상품을 선택해주세요.");
+		var frm = document.getElementById("recipe_frm");
+		frm.action="./recipeinquery";
+		frm.method="get";
+		frm.submit();
+	} else{
 		var frm = document.getElementById("recipe_frm");
 		frm.action="./cartRegister";
 		frm.method="get";
