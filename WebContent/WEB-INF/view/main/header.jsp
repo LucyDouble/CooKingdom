@@ -2,11 +2,29 @@
     pageEncoding="UTF-8"%>
 <%@ page import="ckd.member.vo.User"%>
 <%@ page import="ckd.member.vo.Manager" %>
-
+<script>
+	function openNav() {
+		document.getElementById('mysidenav').style.width = '300px';
+	}
+	function closeNav() {
+		document.getElementById('mysidenav').style.width = '0';
+	}
+	function notYet(){
+		alert("준비중입니다!");
+	}
+</script>
 <header id="header">
+			<div id="mysidenav" class="sidenav">
+				<a href="#" class="closebtn" onclick='closeNav()'>x</a>
+				<a href="#" onclick='notYet()'>*************</a>
+				<a href="#" onclick='notYet()'>CookingDom</a>
+				<a href="#" onclick='notYet()'>Service</a>
+				<a href="#" onclick='notYet()'>Contact</a>
+			</div>
             <div id="hamburgerM">
-                <a href="#"><img src="image/header/menu.png" alt=""></a>
+                <a href="#" class="openmenu" onclick="openNav()"><img src="image/header/menu.png" alt=""></a>
             </div>
+            
             <div id="logo">
                 <a href="<%=request.getContextPath()%>/cookingDom?command=Main"><img src="image/header/logo.png"  ></a>
             </div>
