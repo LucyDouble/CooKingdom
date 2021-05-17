@@ -32,30 +32,25 @@
 		<hr>
 		
 		<div id="today" class="orderListInquiry_box">
-		<c:if test="${empty ordersList }">
-			주문건이 없습니다.
-		</c:if>
-		<c:if test="${not empty ordersList }">
-			<table border="1">
-				<tr>
-					<th>주문코드</th>
-					<th>이메일</th>
-					<th>배송코드</th>
-					<th>주문일자</th>
-					<th>총금액</th>
-				</tr>
-			<c:forEach items="${ordersList }" var="order">
-				<tr>
-					<th>${order.orderCode }</th>
-					<th>${order.email }</th>
-					<th>${order.shipCode }</th>
-					<th>${order.orderDate }</th>
-					<th>${order.totalPrice }</th>
-				</tr>
-			</c:forEach>
-			</table>
-		</c:if>
-			<div class="eachbox">
+			
+		</div>
+		
+		<div id="week" class="orderListInquiry_box">
+		
+		</div>
+		
+		<div id="month" class="orderListInquiry_box">
+			
+		</div>
+		
+		<div id="half" class="orderListInquiry_box">
+			
+		</div>
+		
+		<div id="whole" class="orderListInquiry_box">
+
+<%--  화면 출력 예시
+ 			<div class="eachbox">
 				<p> 오늘 주문건    |   주문번호 : 202101425-01234567
 				<div>
 					<table>
@@ -66,7 +61,7 @@
 								<ul>
 									<li><button class="inboxBtn1">배송정보수정</button></li>
 									<li><button class="inboxBtn2">결제 취소</button></li>
-									<li><button class="inboxBtn2">리뷰 작성하기</button></li>
+									<li><button class="inboxBtn2" onclick="goReview()">리뷰 작성하기</button></li>
 								</ul>
 							</td>
 						</tr>
@@ -89,6 +84,7 @@
 				</div>
 			</div>
 			<div class="eachbox">
+			
 				<p> 오늘 2번째 주문건    |   주문번호 : 202101425-01234567
 				<div>
 					<table>
@@ -120,35 +116,8 @@
 						</tr>
 					</table>
 				</div>
-			</div>
-		</div>
-		
-		<div id="week" class="orderListInquiry_box">
-			<p> 일주일 주문건    |   주문번호 : 202101425-01234567
-			<div>
-				<p>배송준비</p>
-			</div>
-		</div>
-		
-		<div id="month" class="orderListInquiry_box">
-			<p> 한달 주문건    |   주문번호 : 202101425-01234567
-			<div>
-				<p>배송준비</p>
-			</div>
-		</div>
-		
-		<div id="half" class="orderListInquiry_box">
-			<p> 6개월 주문건    |   주문번호 : 202101425-01234567
-			<div>
-				<p>배송준비</p>
-			</div>
-		</div>
-		
-		<div id="whole" class="orderListInquiry_box">
-			<p> 전체 주문건    |   주문번호 : 202101425-01234567
-			<div>
-				<p>배송준비</p>
-			</div>
+			</div>  --%>
+			
 		</div>
 	</div>
 	

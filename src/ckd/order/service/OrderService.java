@@ -6,6 +6,7 @@ import java.util.List;
 import ckd.common.jdbc.JDBCConnection;
 import ckd.order.dao.OrderDAO;
 import ckd.order.vo.OrderInfo;
+import ckd.order.vo.OrderList;
 import ckd.order.vo.Orders;
 import ckd.order.vo.Ship;
 
@@ -32,9 +33,9 @@ public class OrderService {
 		return result;
 	}
 
-	public List<Orders> selectOrders(Orders ordersVo) {
+	public List<OrderList> selectOrderList(Orders ordersVo, int period) {
 		Connection conn = JDBCConnection.getConnection();
-		List<Orders> list = new OrderDAO().selectOrders(conn, ordersVo);
+		List<OrderList> list = new OrderDAO().selectOrderList(conn, ordersVo, period);
 		JDBCConnection.close(conn);
 		return list;
 	}
