@@ -259,8 +259,8 @@
 			<tr id="tr">
 				<td id="info">이메일</td>
 				<td id="input"><input type="text" id="email" name="email" value="${Director.email }" readonly></td>
-				<td id="input"><input type="text" class="text" id="newEmail" name="newEmail"></td>
-				<td id="button"><button id="btn" onclick="updateEmail();">이메일 변경</button></td>				
+				<td id="input"></td>
+				<td id="button"></button></td>				
 			</tr>
 			<tr id="tr">
 				<td id="info">이름</td>
