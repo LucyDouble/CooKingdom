@@ -53,6 +53,8 @@ public class ReviewRegister extends HttpServlet {
 		String saveDirectory = getServletContext().getRealPath("/files"); // 웹서버상의 절대경로.
 		String encType = "UTF-8";
 		int maxSize = 5 * 1024 * 1024;
+		
+		
 
 		try {
 			// saveDirectory 폴더가 없다면 생성
@@ -64,6 +66,8 @@ public class ReviewRegister extends HttpServlet {
 
 			// saveDirectory위치에 파일을 저장하는 코드
 			MultipartRequest mReq = new MultipartRequest(request, saveDirectory, maxSize, encType, new DefaultFileRenamePolicy());
+			
+			
 			
 			// *****저장이 잘 되었는지 확인하는 코드*****
 			// 저장된 file의 정보(file의 경로 + file name)를 읽어오기 --> DB에 저장할 내용임

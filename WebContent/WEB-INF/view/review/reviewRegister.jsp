@@ -69,46 +69,54 @@
 				alert("내용을 입력해주세요!");
 				return;
 			}
+			
+			var maxSize = 5 * 1024 * 1024;
+			var fileSize = 0;
+			
+			fileSize = document.getElementById("reviewPhoto").files[0].size;
+			
+			console.log("fileSize : "+ fileSize + "maxSize : "+ maxSize);
+			
+				var formData = new FormData(document.getElementById("frm"));
+				formData.append('email',document.getElementById("email").value);
+				formData.append('recipeCode',document.getElementById("recipeCode").value);
+				formData.append('reviewSubject',document.getElementById("reviewSubject").value);
+				formData.append('reviewPhoto',document.getElementById("reviewPhoto").files[0]);
+				formData.append('reviewContent',document.getElementById("reviewContent").value);
+				
+				var i = document.getElementById("recipeCode").value;
+				console.log(i);
+				
+				
+				$.ajax({
+					url: "<%=request.getContextPath()%>/reviewRegister",
+					type:"POST",
+					cache: false,
+					processData: false,
+		            contentType: false,
+					data : formData,
+					success : function(data){
+						$.ajax({
+							url : "<%=request.getContextPath()%>/recipeinquery.do",
+							type : "POST",
+							data : {
+								recipeCode : i
+							},
+							success : function(data){
+								alert("글 등록 성공!");
+								history.back();
+							},error : function(){
+								history.back();
+							}
+						});
+					},
+					error : function(request, status, error){
+						console.log(error);
+					}
+				});
+			}
 
 			
-			var formData = new FormData(document.getElementById("frm"));
-			formData.append('email',document.getElementById("email").value);
-			formData.append('recipeCode',document.getElementById("recipeCode").value);
-			formData.append('reviewSubject',document.getElementById("reviewSubject").value);
-			formData.append('reviewPhoto',document.getElementById("reviewPhoto").files[0]);
-			formData.append('reviewContent',document.getElementById("reviewContent").value);
-			alert("글 등록 성공!");
-			var i = document.getElementById("recipeCode").value;
-			console.log(i);
-			
-			
-			$.ajax({
-				url: "<%=request.getContextPath()%>/reviewRegister",
-				type:"POST",
-				cache: false,
-				processData: false,
-	            contentType: false,
-				data : formData,
-				success : function(data){
-					$.ajax({
-						url : "<%=request.getContextPath()%>/recipeinquery.do",
-						type : "POST",
-						data : {
-							recipeCode : i
-						},
-						success : function(data){
-							console.log("잘갔음!");
-							history.back();
-						},error : function(){
-							console.log("왜이래!");
-							history.back();
-						}
-					});
-				},
-				error : function(request, status, error){
-					console.log(error);
-				}
-			});
 		}
 	</script>
 </div>

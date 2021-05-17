@@ -50,6 +50,15 @@
 			} else {
 				document.getElementById("msg3").style.display = "none";
 			}
+			// 핸드폰 번호 양식
+			var phone = document.getElementById("phone");
+			var phoneForm = /^\d{3}-\d{3,4}-\d{4}$/; 
+			if (!phoneForm.test(phone.value)) {
+				document.getElementById("msg8").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("msg8").style.display = "none";
+			}
 		}
 		// 중복 이메일 확인
 		function checkEmail() {
@@ -157,7 +166,7 @@
 		<br>
 		<div id="index">
 			<p id="info">휴대폰 번호</p>
-			<input type="text" class="input" name="phone">
+			<input type="text" class="input" name="phone" id="phone" placeholder="ex) 010-0000-0000">
 		</div>
 		<br>
 		<div id="index">
@@ -179,6 +188,8 @@
 			닉네임이 있습니다.</p>
 		<p id="msg7" style="color: blue; display: none; margin-top: 0;">사용
 			가능한 닉네임 입니다.</p>
+		<p id="msg8" style="color: red; display: none; margin-top: 0;">핸드폰 번호
+			양식에 맞게 입력해주세요.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
 		</div>
