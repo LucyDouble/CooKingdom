@@ -15,6 +15,9 @@
 	function plzLogin(){
 		alert("로그인 후 이용가능합니다.");
 	}
+	function cannotUsed(){
+		alert("사용자만 이용가능합니다.");
+	}
 </script>
 <header id="header">
 			<div id="mysidenav" class="sidenav">
@@ -45,13 +48,19 @@
                  
                  
                 <!-- 카트 -->
-                <li class="my"><a href="CartListInquiry"><img src="image/header/cart.png"></a></li>
-                
-                
-                <!--유저정보/로그인 -->
                 <%
             	if (user == null && manager == null && director == null) {%>
-            		<li class="my"><a href="loginUser"><img src="image/header/myPage.png"></a></li>
+                	<li class="my"><a href="loginUser" onclick ="plzLogin()"><img src="image/header/cart.png"></a></li>
+            	<%} else if (user != null) {%>
+                	<li class="my"><a href="cartListInquiry"><img src="image/header/cart.png"></a></li>
+            	<%} else {%>               
+                	<li class="my"><a href="<%=request.getContextPath()%>/cookingDom?command=Main" onclick ="cannotUsed()"><img src="image/header/cart.png"></a></li>
+            	<%}%>               
+                
+                <!--유저정보/로그인 -->
+                <%	
+            	if (user == null && manager == null && director == null) {%>
+            		<li class="my"><a href="loginUser" onclick ="plzLogin()"><img src="image/header/myPage.png"></a></li>
             	<%} else if (user != null) {%>
             		<li class="my"><a href="modifyUserInfo"><img src="image/header/myPage.png"></a></li>
             	<%} else if (manager != null) {%>

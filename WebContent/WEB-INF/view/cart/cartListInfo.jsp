@@ -4,14 +4,21 @@
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/cartListInquiry.css" rel="stylesheet" type="text/css">
 
+<%@ page import="ckd.member.vo.User"%>
+<%@ page import="ckd.cart.vo.Cart"%>
+<%@ page import="ckd.cart.service.CartService"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>장바구니</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,13 +34,23 @@
 		</div>
 		<div id="cartListInfo">
 			<table>
-				<tr>
-					<td><input type="checkbox" id="check_cart" class="" /></td>
-					<td width="100"><img src="${imgURL}" width="100" /></td>
-					<td width="300">${mkName }</td>
-					<td width="400">${mkNum }개</td>
-					<td width="400" class="orderPrice">${total_price }원</td>
-				</tr>
+				<c:forEach items="${list}" var="cl">
+					<tr>
+						<td><input type="checkbox" id="check_cart" class="" /></td>
+						<!-- 이미지  -->
+						<td width="100"><img src="${cl.mealkitUrl}" width="100" /></td>
+						<!-- 밀키트명  -->
+						<td width="300">${cl.mealkit_name}</td>
+						<!--  수량 -->
+						<td width="400">${cl.mealkitQty}개</td>
+						<!--  총 긍액 -->
+						<td width="400" class="orderPrice">${cl.mealkit_price}원</td>
+						<!--  삭제 -->
+						<td><input type="button" class="btn" value="[장바구니에서 삭제]"
+							>
+						</td>
+					</tr>
+				</c:forEach>
 			</table>
 		</div>
 		<jsp:include page="../main/footer.jsp"></jsp:include>

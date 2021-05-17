@@ -1,6 +1,8 @@
 package ckd.cart.controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,6 +39,9 @@ public class CartInfoRegister extends HttpServlet {
 
 		CartService cartSV = new CartService();
 		int result = cartSV.registerCartInfo(cart);
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher("./cartListInquiry");
+		dispatcher.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
