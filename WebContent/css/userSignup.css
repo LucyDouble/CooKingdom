@@ -36,7 +36,7 @@
 	cursor : pointer;
 }
 
-#check {
+.check {
 	border-radius: 10px;
 	height: 26px;
 	width: 70px;
@@ -46,6 +46,7 @@
 	border : none;
 	outline : none;
 	cursor : pointer;
+	text-align: center;
 }
 
 #email {

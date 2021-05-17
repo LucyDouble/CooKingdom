@@ -20,6 +20,8 @@
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
 		document.getElementById("msg6").style.display = "none";
+		document.getElementById("msg7").style.display = "none";
+		document.getElementById("msg8").style.display = "none";
 		// 모든 항목 채우기
 		var checkAll = document.getElementsByClassName("input");
 		for (var i = 0; i < checkAll.length; i++) {
@@ -67,6 +69,14 @@
 		} else {
 			document.getElementById("msg6").style.display = "none";
 		}
+		// 이메일 중복확인 버튼 클릭 유무
+		var emailBtn = document.getElementById("emailBtn").value;
+		if (emailBtn != "확인완료") {
+			document.getElementById("msg8").style.display = "block";
+			return false;
+		} else {
+			document.getElementById("msg8").style.display = "none";
+		}
 	}
 	// 중복 이메일 확인
 	function checkEmail() {
@@ -76,6 +86,8 @@
 		document.getElementById("msg4").style.display = "none";
 		document.getElementById("msg5").style.display = "none";
 		document.getElementById("msg6").style.display = "none";
+		document.getElementById("msg7").style.display = "none";
+		document.getElementById("msg8").style.display = "none";
 		var email = document.getElementById("email").value;
 		$.ajax({
 			type : "POST",
@@ -88,6 +100,7 @@
 					console.log("중복 없음!");
 					document.getElementById("msg4").style.display = "none";
 					document.getElementById("msg5").style.display = "block";
+					document.getElementById("emailBtn").value = "확인완료";
 				} else {
 					console.log("중복 있음!");
 					document.getElementById("msg5").style.display = "none";
@@ -115,7 +128,7 @@
 		<div id="index">
 			<p id="info">이메일</p>
 			<input type="email" class="input" name="email" id="email"> 
-			<input type="button" id="check" value="중복확인" onclick="checkEmail();">
+			<input type="button" class="check" id="emailBtn" value="중복확인" onclick="checkEmail();">
 		</div>
 		<br>
 		<div id="index">
@@ -157,6 +170,8 @@
 			번호가 틀렸습니다.</p>
 		<p id="msg7" style="color: red; display: none; margin-top: 0;">핸드폰 번호
 			양식에 맞게 입력해주세요.</p>
+		<p id="msg8" style="color: red; display: none; margin-top: 0;">이메일 
+		중복확인 버튼을 눌러주세요.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
 		</div>

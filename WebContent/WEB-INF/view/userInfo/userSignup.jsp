@@ -1,7 +1,7 @@
 <%@page import="ckd.userInfo.service.userManagementService"%>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
-<link href="css/userSignup.css?ver=1.9" rel="stylesheet" type="text/css">
+<link href="css/userSignup.css?ver=2.1" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -25,6 +25,7 @@
 			document.getElementById("msg7").style.display = "none";
 			document.getElementById("msg8").style.display = "none";
 			document.getElementById("msg9").style.display = "none";
+			document.getElementById("msg10").style.display = "none";
 			// 모든 항목 채우기
 			var checkAll = document.getElementsByClassName("input");
 			for (var i = 0; i < checkAll.length; i++) {
@@ -73,6 +74,23 @@
 			} else {
 				document.getElementById("msg8").style.display = "none";
 			}
+			// 이메일 중복확인 버튼 클릭 유무
+			var emailBtn = document.getElementById("emailBtn").value;
+			var nickNameBtn = document.getElementById("nickNameBtn").value;
+			if (emailBtn != "확인완료") {
+				document.getElementById("msg10").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("msg10").style.display = "none";
+			}
+			// 닉네임 중복확인 버튼 클릭 유무
+			if (nickNameBtn != "확인완료") {
+				document.getElementById("msg10").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("msg10").style.display = "none";
+			}
+			
 		}
 		// 중복 이메일 확인
 		function checkEmail() {
@@ -85,6 +103,7 @@
 			document.getElementById("msg7").style.display = "none";
 			document.getElementById("msg8").style.display = "none";
 			document.getElementById("msg9").style.display = "none";
+			document.getElementById("msg10").style.display = "none";
 			var email = document.getElementById("email").value;
 			$.ajax({
 				type : "POST",
@@ -97,6 +116,7 @@
 						console.log("중복 없음!");
 						document.getElementById("msg4").style.display = "none";
 						document.getElementById("msg5").style.display = "block";
+						document.getElementById("emailBtn").value = "확인완료"
 					} else {
 						console.log("중복 있음!");
 						document.getElementById("msg5").style.display = "none";
@@ -119,6 +139,7 @@
 			document.getElementById("msg7").style.display = "none";
 			document.getElementById("msg8").style.display = "none";
 			document.getElementById("msg9").style.display = "none";
+			document.getElementById("msg10").style.display = "none";
 			var nickName = document.getElementById("nickName").value;
 			$.ajax({
 				type : "POST",
@@ -131,7 +152,8 @@
 					if (data == "") {
 						console.log("중복 없음!");
 						document.getElementById("msg6").style.display = "none";
-						document.getElementById("msg7").style.display = "block";						
+						document.getElementById("msg7").style.display = "block";	
+						document.getElementById("nickNameBtn").value = "확인완료"
 					} else {
 						console.log("중복 있음!");
 						document.getElementById("msg7").style.display = "none";
@@ -157,7 +179,7 @@
 		<div id="index">
 			<p id="info">이메일</p>
 			<input type="email" class="input" name="email" id="email"> 
-			<input type="button" id="check" value="중복확인" onclick="checkEmail();">
+			<input type="button" class="check" id="emailBtn" value="중복확인" onclick="checkEmail();">
 		</div>
 		<br>
 		<div id="index">
@@ -168,7 +190,7 @@
 		<div id="index">
 			<p id="info">닉네임</p>
 			<input type="text" class="input" name="nickName" id="nickName">
-			<input type="button" id="check" value="중복확인 " onclick="checkNickName();">
+			<input type="button" class="check" id="nickNameBtn" value="중복확인 " onclick="checkNickName();">
 		</div>
 		<br>
 		<div id="index">
@@ -214,6 +236,8 @@
 			양식에 맞게 입력해주세요.</p>
 		<p id="msg9" style="color: red; display: none; margin-top: 0;">생년월일
 			양식에 맞게 입력해주세요.</p>
+		<p id="msg10" style="color: red; display: none; margin-top: 0;">이메일, 닉네임
+			중복확인 버튼을 눌러주세요.</p>
 		<div style="text-align: center;">
 			<input type="submit" value="회원가입" id="btn">
 		</div>
