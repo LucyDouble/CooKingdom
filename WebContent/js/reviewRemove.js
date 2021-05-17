@@ -9,7 +9,7 @@ $("body").on("click", "[id^=rsub-]", function(event) {
 	
 });
 
-function goList(){
+function goList2(){
 	console.log("rnoText : " + rnoText);
 	var recipeCode = document.getElementById("recipeCode").value;
 	console.log("recipeCode : "+ recipeCode);
@@ -21,9 +21,75 @@ function goList(){
 			reviewNo : rnoText
 		},
 		success : function(data){
-			console.log("성공!");
-			//window.location = "/recipeinquery.do?recipeCode="+recipeCode+"";
-			location.reload();
+				$.ajax({
+		url:"reviewListInquiry",
+		type:"POST",
+		dataType : "json",
+		async : false,
+		data: { 
+			recipeCode : recipeCode
+		},
+		success : function(data){
+			
+			var commentList = data.commentList;
+			var cv = "";
+			
+			$("#cmt").empty();
+			
+			if(commentList == null || data.cnt == 0){
+				cv = "<p>첫번째 댓글을 작성해 보세요!</p>";
+				$("#cmt").append(cv);
+			}
+			
+			
+			if (currentMail == "null" ) {
+				cv = "<p>로그인 후 확인이 가능합니다.</p>";
+				$("#cmt").append(cv);
+			}
+			
+			$("#cmt").empty();
+			
+			
+			if(currentMail != null && currentMail != "null"){
+				$.each(commentList, function(i,list){
+					cv += "<div class='comment_Inq' style='display:none;'>";
+					cv += "<input type='hidden' name='commentNo' value='"+commentList[i].commentNo+"' />";
+					cv += "<table><tr>";
+					cv += "<td class='cwriter'>"+commentList[i].nickname+"</td>";
+					cv += "<td class='csub' id='csub-"+commentList[i].commentNo+"'>"+commentList[i].commentContent+"</td>";
+					cv += "<td class='cdate'>"+commentList[i].commentDate+"</td>";
+					cv += "</tr></table>";
+					if(currentMail == commentList[i].email){
+					cv += "<div class='commentBtn'>";
+					cv += "<button type='button' class='cbtn' id='mbtn-"+commentList[i].commentNo+"'>수정</button>";
+					cv += "<button type='button' class='cbtn' id='cbtn-"+commentList[i].commentNo+"' onclick='return false;'>삭제</button>";
+					cv += "</div>";
+					}
+					cv += "</div>";					
+				});
+				
+			}
+					$("#cmt").append(cv);
+				
+				
+			
+			
+				
+				$(".comment_Inq").slice(0,5).show();
+
+				
+				
+				var morebtn = "<a id='moreBtn'>더보기(more)</a>";
+				
+				if(currentMail != null && data.cnt > 5 && currentMail != 'null'){
+					$("#moreDiv").append(morebtn);				
+				} 
+
+	
+			$("#comment_cnt").html("<h3>댓글 ("+data.cnt+" comments)</h3>");
+			
+		}
+	});
 		},
 		error : function(request, status, error){
 			console.log(request);
@@ -33,17 +99,22 @@ function goList(){
 }
 
 $(function () {
-    $(document).on("click", "[id^=delete_modal-]", function () {
+    $(document).on("click", "[id^=delete_modal-]", function (e) {
         action_popup.confirm("게시글을 삭제하시겠습니까?", function (res) {
-            if (res) { 
+            if (res) { 			
 				action_popup.alert("정상적으로 삭제되었습니다.");				
-				goList();
+				goList2();
+			
             }
-        })
+        });
     });
 
-    $(".modal_close").on("click", function () {
+    $(".modal_close").on("click", function (event) {
         action_popup.close(this);
+		event.preventDefault();
+		event.stopPropagation();
+		location.reload();
+		goList2();
     });
 });
 
@@ -60,6 +131,7 @@ $(function () {
 var action_popup = {
     timer: 500,
     confirm: function (txt, callback) {
+		
         if (txt == null || txt.trim() == "") {
             console.warn("confirm message is empty.");
             return;
@@ -68,12 +140,13 @@ var action_popup = {
             return;
         } else {
             $(".type-confirm .btn_ok").on("click", function () {
-                $(this).unbind("click");
+				//$(this).unbind("click");
                 callback(true);
                 action_popup.close(this);
             });
             this.open("type-confirm", txt);
         }
+
     },
 
     alert: function (txt) {
@@ -108,5 +181,6 @@ var action_popup = {
         setTimeout(function () {
             dimLayer != null ? dimLayer.remove() : "";
         }, this.timer);
+
     }
 }

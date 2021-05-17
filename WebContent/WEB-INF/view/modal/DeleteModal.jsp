@@ -7,7 +7,7 @@
          <p class="menu_msg"></p>
      </div>
      <div class="enroll_btn">
-         <button class="btn pink_btn btn_ok">확인</button>
+         <button class="btn pink_btn btn_ok" onclick="return false;">확인</button>
          <button class="btn gray_btn modal_close">취소</button>
      </div>
  </div>
@@ -17,6 +17,6 @@
         <p class="menu_msg"></p>
     </div>
     <div class="enroll_btn">
-        <button class="btn pink_btn modal_close">확인</button>
+        <button class="btn pink_btn modal_close" >확인</button>
     </div>
 </div>

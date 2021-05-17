@@ -70,13 +70,6 @@
 				return;
 			}
 			
-			var maxSize = 5 * 1024 * 1024;
-			var fileSize = 0;
-			
-			fileSize = document.getElementById("reviewPhoto").files[0].size;
-			
-			console.log("fileSize : "+ fileSize + "maxSize : "+ maxSize);
-			
 				var formData = new FormData(document.getElementById("frm"));
 				formData.append('email',document.getElementById("email").value);
 				formData.append('recipeCode',document.getElementById("recipeCode").value);
@@ -116,8 +109,6 @@
 				});
 			}
 
-			
-		}
 	</script>
 </div>
 </body>

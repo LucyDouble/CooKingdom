@@ -80,9 +80,9 @@ function goReview(){
 				$(".comment_Inq").slice(0,5).show();
 
 				
+				$("#moreDiv").empty();
 				
-				
-				
+				var morebtn = "<a id='moreBtn'>더보기(more)</a>";
 				if(currentMail != null && data.cnt > 5 && currentMail != 'null'){
 					$("#moreDiv").append(morebtn);				
 				} 

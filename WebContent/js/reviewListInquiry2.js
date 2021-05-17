@@ -32,7 +32,6 @@ window.onload = function(){
 		},
 		success : function(data){
 			
-	
 			var commentList = data.commentList;
 			var cv = "";
 			
@@ -64,7 +63,7 @@ window.onload = function(){
 					if(currentMail == commentList[i].email){
 					cv += "<div class='commentBtn'>";
 					cv += "<button type='button' class='cbtn' id='mbtn-"+commentList[i].commentNo+"'>수정</button>";
-					cv += "<button type='button' class='cbtn' id='cbtn-"+commentList[i].commentNo+"'>삭제</button>";
+					cv += "<button type='button' class='cbtn' id='cbtn-"+commentList[i].commentNo+"' onclick='return false;'>삭제</button>";
 					cv += "</div>";
 					}
 					cv += "</div>";					
