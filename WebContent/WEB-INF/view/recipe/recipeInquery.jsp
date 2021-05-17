@@ -29,6 +29,7 @@
 			<input type="hidden" name="recipeCode" value="${recipeInquery.recipeCode }">
 			<input type="hidden" name="imgURL" value="${recipeInquery.recipeUrl }">
 			<input type="hidden" name="mkName" value="${recipeInquery.recipeName }">
+			
 			<!-- name="mkNum" value="0"  98행에 있는거 읽어옴 -->
 			<!-- name="total_price" value="0" 113행에 있는거 읽어옴-->
 			
@@ -70,7 +71,9 @@
 							<li>${recipeInquery.recipeLevel }</li>
 						</ul>
 						<ul>
-							<li>url복사</li>
+							<li>
+								<a onclick="CopyUrlToClipboard()" id="urlBtn">url복사</a>						
+							</li>
 							<li><i class="far fa-heart"></i></li>
 						</ul>
 					</div>

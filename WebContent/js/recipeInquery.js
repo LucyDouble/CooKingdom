@@ -59,3 +59,20 @@ function cart(email) {
 		frm.submit();
 	}
 }
+
+//url 복사
+function CopyUrlToClipboard(){
+	const t = document.createElement("textarea");
+	document.body.appendChild(t);
+	
+	t.value = window.document.location.href; // 현재 URL 을 세팅해 줍니다.
+	
+	t.select();  // 해당 값이 선택되도록 select() 합니다
+
+	document.execCommand("copy"); // 클립보드에 복사합니다.
+	document.body.removeChild(t);
+
+
+	alert("URL이 클립보드에 복사되었습니다"); 
+
+}
