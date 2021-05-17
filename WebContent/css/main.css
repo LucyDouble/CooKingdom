@@ -16,6 +16,7 @@
 .mR, .bR, .cR {
     display: inline-block;
     margin-left: 5%;
+    cursor : pointer;
 }
 #bestRecipe {
     clear: both;

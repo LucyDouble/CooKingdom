@@ -12,6 +12,9 @@
 	function notYet(){
 		alert("준비중입니다!");
 	}
+	function plzLogin(){
+		alert("로그인 후 이용가능합니다.");
+	}
 </script>
 <header id="header">
 			<div id="mysidenav" class="sidenav">
@@ -29,12 +32,24 @@
                 <a href="<%=request.getContextPath()%>/cookingDom?command=Main"><img src="image/header/logo.png"  ></a>
             </div>
             <ul id="my">
-                <li class="my"><a href="#"><img src="image/header/delivery.png"></a></li>
-                <li class="my"><a href="CartListInquiry"><img src="image/header/cart.png"></a></li>
-                <%
-                User user = (User)session.getAttribute("User");
+            	<!-- 주문내역 -->
+            	<% 
+            	User user = (User)session.getAttribute("User");
             	Manager manager = (Manager)session.getAttribute("Manager");
             	Manager director = (Manager)session.getAttribute("Director"); 
+            	if (user == null && manager == null && director == null) {%>
+                <li class="my"><a href="loginUser" onclick ="plzLogin()"><img src="image/header/delivery.png"></a></li>               
+                <% }else if (user != null) {%>
+                <li class="my"><a href="orderListInquiry"><img src="image/header/delivery.png"></a></li> 
+                 <% } %>
+                 
+                 
+                <!-- 카트 -->
+                <li class="my"><a href="CartListInquiry"><img src="image/header/cart.png"></a></li>
+                
+                
+                <!--유저정보/로그인 -->
+                <%
             	if (user == null && manager == null && director == null) {%>
             		<li class="my"><a href="loginUser"><img src="image/header/myPage.png"></a></li>
             	<%} else if (user != null) {%>

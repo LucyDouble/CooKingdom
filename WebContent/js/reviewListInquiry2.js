@@ -188,20 +188,20 @@ function reviewDisplay(data){
 	$("#title_txt").html("<h3>리뷰 ("+data.cnt+" review)</h3>");
 	
 	var page = "";
+	if(currentMail != "null"){
+		if(data.startPage > 1){
+		page += "<a id='beforeP' onclick='pageGo("+(data.startPage-1)+")'>이전</a>";				
+		}
+		for (var i = data.startPage; i<=data.endPage; i++){
+		page += "<a class='page' onclick='pageGo("+i+")'>"+" "+ i +" "+"</a>";				
+		}
+		
+		if(data.endPage < data.pageCnt)
+		page += "<a id='afterP' onclick='pageGo("+(data.endPage+1)+")'>다음</a>"
+		
 	
-	if(data.startPage > 1){
-	page += "<a id='beforeP' onclick='pageGo("+(data.startPage-1)+")'>이전</a>";				
+		$("#pageCount").html(page);
 	}
-	for (var i = data.startPage; i<=data.endPage; i++){
-	page += "<a class='page' onclick='pageGo("+i+")'>"+" "+ i +" "+"</a>";				
-	}
-	
-	if(data.endPage < data.pageCnt)
-	page += "<a id='afterP' onclick='pageGo("+(data.endPage+1)+")'>다음</a>"
-	
-
-	$("#pageCount").html(page);
-	
 
 }
 

@@ -104,7 +104,7 @@ $(function () {
             if (res) { 			
 				action_popup.alert("정상적으로 삭제되었습니다.");				
 				goList2();
-			
+				location.reload();
             }
         });
     });
@@ -113,8 +113,6 @@ $(function () {
         action_popup.close(this);
 		event.preventDefault();
 		event.stopPropagation();
-		location.reload();
-		goList2();
     });
 });
 
