@@ -54,11 +54,12 @@ function cart(email) {
 		frm.submit();
 	} else {
 		var frm = document.getElementById("recipe_frm");
-		frm.action="./CartInfoRegister";
+		frm.action="./cartRegister";
 		frm.method="get";
 		frm.submit();
 	}
 }
+
 
 //url 복사
 function CopyUrlToClipboard(){
