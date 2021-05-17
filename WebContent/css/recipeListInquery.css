@@ -112,6 +112,7 @@
 
 #recipe_Rbtn {
 	position: absolute;
+/* 	display: none; */
 	top: 10px;
 	right: 15px;
 	width: 110px;

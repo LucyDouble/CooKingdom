@@ -95,6 +95,7 @@
 }
 
 .modify_delete input {
+/* 	display: none; */
 	width: 110px;
 	background-color:  white;
 	padding: 9px 0px;

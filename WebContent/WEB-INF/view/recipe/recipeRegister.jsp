@@ -142,11 +142,11 @@ function addIng() {
 								<input id="addIng_cnt" type="hidden" name="cnt"></td>
 						</tr>
 
-<!-- 						<tr>
+				<tr>
 							<th>상품 소개</th>
 							<td><textarea id="summernote" name="editordata"></textarea>
 							</td>
-						</tr> -->
+						</tr> 
 
 					</tbody>
 				</table>
