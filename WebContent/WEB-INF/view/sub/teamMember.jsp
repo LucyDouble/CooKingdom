@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>쿠킹덤</title>
+<title>CookingDom Developer</title>
 
 <style>
 	body{ width: 1440px; margin: 0 auto;}
