@@ -271,7 +271,7 @@
 		<table style="border-collapse:collapse;">
 			<tr id="tr">
 				<td id="info">이메일</td>
-				<td id="input"><input type="text" id="email" name="email" value="${Director.email }" readonly></td>
+				<td id="input"><input type="text" id="email" name="email" class="set" value="${Director.email }" readonly></td>
 				<td id="input"></td>
 				<td id="button"></td>				
 			</tr>
@@ -289,7 +289,7 @@
 			</tr>
 			<tr id="tr">
 				<td id="info">비밀번호</td>
-				<td id="input">${Director.pwd }</td>
+				<td id="input"><input type="password" id="email" name="email" class="set" value="${Director.pwd }" readonly></td>
 				<td id="input">
 					<input type="password" class="text" id="newPwd" name="newPwd" placeholder="새 비밀번호"><br><br>
 					<input type="password" class="text" id="rePwd" name="rePwd" placeholder="새 비밀번호 확인">

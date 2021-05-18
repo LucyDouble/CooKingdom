@@ -42,7 +42,7 @@ table {
 	cursor : pointer;
 }
 
-#email {
+.set {
 	border: none;
 	font-family: "NanumB";
 	font-size: 13px;

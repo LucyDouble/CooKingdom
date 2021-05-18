@@ -41,7 +41,7 @@ table {
 	cursor : pointer;
 }
 
-#email {
+.set {
 	border: none;
 	font-family: "NanumB";
 	src: url("../font/NanumBarunpenB.ttf");
