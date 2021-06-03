@@ -1,5 +1,5 @@
 # CooKingdom
-<h2><a href="https://youtu.be/ZX5bDemHHXQ">시연 영상 바로 보기</a></h2>
+<h2><a href="https://youtu.be/ZX5bDemHHXQ" target="_blank">시연 영상 바로 보기</a></h2>
 <hr>
 <h2>메인페이지 실행</h2><br>
   src/ckd/Main.java <br>
