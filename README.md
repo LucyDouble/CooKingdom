@@ -3,10 +3,10 @@
 ##### 팀원 : 강수목, 고현민(조장), 곽서현, 김세훈, 박준태
 ---
 ## Contents
-1. [프로젝트 소개](#프로젝트 소개)
-2. 설계의 주안점
+1. 프로젝트 소개
+2. [설계의 주안점](#설계의-주안점)
 3. 개발환경
-4. 프로젝트 기능구현
+4. [프로젝트 기능구현](#프로젝트-기능구현)
 5. 주요기능
 6. Document
 ---
@@ -21,6 +21,20 @@
 
 ---
 ## 개발환경
+
+
+|Category|Detail|
+|:--:|:--:|
+|FrontEnd|HTML5, JS, CSS3, JQuery|
+|BackEnd|Java(JDK 1.8), Servlet|
+|OS|Windows 10, MacOS|
+|Libray&API|Apache Commons FileUpload, Imgscalr|
+|IDE|Eclipse, VisualStudio|
+|Server|Tomcat(v8.5)|
+|Document|Google Drive, KakaoOven, ERDCloud, diagrams.net|
+|CI|Github|
+|DateBase|SQL Developer, Oracle(11g)|
+
 Java, JSP/Servlets, JavaScript, jQuery, Oracle, GitHub, Apache Tomcat
 
 ---
