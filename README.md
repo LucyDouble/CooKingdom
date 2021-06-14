@@ -129,5 +129,16 @@
 <p align="center">
     <img src = "ReadMe/17.png", width="100%">
 </p>
+
 ---
 ## Document
+### 1. 요구사항 정의서
+<p align="center">
+    <img src = "ReadMe/specification.jpg", width="100%">
+</p>
+
+### 2. ERD
+<p align="center">
+    <img src = "ReadMe/erd.png", width="100%">
+</p>
+
