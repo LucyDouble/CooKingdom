@@ -134,7 +134,7 @@
 ## Document
 ### 1. 요구사항 정의서
 <p align="center">
-    <img src = "ReadMe/specification.jpg", width="100%">
+    <img src = "ReadMe/specification.png", width="100%">
 </p>
 
 ### 2. ERD
